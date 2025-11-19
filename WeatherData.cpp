@@ -194,7 +194,7 @@ void WeatherDataCollection::displayAverageWindSpeed(int year, int month) const
     auto data = getDataForSpecificMonthYear(year, month);
 
     // Error check statement
-    if (!data.empty())
+    if (data.empty())
     {
         std::cout << "No data for " << month << "/" << year << std::endl;
         return;
@@ -222,7 +222,7 @@ void WeatherDataCollection::displayMonthlyTemperatures(int year) const
         auto data = getDataForSpecificMonthYear(year, month);
 
         // error check
-        if (!data.empty())
+        if (data.empty())
         {
             std::cout << "Month " << month << ": No data available" << std::endl;
             continue;
