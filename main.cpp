@@ -24,7 +24,7 @@ public:
             processChoice(choice);
         }
 
-        while (choice != 6);
+        while (choice != 8);
     }
 
 private:

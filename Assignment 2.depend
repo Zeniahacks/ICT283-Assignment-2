@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1763546064 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\main.cpp
+1763548489 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\main.cpp
 	<iostream>
 	<string>
 	"WeatherData.h"
@@ -19,4 +19,14 @@
 1763482023 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\bst.h
 	<iostream>
 	<functional>
+
+1763547643 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherdata.cpp
+	"WeatherData.h"
+	<fstream>
+	<sstream>
+	<iostream>
+	<cmath>
+	<algorithm>
+	<numeric>
+	<stdexcept>
 
