@@ -81,6 +81,9 @@ public:
     std::vector<WeatherRecord> getDataForMonth(int month) const;
     std::vector<WeatherRecord> getDataForYearMonth(int year, int month) const;
 
+    // New query operation for assignment 2
+    std::vector<WeatherRecord> getDataForSpecificMonthYear(int year, int month) const;
+
     // Statistical operations
     double calculateSPCC(int month, const std::string& correlationType) const;
 
