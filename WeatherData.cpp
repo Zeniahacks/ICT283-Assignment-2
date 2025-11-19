@@ -262,6 +262,12 @@ std::vector<WeatherRecord> WeatherDataCollection::getDataForYearMonth(int year, 
     return result;
 }
 
+// New implementation for Assignment 2; To get specific data for the month and year
+std::vector<WeatherRecord> WeatherDataCollection::getDataForSpecificMonthYear(int year, int month) const
+{
+    return getDataForYearMonth(year, month);
+}
+
 // Statistical namespace implementation
 namespace Statistics
 {
