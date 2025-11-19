@@ -87,6 +87,9 @@ public:
     // Statistical operations
     double calculateSPCC(int month, const std::string& correlationType) const;
 
+    // New Menu option as tasked from assignment 2
+    void displayAverageWindSpeed(int year, int month) const;
+
     // Menu option 4 calculations
     void generateMonthlyStats(int year, const std::string& filename) const;
 
