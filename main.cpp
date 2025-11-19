@@ -143,7 +143,11 @@ private:
             return;
         }
 
-        int month;
+        int year, month;
+
+        cout << "Enter year: ";
+        cin >> year;
+
         cout << "Enter month (1-12): ";
         cin >> month;
 
