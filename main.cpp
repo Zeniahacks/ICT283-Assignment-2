@@ -33,11 +33,13 @@ private:
     {
         cout << "\n=== Assignment 2 Weather Data Analysis ===" << endl;
         cout << "1. Load Weather Data Files" << endl;
-        cout << "2. Display All Data" << endl;
-        cout << "3. Calculate Pearson Correlation Coefficients" << endl;
-        cout << "4. Generate Monthly Statistics Report" << endl;
-        cout << "5. Display Data Structure Information" << endl;
-        cout << "6. Exit" << endl;
+        cout << "2. Display Average Wind Speed and Standard Deviation" << endl;
+        cout << "3. Display Monthly Temperature Averages and Standard Deviations" << endl;
+        cout << "4. Calculate Pearson Correlation Coefficients" << endl;
+        cout << "5. Generate Monthly Statistics Report" << endl;
+        cout << "6. Display Data Structure Information" << endl;
+        cout << "7. Display All Data" << endl;
+        cout << "8. Exit" << endl;
         cout << "==========================================" << endl;
     }
 
@@ -50,18 +52,24 @@ private:
             loadData();
             break;
         case 2:
-            displayData();
+            displayAverageWindSpeed();
             break;
         case 3:
-            calculateCorrelations();
+            displayMonthlyTemperatures();
             break;
         case 4:
-            generateReport();
+            calculateCorrelations();
             break;
         case 5:
-            displayStructuredinfo();
+            generateReport();
             break;
         case 6:
+            displayStructuredinfo();
+            break;
+        case 7:
+            displayData();
+            break;
+        case 8:
             cout << "Exiting application. Goodbye!" << endl;
             break;
         default:
@@ -90,6 +98,41 @@ private:
         }
 
         weatherData.displayAllData();
+    }
+
+    /// Tasked for assignment 2
+    void displayAverageWindSpeed() {
+        if (!dataLoaded) {
+            cout << "Please load the data first (Option 1)." << endl;
+            return;
+        }
+
+        int year, month;
+        cout << "Enter year: ";
+        cin >> year;
+        cout << "Enter month (1-12): ";
+        cin >> month;
+
+        if (month < 1 || month > 12) {
+            cout << "Invalid month. Please try again." << endl;
+            return;
+        }
+
+        weatherData.displayAverageWindSpeed(year, month);
+    }
+
+    /// Also tasked for assignment 2
+    void displayMonthlyTemperatures() {
+        if (!dataLoaded) {
+            cout << "Please load the data first (Option 1)." << endl;
+            return;
+        }
+
+        int year;
+        cout << "Enter year: ";
+        cin >> year;
+
+        weatherData.displayMonthlyTemperatures(year);
     }
 
     void calculateCorrelations()

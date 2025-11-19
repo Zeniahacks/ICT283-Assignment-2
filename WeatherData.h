@@ -80,6 +80,7 @@ public:
     // Query operations
     std::vector<WeatherRecord> getDataForMonth(int month) const;
     std::vector<WeatherRecord> getDataForYearMonth(int year, int month) const;
+    std::vector<WeatherRecord> getDataForSpecificMonthYear(int year, int month) const;
 
     // New query operation for assignment 2
     std::vector<WeatherRecord> getDataForSpecificMonthYear(int year, int month) const;
