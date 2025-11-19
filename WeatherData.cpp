@@ -153,8 +153,8 @@ void WeatherDataCollection::parseAndAddRecord(const std::string& line) {
         WeatherRecord record(date, windSpeed, temperature, solarRadiation);
         addWeatherRecord(record);
 
-        // Debug
-        std::cout << "Parsed record: " << date << " WS: " << windSpeed << " Temp: " << temperature << " Solar: " << solarRadiation << std::endl;
+        // Debug statement to shows it run
+        // std::cout << "Parsed record: " << date << " WS: " << windSpeed << " Temp: " << temperature << " Solar: " << solarRadiation << std::endl;
 
     } catch (const std::exception& e) {
         std::cerr << "Error parsing line: " << line << " - " << e.what() << std::endl;
@@ -215,9 +215,9 @@ void WeatherDataCollection::displayAverageWindSpeed(int year, int month) const
 
 void WeatherDataCollection::displayMonthlyTemperatures(int year) const
 {
-    std::cout << year << endl;
+    std::cout << year << std::endl;
 
-    for (int i = 1; month <= 12; month++)
+    for (int month = 1; month <= 12; month++)
     {
         auto data = getDataForSpecificMonthYear(year, month);
 
@@ -231,7 +231,7 @@ void WeatherDataCollection::displayMonthlyTemperatures(int year) const
         std::vector<double> temperatures;
 
         for (const auto& record : data)
-            temperatures.push_back(record.temperature)
+            temperatures.push_back(record.temperature);
 
         double avg = Statistics::calculateMean(temperatures);
         double stdDev = Statistics::calculateStdDev(temperatures);
