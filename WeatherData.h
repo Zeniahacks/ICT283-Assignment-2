@@ -89,6 +89,7 @@ public:
 
     /// New Menu option tasked from assignment 2
     void displayAverageWindSpeed(int year, int month) const;
+    void displayMonthlyTemperatures(int year) const;
 
     // Menu option 4 calculations
     void generateMonthlyStats(int year, const std::string& filename) const;
