@@ -202,13 +202,42 @@ void WeatherDataCollection::displayAverageWindSpeed(int year, int month) const
 
     std::vector<double> windSpeeds;
     for (const auto& record : data)
-        windSpeeds.push_back(record.windSpeeds);
+        windSpeeds.push_back(record.windSpeed);
 
     double avg = Statistics::calculateMean(windSpeeds);
     double stdDev = Statistics::calculateStdDev(windSpeeds);
 
     std::cout << "Average Speed: " << avg << " km/h" << std::endl;
     std::cout << "Sample stdev: " << stdDev << std::endl;
+}
+
+/// Menu option 3: Average ambient air temperature and sample standard deviation for each month of a specified year.
+
+void WeatherDataCollection::displayMonthlyTemperatures(int year) const
+{
+    std::cout << year << endl;
+
+    for (int i = 1; month <= 12; month++)
+    {
+        auto data = getDataForSpecificMonthYear(year, month);
+
+        // error check
+        if (!data.empty())
+        {
+            std::cout << "Month " << month << ": No data available" << std::endl;
+            continue;
+        }
+
+        std::vector<double> temperatures;
+
+        for (const auto& record : data)
+            temperatures.push_back(record.temperature)
+
+        double avg = Statistics::calculateMean(temperatures);
+        double stdDev = Statistics::calculateStdDev(temperatures);
+
+        std::cout << month << ": Average:" << avg << " degrees C, stdev: " << stdDev << std::endl;
+    }
 }
 
 
