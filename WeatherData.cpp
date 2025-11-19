@@ -185,6 +185,34 @@ Date WeatherDataCollection::parseDate(const std::string& dateTimeString) {
     return Date(day, month, year);
 }
 
+// NEW IMPLEMENTAION FOR ASSIGNMENT 2
+/// Menu Option 2: The average wind speed and sample standard deviation for this wind speed given a
+/// specified month and year
+
+void WeatherDataCollection::displayAverageWindSpeed(int year, int month) const
+{
+    auto data = getDataForSpecificMonthYear(year, month);
+
+    // Error check statement
+    if (!data.empty())
+    {
+        std::cout << "No data for " << month << "/" << year << std::endl;
+        return;
+    }
+
+    std::vector<double> windSpeeds;
+    for (const auto& record : data)
+        windSpeeds.push_back(record.windSpeeds);
+
+    double avg = Statistics::calculateMean(windSpeeds);
+    double stdDev = Statistics::calculateStdDev(windSpeeds);
+
+    std::cout << "Average Speed: " << avg << " km/h" << std::endl;
+    std::cout << "Sample stdev: " << stdDev << std::endl;
+}
+
+
+/// Get data for Month only
 std::vector<WeatherRecord> WeatherDataCollection::getDataForMonth(int month) const {
     std::vector<WeatherRecord> result;
 
@@ -218,7 +246,7 @@ void collectByMonth(const WeatherRecord& record, void* context) {
     }
 }
 
-// Calculation of SPCC
+/// Calculation of SPCC
 double WeatherDataCollection::calculateSPCC(int month, const std::string& correlationType) const {
     auto monthlyData = getDataForMonth(month);
     if (monthlyData.empty()) {
