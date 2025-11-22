@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_weather_data_collection" kind="class" language="C++" prot="public">
+    <compoundname>WeatherDataCollection</compoundname>
+    <includes refid="_weather_data_8h" local="no">WeatherData.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_weather_data_collection_1a180814c73c31a8b800f954defc4013cd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bst" kindref="compound">Bst</ref>&lt; <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &gt;</type>
+        <definition>Bst&lt;WeatherRecord&gt; WeatherDataCollection::weatherDataBST</definition>
+        <argsstring></argsstring>
+        <name>weatherDataBST</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="69" column="9" bodyfile="WeatherData.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_weather_data_collection_1ab1d12616436aebf0709a817e3aa6c347" prot="private" static="no" mutable="no">
+        <type><ref refid="class_map" kindref="compound">Map</ref>&lt; int, std::vector&lt; <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> * &gt; &gt;</type>
+        <definition>Map&lt;int, std::vector&lt;WeatherRecord*&gt; &gt; WeatherDataCollection::dataByMonth</definition>
+        <argsstring></argsstring>
+        <name>dataByMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="70" column="9" bodyfile="WeatherData.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_weather_data_collection_1ac3202894d9362c8ae57d61ba1a1b683f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WeatherDataCollection::WeatherDataCollection</definition>
+        <argsstring>()</argsstring>
+        <name>WeatherDataCollection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="73" column="5" bodyfile="WeatherData.cpp" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a58b299aa1f7928d53e909e144d8d1b24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WeatherDataCollection::~WeatherDataCollection</definition>
+        <argsstring>()</argsstring>
+        <name>~WeatherDataCollection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="74" column="5" bodyfile="WeatherData.cpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WeatherDataCollection::addWeatherRecord</definition>
+        <argsstring>(const WeatherRecord &amp;record)</argsstring>
+        <name>addWeatherRecord</name>
+        <param>
+          <type>const <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &amp;</type>
+          <declname>record</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="77" column="10" bodyfile="WeatherData.cpp" bodystart="39" bodyend="55"/>
+        <references refid="class_map_1a2b6343cc81c1caee8760516815f144a8" compoundref="_weather_data_8h" startline="33" endline="35">Map&lt; K, V &gt;::at</references>
+        <references refid="class_map_1a21817f63324636803318e47c2a88b02e" compoundref="_weather_data_8h" startline="29" endline="31">Map&lt; K, V &gt;::contains</references>
+        <references refid="class_weather_record_1a70f012d48746320340d318fe747104ee" compoundref="_weather_data_8h" startline="51">WeatherRecord::date</references>
+        <references refid="class_date_1af2dcc6ce51dbb2bd798499a149bdffb7" compoundref="_date_8h" startline="49" endline="49">Date::GetMonth</references>
+        <references refid="class_map_1a225903c0291cf978e27be5a58f399a14" compoundref="_weather_data_8h" startline="25" endline="27">Map&lt; K, V &gt;::insert</references>
+        <references refid="class_bst_1a56e4e604602065a9fe143ec5dfba3536" compoundref="_bst_8h" startline="132" endline="134">Bst&lt; T &gt;::insert</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a208171f41a04ea93ec8b18780d765f39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WeatherDataCollection::loadFromFiles</definition>
+        <argsstring>(const std::string &amp;dataSourceFile)</argsstring>
+        <name>loadFromFiles</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dataSourceFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="78" column="10" bodyfile="WeatherData.cpp" bodystart="63" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a9f12fb0238999c6de5e8b28f2d75f210" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &gt;</type>
+        <definition>std::vector&lt; WeatherRecord &gt; WeatherDataCollection::getDataForMonth</definition>
+        <argsstring>(int month) const</argsstring>
+        <name>getDataForMonth</name>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+<para>Get data for Month only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="81" column="17" bodyfile="WeatherData.cpp" bodystart="245" bodyend="259"/>
+        <references refid="class_map_1a2b6343cc81c1caee8760516815f144a8" compoundref="_weather_data_8h" startline="33" endline="35">Map&lt; K, V &gt;::at</references>
+        <referencedby refid="class_weather_data_collection_1adf00be9874637aa86f79d03f79e3591d" compoundref="_weather_data_8cpp" startline="279" endline="301">calculateSPCC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a7509e18dd1bd7839cd442db739573c9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &gt;</type>
+        <definition>std::vector&lt; WeatherRecord &gt; WeatherDataCollection::getDataForYearMonth</definition>
+        <argsstring>(int year, int month) const</argsstring>
+        <name>getDataForYearMonth</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="82" column="17" bodyfile="WeatherData.cpp" bodystart="304" bodyend="320"/>
+        <references refid="class_map_1a2b6343cc81c1caee8760516815f144a8" compoundref="_weather_data_8h" startline="33" endline="35">Map&lt; K, V &gt;::at</references>
+        <referencedby refid="class_weather_data_collection_1a98207c224b346028112f14e5a9e9bb1a" compoundref="_weather_data_8cpp" startline="404" endline="458">generateMonthlyStats</referencedby>
+        <referencedby refid="class_weather_data_collection_1a8242557f38750a366d640009c2d0d9b3" compoundref="_weather_data_8cpp" startline="323" endline="326">getDataForSpecificMonthYear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a8242557f38750a366d640009c2d0d9b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &gt;</type>
+        <definition>std::vector&lt; WeatherRecord &gt; WeatherDataCollection::getDataForSpecificMonthYear</definition>
+        <argsstring>(int year, int month) const</argsstring>
+        <name>getDataForSpecificMonthYear</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="85" column="17" bodyfile="WeatherData.cpp" bodystart="323" bodyend="326"/>
+        <references refid="class_weather_data_collection_1a7509e18dd1bd7839cd442db739573c9d" compoundref="_weather_data_8cpp" startline="304" endline="320">getDataForYearMonth</references>
+        <referencedby refid="class_weather_data_collection_1aebed502136a6a926dffeaaab3df64fb8" compoundref="_weather_data_8cpp" startline="192" endline="212">displayAverageWindSpeed</referencedby>
+        <referencedby refid="class_weather_data_collection_1ac46cef0678cb228ee7d3563c4a395329" compoundref="_weather_data_8cpp" startline="216" endline="241">displayMonthlyTemperatures</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1adf00be9874637aa86f79d03f79e3591d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WeatherDataCollection::calculateSPCC</definition>
+        <argsstring>(int month, const std::string &amp;correlationType) const</argsstring>
+        <name>calculateSPCC</name>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>correlationType</declname>
+        </param>
+        <briefdescription>
+<para>Calculation of SPCC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="88" column="12" bodyfile="WeatherData.cpp" bodystart="279" bodyend="301"/>
+        <references refid="namespace_statistics_1aa4976da3f8f935e7c33ffc1ce2016db8" compoundref="_weather_data_8cpp" startline="374" endline="400">Statistics::calculateSPCC</references>
+        <references refid="class_weather_data_collection_1a9f12fb0238999c6de5e8b28f2d75f210" compoundref="_weather_data_8cpp" startline="245" endline="259">getDataForMonth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1aebed502136a6a926dffeaaab3df64fb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WeatherDataCollection::displayAverageWindSpeed</definition>
+        <argsstring>(int year, int month) const</argsstring>
+        <name>displayAverageWindSpeed</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+<para>New Menu option tasked from assignment 2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Menu Option 2: The average wind speed and sample standard deviation for this wind speed given a specified month and year </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="91" column="10" bodyfile="WeatherData.cpp" bodystart="192" bodyend="212"/>
+        <references refid="namespace_statistics_1a27742824c580d8e4c2e70ffdf3c8a4fa" compoundref="_weather_data_8cpp" startline="331" endline="342">Statistics::calculateMean</references>
+        <references refid="namespace_statistics_1ac2a30272cbc2248b0c94b1921acd9f34" compoundref="_weather_data_8cpp" startline="344" endline="357">Statistics::calculateStdDev</references>
+        <references refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" compoundref="_evaluation_8txt" startline="30">data</references>
+        <references refid="class_weather_data_collection_1a8242557f38750a366d640009c2d0d9b3" compoundref="_weather_data_8cpp" startline="323" endline="326">getDataForSpecificMonthYear</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1ac46cef0678cb228ee7d3563c4a395329" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WeatherDataCollection::displayMonthlyTemperatures</definition>
+        <argsstring>(int year) const</argsstring>
+        <name>displayMonthlyTemperatures</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Menu option 3: Average ambient air temperature and sample standard deviation for each month of a specified year. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="92" column="10" bodyfile="WeatherData.cpp" bodystart="216" bodyend="241"/>
+        <references refid="namespace_statistics_1a27742824c580d8e4c2e70ffdf3c8a4fa" compoundref="_weather_data_8cpp" startline="331" endline="342">Statistics::calculateMean</references>
+        <references refid="namespace_statistics_1ac2a30272cbc2248b0c94b1921acd9f34" compoundref="_weather_data_8cpp" startline="344" endline="357">Statistics::calculateStdDev</references>
+        <references refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" compoundref="_evaluation_8txt" startline="30">data</references>
+        <references refid="class_weather_data_collection_1a8242557f38750a366d640009c2d0d9b3" compoundref="_weather_data_8cpp" startline="323" endline="326">getDataForSpecificMonthYear</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a98207c224b346028112f14e5a9e9bb1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WeatherDataCollection::generateMonthlyStats</definition>
+        <argsstring>(int year, const std::string &amp;filename) const</argsstring>
+        <name>generateMonthlyStats</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="95" column="10" bodyfile="WeatherData.cpp" bodystart="404" bodyend="458"/>
+        <references refid="namespace_statistics_1a707ebc094c5689786f4de672932eea01" compoundref="_weather_data_8cpp" startline="359" endline="372">Statistics::calculateMAD</references>
+        <references refid="namespace_statistics_1a27742824c580d8e4c2e70ffdf3c8a4fa" compoundref="_weather_data_8cpp" startline="331" endline="342">Statistics::calculateMean</references>
+        <references refid="namespace_statistics_1ac2a30272cbc2248b0c94b1921acd9f34" compoundref="_weather_data_8cpp" startline="344" endline="357">Statistics::calculateStdDev</references>
+        <references refid="class_weather_data_collection_1a7509e18dd1bd7839cd442db739573c9d" compoundref="_weather_data_8cpp" startline="304" endline="320">getDataForYearMonth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a317191b0b3a183ac9bc02e038b50d7d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WeatherDataCollection::displayAllData</definition>
+        <argsstring>() const</argsstring>
+        <name>displayAllData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="98" column="10" bodyfile="WeatherData.cpp" bodystart="461" bodyend="467"/>
+        <references refid="class_weather_data_collection_1aacac7f424c8b3dc53de5ea8acbec9631" compoundref="_weather_data_8cpp" startline="469" endline="471">getTotalRecords</references>
+        <references refid="class_bst_1a548552ba241e7b600a04bc55154af36e" compoundref="_bst_8h" startline="165" endline="167">Bst&lt; T &gt;::inOrder</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1aacac7f424c8b3dc53de5ea8acbec9631" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WeatherDataCollection::getTotalRecords</definition>
+        <argsstring>() const</argsstring>
+        <name>getTotalRecords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="99" column="9" bodyfile="WeatherData.cpp" bodystart="469" bodyend="471"/>
+        <references refid="class_bst_1a2fa9672cc879f25613c40690cf0098e8" compoundref="_bst_8h" startline="265" endline="267">Bst&lt; T &gt;::size</references>
+        <referencedby refid="class_weather_data_collection_1a317191b0b3a183ac9bc02e038b50d7d0" compoundref="_weather_data_8cpp" startline="461" endline="467">displayAllData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1ae0b7490bc29c71ca76ae5da6726070a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; WeatherDataCollection::getAvailableYears</definition>
+        <argsstring>() const</argsstring>
+        <name>getAvailableYears</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="101" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_weather_data_collection_1ab989cab32d91cff3b7a9f31bcdc31a47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WeatherDataCollection::parseAndAddRecord</definition>
+        <argsstring>(const std::string &amp;line)</argsstring>
+        <name>parseAndAddRecord</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="104" column="10" bodyfile="WeatherData.cpp" bodystart="122" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1ad3eae0f0b875676f9b4371c584ac6bed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date WeatherDataCollection::parseDate</definition>
+        <argsstring>(const std::string &amp;dateTimeString)</argsstring>
+        <name>parseDate</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>dateTimeString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="105" column="10" bodyfile="WeatherData.cpp" bodystart="164" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1ae8e7fd8fb3d9f6b3a57794cb70f55847" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WeatherDataCollection::monthExists</definition>
+        <argsstring>(int month) const</argsstring>
+        <name>monthExists</name>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="113" column="10" bodyfile="WeatherData.cpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_weather_data_collection_1a8175ee519322c47eecfe3154083deda5" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double WeatherDataCollection::calculateMean</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values)</argsstring>
+        <name>calculateMean</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="108" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1ab522172b13556df354ece047036fe927" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double WeatherDataCollection::calculateStdDev</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values)</argsstring>
+        <name>calculateStdDev</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="109" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_data_collection_1a4f4388e7ece21f81afd415dd1602a66e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double WeatherDataCollection::calculateMAD</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values)</argsstring>
+        <name>calculateMAD</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="110" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WeatherData.h" line="67" column="28" bodyfile="WeatherData.h" bodystart="67" bodyend="114"/>
+    <listofallmembers>
+      <member refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>addWeatherRecord</name></member>
+      <member refid="class_weather_data_collection_1a4f4388e7ece21f81afd415dd1602a66e" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>calculateMAD</name></member>
+      <member refid="class_weather_data_collection_1a8175ee519322c47eecfe3154083deda5" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>calculateMean</name></member>
+      <member refid="class_weather_data_collection_1adf00be9874637aa86f79d03f79e3591d" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>calculateSPCC</name></member>
+      <member refid="class_weather_data_collection_1ab522172b13556df354ece047036fe927" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>calculateStdDev</name></member>
+      <member refid="class_weather_data_collection_1ab1d12616436aebf0709a817e3aa6c347" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>dataByMonth</name></member>
+      <member refid="class_weather_data_collection_1a317191b0b3a183ac9bc02e038b50d7d0" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>displayAllData</name></member>
+      <member refid="class_weather_data_collection_1aebed502136a6a926dffeaaab3df64fb8" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>displayAverageWindSpeed</name></member>
+      <member refid="class_weather_data_collection_1ac46cef0678cb228ee7d3563c4a395329" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>displayMonthlyTemperatures</name></member>
+      <member refid="class_weather_data_collection_1a98207c224b346028112f14e5a9e9bb1a" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>generateMonthlyStats</name></member>
+      <member refid="class_weather_data_collection_1ae0b7490bc29c71ca76ae5da6726070a9" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>getAvailableYears</name></member>
+      <member refid="class_weather_data_collection_1a9f12fb0238999c6de5e8b28f2d75f210" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>getDataForMonth</name></member>
+      <member refid="class_weather_data_collection_1a8242557f38750a366d640009c2d0d9b3" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>getDataForSpecificMonthYear</name></member>
+      <member refid="class_weather_data_collection_1a7509e18dd1bd7839cd442db739573c9d" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>getDataForYearMonth</name></member>
+      <member refid="class_weather_data_collection_1aacac7f424c8b3dc53de5ea8acbec9631" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>getTotalRecords</name></member>
+      <member refid="class_weather_data_collection_1a208171f41a04ea93ec8b18780d765f39" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>loadFromFiles</name></member>
+      <member refid="class_weather_data_collection_1ae8e7fd8fb3d9f6b3a57794cb70f55847" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>monthExists</name></member>
+      <member refid="class_weather_data_collection_1ab989cab32d91cff3b7a9f31bcdc31a47" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>parseAndAddRecord</name></member>
+      <member refid="class_weather_data_collection_1ad3eae0f0b875676f9b4371c584ac6bed" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>parseDate</name></member>
+      <member refid="class_weather_data_collection_1a180814c73c31a8b800f954defc4013cd" prot="private" virt="non-virtual"><scope>WeatherDataCollection</scope><name>weatherDataBST</name></member>
+      <member refid="class_weather_data_collection_1ac3202894d9362c8ae57d61ba1a1b683f" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>WeatherDataCollection</name></member>
+      <member refid="class_weather_data_collection_1a58b299aa1f7928d53e909e144d8d1b24" prot="public" virt="non-virtual"><scope>WeatherDataCollection</scope><name>~WeatherDataCollection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

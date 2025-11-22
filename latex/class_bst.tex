@@ -1,0 +1,280 @@
+\hypertarget{class_bst}{}\doxysection{Bst$<$ T $>$ Class Template Reference}
+\label{class_bst}\index{Bst$<$ T $>$@{Bst$<$ T $>$}}
+
+
+Template Binary Search Tree with function pointers for traversal.  
+
+
+
+
+{\ttfamily \#include $<$Bst.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bst_ac9124c96ba73bebfbe93a1179908292a}{Bst}} ()
+\item 
+\mbox{\hyperlink{class_bst_ac70fe9f8cfede8f34f74d3105544760e}{$\sim$\+Bst}} ()
+\item 
+\mbox{\hyperlink{class_bst_a88ee5a0d32c474cf021cd081131b64fc}{Bst}} (const \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$ \&other)
+\item 
+\mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$ \& \mbox{\hyperlink{class_bst_a42abbdf74271d69421563d28c938b592}{operator=}} (const \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$ \&other)
+\item 
+void \mbox{\hyperlink{class_bst_a56e4e604602065a9fe143ec5dfba3536}{insert}} (const T \&value)
+\item 
+\mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_bst_aaa3dacb8f38c0af9905591cab0d7f1b7}{search}} (const T \&value) const
+\item 
+void \mbox{\hyperlink{class_bst_a548552ba241e7b600a04bc55154af36e}{in\+Order}} (void($\ast$visit)(const T \&)) const
+\item 
+void \mbox{\hyperlink{class_bst_a635962ab972d9ec514b326764c3714a4}{pre\+Order}} (void($\ast$visit)(const T \&)) const
+\item 
+void \mbox{\hyperlink{class_bst_a53ffa06cb90c2b3d5e4e16640deccb7c}{post\+Order}} (void($\ast$visit)(const T \&)) const
+\item 
+void \mbox{\hyperlink{class_bst_afca2cc218f063a8379b9e97cfd9bae8b}{in\+Order}} (void($\ast$visit)(const T \&, void $\ast$), void $\ast$context) const
+\item 
+void \mbox{\hyperlink{class_bst_aedcaa57cd09d4ba78aed57be5add24c5}{in\+Order}} () const
+\item 
+void \mbox{\hyperlink{class_bst_aaef63223428c98395284efa9683b1f51}{pre\+Order}} () const
+\item 
+void \mbox{\hyperlink{class_bst_a051ebb3b382d31b9b5ad4044c031b59f}{post\+Order}} () const
+\item 
+bool \mbox{\hyperlink{class_bst_a5b3e3c8eae6ca64aae996457cf0c1187}{check\+Invariant}} () const
+\item 
+bool \mbox{\hyperlink{class_bst_af0223b3d12a3effe9541d29b6768a72f}{is\+Empty}} () const
+\item 
+int \mbox{\hyperlink{class_bst_a2fa9672cc879f25613c40690cf0098e8}{size}} () const
+\item 
+int \mbox{\hyperlink{class_bst_a02ddb8f2ecd2034f6a92caa6e6b628e6}{height}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Bst$<$ T $>$}
+
+Template Binary Search Tree with function pointers for traversal. 
+
+Definition at line 22 of file Bst.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bst_ac9124c96ba73bebfbe93a1179908292a}\label{class_bst_ac9124c96ba73bebfbe93a1179908292a}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!Bst@{Bst}}
+\index{Bst@{Bst}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Bst()}{Bst()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::\mbox{\hyperlink{class_bst}{Bst}}}
+
+
+
+Definition at line 77 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_ac70fe9f8cfede8f34f74d3105544760e}\label{class_bst_ac70fe9f8cfede8f34f74d3105544760e}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!````~Bst@{$\sim$Bst}}
+\index{````~Bst@{$\sim$Bst}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bst()}{~Bst()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_bst}{Bst}}}
+
+
+
+Definition at line 80 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a88ee5a0d32c474cf021cd081131b64fc}\label{class_bst_a88ee5a0d32c474cf021cd081131b64fc}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!Bst@{Bst}}
+\index{Bst@{Bst}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Bst()}{Bst()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::\mbox{\hyperlink{class_bst}{Bst}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file Bst.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bst_a5b3e3c8eae6ca64aae996457cf0c1187}\label{class_bst_a5b3e3c8eae6ca64aae996457cf0c1187}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!checkInvariant@{checkInvariant}}
+\index{checkInvariant@{checkInvariant}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{checkInvariant()}{checkInvariant()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::check\+Invariant}
+
+
+
+Definition at line 247 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a02ddb8f2ecd2034f6a92caa6e6b628e6}\label{class_bst_a02ddb8f2ecd2034f6a92caa6e6b628e6}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!height@{height}}
+\index{height@{height}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::height}
+
+
+
+Definition at line 276 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_aedcaa57cd09d4ba78aed57be5add24c5}\label{class_bst_aedcaa57cd09d4ba78aed57be5add24c5}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!inOrder@{inOrder}}
+\index{inOrder@{inOrder}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inOrder()}{inOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::in\+Order}
+
+
+
+Definition at line 214 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a548552ba241e7b600a04bc55154af36e}\label{class_bst_a548552ba241e7b600a04bc55154af36e}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!inOrder@{inOrder}}
+\index{inOrder@{inOrder}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inOrder()}{inOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::in\+Order (\begin{DoxyParamCaption}\item[{void($\ast$)(const T \&)}]{visit }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 165 of file Bst.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_bst_a548552ba241e7b600a04bc55154af36e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_bst_afca2cc218f063a8379b9e97cfd9bae8b}\label{class_bst_afca2cc218f063a8379b9e97cfd9bae8b}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!inOrder@{inOrder}}
+\index{inOrder@{inOrder}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inOrder()}{inOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::in\+Order (\begin{DoxyParamCaption}\item[{void($\ast$)(const T \&, void $\ast$)}]{visit,  }\item[{void $\ast$}]{context }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 208 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a56e4e604602065a9fe143ec5dfba3536}\label{class_bst_a56e4e604602065a9fe143ec5dfba3536}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file Bst.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_bst_a56e4e604602065a9fe143ec5dfba3536_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_bst_af0223b3d12a3effe9541d29b6768a72f}\label{class_bst_af0223b3d12a3effe9541d29b6768a72f}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::is\+Empty}
+
+
+
+Definition at line 254 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a42abbdf74271d69421563d28c938b592}\label{class_bst_a42abbdf74271d69421563d28c938b592}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$ \& \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a051ebb3b382d31b9b5ad4044c031b59f}\label{class_bst_a051ebb3b382d31b9b5ad4044c031b59f}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!postOrder@{postOrder}}
+\index{postOrder@{postOrder}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{postOrder()}{postOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::post\+Order}
+
+
+
+Definition at line 228 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a53ffa06cb90c2b3d5e4e16640deccb7c}\label{class_bst_a53ffa06cb90c2b3d5e4e16640deccb7c}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!postOrder@{postOrder}}
+\index{postOrder@{postOrder}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{postOrder()}{postOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::post\+Order (\begin{DoxyParamCaption}\item[{void($\ast$)(const T \&)}]{visit }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 193 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_aaef63223428c98395284efa9683b1f51}\label{class_bst_aaef63223428c98395284efa9683b1f51}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!preOrder@{preOrder}}
+\index{preOrder@{preOrder}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{preOrder()}{preOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::pre\+Order}
+
+
+
+Definition at line 221 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a635962ab972d9ec514b326764c3714a4}\label{class_bst_a635962ab972d9ec514b326764c3714a4}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!preOrder@{preOrder}}
+\index{preOrder@{preOrder}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{preOrder()}{preOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::pre\+Order (\begin{DoxyParamCaption}\item[{void($\ast$)(const T \&)}]{visit }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 179 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_aaa3dacb8f38c0af9905591cab0d7f1b7}\label{class_bst_aaa3dacb8f38c0af9905591cab0d7f1b7}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!search@{search}}
+\index{search@{search}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::search (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 150 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_bst_a2fa9672cc879f25613c40690cf0098e8}\label{class_bst_a2fa9672cc879f25613c40690cf0098e8}} 
+\index{Bst$<$ T $>$@{Bst$<$ T $>$}!size@{size}}
+\index{size@{size}!Bst$<$ T $>$@{Bst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_bst}{Bst}}$<$ T $>$\+::size}
+
+
+
+Definition at line 265 of file Bst.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bst_a2fa9672cc879f25613c40690cf0098e8_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bst_8h}{Bst.\+h}}\end{DoxyCompactItemize}

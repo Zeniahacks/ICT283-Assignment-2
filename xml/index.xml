@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="class_assignment2_app" kind="class"><name>Assignment2App</name>
+    <member refid="class_assignment2_app_1af25920419eaad5088cdc9d5443e2fbdc" kind="variable"><name>weatherData</name></member>
+    <member refid="class_assignment2_app_1a7360ead54bd01b280d281e3c6b3a202e" kind="variable"><name>dataLoaded</name></member>
+    <member refid="class_assignment2_app_1a68c7b79cde569810046441f99a99e0ae" kind="function"><name>Assignment2App</name></member>
+    <member refid="class_assignment2_app_1a04d0de259955552f8641eb67c2978418" kind="function"><name>run</name></member>
+    <member refid="class_assignment2_app_1a93434df6273044ebe10e438e56726955" kind="function"><name>displayMenu</name></member>
+    <member refid="class_assignment2_app_1ad01929ce6c99caeb9eda8132c24fa130" kind="function"><name>processChoice</name></member>
+    <member refid="class_assignment2_app_1add343d8222b637ba984db13b2bf1cced" kind="function"><name>loadData</name></member>
+    <member refid="class_assignment2_app_1aab5cd599e2510021622c85c476d556aa" kind="function"><name>displayData</name></member>
+    <member refid="class_assignment2_app_1a991484f1bc1d1f6d5b87ddad6cf956a8" kind="function"><name>displayAverageWindSpeed</name></member>
+    <member refid="class_assignment2_app_1aafd14abc5f58356186156944a193752b" kind="function"><name>displayMonthlyTemperatures</name></member>
+    <member refid="class_assignment2_app_1a2fa2b03dd5ed95a46acb621868f2c931" kind="function"><name>calculateCorrelations</name></member>
+    <member refid="class_assignment2_app_1a5759c1b1d6ffb44fd0c4ac2b567ca06d" kind="function"><name>generateReport</name></member>
+    <member refid="class_assignment2_app_1a75aba81f4ee8343f4ffe6b01fb02b5f9" kind="function"><name>displayStructuredinfo</name></member>
+  </compound>
+  <compound refid="class_bst" kind="class"><name>Bst</name>
+    <member refid="class_bst_1a58cf9307599ab510c789b153cf170192" kind="variable"><name>root</name></member>
+    <member refid="class_bst_1ae124d347f712b7baa92d43019f063567" kind="function"><name>insertRec</name></member>
+    <member refid="class_bst_1a23ac5018fc83e30fce03121293369c74" kind="function"><name>searchRec</name></member>
+    <member refid="class_bst_1a19ba26c4a00f5c312fcdb92c963ff725" kind="function"><name>inOrderRec</name></member>
+    <member refid="class_bst_1a0c551cfd9f28f3bbb1dbbc3a8ec2f097" kind="function"><name>preOrderRec</name></member>
+    <member refid="class_bst_1ab09338fa5b83aa9fa887c61853e56323" kind="function"><name>postOrderRec</name></member>
+    <member refid="class_bst_1a2ae2239f12a65d7ab844405162bb821e" kind="function"><name>inOrderRec</name></member>
+    <member refid="class_bst_1a57e56022dfce4213a6f164f0fe3fb3df" kind="function"><name>deleteTreeRec</name></member>
+    <member refid="class_bst_1a656d61f102b932a8e9f3d3e8b63ae289" kind="function"><name>checkInvariantRec</name></member>
+    <member refid="class_bst_1ae1bbfcfe908790c9d59f8d5f39348982" kind="function"><name>copyTreeRec</name></member>
+    <member refid="class_bst_1aec604bdf30705d4052805d9045b611fe" kind="function"><name>sizeRec</name></member>
+    <member refid="class_bst_1acdeb8fd501a0cbc71aa8e1113d37f97b" kind="function"><name>heightRec</name></member>
+    <member refid="class_bst_1ac9124c96ba73bebfbe93a1179908292a" kind="function"><name>Bst</name></member>
+    <member refid="class_bst_1ac70fe9f8cfede8f34f74d3105544760e" kind="function"><name>~Bst</name></member>
+    <member refid="class_bst_1a88ee5a0d32c474cf021cd081131b64fc" kind="function"><name>Bst</name></member>
+    <member refid="class_bst_1a42abbdf74271d69421563d28c938b592" kind="function"><name>operator=</name></member>
+    <member refid="class_bst_1a56e4e604602065a9fe143ec5dfba3536" kind="function"><name>insert</name></member>
+    <member refid="class_bst_1aaa3dacb8f38c0af9905591cab0d7f1b7" kind="function"><name>search</name></member>
+    <member refid="class_bst_1a548552ba241e7b600a04bc55154af36e" kind="function"><name>inOrder</name></member>
+    <member refid="class_bst_1a635962ab972d9ec514b326764c3714a4" kind="function"><name>preOrder</name></member>
+    <member refid="class_bst_1a53ffa06cb90c2b3d5e4e16640deccb7c" kind="function"><name>postOrder</name></member>
+    <member refid="class_bst_1afca2cc218f063a8379b9e97cfd9bae8b" kind="function"><name>inOrder</name></member>
+    <member refid="class_bst_1aedcaa57cd09d4ba78aed57be5add24c5" kind="function"><name>inOrder</name></member>
+    <member refid="class_bst_1aaef63223428c98395284efa9683b1f51" kind="function"><name>preOrder</name></member>
+    <member refid="class_bst_1a051ebb3b382d31b9b5ad4044c031b59f" kind="function"><name>postOrder</name></member>
+    <member refid="class_bst_1a5b3e3c8eae6ca64aae996457cf0c1187" kind="function"><name>checkInvariant</name></member>
+    <member refid="class_bst_1af0223b3d12a3effe9541d29b6768a72f" kind="function"><name>isEmpty</name></member>
+    <member refid="class_bst_1a2fa9672cc879f25613c40690cf0098e8" kind="function"><name>size</name></member>
+    <member refid="class_bst_1a02ddb8f2ecd2034f6a92caa6e6b628e6" kind="function"><name>height</name></member>
+  </compound>
+  <compound refid="struct_collection_context" kind="struct"><name>CollectionContext</name>
+    <member refid="struct_collection_context_1aa8620149ccba5b87793d279e8c17eda4" kind="variable"><name>records</name></member>
+    <member refid="struct_collection_context_1aea866f273ccd54b1663e6ab7c2f457c6" kind="variable"><name>targetMonth</name></member>
+  </compound>
+  <compound refid="class_date" kind="class"><name>Date</name>
+    <member refid="class_date_1a5b192adcabf2b2871e3f0b76c1ec1601" kind="variable"><name>day</name></member>
+    <member refid="class_date_1a533843e07c6ac8d19fee9b16f5336ba2" kind="variable"><name>month</name></member>
+    <member refid="class_date_1a3eeced2ed56bc95d56782b9e738db8ea" kind="variable"><name>year</name></member>
+    <member refid="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" kind="function"><name>Date</name></member>
+    <member refid="class_date_1a3b1d154b0e6f67e1dacfa563c9d4ed46" kind="function"><name>Date</name></member>
+    <member refid="class_date_1a6304a67f1c13b239eb8e80ad68161e40" kind="function"><name>GetDay</name></member>
+    <member refid="class_date_1af2dcc6ce51dbb2bd798499a149bdffb7" kind="function"><name>GetMonth</name></member>
+    <member refid="class_date_1ad79ce504482f317ddcfdc4ecad77671f" kind="function"><name>GetYear</name></member>
+    <member refid="class_date_1ab2d0573c89abb758c92b429874ad9ae2" kind="function"><name>SetDay</name></member>
+    <member refid="class_date_1ae47ff4dbe38076b995703ecb4aa5c602" kind="function"><name>SetMonth</name></member>
+    <member refid="class_date_1ae77d46d475c904d1fabcb91933034514" kind="function"><name>SetYear</name></member>
+    <member refid="class_date_1aceba42d25cb6a888cea3428f80d50359" kind="function"><name>toString</name></member>
+    <member refid="class_date_1a56469dbfb6a0c32326330796cb316881" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_date_1ab2943ef426612046e084e2d885c5fed4" kind="function"><name>operator&gt;</name></member>
+    <member refid="class_date_1a3b103cc8257d3055aedb519fff343503" kind="function"><name>operator==</name></member>
+    <member refid="class_date_1af47f5313d22ea8a75eb9270d433abd6b" kind="function"><name>operator!=</name></member>
+    <member refid="class_date_1a1862604492a841a6b98e1a3061d95b96" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_date_1ad38747168f2005159180860e5509b26e" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="class_map" kind="class"><name>Map</name>
+    <member refid="class_map_1ad52d75e1ac5033a7d1c56a6ab01ea8b8" kind="variable"><name>internalMap</name></member>
+    <member refid="class_map_1ae4b8988b31da6ea748ffec6adeaee458" kind="function"><name>Map</name></member>
+    <member refid="class_map_1a225903c0291cf978e27be5a58f399a14" kind="function"><name>insert</name></member>
+    <member refid="class_map_1a21817f63324636803318e47c2a88b02e" kind="function"><name>contains</name></member>
+    <member refid="class_map_1a2b6343cc81c1caee8760516815f144a8" kind="function"><name>at</name></member>
+    <member refid="class_map_1a706c8bdeee85078c49c5bd4b6f33adfa" kind="function"><name>at</name></member>
+    <member refid="class_map_1adfbce5b2904fef300bac712781303166" kind="function"><name>begin</name></member>
+    <member refid="class_map_1a3285d6132c47062e6e7f0db12d18c240" kind="function"><name>end</name></member>
+    <member refid="class_map_1ad20f7008b571c9e39cd80e13d056e0ca" kind="function"><name>begin</name></member>
+    <member refid="class_map_1a138901d4ec4b3986c44b8d9ecc95b02b" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="class_node" kind="class"><name>Node</name>
+    <member refid="class_node_1ac450c71a8677a38d306361f9ced518d3" kind="variable"><name>data</name></member>
+    <member refid="class_node_1a2841886a16c27e72b21885025c00b44b" kind="variable"><name>left</name></member>
+    <member refid="class_node_1ad7092450d89448320103cde1f72da320" kind="variable"><name>right</name></member>
+    <member refid="class_node_1ac57506b1a54e5b804f22ae786d3ab737" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="class_weather_data_collection" kind="class"><name>WeatherDataCollection</name>
+    <member refid="class_weather_data_collection_1a180814c73c31a8b800f954defc4013cd" kind="variable"><name>weatherDataBST</name></member>
+    <member refid="class_weather_data_collection_1ab1d12616436aebf0709a817e3aa6c347" kind="variable"><name>dataByMonth</name></member>
+    <member refid="class_weather_data_collection_1ac3202894d9362c8ae57d61ba1a1b683f" kind="function"><name>WeatherDataCollection</name></member>
+    <member refid="class_weather_data_collection_1a58b299aa1f7928d53e909e144d8d1b24" kind="function"><name>~WeatherDataCollection</name></member>
+    <member refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" kind="function"><name>addWeatherRecord</name></member>
+    <member refid="class_weather_data_collection_1a208171f41a04ea93ec8b18780d765f39" kind="function"><name>loadFromFiles</name></member>
+    <member refid="class_weather_data_collection_1a9f12fb0238999c6de5e8b28f2d75f210" kind="function"><name>getDataForMonth</name></member>
+    <member refid="class_weather_data_collection_1a7509e18dd1bd7839cd442db739573c9d" kind="function"><name>getDataForYearMonth</name></member>
+    <member refid="class_weather_data_collection_1a8242557f38750a366d640009c2d0d9b3" kind="function"><name>getDataForSpecificMonthYear</name></member>
+    <member refid="class_weather_data_collection_1adf00be9874637aa86f79d03f79e3591d" kind="function"><name>calculateSPCC</name></member>
+    <member refid="class_weather_data_collection_1aebed502136a6a926dffeaaab3df64fb8" kind="function"><name>displayAverageWindSpeed</name></member>
+    <member refid="class_weather_data_collection_1ac46cef0678cb228ee7d3563c4a395329" kind="function"><name>displayMonthlyTemperatures</name></member>
+    <member refid="class_weather_data_collection_1a98207c224b346028112f14e5a9e9bb1a" kind="function"><name>generateMonthlyStats</name></member>
+    <member refid="class_weather_data_collection_1a317191b0b3a183ac9bc02e038b50d7d0" kind="function"><name>displayAllData</name></member>
+    <member refid="class_weather_data_collection_1aacac7f424c8b3dc53de5ea8acbec9631" kind="function"><name>getTotalRecords</name></member>
+    <member refid="class_weather_data_collection_1ae0b7490bc29c71ca76ae5da6726070a9" kind="function"><name>getAvailableYears</name></member>
+    <member refid="class_weather_data_collection_1ab989cab32d91cff3b7a9f31bcdc31a47" kind="function"><name>parseAndAddRecord</name></member>
+    <member refid="class_weather_data_collection_1ad3eae0f0b875676f9b4371c584ac6bed" kind="function"><name>parseDate</name></member>
+    <member refid="class_weather_data_collection_1ae8e7fd8fb3d9f6b3a57794cb70f55847" kind="function"><name>monthExists</name></member>
+    <member refid="class_weather_data_collection_1a8175ee519322c47eecfe3154083deda5" kind="function"><name>calculateMean</name></member>
+    <member refid="class_weather_data_collection_1ab522172b13556df354ece047036fe927" kind="function"><name>calculateStdDev</name></member>
+    <member refid="class_weather_data_collection_1a4f4388e7ece21f81afd415dd1602a66e" kind="function"><name>calculateMAD</name></member>
+  </compound>
+  <compound refid="class_weather_record" kind="class"><name>WeatherRecord</name>
+    <member refid="class_weather_record_1a70f012d48746320340d318fe747104ee" kind="variable"><name>date</name></member>
+    <member refid="class_weather_record_1a7720d281cc2f8762f56949c4f662dba3" kind="variable"><name>windSpeed</name></member>
+    <member refid="class_weather_record_1ac805b71758371a9eff0fdb498dce30d3" kind="variable"><name>temperature</name></member>
+    <member refid="class_weather_record_1ad0949ad871135e6c854a80ed75df76fa" kind="variable"><name>solarRadiation</name></member>
+    <member refid="class_weather_record_1a763c553bc47d7723d38ef96b94ed2dab" kind="function"><name>WeatherRecord</name></member>
+    <member refid="class_weather_record_1a96728b5c02d42bbe650323b0001aba50" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_weather_record_1a0984be568b0ed7a74c3c6d0735ac8120" kind="function"><name>operator&gt;</name></member>
+    <member refid="class_weather_record_1a2a34fb7dfafdfff7ff82a13dfae8fae3" kind="function"><name>operator==</name></member>
+    <member refid="class_weather_record_1a009055c1258017f36456e816fffbddcb" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespace_statistics" kind="namespace"><name>Statistics</name>
+    <member refid="namespace_statistics_1a27742824c580d8e4c2e70ffdf3c8a4fa" kind="function"><name>calculateMean</name></member>
+    <member refid="namespace_statistics_1ac2a30272cbc2248b0c94b1921acd9f34" kind="function"><name>calculateStdDev</name></member>
+    <member refid="namespace_statistics_1a707ebc094c5689786f4de672932eea01" kind="function"><name>calculateMAD</name></member>
+    <member refid="namespace_statistics_1aa4976da3f8f935e7c33ffc1ce2016db8" kind="function"><name>calculateSPCC</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_bst_8h" kind="file"><name>Bst.h</name>
+  </compound>
+  <compound refid="data__source_8txt" kind="file"><name>data_source.txt</name>
+  </compound>
+  <compound refid="_date_8h" kind="file"><name>Date.h</name>
+    <member refid="_date_8h_1a1862604492a841a6b98e1a3061d95b96" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="_date_8h_1ad38747168f2005159180860e5509b26e" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="_evaluation_8txt" kind="file"><name>Evaluation.txt</name>
+    <member refid="_evaluation_8txt_1afb1b8f0cee2a1d78746650e8b95a76f9" kind="variable"><name>__pad0__</name></member>
+    <member refid="_evaluation_8txt_1af851d6e2ce2ef7ee836350632b0fd520" kind="variable"><name>dev</name></member>
+    <member refid="_evaluation_8txt_1afc2a406addb235a6761c728222dfda23" kind="variable"><name>MAD</name></member>
+    <member refid="_evaluation_8txt_1aaeedeafcbb754ca473e3ff0f86538bc5" kind="variable"><name>IMPLEMENTATION</name></member>
+    <member refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kind="variable"><name>data</name></member>
+    <member refid="_evaluation_8txt_1adc6e6e896722e0a3aae355407f4ed0ed" kind="variable"><name>RATIONALE</name></member>
+    <member refid="_evaluation_8txt_1af5b25d7733000adeb055508ad4b30ad1" kind="variable"><name>insert</name></member>
+    <member refid="_evaluation_8txt_1a5ff58ec30c1f7fb1b47b7681ee54cacf" kind="variable"><name>PROS</name></member>
+    <member refid="_evaluation_8txt_1aaeffcc3ab03744d9d846c89ad3b04e8f" kind="variable"><name>CONS</name></member>
+    <member refid="_evaluation_8txt_1a148699dcf0213a95cb36668fa1ab9ca1" kind="variable"><name>CONSIDERED</name></member>
+    <member refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kind="variable"><name>Result</name></member>
+    <member refid="_evaluation_8txt_1ad790756eb0470bf43e5c536b8d47c97f" kind="variable"><name>files</name></member>
+    <member refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kind="variable"><name>Test</name></member>
+    <member refid="_evaluation_8txt_1a8cdf03e7d0a6a06a4d5a94e0a73f24fd" kind="variable"><name>documented</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_weather_data_8cpp" kind="file"><name>WeatherData.cpp</name>
+    <member refid="_weather_data_8cpp_1a009055c1258017f36456e816fffbddcb" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="_weather_data_8cpp_1a82bde5a8a1c8a54f2fff09e1961b3638" kind="function"><name>printWeatherRecord</name></member>
+    <member refid="_weather_data_8cpp_1aa757d30bfccdbec1174036ccf7edcc8f" kind="function"><name>collectByMonth</name></member>
+  </compound>
+  <compound refid="_weather_data_8h" kind="file"><name>WeatherData.h</name>
+    <member refid="_weather_data_8h_1a82bde5a8a1c8a54f2fff09e1961b3638" kind="function"><name>printWeatherRecord</name></member>
+    <member refid="_weather_data_8h_1aa757d30bfccdbec1174036ccf7edcc8f" kind="function"><name>collectByMonth</name></member>
+  </compound>
+</doxygenindex>

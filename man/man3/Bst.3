@@ -1,0 +1,151 @@
+.TH "Bst< T >" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Bst< T > \- Template Binary Search Tree with function pointers for traversal\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Bst\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBst\fP ()"
+.br
+.ti -1c
+.RI "\fB~Bst\fP ()"
+.br
+.ti -1c
+.RI "\fBBst\fP (const \fBBst\fP< T > &other)"
+.br
+.ti -1c
+.RI "\fBBst\fP< T > & \fBoperator=\fP (const \fBBst\fP< T > &other)"
+.br
+.ti -1c
+.RI "void \fBinsert\fP (const T &value)"
+.br
+.ti -1c
+.RI "\fBNode\fP< T > * \fBsearch\fP (const T &value) const"
+.br
+.ti -1c
+.RI "void \fBinOrder\fP (void(*visit)(const T &)) const"
+.br
+.ti -1c
+.RI "void \fBpreOrder\fP (void(*visit)(const T &)) const"
+.br
+.ti -1c
+.RI "void \fBpostOrder\fP (void(*visit)(const T &)) const"
+.br
+.ti -1c
+.RI "void \fBinOrder\fP (void(*visit)(const T &, void *), void *context) const"
+.br
+.ti -1c
+.RI "void \fBinOrder\fP () const"
+.br
+.ti -1c
+.RI "void \fBpreOrder\fP () const"
+.br
+.ti -1c
+.RI "void \fBpostOrder\fP () const"
+.br
+.ti -1c
+.RI "bool \fBcheckInvariant\fP () const"
+.br
+.ti -1c
+.RI "bool \fBisEmpty\fP () const"
+.br
+.ti -1c
+.RI "int \fBsize\fP () const"
+.br
+.ti -1c
+.RI "int \fBheight\fP () const"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class T>
+.br
+class Bst< T >"
+Template Binary Search Tree with function pointers for traversal\&. 
+.PP
+Definition at line 22 of file Bst\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T > \fBBst\fP< T >::\fBBst\fP"
+
+.PP
+Definition at line 77 of file Bst\&.h\&.
+.SS "template<class T > \fBBst\fP< T >::~\fBBst\fP"
+
+.PP
+Definition at line 80 of file Bst\&.h\&.
+.SS "template<class T > \fBBst\fP< T >::\fBBst\fP (const \fBBst\fP< T > & other)"
+
+.PP
+Definition at line 85 of file Bst\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T > bool \fBBst\fP< T >::checkInvariant"
+
+.PP
+Definition at line 247 of file Bst\&.h\&.
+.SS "template<class T > int \fBBst\fP< T >::height"
+
+.PP
+Definition at line 276 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::inOrder"
+
+.PP
+Definition at line 214 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::inOrder (void(*)(const T &) visit) const"
+
+.PP
+Definition at line 165 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::inOrder (void(*)(const T &, void *) visit, void * context) const"
+
+.PP
+Definition at line 208 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::insert (const T & value)"
+
+.PP
+Definition at line 132 of file Bst\&.h\&.
+.SS "template<class T > bool \fBBst\fP< T >::isEmpty"
+
+.PP
+Definition at line 254 of file Bst\&.h\&.
+.SS "template<class T > \fBBst\fP< T > & \fBBst\fP< T >::operator= (const \fBBst\fP< T > & other)"
+
+.PP
+Definition at line 90 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::postOrder"
+
+.PP
+Definition at line 228 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::postOrder (void(*)(const T &) visit) const"
+
+.PP
+Definition at line 193 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::preOrder"
+
+.PP
+Definition at line 221 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::preOrder (void(*)(const T &) visit) const"
+
+.PP
+Definition at line 179 of file Bst\&.h\&.
+.SS "template<class T > \fBNode\fP< T > * \fBBst\fP< T >::search (const T & value) const"
+
+.PP
+Definition at line 150 of file Bst\&.h\&.
+.SS "template<class T > int \fBBst\fP< T >::size"
+
+.PP
+Definition at line 265 of file Bst\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

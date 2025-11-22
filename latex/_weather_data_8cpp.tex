@@ -1,0 +1,86 @@
+\hypertarget{_weather_data_8cpp}{}\doxysection{Weather\+Data.\+cpp File Reference}
+\label{_weather_data_8cpp}\index{WeatherData.cpp@{WeatherData.cpp}}
+{\ttfamily \#include \char`\"{}Weather\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Include dependency graph for Weather\+Data.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather_data_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_collection_context}{Collection\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_statistics}{Statistics}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_weather_data_8cpp_a009055c1258017f36456e816fffbddcb}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&wr)
+\item 
+void \mbox{\hyperlink{_weather_data_8cpp_a82bde5a8a1c8a54f2fff09e1961b3638}{print\+Weather\+Record}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&record)
+\item 
+void \mbox{\hyperlink{_weather_data_8cpp_aa757d30bfccdbec1174036ccf7edcc8f}{collect\+By\+Month}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&record, void $\ast$context)
+\item 
+double \mbox{\hyperlink{namespace_statistics_a27742824c580d8e4c2e70ffdf3c8a4fa}{Statistics\+::calculate\+Mean}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+double \mbox{\hyperlink{namespace_statistics_ac2a30272cbc2248b0c94b1921acd9f34}{Statistics\+::calculate\+Std\+Dev}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+double \mbox{\hyperlink{namespace_statistics_a707ebc094c5689786f4de672932eea01}{Statistics\+::calculate\+M\+AD}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+double \mbox{\hyperlink{namespace_statistics_aa4976da3f8f935e7c33ffc1ce2016db8}{Statistics\+::calculate\+S\+P\+CC}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_weather_data_8cpp_aa757d30bfccdbec1174036ccf7edcc8f}\label{_weather_data_8cpp_aa757d30bfccdbec1174036ccf7edcc8f}} 
+\index{WeatherData.cpp@{WeatherData.cpp}!collectByMonth@{collectByMonth}}
+\index{collectByMonth@{collectByMonth}!WeatherData.cpp@{WeatherData.cpp}}
+\doxysubsubsection{\texorpdfstring{collectByMonth()}{collectByMonth()}}
+{\footnotesize\ttfamily void collect\+By\+Month (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{record,  }\item[{void $\ast$}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line 271 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{_weather_data_8cpp_aa757d30bfccdbec1174036ccf7edcc8f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_weather_data_8cpp_a009055c1258017f36456e816fffbddcb}\label{_weather_data_8cpp_a009055c1258017f36456e816fffbddcb}} 
+\index{WeatherData.cpp@{WeatherData.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!WeatherData.cpp@{WeatherData.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{wr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Weather\+Data.\+cpp.
+
+\mbox{\Hypertarget{_weather_data_8cpp_a82bde5a8a1c8a54f2fff09e1961b3638}\label{_weather_data_8cpp_a82bde5a8a1c8a54f2fff09e1961b3638}} 
+\index{WeatherData.cpp@{WeatherData.cpp}!printWeatherRecord@{printWeatherRecord}}
+\index{printWeatherRecord@{printWeatherRecord}!WeatherData.cpp@{WeatherData.cpp}}
+\doxysubsubsection{\texorpdfstring{printWeatherRecord()}{printWeatherRecord()}}
+{\footnotesize\ttfamily void print\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{record }\end{DoxyParamCaption})}
+
+
+
+Definition at line 262 of file Weather\+Data.\+cpp.
+

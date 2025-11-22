@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_collection_context" kind="struct" language="C++" prot="public">
+    <compoundname>CollectionContext</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_collection_context_1aa8620149ccba5b87793d279e8c17eda4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &gt; *</type>
+        <definition>std::vector&lt;WeatherRecord&gt;* CollectionContext::records</definition>
+        <argsstring></argsstring>
+        <name>records</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.cpp" line="267" column="17" bodyfile="WeatherData.cpp" bodystart="267" bodyend="-1"/>
+        <referencedby refid="_weather_data_8h_1aa757d30bfccdbec1174036ccf7edcc8f" compoundref="_weather_data_8cpp" startline="271" endline="276">collectByMonth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_collection_context_1aea866f273ccd54b1663e6ab7c2f457c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CollectionContext::targetMonth</definition>
+        <argsstring></argsstring>
+        <name>targetMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.cpp" line="268" column="9" bodyfile="WeatherData.cpp" bodystart="268" bodyend="-1"/>
+        <referencedby refid="_weather_data_8h_1aa757d30bfccdbec1174036ccf7edcc8f" compoundref="_weather_data_8cpp" startline="271" endline="276">collectByMonth</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WeatherData.cpp" line="266" column="24" bodyfile="WeatherData.cpp" bodystart="266" bodyend="269"/>
+    <listofallmembers>
+      <member refid="struct_collection_context_1aa8620149ccba5b87793d279e8c17eda4" prot="public" virt="non-virtual"><scope>CollectionContext</scope><name>records</name></member>
+      <member refid="struct_collection_context_1aea866f273ccd54b1663e6ab7c2f457c6" prot="public" virt="non-virtual"><scope>CollectionContext</scope><name>targetMonth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

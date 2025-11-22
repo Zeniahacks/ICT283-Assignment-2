@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_bst" kind="class" language="C++" prot="public">
+    <compoundname>Bst</compoundname>
+    <includes refid="_bst_8h" local="no">Bst.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bst_1a58cf9307599ab510c789b153cf170192" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt;T&gt;* Bst&lt; T &gt;::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="24" column="10" bodyfile="Bst.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bst_1ae124d347f712b7baa92d43019f063567" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt; T &gt; * Bst&lt; T &gt;::insertRec</definition>
+        <argsstring>(Node&lt; T &gt; *node, const T &amp;value)</argsstring>
+        <name>insertRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="27" column="10" bodyfile="Bst.h" bodystart="118" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a23ac5018fc83e30fce03121293369c74" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt; T &gt; * Bst&lt; T &gt;::searchRec</definition>
+        <argsstring>(Node&lt; T &gt; *node, const T &amp;value) const</argsstring>
+        <name>searchRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="28" column="10" bodyfile="Bst.h" bodystart="137" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a19ba26c4a00f5c312fcdb92c963ff725" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::inOrderRec</definition>
+        <argsstring>(Node&lt; T &gt; *node, void(*visit)(const T &amp;)) const</argsstring>
+        <name>inOrderRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>void(*)(const T &amp;)</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="31" column="10" bodyfile="Bst.h" bodystart="156" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a0c551cfd9f28f3bbb1dbbc3a8ec2f097" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::preOrderRec</definition>
+        <argsstring>(Node&lt; T &gt; *node, void(*visit)(const T &amp;)) const</argsstring>
+        <name>preOrderRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>void(*)(const T &amp;)</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="32" column="10" bodyfile="Bst.h" bodystart="170" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1ab09338fa5b83aa9fa887c61853e56323" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::postOrderRec</definition>
+        <argsstring>(Node&lt; T &gt; *node, void(*visit)(const T &amp;)) const</argsstring>
+        <name>postOrderRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>void(*)(const T &amp;)</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="33" column="10" bodyfile="Bst.h" bodystart="184" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a2ae2239f12a65d7ab844405162bb821e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::inOrderRec</definition>
+        <argsstring>(Node&lt; T &gt; *node, void(*visit)(const T &amp;, void *), void *context) const</argsstring>
+        <name>inOrderRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>void(*)(const T &amp;, void *)</type>
+          <declname>visit</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="36" column="10" bodyfile="Bst.h" bodystart="199" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a57e56022dfce4213a6f164f0fe3fb3df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::deleteTreeRec</definition>
+        <argsstring>(Node&lt; T &gt; *node)</argsstring>
+        <name>deleteTreeRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="38" column="10" bodyfile="Bst.h" bodystart="109" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a656d61f102b932a8e9f3d3e8b63ae289" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Bst&lt; T &gt;::checkInvariantRec</definition>
+        <argsstring>(Node&lt; T &gt; *node, const T &amp;min, const T &amp;max) const</argsstring>
+        <name>checkInvariantRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="39" column="10" bodyfile="Bst.h" bodystart="235" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1ae1bbfcfe908790c9d59f8d5f39348982" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt; T &gt; * Bst&lt; T &gt;::copyTreeRec</definition>
+        <argsstring>(Node&lt; T &gt; *node)</argsstring>
+        <name>copyTreeRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="40" column="10" bodyfile="Bst.h" bodystart="99" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1aec604bdf30705d4052805d9045b611fe" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bst&lt; T &gt;::sizeRec</definition>
+        <argsstring>(Node&lt; T &gt; *node) const</argsstring>
+        <name>sizeRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="70" column="9" bodyfile="Bst.h" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1acdeb8fd501a0cbc71aa8e1113d37f97b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bst&lt; T &gt;::heightRec</definition>
+        <argsstring>(Node&lt; T &gt; *node) const</argsstring>
+        <name>heightRec</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="71" column="9" bodyfile="Bst.h" bodystart="270" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bst_1ac9124c96ba73bebfbe93a1179908292a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bst&lt; T &gt;::Bst</definition>
+        <argsstring>()</argsstring>
+        <name>Bst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="43" column="5" bodyfile="Bst.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1ac70fe9f8cfede8f34f74d3105544760e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bst&lt; T &gt;::~Bst</definition>
+        <argsstring>()</argsstring>
+        <name>~Bst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="44" column="5" bodyfile="Bst.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a88ee5a0d32c474cf021cd081131b64fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bst&lt; T &gt;::Bst</definition>
+        <argsstring>(const Bst&lt; T &gt; &amp;other)</argsstring>
+        <name>Bst</name>
+        <param>
+          <type>const <ref refid="class_bst" kindref="compound">Bst</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="45" column="5" bodyfile="Bst.h" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a42abbdf74271d69421563d28c938b592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_bst" kindref="compound">Bst</ref>&lt; T &gt; &amp;</type>
+        <definition>Bst&lt; T &gt; &amp; Bst&lt; T &gt;::operator=</definition>
+        <argsstring>(const Bst&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bst" kindref="compound">Bst</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="46" column="9" bodyfile="Bst.h" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a56e4e604602065a9fe143ec5dfba3536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::insert</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="48" column="10" bodyfile="Bst.h" bodystart="132" bodyend="134"/>
+        <referencedby refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" compoundref="_weather_data_8cpp" startline="39" endline="55">WeatherDataCollection::addWeatherRecord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1aaa3dacb8f38c0af9905591cab0d7f1b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt; T &gt; * Bst&lt; T &gt;::search</definition>
+        <argsstring>(const T &amp;value) const</argsstring>
+        <name>search</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="49" column="10" bodyfile="Bst.h" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a548552ba241e7b600a04bc55154af36e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::inOrder</definition>
+        <argsstring>(void(*visit)(const T &amp;)) const</argsstring>
+        <name>inOrder</name>
+        <param>
+          <type>void(*)(const T &amp;)</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="52" column="10" bodyfile="Bst.h" bodystart="165" bodyend="167"/>
+        <referencedby refid="class_weather_data_collection_1a317191b0b3a183ac9bc02e038b50d7d0" compoundref="_weather_data_8cpp" startline="461" endline="467">WeatherDataCollection::displayAllData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a635962ab972d9ec514b326764c3714a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::preOrder</definition>
+        <argsstring>(void(*visit)(const T &amp;)) const</argsstring>
+        <name>preOrder</name>
+        <param>
+          <type>void(*)(const T &amp;)</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="53" column="10" bodyfile="Bst.h" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a53ffa06cb90c2b3d5e4e16640deccb7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::postOrder</definition>
+        <argsstring>(void(*visit)(const T &amp;)) const</argsstring>
+        <name>postOrder</name>
+        <param>
+          <type>void(*)(const T &amp;)</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="54" column="10" bodyfile="Bst.h" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1afca2cc218f063a8379b9e97cfd9bae8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::inOrder</definition>
+        <argsstring>(void(*visit)(const T &amp;, void *), void *context) const</argsstring>
+        <name>inOrder</name>
+        <param>
+          <type>void(*)(const T &amp;, void *)</type>
+          <declname>visit</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="57" column="10" bodyfile="Bst.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1aedcaa57cd09d4ba78aed57be5add24c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::inOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>inOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="60" column="10" bodyfile="Bst.h" bodystart="214" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1aaef63223428c98395284efa9683b1f51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::preOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>preOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="61" column="10" bodyfile="Bst.h" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a051ebb3b382d31b9b5ad4044c031b59f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bst&lt; T &gt;::postOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>postOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="62" column="10" bodyfile="Bst.h" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a5b3e3c8eae6ca64aae996457cf0c1187" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Bst&lt; T &gt;::checkInvariant</definition>
+        <argsstring>() const</argsstring>
+        <name>checkInvariant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="64" column="10" bodyfile="Bst.h" bodystart="247" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1af0223b3d12a3effe9541d29b6768a72f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Bst&lt; T &gt;::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="65" column="10" bodyfile="Bst.h" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a2fa9672cc879f25613c40690cf0098e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bst&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="66" column="9" bodyfile="Bst.h" bodystart="265" bodyend="267"/>
+        <referencedby refid="class_weather_data_collection_1aacac7f424c8b3dc53de5ea8acbec9631" compoundref="_weather_data_8cpp" startline="469" endline="471">WeatherDataCollection::getTotalRecords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bst_1a02ddb8f2ecd2034f6a92caa6e6b628e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bst&lt; T &gt;::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="67" column="9" bodyfile="Bst.h" bodystart="276" bodyend="278"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template Binary Search Tree with function pointers for traversal. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Bst.h" line="22" column="10" bodyfile="Bst.h" bodystart="22" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_bst_1ac9124c96ba73bebfbe93a1179908292a" prot="public" virt="non-virtual"><scope>Bst</scope><name>Bst</name></member>
+      <member refid="class_bst_1a88ee5a0d32c474cf021cd081131b64fc" prot="public" virt="non-virtual"><scope>Bst</scope><name>Bst</name></member>
+      <member refid="class_bst_1a5b3e3c8eae6ca64aae996457cf0c1187" prot="public" virt="non-virtual"><scope>Bst</scope><name>checkInvariant</name></member>
+      <member refid="class_bst_1a656d61f102b932a8e9f3d3e8b63ae289" prot="private" virt="non-virtual"><scope>Bst</scope><name>checkInvariantRec</name></member>
+      <member refid="class_bst_1ae1bbfcfe908790c9d59f8d5f39348982" prot="private" virt="non-virtual"><scope>Bst</scope><name>copyTreeRec</name></member>
+      <member refid="class_bst_1a57e56022dfce4213a6f164f0fe3fb3df" prot="private" virt="non-virtual"><scope>Bst</scope><name>deleteTreeRec</name></member>
+      <member refid="class_bst_1a02ddb8f2ecd2034f6a92caa6e6b628e6" prot="public" virt="non-virtual"><scope>Bst</scope><name>height</name></member>
+      <member refid="class_bst_1acdeb8fd501a0cbc71aa8e1113d37f97b" prot="private" virt="non-virtual"><scope>Bst</scope><name>heightRec</name></member>
+      <member refid="class_bst_1a548552ba241e7b600a04bc55154af36e" prot="public" virt="non-virtual"><scope>Bst</scope><name>inOrder</name></member>
+      <member refid="class_bst_1afca2cc218f063a8379b9e97cfd9bae8b" prot="public" virt="non-virtual"><scope>Bst</scope><name>inOrder</name></member>
+      <member refid="class_bst_1aedcaa57cd09d4ba78aed57be5add24c5" prot="public" virt="non-virtual"><scope>Bst</scope><name>inOrder</name></member>
+      <member refid="class_bst_1a19ba26c4a00f5c312fcdb92c963ff725" prot="private" virt="non-virtual"><scope>Bst</scope><name>inOrderRec</name></member>
+      <member refid="class_bst_1a2ae2239f12a65d7ab844405162bb821e" prot="private" virt="non-virtual"><scope>Bst</scope><name>inOrderRec</name></member>
+      <member refid="class_bst_1a56e4e604602065a9fe143ec5dfba3536" prot="public" virt="non-virtual"><scope>Bst</scope><name>insert</name></member>
+      <member refid="class_bst_1ae124d347f712b7baa92d43019f063567" prot="private" virt="non-virtual"><scope>Bst</scope><name>insertRec</name></member>
+      <member refid="class_bst_1af0223b3d12a3effe9541d29b6768a72f" prot="public" virt="non-virtual"><scope>Bst</scope><name>isEmpty</name></member>
+      <member refid="class_bst_1a42abbdf74271d69421563d28c938b592" prot="public" virt="non-virtual"><scope>Bst</scope><name>operator=</name></member>
+      <member refid="class_bst_1a53ffa06cb90c2b3d5e4e16640deccb7c" prot="public" virt="non-virtual"><scope>Bst</scope><name>postOrder</name></member>
+      <member refid="class_bst_1a051ebb3b382d31b9b5ad4044c031b59f" prot="public" virt="non-virtual"><scope>Bst</scope><name>postOrder</name></member>
+      <member refid="class_bst_1ab09338fa5b83aa9fa887c61853e56323" prot="private" virt="non-virtual"><scope>Bst</scope><name>postOrderRec</name></member>
+      <member refid="class_bst_1a635962ab972d9ec514b326764c3714a4" prot="public" virt="non-virtual"><scope>Bst</scope><name>preOrder</name></member>
+      <member refid="class_bst_1aaef63223428c98395284efa9683b1f51" prot="public" virt="non-virtual"><scope>Bst</scope><name>preOrder</name></member>
+      <member refid="class_bst_1a0c551cfd9f28f3bbb1dbbc3a8ec2f097" prot="private" virt="non-virtual"><scope>Bst</scope><name>preOrderRec</name></member>
+      <member refid="class_bst_1a58cf9307599ab510c789b153cf170192" prot="private" virt="non-virtual"><scope>Bst</scope><name>root</name></member>
+      <member refid="class_bst_1aaa3dacb8f38c0af9905591cab0d7f1b7" prot="public" virt="non-virtual"><scope>Bst</scope><name>search</name></member>
+      <member refid="class_bst_1a23ac5018fc83e30fce03121293369c74" prot="private" virt="non-virtual"><scope>Bst</scope><name>searchRec</name></member>
+      <member refid="class_bst_1a2fa9672cc879f25613c40690cf0098e8" prot="public" virt="non-virtual"><scope>Bst</scope><name>size</name></member>
+      <member refid="class_bst_1aec604bdf30705d4052805d9045b611fe" prot="private" virt="non-virtual"><scope>Bst</scope><name>sizeRec</name></member>
+      <member refid="class_bst_1ac70fe9f8cfede8f34f74d3105544760e" prot="public" virt="non-virtual"><scope>Bst</scope><name>~Bst</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

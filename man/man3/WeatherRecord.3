@@ -1,0 +1,100 @@
+.TH "WeatherRecord" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WeatherRecord
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <WeatherData\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWeatherRecord\fP (const \fBDate\fP &d, double ws, double temp, double sr)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBWeatherRecord\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBWeatherRecord\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBWeatherRecord\fP &other) const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBDate\fP \fBdate\fP"
+.br
+.ti -1c
+.RI "double \fBwindSpeed\fP"
+.br
+.ti -1c
+.RI "double \fBtemperature\fP"
+.br
+.ti -1c
+.RI "double \fBsolarRadiation\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBWeatherRecord\fP &wr)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 49 of file WeatherData\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "WeatherRecord::WeatherRecord (const \fBDate\fP & d, double ws, double temp, double sr)"
+
+.PP
+Definition at line 11 of file WeatherData\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool WeatherRecord::operator< (const \fBWeatherRecord\fP & other) const"
+
+.PP
+Definition at line 14 of file WeatherData\&.cpp\&.
+.SS "bool WeatherRecord::operator== (const \fBWeatherRecord\fP & other) const"
+
+.PP
+Definition at line 22 of file WeatherData\&.cpp\&.
+.SS "bool WeatherRecord::operator> (const \fBWeatherRecord\fP & other) const"
+
+.PP
+Definition at line 18 of file WeatherData\&.cpp\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream& operator<< (std::ostream & os, const \fBWeatherRecord\fP & wr)\fC [friend]\fP"
+
+.PP
+Definition at line 26 of file WeatherData\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBDate\fP WeatherRecord::date"
+
+.PP
+Definition at line 51 of file WeatherData\&.h\&.
+.SS "double WeatherRecord::solarRadiation"
+
+.PP
+Definition at line 54 of file WeatherData\&.h\&.
+.SS "double WeatherRecord::temperature"
+
+.PP
+Definition at line 53 of file WeatherData\&.h\&.
+.SS "double WeatherRecord::windSpeed"
+
+.PP
+Definition at line 52 of file WeatherData\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

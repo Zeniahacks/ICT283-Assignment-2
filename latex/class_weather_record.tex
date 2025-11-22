@@ -1,0 +1,158 @@
+\hypertarget{class_weather_record}{}\doxysection{Weather\+Record Class Reference}
+\label{class_weather_record}\index{WeatherRecord@{WeatherRecord}}
+
+
+{\ttfamily \#include $<$Weather\+Data.\+h$>$}
+
+
+
+Collaboration diagram for Weather\+Record\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_weather_record__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weather_record_a763c553bc47d7723d38ef96b94ed2dab}{Weather\+Record}} (const \mbox{\hyperlink{class_date}{Date}} \&d, double ws, double temp, double sr)
+\item 
+bool \mbox{\hyperlink{class_weather_record_a96728b5c02d42bbe650323b0001aba50}{operator$<$}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}{operator$>$}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}{operator==}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_date}{Date}} \mbox{\hyperlink{class_weather_record_a70f012d48746320340d318fe747104ee}{date}}
+\item 
+double \mbox{\hyperlink{class_weather_record_a7720d281cc2f8762f56949c4f662dba3}{wind\+Speed}}
+\item 
+double \mbox{\hyperlink{class_weather_record_ac805b71758371a9eff0fdb498dce30d3}{temperature}}
+\item 
+double \mbox{\hyperlink{class_weather_record_ad0949ad871135e6c854a80ed75df76fa}{solar\+Radiation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_weather_record_a009055c1258017f36456e816fffbddcb}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&wr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 49 of file Weather\+Data.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_weather_record_a763c553bc47d7723d38ef96b94ed2dab}\label{class_weather_record_a763c553bc47d7723d38ef96b94ed2dab}} 
+\index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
+\index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{WeatherRecord()}{WeatherRecord()}}
+{\footnotesize\ttfamily Weather\+Record\+::\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{d,  }\item[{double}]{ws,  }\item[{double}]{temp,  }\item[{double}]{sr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file Weather\+Data.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weather_record_a96728b5c02d42bbe650323b0001aba50}\label{class_weather_record_a96728b5c02d42bbe650323b0001aba50}} 
+\index{WeatherRecord@{WeatherRecord}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Weather\+Record\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 14 of file Weather\+Data.\+cpp.
+
+\mbox{\Hypertarget{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}\label{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}} 
+\index{WeatherRecord@{WeatherRecord}!operator==@{operator==}}
+\index{operator==@{operator==}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Weather\+Record\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 22 of file Weather\+Data.\+cpp.
+
+\mbox{\Hypertarget{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}\label{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}} 
+\index{WeatherRecord@{WeatherRecord}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Weather\+Record\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 18 of file Weather\+Data.\+cpp.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_weather_record_a009055c1258017f36456e816fffbddcb}\label{class_weather_record_a009055c1258017f36456e816fffbddcb}} 
+\index{WeatherRecord@{WeatherRecord}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{wr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 26 of file Weather\+Data.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_weather_record_a70f012d48746320340d318fe747104ee}\label{class_weather_record_a70f012d48746320340d318fe747104ee}} 
+\index{WeatherRecord@{WeatherRecord}!date@{date}}
+\index{date@{date}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_date}{Date}} Weather\+Record\+::date}
+
+
+
+Definition at line 51 of file Weather\+Data.\+h.
+
+\mbox{\Hypertarget{class_weather_record_ad0949ad871135e6c854a80ed75df76fa}\label{class_weather_record_ad0949ad871135e6c854a80ed75df76fa}} 
+\index{WeatherRecord@{WeatherRecord}!solarRadiation@{solarRadiation}}
+\index{solarRadiation@{solarRadiation}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{solarRadiation}{solarRadiation}}
+{\footnotesize\ttfamily double Weather\+Record\+::solar\+Radiation}
+
+
+
+Definition at line 54 of file Weather\+Data.\+h.
+
+\mbox{\Hypertarget{class_weather_record_ac805b71758371a9eff0fdb498dce30d3}\label{class_weather_record_ac805b71758371a9eff0fdb498dce30d3}} 
+\index{WeatherRecord@{WeatherRecord}!temperature@{temperature}}
+\index{temperature@{temperature}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily double Weather\+Record\+::temperature}
+
+
+
+Definition at line 53 of file Weather\+Data.\+h.
+
+\mbox{\Hypertarget{class_weather_record_a7720d281cc2f8762f56949c4f662dba3}\label{class_weather_record_a7720d281cc2f8762f56949c4f662dba3}} 
+\index{WeatherRecord@{WeatherRecord}!windSpeed@{windSpeed}}
+\index{windSpeed@{windSpeed}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{windSpeed}{windSpeed}}
+{\footnotesize\ttfamily double Weather\+Record\+::wind\+Speed}
+
+
+
+Definition at line 52 of file Weather\+Data.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_weather_data_8h}{Weather\+Data.\+h}}\item 
+\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\end{DoxyCompactItemize}

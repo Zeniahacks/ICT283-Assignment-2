@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_node" kind="class" language="C++" prot="public">
+    <compoundname>Node</compoundname>
+    <includes refid="_bst_8h" local="no">Bst.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_node_1ac450c71a8677a38d306361f9ced518d3" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Node&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="12" column="7" bodyfile="Bst.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a2841886a16c27e72b21885025c00b44b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt;T&gt;* Node&lt; T &gt;::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="13" column="10" bodyfile="Bst.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1ad7092450d89448320103cde1f72da320" prot="public" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>&lt; T &gt; *</type>
+        <definition>Node&lt;T&gt;* Node&lt; T &gt;::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="14" column="10" bodyfile="Bst.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_node_1ac57506b1a54e5b804f22ae786d3ab737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Node&lt; T &gt;::Node</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Bst.h" line="16" column="5" bodyfile="Bst.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template node class for Binary Search Tree. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Bst.h" line="10" column="11" bodyfile="Bst.h" bodystart="10" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_node_1ac450c71a8677a38d306361f9ced518d3" prot="public" virt="non-virtual"><scope>Node</scope><name>data</name></member>
+      <member refid="class_node_1a2841886a16c27e72b21885025c00b44b" prot="public" virt="non-virtual"><scope>Node</scope><name>left</name></member>
+      <member refid="class_node_1ac57506b1a54e5b804f22ae786d3ab737" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1ad7092450d89448320103cde1f72da320" prot="public" virt="non-virtual"><scope>Node</scope><name>right</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

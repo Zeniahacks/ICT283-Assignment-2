@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_date" kind="class" language="C++" prot="public">
+    <compoundname>Date</compoundname>
+    <includes refid="_date_8h" local="no">Date.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_date_1a5b192adcabf2b2871e3f0b76c1ec1601" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Date::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="9" column="9" bodyfile="Date.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_1a533843e07c6ac8d19fee9b16f5336ba2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Date::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="10" column="9" bodyfile="Date.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_1a3eeced2ed56bc95d56782b9e738db8ea" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Date::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="11" column="9" bodyfile="Date.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Date::Date</definition>
+        <argsstring>()</argsstring>
+        <name>Date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="15" column="5" bodyfile="Date.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a3b1d154b0e6f67e1dacfa563c9d4ed46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Date::Date</definition>
+        <argsstring>(int d, int m, int y)</argsstring>
+        <name>Date</name>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="16" column="5" bodyfile="Date.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a6304a67f1c13b239eb8e80ad68161e40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Date::GetDay</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="19" column="9" bodyfile="Date.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1af2dcc6ce51dbb2bd798499a149bdffb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Date::GetMonth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="20" column="9" bodyfile="Date.h" bodystart="49" bodyend="49"/>
+        <referencedby refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" compoundref="_weather_data_8cpp" startline="39" endline="55">WeatherDataCollection::addWeatherRecord</referencedby>
+        <referencedby refid="_weather_data_8h_1aa757d30bfccdbec1174036ccf7edcc8f" compoundref="_weather_data_8cpp" startline="271" endline="276">collectByMonth</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ad79ce504482f317ddcfdc4ecad77671f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Date::GetYear</definition>
+        <argsstring>() const</argsstring>
+        <name>GetYear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="21" column="9" bodyfile="Date.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ab2d0573c89abb758c92b429874ad9ae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Date::SetDay</definition>
+        <argsstring>(int d)</argsstring>
+        <name>SetDay</name>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="24" column="10" bodyfile="Date.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ae47ff4dbe38076b995703ecb4aa5c602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Date::SetMonth</definition>
+        <argsstring>(int m)</argsstring>
+        <name>SetMonth</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="25" column="10" bodyfile="Date.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ae77d46d475c904d1fabcb91933034514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Date::SetYear</definition>
+        <argsstring>(int y)</argsstring>
+        <name>SetYear</name>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="26" column="10" bodyfile="Date.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1aceba42d25cb6a888cea3428f80d50359" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Date::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="29" column="17" bodyfile="Date.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a56469dbfb6a0c32326330796cb316881" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&lt;</definition>
+        <argsstring>(const Date &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="32" column="5" bodyfile="Date.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ab2943ef426612046e084e2d885c5fed4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&gt;</definition>
+        <argsstring>(const Date &amp;other) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="33" column="10" bodyfile="Date.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a3b103cc8257d3055aedb519fff343503" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator==</definition>
+        <argsstring>(const Date &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="34" column="10" bodyfile="Date.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1af47f5313d22ea8a75eb9270d433abd6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator!=</definition>
+        <argsstring>(const Date &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="35" column="10" bodyfile="Date.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_date_1a1862604492a841a6b98e1a3061d95b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Date &amp;date)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="38" column="12" bodyfile="Date.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_date_1ad38747168f2005159180860e5509b26e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::istream &amp;</type>
+        <definition>std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;is, Date &amp;date)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="39" column="25" bodyfile="Date.h" bodystart="86" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Date.h" line="7" column="11" bodyfile="Date.h" bodystart="7" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" prot="public" virt="non-virtual"><scope>Date</scope><name>Date</name></member>
+      <member refid="class_date_1a3b1d154b0e6f67e1dacfa563c9d4ed46" prot="public" virt="non-virtual"><scope>Date</scope><name>Date</name></member>
+      <member refid="class_date_1a5b192adcabf2b2871e3f0b76c1ec1601" prot="private" virt="non-virtual"><scope>Date</scope><name>day</name></member>
+      <member refid="class_date_1a6304a67f1c13b239eb8e80ad68161e40" prot="public" virt="non-virtual"><scope>Date</scope><name>GetDay</name></member>
+      <member refid="class_date_1af2dcc6ce51dbb2bd798499a149bdffb7" prot="public" virt="non-virtual"><scope>Date</scope><name>GetMonth</name></member>
+      <member refid="class_date_1ad79ce504482f317ddcfdc4ecad77671f" prot="public" virt="non-virtual"><scope>Date</scope><name>GetYear</name></member>
+      <member refid="class_date_1a533843e07c6ac8d19fee9b16f5336ba2" prot="private" virt="non-virtual"><scope>Date</scope><name>month</name></member>
+      <member refid="class_date_1af47f5313d22ea8a75eb9270d433abd6b" prot="public" virt="non-virtual"><scope>Date</scope><name>operator!=</name></member>
+      <member refid="class_date_1a56469dbfb6a0c32326330796cb316881" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&lt;</name></member>
+      <member refid="class_date_1a1862604492a841a6b98e1a3061d95b96" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_date_1a3b103cc8257d3055aedb519fff343503" prot="public" virt="non-virtual"><scope>Date</scope><name>operator==</name></member>
+      <member refid="class_date_1ab2943ef426612046e084e2d885c5fed4" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&gt;</name></member>
+      <member refid="class_date_1ad38747168f2005159180860e5509b26e" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_date_1ab2d0573c89abb758c92b429874ad9ae2" prot="public" virt="non-virtual"><scope>Date</scope><name>SetDay</name></member>
+      <member refid="class_date_1ae47ff4dbe38076b995703ecb4aa5c602" prot="public" virt="non-virtual"><scope>Date</scope><name>SetMonth</name></member>
+      <member refid="class_date_1ae77d46d475c904d1fabcb91933034514" prot="public" virt="non-virtual"><scope>Date</scope><name>SetYear</name></member>
+      <member refid="class_date_1aceba42d25cb6a888cea3428f80d50359" prot="public" virt="non-virtual"><scope>Date</scope><name>toString</name></member>
+      <member refid="class_date_1a3eeced2ed56bc95d56782b9e738db8ea" prot="private" virt="non-virtual"><scope>Date</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

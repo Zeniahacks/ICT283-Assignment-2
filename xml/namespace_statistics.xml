@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_statistics" kind="namespace" language="C++">
+    <compoundname>Statistics</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_statistics_1a27742824c580d8e4c2e70ffdf3c8a4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::calculateMean</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values)</argsstring>
+        <name>calculateMean</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.cpp" line="331" column="12" bodyfile="WeatherData.cpp" bodystart="331" bodyend="342" declfile="WeatherData.h" declline="119" declcolumn="12"/>
+        <referencedby refid="namespace_statistics_1a707ebc094c5689786f4de672932eea01" compoundref="_weather_data_8cpp" startline="359" endline="372">calculateMAD</referencedby>
+        <referencedby refid="namespace_statistics_1ac2a30272cbc2248b0c94b1921acd9f34" compoundref="_weather_data_8cpp" startline="344" endline="357">calculateStdDev</referencedby>
+        <referencedby refid="class_weather_data_collection_1aebed502136a6a926dffeaaab3df64fb8" compoundref="_weather_data_8cpp" startline="192" endline="212">WeatherDataCollection::displayAverageWindSpeed</referencedby>
+        <referencedby refid="class_weather_data_collection_1ac46cef0678cb228ee7d3563c4a395329" compoundref="_weather_data_8cpp" startline="216" endline="241">WeatherDataCollection::displayMonthlyTemperatures</referencedby>
+        <referencedby refid="class_weather_data_collection_1a98207c224b346028112f14e5a9e9bb1a" compoundref="_weather_data_8cpp" startline="404" endline="458">WeatherDataCollection::generateMonthlyStats</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_statistics_1ac2a30272cbc2248b0c94b1921acd9f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::calculateStdDev</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values)</argsstring>
+        <name>calculateStdDev</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.cpp" line="344" column="12" bodyfile="WeatherData.cpp" bodystart="344" bodyend="357" declfile="WeatherData.h" declline="120" declcolumn="12"/>
+        <references refid="namespace_statistics_1a27742824c580d8e4c2e70ffdf3c8a4fa" compoundref="_weather_data_8cpp" startline="331" endline="342">calculateMean</references>
+        <referencedby refid="class_weather_data_collection_1aebed502136a6a926dffeaaab3df64fb8" compoundref="_weather_data_8cpp" startline="192" endline="212">WeatherDataCollection::displayAverageWindSpeed</referencedby>
+        <referencedby refid="class_weather_data_collection_1ac46cef0678cb228ee7d3563c4a395329" compoundref="_weather_data_8cpp" startline="216" endline="241">WeatherDataCollection::displayMonthlyTemperatures</referencedby>
+        <referencedby refid="class_weather_data_collection_1a98207c224b346028112f14e5a9e9bb1a" compoundref="_weather_data_8cpp" startline="404" endline="458">WeatherDataCollection::generateMonthlyStats</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_statistics_1a707ebc094c5689786f4de672932eea01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::calculateMAD</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values)</argsstring>
+        <name>calculateMAD</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.cpp" line="359" column="12" bodyfile="WeatherData.cpp" bodystart="359" bodyend="372" declfile="WeatherData.h" declline="121" declcolumn="12"/>
+        <references refid="namespace_statistics_1a27742824c580d8e4c2e70ffdf3c8a4fa" compoundref="_weather_data_8cpp" startline="331" endline="342">calculateMean</references>
+        <referencedby refid="class_weather_data_collection_1a98207c224b346028112f14e5a9e9bb1a" compoundref="_weather_data_8cpp" startline="404" endline="458">WeatherDataCollection::generateMonthlyStats</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_statistics_1aa4976da3f8f935e7c33ffc1ce2016db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Statistics::calculateSPCC</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y)</argsstring>
+        <name>calculateSPCC</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.cpp" line="374" column="12" bodyfile="WeatherData.cpp" bodystart="374" bodyend="400" declfile="WeatherData.h" declline="122" declcolumn="12"/>
+        <referencedby refid="class_weather_data_collection_1adf00be9874637aa86f79d03f79e3591d" compoundref="_weather_data_8cpp" startline="279" endline="301">WeatherDataCollection::calculateSPCC</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WeatherData.cpp" line="330" column="1"/>
+  </compounddef>
+</doxygen>

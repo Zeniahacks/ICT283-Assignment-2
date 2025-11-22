@@ -1,0 +1,8 @@
+<map id="WeatherDataCollection::displayMonthlyTemperatures" name="WeatherDataCollection::displayMonthlyTemperatures">
+<area shape="rect" id="node1" title="Menu option 3: Average ambient air temperature and sample standard deviation for each month of a spec..." alt="" coords="5,23,201,65"/>
+<area shape="rect" id="node2" href="$namespace_statistics.html#a27742824c580d8e4c2e70ffdf3c8a4fa" title=" " alt="" coords="500,5,669,32"/>
+<area shape="rect" id="node3" href="$namespace_statistics.html#ac2a30272cbc2248b0c94b1921acd9f34" title=" " alt="" coords="261,31,440,57"/>
+<area shape="rect" id="node4" href="$class_weather_data_collection.html#a8242557f38750a366d640009c2d0d9b3" title=" " alt="" coords="249,82,452,123"/>
+<area shape="rect" id="node5" href="$class_weather_data_collection.html#a7509e18dd1bd7839cd442db739573c9d" title=" " alt="" coords="506,82,663,123"/>
+<area shape="rect" id="node6" href="$class_map.html#a2b6343cc81c1caee8760516815f144a8" title=" " alt="" coords="717,89,784,116"/>
+</map>

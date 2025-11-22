@@ -1,0 +1,84 @@
+\hypertarget{_weather_data_8h}{}\doxysection{Weather\+Data.\+h File Reference}
+\label{_weather_data_8h}\index{WeatherData.h@{WeatherData.h}}
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bst.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for Weather\+Data.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather_data_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{_weather_data_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_map}{Map$<$ K, V $>$}}
+\item 
+class \mbox{\hyperlink{class_weather_record}{Weather\+Record}}
+\item 
+class \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_statistics}{Statistics}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespace_statistics_a27742824c580d8e4c2e70ffdf3c8a4fa}{Statistics\+::calculate\+Mean}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+double \mbox{\hyperlink{namespace_statistics_ac2a30272cbc2248b0c94b1921acd9f34}{Statistics\+::calculate\+Std\+Dev}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+double \mbox{\hyperlink{namespace_statistics_a707ebc094c5689786f4de672932eea01}{Statistics\+::calculate\+M\+AD}} (const std\+::vector$<$ double $>$ \&values)
+\item 
+double \mbox{\hyperlink{namespace_statistics_aa4976da3f8f935e7c33ffc1ce2016db8}{Statistics\+::calculate\+S\+P\+CC}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y)
+\item 
+void \mbox{\hyperlink{_weather_data_8h_a82bde5a8a1c8a54f2fff09e1961b3638}{print\+Weather\+Record}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&record)
+\item 
+void \mbox{\hyperlink{_weather_data_8h_aa757d30bfccdbec1174036ccf7edcc8f}{collect\+By\+Month}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&record, void $\ast$context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_weather_data_8h_aa757d30bfccdbec1174036ccf7edcc8f}\label{_weather_data_8h_aa757d30bfccdbec1174036ccf7edcc8f}} 
+\index{WeatherData.h@{WeatherData.h}!collectByMonth@{collectByMonth}}
+\index{collectByMonth@{collectByMonth}!WeatherData.h@{WeatherData.h}}
+\doxysubsubsection{\texorpdfstring{collectByMonth()}{collectByMonth()}}
+{\footnotesize\ttfamily void collect\+By\+Month (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{record,  }\item[{void $\ast$}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line 271 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{_weather_data_8h_aa757d30bfccdbec1174036ccf7edcc8f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_weather_data_8h_a82bde5a8a1c8a54f2fff09e1961b3638}\label{_weather_data_8h_a82bde5a8a1c8a54f2fff09e1961b3638}} 
+\index{WeatherData.h@{WeatherData.h}!printWeatherRecord@{printWeatherRecord}}
+\index{printWeatherRecord@{printWeatherRecord}!WeatherData.h@{WeatherData.h}}
+\doxysubsubsection{\texorpdfstring{printWeatherRecord()}{printWeatherRecord()}}
+{\footnotesize\ttfamily void print\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{record }\end{DoxyParamCaption})}
+
+
+
+Definition at line 262 of file Weather\+Data.\+cpp.
+

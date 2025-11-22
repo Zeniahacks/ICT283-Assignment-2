@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_weather_record" kind="class" language="C++" prot="public">
+    <compoundname>WeatherRecord</compoundname>
+    <includes refid="_weather_data_8h" local="no">WeatherData.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_weather_record_1a70f012d48746320340d318fe747104ee" prot="public" static="no" mutable="no">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date WeatherRecord::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="51" column="10" bodyfile="WeatherData.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_weather_record_1a96728b5c02d42bbe650323b0001aba50" compoundref="_weather_data_8cpp" startline="14" endline="16">operator&lt;</referencedby>
+        <referencedby refid="class_weather_record_1a0984be568b0ed7a74c3c6d0735ac8120" compoundref="_weather_data_8cpp" startline="18" endline="20">operator&gt;</referencedby>
+        <referencedby refid="class_weather_record_1a2a34fb7dfafdfff7ff82a13dfae8fae3" compoundref="_weather_data_8cpp" startline="22" endline="24">operator==</referencedby>
+        <referencedby refid="_weather_data_8cpp_1a009055c1258017f36456e816fffbddcb" compoundref="_weather_data_8cpp" startline="26" endline="30">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" compoundref="_weather_data_8cpp" startline="39" endline="55">WeatherDataCollection::addWeatherRecord</referencedby>
+        <referencedby refid="_weather_data_8h_1aa757d30bfccdbec1174036ccf7edcc8f" compoundref="_weather_data_8cpp" startline="271" endline="276">collectByMonth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weather_record_1a7720d281cc2f8762f56949c4f662dba3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WeatherRecord::windSpeed</definition>
+        <argsstring></argsstring>
+        <name>windSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="52" column="12" bodyfile="WeatherData.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="_weather_data_8cpp_1a009055c1258017f36456e816fffbddcb" compoundref="_weather_data_8cpp" startline="26" endline="30">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weather_record_1ac805b71758371a9eff0fdb498dce30d3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WeatherRecord::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="53" column="12" bodyfile="WeatherData.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="_weather_data_8cpp_1a009055c1258017f36456e816fffbddcb" compoundref="_weather_data_8cpp" startline="26" endline="30">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weather_record_1ad0949ad871135e6c854a80ed75df76fa" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double WeatherRecord::solarRadiation</definition>
+        <argsstring></argsstring>
+        <name>solarRadiation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="54" column="12" bodyfile="WeatherData.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="_weather_data_8cpp_1a009055c1258017f36456e816fffbddcb" compoundref="_weather_data_8cpp" startline="26" endline="30">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_weather_record_1a763c553bc47d7723d38ef96b94ed2dab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WeatherRecord::WeatherRecord</definition>
+        <argsstring>(const Date &amp;d, double ws, double temp, double sr)</argsstring>
+        <name>WeatherRecord</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ws</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="56" column="5" bodyfile="WeatherData.cpp" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_record_1a96728b5c02d42bbe650323b0001aba50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WeatherRecord::operator&lt;</definition>
+        <argsstring>(const WeatherRecord &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="59" column="5" bodyfile="WeatherData.cpp" bodystart="14" bodyend="16"/>
+        <references refid="class_weather_record_1a70f012d48746320340d318fe747104ee" compoundref="_weather_data_8h" startline="51">date</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_record_1a0984be568b0ed7a74c3c6d0735ac8120" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WeatherRecord::operator&gt;</definition>
+        <argsstring>(const WeatherRecord &amp;other) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="60" column="10" bodyfile="WeatherData.cpp" bodystart="18" bodyend="20"/>
+        <references refid="class_weather_record_1a70f012d48746320340d318fe747104ee" compoundref="_weather_data_8h" startline="51">date</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weather_record_1a2a34fb7dfafdfff7ff82a13dfae8fae3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WeatherRecord::operator==</definition>
+        <argsstring>(const WeatherRecord &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="61" column="10" bodyfile="WeatherData.cpp" bodystart="22" bodyend="24"/>
+        <references refid="class_weather_record_1a70f012d48746320340d318fe747104ee" compoundref="_weather_data_8h" startline="51">date</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_weather_record_1a009055c1258017f36456e816fffbddcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const WeatherRecord &amp;wr)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_weather_record" kindref="compound">WeatherRecord</ref> &amp;</type>
+          <declname>wr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="63" column="12" bodyfile="WeatherData.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>WeatherRecord</label>
+        <link refid="class_weather_record"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>date</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Date</label>
+        <link refid="class_date"/>
+      </node>
+    </collaborationgraph>
+    <location file="WeatherData.h" line="49" column="20" bodyfile="WeatherData.h" bodystart="49" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_weather_record_1a70f012d48746320340d318fe747104ee" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>date</name></member>
+      <member refid="class_weather_record_1a96728b5c02d42bbe650323b0001aba50" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>operator&lt;</name></member>
+      <member refid="class_weather_record_1a009055c1258017f36456e816fffbddcb" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_weather_record_1a2a34fb7dfafdfff7ff82a13dfae8fae3" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>operator==</name></member>
+      <member refid="class_weather_record_1a0984be568b0ed7a74c3c6d0735ac8120" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>operator&gt;</name></member>
+      <member refid="class_weather_record_1ad0949ad871135e6c854a80ed75df76fa" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>solarRadiation</name></member>
+      <member refid="class_weather_record_1ac805b71758371a9eff0fdb498dce30d3" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>temperature</name></member>
+      <member refid="class_weather_record_1a763c553bc47d7723d38ef96b94ed2dab" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>WeatherRecord</name></member>
+      <member refid="class_weather_record_1a7720d281cc2f8762f56949c4f662dba3" prot="public" virt="non-virtual"><scope>WeatherRecord</scope><name>windSpeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

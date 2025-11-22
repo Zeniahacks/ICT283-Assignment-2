@@ -1,0 +1,11 @@
+<map id="Map::at" name="Map::at">
+<area shape="rect" id="node1" title=" " alt="" coords="705,78,772,105"/>
+<area shape="rect" id="node2" href="$class_weather_data_collection.html#ae2c16b0fadf4b8edee794ab1bea87e47" title=" " alt="" coords="501,5,656,47"/>
+<area shape="rect" id="node3" href="$class_weather_data_collection.html#a9f12fb0238999c6de5e8b28f2d75f210" title="Get data for Month only." alt="" coords="501,71,656,112"/>
+<area shape="rect" id="node5" href="$class_weather_data_collection.html#a7509e18dd1bd7839cd442db739573c9d" title=" " alt="" coords="500,136,657,177"/>
+<area shape="rect" id="node4" href="$class_weather_data_collection.html#adf00be9874637aa86f79d03f79e3591d" title="Calculation of SPCC." alt="" coords="273,71,428,112"/>
+<area shape="rect" id="node6" href="$class_weather_data_collection.html#a98207c224b346028112f14e5a9e9bb1a" title=" " alt="" coords="272,136,429,177"/>
+<area shape="rect" id="node7" href="$class_weather_data_collection.html#a8242557f38750a366d640009c2d0d9b3" title=" " alt="" coords="249,201,452,243"/>
+<area shape="rect" id="node8" href="$class_weather_data_collection.html#aebed502136a6a926dffeaaab3df64fb8" title="New Menu option tasked from assignment 2." alt="" coords="11,168,195,209"/>
+<area shape="rect" id="node9" href="$class_weather_data_collection.html#ac46cef0678cb228ee7d3563c4a395329" title="Menu option 3: Average ambient air temperature and sample standard deviation for each month of a spec..." alt="" coords="5,233,201,275"/>
+</map>

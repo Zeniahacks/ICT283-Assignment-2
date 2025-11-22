@@ -1,0 +1,133 @@
+.TH "WeatherDataCollection" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WeatherDataCollection
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <WeatherData\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWeatherDataCollection\fP ()"
+.br
+.ti -1c
+.RI "\fB~WeatherDataCollection\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddWeatherRecord\fP (const \fBWeatherRecord\fP &record)"
+.br
+.ti -1c
+.RI "void \fBloadFromFiles\fP (const std::string &dataSourceFile)"
+.br
+.ti -1c
+.RI "std::vector< \fBWeatherRecord\fP > \fBgetDataForMonth\fP (int month) const"
+.br
+.RI "Get data for Month only\&. "
+.ti -1c
+.RI "std::vector< \fBWeatherRecord\fP > \fBgetDataForYearMonth\fP (int year, int month) const"
+.br
+.ti -1c
+.RI "std::vector< \fBWeatherRecord\fP > \fBgetDataForSpecificMonthYear\fP (int year, int month) const"
+.br
+.ti -1c
+.RI "double \fBcalculateSPCC\fP (int month, const std::string &correlationType) const"
+.br
+.RI "Calculation of SPCC\&. "
+.ti -1c
+.RI "void \fBdisplayAverageWindSpeed\fP (int year, int month) const"
+.br
+.RI "New Menu option tasked from assignment 2\&. "
+.ti -1c
+.RI "void \fBdisplayMonthlyTemperatures\fP (int year) const"
+.br
+.RI "Menu option 3: Average ambient air temperature and sample standard deviation for each month of a specified year\&. "
+.ti -1c
+.RI "void \fBgenerateMonthlyStats\fP (int year, const std::string &filename) const"
+.br
+.ti -1c
+.RI "void \fBdisplayAllData\fP () const"
+.br
+.ti -1c
+.RI "int \fBgetTotalRecords\fP () const"
+.br
+.ti -1c
+.RI "std::vector< int > \fBgetAvailableYears\fP () const"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 67 of file WeatherData\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "WeatherDataCollection::WeatherDataCollection ()"
+
+.PP
+Definition at line 33 of file WeatherData\&.cpp\&.
+.SS "WeatherDataCollection::~WeatherDataCollection ()"
+
+.PP
+Definition at line 36 of file WeatherData\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void WeatherDataCollection::addWeatherRecord (const \fBWeatherRecord\fP & record)"
+
+.PP
+Definition at line 39 of file WeatherData\&.cpp\&.
+.SS "double WeatherDataCollection::calculateSPCC (int month, const std::string & correlationType) const"
+
+.PP
+Calculation of SPCC\&. 
+.PP
+Definition at line 279 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::displayAllData () const"
+
+.PP
+Definition at line 461 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::displayAverageWindSpeed (int year, int month) const"
+
+.PP
+New Menu option tasked from assignment 2\&. Menu Option 2: The average wind speed and sample standard deviation for this wind speed given a specified month and year 
+.PP
+Definition at line 192 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::displayMonthlyTemperatures (int year) const"
+
+.PP
+Menu option 3: Average ambient air temperature and sample standard deviation for each month of a specified year\&. 
+.PP
+Definition at line 216 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::generateMonthlyStats (int year, const std::string & filename) const"
+
+.PP
+Definition at line 404 of file WeatherData\&.cpp\&.
+.SS "std::vector<int> WeatherDataCollection::getAvailableYears () const"
+
+.SS "std::vector< \fBWeatherRecord\fP > WeatherDataCollection::getDataForMonth (int month) const"
+
+.PP
+Get data for Month only\&. 
+.PP
+Definition at line 245 of file WeatherData\&.cpp\&.
+.SS "std::vector< \fBWeatherRecord\fP > WeatherDataCollection::getDataForSpecificMonthYear (int year, int month) const"
+
+.PP
+Definition at line 323 of file WeatherData\&.cpp\&.
+.SS "std::vector< \fBWeatherRecord\fP > WeatherDataCollection::getDataForYearMonth (int year, int month) const"
+
+.PP
+Definition at line 304 of file WeatherData\&.cpp\&.
+.SS "int WeatherDataCollection::getTotalRecords () const"
+
+.PP
+Definition at line 469 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::loadFromFiles (const std::string & dataSourceFile)"
+
+.PP
+Definition at line 63 of file WeatherData\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_evaluation_8txt" kind="file" language="C++">
+    <compoundname>Evaluation.txt</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_evaluation_8txt_1afb1b8f0cee2a1d78746650e8b95a76f9" prot="public" static="no" mutable="no">
+        <type>Title</type>
+        <definition>Title __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="1" column="1" bodyfile="Evaluation.txt" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1af851d6e2ce2ef7ee836350632b0fd520" prot="public" static="no" mutable="no">
+        <type>Title std</type>
+        <definition>Title std dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="14" column="6" bodyfile="Evaluation.txt" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1afc2a406addb235a6761c728222dfda23" prot="public" static="no" mutable="no">
+        <type>Title std</type>
+        <definition>Title std MAD</definition>
+        <argsstring></argsstring>
+        <name>MAD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="14" column="10" bodyfile="Evaluation.txt" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1aaeedeafcbb754ca473e3ff0f86538bc5" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES IMPLEMENTATION</definition>
+        <argsstring></argsstring>
+        <name>IMPLEMENTATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="18" column="17" bodyfile="Evaluation.txt" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="30" column="12" bodyfile="Evaluation.txt" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_weather_data_collection_1aebed502136a6a926dffeaaab3df64fb8" compoundref="_weather_data_8cpp" startline="192" endline="212">WeatherDataCollection::displayAverageWindSpeed</referencedby>
+        <referencedby refid="class_weather_data_collection_1ac46cef0678cb228ee7d3563c4a395329" compoundref="_weather_data_8cpp" startline="216" endline="241">WeatherDataCollection::displayMonthlyTemperatures</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1adc6e6e896722e0a3aae355407f4ed0ed" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN RATIONALE</definition>
+        <argsstring></argsstring>
+        <name>RATIONALE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="32" column="8" bodyfile="Evaluation.txt" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1af5b25d7733000adeb055508ad4b30ad1" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN insert</definition>
+        <argsstring></argsstring>
+        <name>insert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="35" column="2" bodyfile="Evaluation.txt" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1a5ff58ec30c1f7fb1b47b7681ee54cacf" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts PROS</definition>
+        <argsstring></argsstring>
+        <name>PROS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="37" column="1" bodyfile="Evaluation.txt" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1aaeffcc3ab03744d9d846c89ad3b04e8f" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks CONS</definition>
+        <argsstring></argsstring>
+        <name>CONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="57" column="1" bodyfile="Evaluation.txt" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1a148699dcf0213a95cb36668fa1ab9ca1" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather <ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref> types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather data types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES CONSIDERED</definition>
+        <argsstring></argsstring>
+        <name>CONSIDERED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="64" column="24" bodyfile="Evaluation.txt" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather <ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref> types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather data types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month Month missing malformed data Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="78" column="1" bodyfile="Evaluation.txt" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1ad790756eb0470bf43e5c536b8d47c97f" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather <ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref> types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month Month missing</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather data types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month Month missing files</definition>
+        <argsstring></argsstring>
+        <name>files</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="93" column="10" bodyfile="Evaluation.txt" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather <ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref> types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month Month missing malformed <ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref> no program crashes</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather data types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month Month missing malformed data no program crashes Test</definition>
+        <argsstring></argsstring>
+        <name>Test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="96" column="1" bodyfile="Evaluation.txt" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_evaluation_8txt_1a8cdf03e7d0a6a06a4d5a94e0a73f24fd" prot="public" static="no" mutable="no">
+        <type>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather <ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref> types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month Month missing malformed <ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref> no program crashes well</type>
+        <definition>Title std Pearson correlation Output formats match exact specification requirements Comprehensive input validation prevents crashes DATA STRUCTURES malformed invalid input DESIGN and range queries Function pointers enable flexible traversal strategies without modifying core BST logic Template design allows reuse in other contexts focused abstraction Template based for type safety Minimal interface demonstrates design understanding Eligible for bonus marks completely independent of weather data types This makes them reusable for any numerical analysis and facilitates testing and verification ALTERNATIVE APPROACHES Month Month missing malformed data no program crashes well documented</definition>
+        <argsstring></argsstring>
+        <name>documented</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Evaluation.txt" line="110" column="6" bodyfile="Evaluation.txt" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">Title:<sp/>ICT283<sp/>Assignment<sp/>2</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">Student<sp/>Name:<sp/>[Ang<sp/>Kai<sp/>Jun<sp/>Elson]</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Student<sp/>ID:<sp/>[35771004]</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="class_date" kindref="compound">Date</ref>:<sp/>[19/11/2025]</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Malware<sp/>Check:<sp/>This<sp/>submission<sp/>has<sp/>been<sp/>checked<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>malware<sp/>and<sp/>is<sp/>clean.</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">COMPLETED<sp/>FUNCTIONALITY:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">-<sp/>All<sp/>8<sp/>menu<sp/>options<sp/>fully<sp/>implemented<sp/>and<sp/>tested</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">-<sp/>File<sp/>loading<sp/>from<sp/>multiple<sp/>CSV<sp/><ref refid="_evaluation_8txt_1ad790756eb0470bf43e5c536b8d47c97f" kindref="member">files</ref><sp/>with<sp/>error<sp/>handling</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">-<sp/>BST<sp/>with<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>pointers<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>flexible<sp/>traversals</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">-<sp/>Custom<sp/><ref refid="class_map" kindref="compound">Map</ref><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">with<sp/>minimal<sp/>interface<sp/>(eligible<sp/>for<sp/>bonus)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">-<sp/>Statistical<sp/>functions<sp/>completely<sp/>decoupled<sp/>from<sp/>weather<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref></highlight></codeline>
+<codeline lineno="14" refid="_evaluation_8txt_1afc2a406addb235a6761c728222dfda23" refkind="member"><highlight class="normal">-<sp/>All<sp/>required<sp/>calculations<sp/>met:<sp/>mean,<sp/>std<sp/><ref refid="_evaluation_8txt_1af851d6e2ce2ef7ee836350632b0fd520" kindref="member">dev</ref>,<sp/><ref refid="_evaluation_8txt_1afc2a406addb235a6761c728222dfda23" kindref="member">MAD</ref>,<sp/>Pearson<sp/>correlation</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">-<sp/>Output<sp/>formats<sp/>match<sp/>exact<sp/>specification<sp/>requirements</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">-<sp/>Comprehensive<sp/>input<sp/>validation<sp/>prevents<sp/>crashes</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">DATA<sp/>STRUCTURES<sp/><ref refid="_evaluation_8txt_1aaeedeafcbb754ca473e3ff0f86538bc5" kindref="member">IMPLEMENTATION</ref>:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">-<sp/>Templated<sp/>BST<sp/>with<sp/>recursive<sp/>operations<sp/>and<sp/>function<sp/>pointers</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">-<sp/>Custom<sp/><ref refid="class_map" kindref="compound">Map</ref><sp/>wrapper<sp/>encapsulating<sp/>std::map<sp/>with<sp/>minimal<sp/>interface</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">-<sp/>BST<sp/>used<sp/>for<sp/>chronological<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref><sp/>organization<sp/>and<sp/>efficient<sp/>queries</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">-<sp/>Statistical<sp/>functions<sp/>operate<sp/>on<sp/>std::vector&lt;double&gt;<sp/>for<sp/>complete<sp/>decoupling</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">TESTING<sp/>RESULTS:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">-<sp/>Program<sp/>builds<sp/>successfully<sp/>with<sp/>C++11<sp/>and<sp/>strict<sp/>warnings</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">-<sp/>CPPCheck<sp/>analysis<sp/>shows<sp/>no<sp/>critical<sp/>issues</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">-<sp/>All<sp/>menu<sp/>options<sp/>tested<sp/>with<sp/>various<sp/>input<sp/>scenarios</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">-<sp/>Output<sp/>verified<sp/>against<sp/>manual<sp/>calculations<sp/>for<sp/>accuracy</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">-<sp/>Realistic<sp/>meteorological<sp/>patterns<sp/>observed<sp/>in<sp/>output<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref></highlight></codeline>
+<codeline lineno="30" refid="_evaluation_8txt_1aaeedeafcbb754ca473e3ff0f86538bc5" refkind="member"><highlight class="normal">-<sp/>Handles<sp/>edge<sp/>cases:<sp/>missing<sp/><ref refid="_evaluation_8txt_1ad790756eb0470bf43e5c536b8d47c97f" kindref="member">files</ref>,<sp/>malformed<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref>,<sp/>invalid<sp/>input</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">DESIGN<sp/><ref refid="_evaluation_8txt_1adc6e6e896722e0a3aae355407f4ed0ed" kindref="member">RATIONALE</ref>:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">BST<sp/>USAGE:</highlight></codeline>
+<codeline lineno="35" refid="_evaluation_8txt_1adc6e6e896722e0a3aae355407f4ed0ed" refkind="member"><highlight class="normal">Primary<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref><sp/>structure<sp/>for<sp/>storing<sp/>all<sp/>weather<sp/>records.<sp/>Provides<sp/>natural<sp/>chronological<sp/>ordering<sp/>by<sp/>date<sp/>with<sp/>efficient<sp/>O(log<sp/>n)<sp/>search,<sp/><ref refid="_evaluation_8txt_1af5b25d7733000adeb055508ad4b30ad1" kindref="member">insert</ref>,<sp/>and<sp/>range<sp/>queries.<sp/>Function<sp/>pointers<sp/>enable<sp/>flexible<sp/>traversal<sp/>strategies<sp/>without<sp/>modifying<sp/>core<sp/>BST<sp/>logic.<sp/>Template<sp/>design<sp/>allows<sp/>reuse<sp/>in<sp/>other<sp/>contexts.</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="_evaluation_8txt_1a5ff58ec30c1f7fb1b47b7681ee54cacf" kindref="member">PROS</ref>:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">-<sp/>Maintains<sp/>sorted<sp/>order<sp/>automatically</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">-<sp/>Efficient<sp/>for<sp/>date-based<sp/>queries</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">-<sp/>Flexible<sp/>traversal<sp/>with<sp/>function<sp/>pointers</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">-<sp/>Clean<sp/>separation<sp/>of<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref><sp/>and<sp/>operations</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="_evaluation_8txt_1aaeffcc3ab03744d9d846c89ad3b04e8f" kindref="member">CONS</ref>:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">-<sp/>Can<sp/>become<sp/>unbalanced<sp/>with<sp/>sorted<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">-<sp/>More<sp/>complex<sp/>than<sp/>simple<sp/>arrays</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">-<sp/>Additional<sp/>memory<sp/>overhead<sp/>for<sp/>pointers</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">MAP<sp/>USAGE:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">Custom<sp/><ref refid="class_map" kindref="compound">Map</ref><sp/>class<sp/>demonstrates<sp/>understanding<sp/>of<sp/>essential<sp/>map<sp/>operations.<sp/>Used<sp/>for<sp/>bonus<sp/>eligibility<sp/>demonstration<sp/>with<sp/>minimal<sp/>interface<sp/>focusing<sp/>on<sp/>core<sp/>functionality.</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="_evaluation_8txt_1a5ff58ec30c1f7fb1b47b7681ee54cacf" kindref="member">PROS</ref>:</highlight></codeline>
+<codeline lineno="52" refid="_evaluation_8txt_1a5ff58ec30c1f7fb1b47b7681ee54cacf" refkind="member"><highlight class="normal">-<sp/>Clean,<sp/>focused<sp/>abstraction</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">-<sp/>Template-based<sp/>for<sp/>type<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">-<sp/>Minimal<sp/>interface<sp/>demonstrates<sp/>design<sp/>understanding</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">-<sp/>Eligible<sp/>for<sp/>bonus<sp/>marks</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="_evaluation_8txt_1aaeffcc3ab03744d9d846c89ad3b04e8f" kindref="member">CONS</ref>:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">-<sp/>Limited<sp/>functionality<sp/>compared<sp/>to<sp/>full<sp/>std::map</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">-<sp/>Additional<sp/>layer<sp/>of<sp/>abstraction</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">STATISTICAL<sp/>DECOUPLING:</highlight></codeline>
+<codeline lineno="62" refid="_evaluation_8txt_1aaeffcc3ab03744d9d846c89ad3b04e8f" refkind="member"><highlight class="normal">All<sp/>statistical<sp/>functions<sp/>operate<sp/>on<sp/>std::vector&lt;double&gt;,<sp/>completely<sp/>independent<sp/>of<sp/>weather<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref><sp/>types.<sp/>This<sp/>makes<sp/>them<sp/>reusable<sp/>for<sp/>any<sp/>numerical<sp/>analysis<sp/>and<sp/>facilitates<sp/>testing<sp/>and<sp/>verification.</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">ALTERNATIVE<sp/>APPROACHES<sp/><ref refid="_evaluation_8txt_1a148699dcf0213a95cb36668fa1ab9ca1" kindref="member">CONSIDERED</ref>:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">-<sp/>Hash<sp/>tables:<sp/>Faster<sp/>lookups<sp/>but<sp/>don&apos;t<sp/>maintain<sp/>order</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">-<sp/>Arrays:<sp/>Simpler<sp/>but<sp/>inefficient<sp/>for<sp/>inserts<sp/>and<sp/>searches</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">-<sp/>Multiple<sp/>BSTs:<sp/>Could<sp/>use<sp/>separate<sp/>trees<sp/>for<sp/>different<sp/>time<sp/>periods</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">-<sp/>Direct<sp/>std::map<sp/>usage:<sp/>Simpler<sp/>but<sp/>wouldn&apos;t<sp/>demonstrate<sp/>custom<sp/>implementation</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">TEST<sp/>PLAN<sp/>RESULTS:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kindref="member">Test</ref><sp/>1:<sp/>File<sp/>Loading</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">Input:<sp/>Valid<sp/>data_source.txt</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kindref="member">Result</ref>:<sp/>PASS<sp/>-<sp/>All<sp/><ref refid="_evaluation_8txt_1ad790756eb0470bf43e5c536b8d47c97f" kindref="member">files</ref><sp/>loaded<sp/>successfully<sp/>with<sp/>correct<sp/>record<sp/>counts</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><ref refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kindref="member">Test</ref><sp/>2:<sp/>Menu<sp/>Option<sp/>2<sp/>-<sp/>Average<sp/>Wind<sp/>Speed</highlight></codeline>
+<codeline lineno="77" refid="_evaluation_8txt_1a148699dcf0213a95cb36668fa1ab9ca1" refkind="member"><highlight class="normal">Input:<sp/>Year<sp/>2010,<sp/>Month<sp/>1</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><ref refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kindref="member">Result</ref>:<sp/>PASS<sp/>-<sp/>Realistic<sp/>average<sp/>and<sp/>standard<sp/>deviation<sp/>values<sp/>calculated</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kindref="member">Test</ref><sp/>3:<sp/>Menu<sp/>Option<sp/>3<sp/>-<sp/>Monthly<sp/>Temperatures</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">Input:<sp/>Year<sp/>2010</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kindref="member">Result</ref>:<sp/>PASS<sp/>-<sp/>All<sp/>12<sp/>months<sp/>processed<sp/>with<sp/>seasonal<sp/>variation<sp/>observed</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kindref="member">Test</ref><sp/>4:<sp/>Menu<sp/>Option<sp/>4<sp/>-<sp/>Pearson<sp/>Correlation</highlight></codeline>
+<codeline lineno="85" refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" refkind="member"><highlight class="normal">Input:<sp/>Year<sp/>2010,<sp/>Month<sp/>3</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kindref="member">Result</ref>:<sp/>PASS<sp/>-<sp/>Three<sp/>valid<sp/>correlation<sp/>coefficients<sp/>calculated<sp/>between<sp/>-1<sp/>and<sp/>1</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kindref="member">Test</ref><sp/>5:<sp/>Menu<sp/>Option<sp/>5<sp/>-<sp/>Monthly<sp/><ref refid="namespace_statistics" kindref="compound">Statistics</ref><sp/>Report</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">Input:<sp/>Year<sp/>2010</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><ref refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kindref="member">Result</ref>:<sp/>PASS<sp/>-<sp/>WindTempSolar.csv<sp/>generated<sp/>with<sp/>correct<sp/>format<sp/>and<sp/>realistic<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kindref="member">Test</ref><sp/>6:<sp/>Error<sp/>Handling</highlight></codeline>
+<codeline lineno="93" refid="_evaluation_8txt_1ad790756eb0470bf43e5c536b8d47c97f" refkind="member"><highlight class="normal">Input:<sp/>Invalid<sp/>month<sp/>(13),<sp/>missing<sp/><ref refid="_evaluation_8txt_1ad790756eb0470bf43e5c536b8d47c97f" kindref="member">files</ref>,<sp/>malformed<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><ref refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kindref="member">Result</ref>:<sp/>PASS<sp/>-<sp/>Graceful<sp/>error<sp/>messages,<sp/>no<sp/>program<sp/>crashes</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" kindref="member">Test</ref><sp/>7:<sp/>Data<sp/>Structure<sp/>Verification</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">Input:<sp/>Various<sp/>queries<sp/>across<sp/>different<sp/>years<sp/>and<sp/>months</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="_evaluation_8txt_1a76d02c221c609972405ed6edc37bf4b8" kindref="member">Result</ref>:<sp/>PASS<sp/>-<sp/>BST<sp/>and<sp/><ref refid="class_map" kindref="compound">Map</ref><sp/>functioning<sp/>correctly<sp/>with<sp/>efficient<sp/>performance</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">BONUS<sp/>ELIGIBILITY:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">Custom<sp/><ref refid="class_map" kindref="compound">Map</ref><sp/>class<sp/>implements<sp/>minimal<sp/>but<sp/>complete<sp/>interface<sp/>with<sp/>only<sp/>4<sp/>essential<sp/>methods<sp/>plus<sp/>size.<sp/>Template<sp/>design<sp/>allows<sp/>reuse<sp/>with<sp/>any<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref><sp/>types.<sp/>Encapsulates<sp/>std::map<sp/>while<sp/>providing<sp/>clean<sp/>abstraction.<sp/>Defensible<sp/>design<sp/>philosophy<sp/>with<sp/>only<sp/>essential<sp/>operations<sp/>included.</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">ISSUES<sp/>RESOLVED:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">-<sp/>Fixed<sp/>pointer<sp/>invalidation<sp/>in<sp/>monthly<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref><sp/>organization</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">-<sp/>Corrected<sp/>column<sp/>index<sp/>mismatches<sp/>in<sp/>CSV<sp/>parsing</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">-<sp/>Resolved<sp/>logic<sp/>errors<sp/>in<sp/><ref refid="_evaluation_8txt_1a78b23941ab3c1d2fc090f14a403a074e" kindref="member">data</ref><sp/>existence<sp/>checks</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">-<sp/>Implemented<sp/>proper<sp/>error<sp/>handling<sp/>for<sp/>all<sp/>user<sp/>inputs</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">READY<sp/>FOR<sp/>SUBMISSION:</highlight></codeline>
+<codeline lineno="110" refid="_evaluation_8txt_1a0f962638724a174b052a49adc429afa8" refkind="member"><highlight class="normal">All<sp/>assignment<sp/>requirements<sp/>have<sp/>been<sp/>met.<sp/>The<sp/>program<sp/>is<sp/>fully<sp/>functional,<sp/>well-<ref refid="_evaluation_8txt_1a8cdf03e7d0a6a06a4d5a94e0a73f24fd" kindref="member">documented</ref>,<sp/>and<sp/>ready<sp/>for<sp/>demonstration<sp/>and<sp/>assessment.<sp/>Code<sp/>follows<sp/>C++<sp/>best<sp/>practices<sp/>with<sp/>proper<sp/>modularization<sp/>and<sp/>encapsulation.</highlight></codeline>
+    </programlisting>
+    <location file="Evaluation.txt"/>
+  </compounddef>
+</doxygen>

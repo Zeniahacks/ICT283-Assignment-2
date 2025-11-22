@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_map" kind="class" language="C++" prot="public">
+    <compoundname>Map</compoundname>
+    <includes refid="_weather_data_8h" local="no">WeatherData.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename K</type>
+      </param>
+      <param>
+        <type>typename V</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_map_1ad52d75e1ac5033a7d1c56a6ab01ea8b8" prot="private" static="no" mutable="no">
+        <type>std::map&lt; K, V &gt;</type>
+        <definition>std::map&lt;K, V&gt; Map&lt; K, V &gt;::internalMap</definition>
+        <argsstring></argsstring>
+        <name>internalMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="19" column="14" bodyfile="WeatherData.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_map_1ae4b8988b31da6ea748ffec6adeaee458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Map&lt; K, V &gt;::Map</definition>
+        <argsstring>()=default</argsstring>
+        <name>Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="22" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a225903c0291cf978e27be5a58f399a14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Map&lt; K, V &gt;::insert</definition>
+        <argsstring>(const K &amp;key, const V &amp;value)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const V &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="25" column="10" bodyfile="WeatherData.h" bodystart="25" bodyend="27"/>
+        <referencedby refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" compoundref="_weather_data_8cpp" startline="39" endline="55">WeatherDataCollection::addWeatherRecord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a21817f63324636803318e47c2a88b02e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Map&lt; K, V &gt;::contains</definition>
+        <argsstring>(const K &amp;key) const</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="29" column="10" bodyfile="WeatherData.h" bodystart="29" bodyend="31"/>
+        <referencedby refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" compoundref="_weather_data_8cpp" startline="39" endline="55">WeatherDataCollection::addWeatherRecord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a2b6343cc81c1caee8760516815f144a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>V &amp;</type>
+        <definition>V&amp; Map&lt; K, V &gt;::at</definition>
+        <argsstring>(const K &amp;key)</argsstring>
+        <name>at</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="33" column="7" bodyfile="WeatherData.h" bodystart="33" bodyend="35"/>
+        <referencedby refid="class_weather_data_collection_1ae2c16b0fadf4b8edee794ab1bea87e47" compoundref="_weather_data_8cpp" startline="39" endline="55">WeatherDataCollection::addWeatherRecord</referencedby>
+        <referencedby refid="class_weather_data_collection_1a9f12fb0238999c6de5e8b28f2d75f210" compoundref="_weather_data_8cpp" startline="245" endline="259">WeatherDataCollection::getDataForMonth</referencedby>
+        <referencedby refid="class_weather_data_collection_1a7509e18dd1bd7839cd442db739573c9d" compoundref="_weather_data_8cpp" startline="304" endline="320">WeatherDataCollection::getDataForYearMonth</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a706c8bdeee85078c49c5bd4b6f33adfa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const V &amp;</type>
+        <definition>const V&amp; Map&lt; K, V &gt;::at</definition>
+        <argsstring>(const K &amp;key) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="37" column="13" bodyfile="WeatherData.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1adfbce5b2904fef300bac712781303166" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; K, V &gt;::iterator</type>
+        <definition>std::map&lt;K, V&gt;::iterator Map&lt; K, V &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="42" column="34" bodyfile="WeatherData.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a3285d6132c47062e6e7f0db12d18c240" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; K, V &gt;::iterator</type>
+        <definition>std::map&lt;K, V&gt;::iterator Map&lt; K, V &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="43" column="34" bodyfile="WeatherData.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1ad20f7008b571c9e39cd80e13d056e0ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; K, V &gt;::const_iterator</type>
+        <definition>std::map&lt;K, V&gt;::const_iterator Map&lt; K, V &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="44" column="40" bodyfile="WeatherData.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_map_1a138901d4ec4b3986c44b8d9ecc95b02b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; K, V &gt;::const_iterator</type>
+        <definition>std::map&lt;K, V&gt;::const_iterator Map&lt; K, V &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WeatherData.h" line="45" column="40" bodyfile="WeatherData.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WeatherData.h" line="17" column="10" bodyfile="WeatherData.h" bodystart="17" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_map_1a2b6343cc81c1caee8760516815f144a8" prot="public" virt="non-virtual"><scope>Map</scope><name>at</name></member>
+      <member refid="class_map_1a706c8bdeee85078c49c5bd4b6f33adfa" prot="public" virt="non-virtual"><scope>Map</scope><name>at</name></member>
+      <member refid="class_map_1adfbce5b2904fef300bac712781303166" prot="public" virt="non-virtual"><scope>Map</scope><name>begin</name></member>
+      <member refid="class_map_1ad20f7008b571c9e39cd80e13d056e0ca" prot="public" virt="non-virtual"><scope>Map</scope><name>begin</name></member>
+      <member refid="class_map_1a21817f63324636803318e47c2a88b02e" prot="public" virt="non-virtual"><scope>Map</scope><name>contains</name></member>
+      <member refid="class_map_1a3285d6132c47062e6e7f0db12d18c240" prot="public" virt="non-virtual"><scope>Map</scope><name>end</name></member>
+      <member refid="class_map_1a138901d4ec4b3986c44b8d9ecc95b02b" prot="public" virt="non-virtual"><scope>Map</scope><name>end</name></member>
+      <member refid="class_map_1a225903c0291cf978e27be5a58f399a14" prot="public" virt="non-virtual"><scope>Map</scope><name>insert</name></member>
+      <member refid="class_map_1ad52d75e1ac5033a7d1c56a6ab01ea8b8" prot="private" virt="non-virtual"><scope>Map</scope><name>internalMap</name></member>
+      <member refid="class_map_1ae4b8988b31da6ea748ffec6adeaee458" prot="public" virt="non-virtual"><scope>Map</scope><name>Map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

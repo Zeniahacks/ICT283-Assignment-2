@@ -1,0 +1,136 @@
+.TH "Date" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Date
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Date\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDate\fP ()"
+.br
+.ti -1c
+.RI "\fBDate\fP (int d, int m, int y)"
+.br
+.ti -1c
+.RI "int \fBGetDay\fP () const"
+.br
+.ti -1c
+.RI "int \fBGetMonth\fP () const"
+.br
+.ti -1c
+.RI "int \fBGetYear\fP () const"
+.br
+.ti -1c
+.RI "void \fBSetDay\fP (int d)"
+.br
+.ti -1c
+.RI "void \fBSetMonth\fP (int m)"
+.br
+.ti -1c
+.RI "void \fBSetYear\fP (int y)"
+.br
+.ti -1c
+.RI "std::string \fBtoString\fP () const"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBDate\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBDate\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBDate\fP &other) const"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBDate\fP &other) const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBDate\fP &date)"
+.br
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &is, \fBDate\fP &date)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file Date\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Date::Date ()\fC [inline]\fP"
+
+.PP
+Definition at line 43 of file Date\&.h\&.
+.SS "Date::Date (int d, int m, int y)\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file Date\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int Date::GetDay () const\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file Date\&.h\&.
+.SS "int Date::GetMonth () const\fC [inline]\fP"
+
+.PP
+Definition at line 49 of file Date\&.h\&.
+.SS "int Date::GetYear () const\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file Date\&.h\&.
+.SS "bool Date::operator!= (const \fBDate\fP & other) const\fC [inline]\fP"
+
+.PP
+Definition at line 77 of file Date\&.h\&.
+.SS "bool Date::operator< (const \fBDate\fP & other) const\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file Date\&.h\&.
+.SS "bool Date::operator== (const \fBDate\fP & other) const\fC [inline]\fP"
+
+.PP
+Definition at line 73 of file Date\&.h\&.
+.SS "bool Date::operator> (const \fBDate\fP & other) const\fC [inline]\fP"
+
+.PP
+Definition at line 69 of file Date\&.h\&.
+.SS "void Date::SetDay (int d)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file Date\&.h\&.
+.SS "void Date::SetMonth (int m)\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file Date\&.h\&.
+.SS "void Date::SetYear (int y)\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file Date\&.h\&.
+.SS "std::string Date::toString () const\fC [inline]\fP"
+
+.PP
+Definition at line 59 of file Date\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream& operator<< (std::ostream & os, const \fBDate\fP & date)\fC [friend]\fP"
+
+.PP
+Definition at line 81 of file Date\&.h\&.
+.SS "std::istream& operator>> (std::istream & is, \fBDate\fP & date)\fC [friend]\fP"
+
+.PP
+Definition at line 86 of file Date\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

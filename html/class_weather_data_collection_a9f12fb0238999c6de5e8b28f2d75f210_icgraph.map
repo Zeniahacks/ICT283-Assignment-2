@@ -1,0 +1,4 @@
+<map id="WeatherDataCollection::getDataForMonth" name="WeatherDataCollection::getDataForMonth">
+<area shape="rect" id="node1" title="Get data for Month only." alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node2" href="$class_weather_data_collection.html#adf00be9874637aa86f79d03f79e3591d" title="Calculation of SPCC." alt="" coords="5,5,160,47"/>
+</map>

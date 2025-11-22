@@ -1,0 +1,320 @@
+\hypertarget{class_weather_data_collection}{}\doxysection{Weather\+Data\+Collection Class Reference}
+\label{class_weather_data_collection}\index{WeatherDataCollection@{WeatherDataCollection}}
+
+
+{\ttfamily \#include $<$Weather\+Data.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}{Weather\+Data\+Collection}} ()
+\item 
+\mbox{\hyperlink{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}{$\sim$\+Weather\+Data\+Collection}} ()
+\item 
+void \mbox{\hyperlink{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47}{add\+Weather\+Record}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&record)
+\item 
+void \mbox{\hyperlink{class_weather_data_collection_a208171f41a04ea93ec8b18780d765f39}{load\+From\+Files}} (const std\+::string \&data\+Source\+File)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ \mbox{\hyperlink{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210}{get\+Data\+For\+Month}} (int month) const
+\begin{DoxyCompactList}\small\item\em Get data for Month only. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ \mbox{\hyperlink{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d}{get\+Data\+For\+Year\+Month}} (int year, int month) const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ \mbox{\hyperlink{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3}{get\+Data\+For\+Specific\+Month\+Year}} (int year, int month) const
+\item 
+double \mbox{\hyperlink{class_weather_data_collection_adf00be9874637aa86f79d03f79e3591d}{calculate\+S\+P\+CC}} (int month, const std\+::string \&correlation\+Type) const
+\begin{DoxyCompactList}\small\item\em Calculation of S\+P\+CC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_aebed502136a6a926dffeaaab3df64fb8}{display\+Average\+Wind\+Speed}} (int year, int month) const
+\begin{DoxyCompactList}\small\item\em New Menu option tasked from assignment 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a395329}{display\+Monthly\+Temperatures}} (int year) const
+\begin{DoxyCompactList}\small\item\em Menu option 3\+: Average ambient air temperature and sample standard deviation for each month of a specified year. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a}{generate\+Monthly\+Stats}} (int year, const std\+::string \&filename) const
+\item 
+void \mbox{\hyperlink{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}{display\+All\+Data}} () const
+\item 
+int \mbox{\hyperlink{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}{get\+Total\+Records}} () const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_weather_data_collection_ae0b7490bc29c71ca76ae5da6726070a9}{get\+Available\+Years}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 67 of file Weather\+Data.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}\label{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{WeatherDataCollection()}{WeatherDataCollection()}}
+{\footnotesize\ttfamily Weather\+Data\+Collection\+::\+Weather\+Data\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Weather\+Data.\+cpp.
+
+\mbox{\Hypertarget{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}\label{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!````~WeatherDataCollection@{$\sim$WeatherDataCollection}}
+\index{````~WeatherDataCollection@{$\sim$WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{$\sim$WeatherDataCollection()}{~WeatherDataCollection()}}
+{\footnotesize\ttfamily Weather\+Data\+Collection\+::$\sim$\+Weather\+Data\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file Weather\+Data.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47}\label{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!addWeatherRecord@{addWeatherRecord}}
+\index{addWeatherRecord@{addWeatherRecord}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{addWeatherRecord()}{addWeatherRecord()}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::add\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{record }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_adf00be9874637aa86f79d03f79e3591d}\label{class_weather_data_collection_adf00be9874637aa86f79d03f79e3591d}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!calculateSPCC@{calculateSPCC}}
+\index{calculateSPCC@{calculateSPCC}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{calculateSPCC()}{calculateSPCC()}}
+{\footnotesize\ttfamily double Weather\+Data\+Collection\+::calculate\+S\+P\+CC (\begin{DoxyParamCaption}\item[{int}]{month,  }\item[{const std\+::string \&}]{correlation\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Calculation of S\+P\+CC. 
+
+
+
+Definition at line 279 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_adf00be9874637aa86f79d03f79e3591d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}\label{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!displayAllData@{displayAllData}}
+\index{displayAllData@{displayAllData}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{displayAllData()}{displayAllData()}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 461 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_aebed502136a6a926dffeaaab3df64fb8}\label{class_weather_data_collection_aebed502136a6a926dffeaaab3df64fb8}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!displayAverageWindSpeed@{displayAverageWindSpeed}}
+\index{displayAverageWindSpeed@{displayAverageWindSpeed}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{displayAverageWindSpeed()}{displayAverageWindSpeed()}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+Average\+Wind\+Speed (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption}) const}
+
+
+
+New Menu option tasked from assignment 2. 
+
+Menu Option 2\+: The average wind speed and sample standard deviation for this wind speed given a specified month and year 
+
+Definition at line 192 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_aebed502136a6a926dffeaaab3df64fb8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a395329}\label{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a395329}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!displayMonthlyTemperatures@{displayMonthlyTemperatures}}
+\index{displayMonthlyTemperatures@{displayMonthlyTemperatures}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{displayMonthlyTemperatures()}{displayMonthlyTemperatures()}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+Monthly\+Temperatures (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption}) const}
+
+
+
+Menu option 3\+: Average ambient air temperature and sample standard deviation for each month of a specified year. 
+
+
+
+Definition at line 216 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a395329_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a}\label{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!generateMonthlyStats@{generateMonthlyStats}}
+\index{generateMonthlyStats@{generateMonthlyStats}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{generateMonthlyStats()}{generateMonthlyStats()}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::generate\+Monthly\+Stats (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 404 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_ae0b7490bc29c71ca76ae5da6726070a9}\label{class_weather_data_collection_ae0b7490bc29c71ca76ae5da6726070a9}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getAvailableYears@{getAvailableYears}}
+\index{getAvailableYears@{getAvailableYears}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getAvailableYears()}{getAvailableYears()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Weather\+Data\+Collection\+::get\+Available\+Years (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210}\label{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getDataForMonth@{getDataForMonth}}
+\index{getDataForMonth@{getDataForMonth}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getDataForMonth()}{getDataForMonth()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ Weather\+Data\+Collection\+::get\+Data\+For\+Month (\begin{DoxyParamCaption}\item[{int}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Get data for Month only. 
+
+
+
+Definition at line 245 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3}\label{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getDataForSpecificMonthYear@{getDataForSpecificMonthYear}}
+\index{getDataForSpecificMonthYear@{getDataForSpecificMonthYear}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getDataForSpecificMonthYear()}{getDataForSpecificMonthYear()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ Weather\+Data\+Collection\+::get\+Data\+For\+Specific\+Month\+Year (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 323 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d}\label{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getDataForYearMonth@{getDataForYearMonth}}
+\index{getDataForYearMonth@{getDataForYearMonth}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getDataForYearMonth()}{getDataForYearMonth()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ Weather\+Data\+Collection\+::get\+Data\+For\+Year\+Month (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 304 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}\label{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getTotalRecords@{getTotalRecords}}
+\index{getTotalRecords@{getTotalRecords}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getTotalRecords()}{getTotalRecords()}}
+{\footnotesize\ttfamily int Weather\+Data\+Collection\+::get\+Total\+Records (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 469 of file Weather\+Data.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_a208171f41a04ea93ec8b18780d765f39}\label{class_weather_data_collection_a208171f41a04ea93ec8b18780d765f39}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!loadFromFiles@{loadFromFiles}}
+\index{loadFromFiles@{loadFromFiles}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{loadFromFiles()}{loadFromFiles()}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::load\+From\+Files (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+Source\+File }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file Weather\+Data.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_weather_data_8h}{Weather\+Data.\+h}}\item 
+\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+.TH "WeatherData.cpp" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WeatherData.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'WeatherData\&.h'\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <algorithm>\fP
+.br
+\fC#include <numeric>\fP
+.br
+\fC#include <stdexcept>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCollectionContext\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBStatistics\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBWeatherRecord\fP &wr)"
+.br
+.ti -1c
+.RI "void \fBprintWeatherRecord\fP (const \fBWeatherRecord\fP &record)"
+.br
+.ti -1c
+.RI "void \fBcollectByMonth\fP (const \fBWeatherRecord\fP &record, void *context)"
+.br
+.ti -1c
+.RI "double \fBStatistics::calculateMean\fP (const std::vector< double > &values)"
+.br
+.ti -1c
+.RI "double \fBStatistics::calculateStdDev\fP (const std::vector< double > &values)"
+.br
+.ti -1c
+.RI "double \fBStatistics::calculateMAD\fP (const std::vector< double > &values)"
+.br
+.ti -1c
+.RI "double \fBStatistics::calculateSPCC\fP (const std::vector< double > &x, const std::vector< double > &y)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void collectByMonth (const \fBWeatherRecord\fP & record, void * context)"
+
+.PP
+Definition at line 271 of file WeatherData\&.cpp\&.
+.SS "std::ostream& operator<< (std::ostream & os, const \fBWeatherRecord\fP & wr)"
+
+.PP
+Definition at line 26 of file WeatherData\&.cpp\&.
+.SS "void printWeatherRecord (const \fBWeatherRecord\fP & record)"
+
+.PP
+Definition at line 262 of file WeatherData\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

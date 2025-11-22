@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_assignment2_app" kind="class" language="C++" prot="public">
+    <compoundname>Assignment2App</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_assignment2_app_1af25920419eaad5088cdc9d5443e2fbdc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_weather_data_collection" kindref="compound">WeatherDataCollection</ref></type>
+        <definition>WeatherDataCollection Assignment2App::weatherData</definition>
+        <argsstring></argsstring>
+        <name>weatherData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="10" column="27" bodyfile="main.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_assignment2_app_1a7360ead54bd01b280d281e3c6b3a202e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Assignment2App::dataLoaded</definition>
+        <argsstring></argsstring>
+        <name>dataLoaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="11" column="10" bodyfile="main.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_assignment2_app_1a68c7b79cde569810046441f99a99e0ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Assignment2App::Assignment2App</definition>
+        <argsstring>()</argsstring>
+        <name>Assignment2App</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="14" column="5" bodyfile="main.cpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1a04d0de259955552f8641eb67c2978418" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="16" column="10" bodyfile="main.cpp" bodystart="16" bodyend="28"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="199" endline="208">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_assignment2_app_1a93434df6273044ebe10e438e56726955" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::displayMenu</definition>
+        <argsstring>()</argsstring>
+        <name>displayMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="32" column="10" bodyfile="main.cpp" bodystart="32" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1ad01929ce6c99caeb9eda8132c24fa130" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::processChoice</definition>
+        <argsstring>(int choice)</argsstring>
+        <name>processChoice</name>
+        <param>
+          <type>int</type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="47" column="10" bodyfile="main.cpp" bodystart="47" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1add343d8222b637ba984db13b2bf1cced" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::loadData</definition>
+        <argsstring>()</argsstring>
+        <name>loadData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="81" column="10" bodyfile="main.cpp" bodystart="81" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1aab5cd599e2510021622c85c476d556aa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::displayData</definition>
+        <argsstring>()</argsstring>
+        <name>displayData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="92" column="10" bodyfile="main.cpp" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1a991484f1bc1d1f6d5b87ddad6cf956a8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::displayAverageWindSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>displayAverageWindSpeed</name>
+        <briefdescription>
+<para>Tasked for assignment 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="104" column="10" bodyfile="main.cpp" bodystart="104" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1aafd14abc5f58356186156944a193752b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::displayMonthlyTemperatures</definition>
+        <argsstring>()</argsstring>
+        <name>displayMonthlyTemperatures</name>
+        <briefdescription>
+<para>Also tasked for assignment 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="125" column="10" bodyfile="main.cpp" bodystart="125" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1a2fa2b03dd5ed95a46acb621868f2c931" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::calculateCorrelations</definition>
+        <argsstring>()</argsstring>
+        <name>calculateCorrelations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="138" column="10" bodyfile="main.cpp" bodystart="138" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1a5759c1b1d6ffb44fd0c4ac2b567ca06d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::generateReport</definition>
+        <argsstring>()</argsstring>
+        <name>generateReport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="162" column="10" bodyfile="main.cpp" bodystart="162" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_assignment2_app_1a75aba81f4ee8343f4ffe6b01fb02b5f9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Assignment2App::displayStructuredinfo</definition>
+        <argsstring>()</argsstring>
+        <name>displayStructuredinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="178" column="10" bodyfile="main.cpp" bodystart="178" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="main.cpp" line="8" column="1" bodyfile="main.cpp" bodystart="7" bodyend="194"/>
+    <listofallmembers>
+      <member refid="class_assignment2_app_1a68c7b79cde569810046441f99a99e0ae" prot="public" virt="non-virtual"><scope>Assignment2App</scope><name>Assignment2App</name></member>
+      <member refid="class_assignment2_app_1a2fa2b03dd5ed95a46acb621868f2c931" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>calculateCorrelations</name></member>
+      <member refid="class_assignment2_app_1a7360ead54bd01b280d281e3c6b3a202e" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>dataLoaded</name></member>
+      <member refid="class_assignment2_app_1a991484f1bc1d1f6d5b87ddad6cf956a8" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>displayAverageWindSpeed</name></member>
+      <member refid="class_assignment2_app_1aab5cd599e2510021622c85c476d556aa" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>displayData</name></member>
+      <member refid="class_assignment2_app_1a93434df6273044ebe10e438e56726955" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>displayMenu</name></member>
+      <member refid="class_assignment2_app_1aafd14abc5f58356186156944a193752b" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>displayMonthlyTemperatures</name></member>
+      <member refid="class_assignment2_app_1a75aba81f4ee8343f4ffe6b01fb02b5f9" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>displayStructuredinfo</name></member>
+      <member refid="class_assignment2_app_1a5759c1b1d6ffb44fd0c4ac2b567ca06d" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>generateReport</name></member>
+      <member refid="class_assignment2_app_1add343d8222b637ba984db13b2bf1cced" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>loadData</name></member>
+      <member refid="class_assignment2_app_1ad01929ce6c99caeb9eda8132c24fa130" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>processChoice</name></member>
+      <member refid="class_assignment2_app_1a04d0de259955552f8641eb67c2978418" prot="public" virt="non-virtual"><scope>Assignment2App</scope><name>run</name></member>
+      <member refid="class_assignment2_app_1af25920419eaad5088cdc9d5443e2fbdc" prot="private" virt="non-virtual"><scope>Assignment2App</scope><name>weatherData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
