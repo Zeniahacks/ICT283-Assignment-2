@@ -32,13 +32,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Assignment2App.cpp" />
+		<Unit filename="Assignment2App.h" />
 		<Unit filename="Bst.h" />
+		<Unit filename="Date.cpp" />
 		<Unit filename="Date.h" />
 		<Unit filename="Map.h" />
+		<Unit filename="Statistics.cpp" />
 		<Unit filename="Statistics.h" />
-		<Unit filename="WeatherData.cpp" />
-		<Unit filename="WeatherData.h" />
 		<Unit filename="WeatherDataCollection.cpp" />
+		<Unit filename="WeatherDataCollection.h" />
+		<Unit filename="WeatherRecord.cpp" />
 		<Unit filename="WeatherRecord.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

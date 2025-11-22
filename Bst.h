@@ -9,11 +9,12 @@
 template <class T>
 class Node {
 public:
-    T data;
+    T* data;  // Store pointer
     Node<T>* left;
     Node<T>* right;
 
-    Node(const T& value) : data(value), left(nullptr), right(nullptr) {}
+    Node(T* value) : data(value), left(nullptr), right(nullptr) {}  // Take pointer
+    ~Node() { delete data; }  // Clean up
 };
 
 /// @class Bst
@@ -24,19 +25,19 @@ private:
     Node<T>* root;
 
     // Private recursive helper methods
-    Node<T>* insertRec(Node<T>* node, const T& value);
-    Node<T>* searchRec(Node<T>* node, const T& value) const;
+    Node<T>* insertRec(Node<T>* node, T* value);
+    Node<T>* searchRec(Node<T>* node, T* value) const;
 
     // Traversal methods with function pointers
-    void inOrderRec(Node<T>* node, void (*visit)(const T&)) const;
-    void preOrderRec(Node<T>* node, void (*visit)(const T&)) const;
-    void postOrderRec(Node<T>* node, void (*visit)(const T&)) const;
+    void inOrderRec(Node<T>* node, void (*visit)(const T*)) const;
+    void preOrderRec(Node<T>* node, void (*visit)(const T*)) const;
+    void postOrderRec(Node<T>* node, void (*visit)(const T*)) const;
 
     // Traversal methods that collect data
-    void inOrderRec(Node<T>* node, void (*visit)(const T&, void*), void* context) const;
+    void inOrderRec(Node<T>* node, void (*visit)(const T*, void*), void* context) const;
 
     void deleteTreeRec(Node<T>* node);
-    bool checkInvariantRec(Node<T>* node, const T& min, const T& max) const;
+    bool checkInvariantRec(Node<T>* node, const T* min, const T* max) const;
     Node<T>* copyTreeRec(Node<T>* node);
 
 public:
@@ -45,16 +46,16 @@ public:
     Bst(const Bst<T>& other);
     Bst<T>& operator=(const Bst<T>& other);
 
-    void insert(const T& value);
-    Node<T>* search(const T& value) const;
+    void insert(T* value);
+    Node<T>* search(T* value) const;
 
     // Traversal methods with function pointers
-    void inOrder(void (*visit)(const T&)) const;
-    void preOrder(void (*visit)(const T&)) const;
-    void postOrder(void (*visit)(const T&)) const;
+    void inOrder(void (*visit)(const T*)) const;
+    void preOrder(void (*visit)(const T*)) const;
+    void postOrder(void (*visit)(const T*)) const;
 
     // Traversal methods that collect data into context
-    void inOrder(void (*visit)(const T&, void*), void* context) const;
+    void inOrder(void (*visit)(const T*, void*), void* context) const;
 
     // Simple traversals (for backward compatibility)
     void inOrder() const;
@@ -99,7 +100,9 @@ template <class T>
 Node<T>* Bst<T>::copyTreeRec(Node<T>* node) {
     if (node == nullptr) return nullptr;
 
-    Node<T>* newNode = new Node<T>(node->data);
+    // Create new node with copied data
+    T* newData = new T(*(node->data));  // Copy the data
+    Node<T>* newNode = new Node<T>(newData);
     newNode->left = copyTreeRec(node->left);
     newNode->right = copyTreeRec(node->right);
     return newNode;
@@ -115,31 +118,31 @@ void Bst<T>::deleteTreeRec(Node<T>* node) {
 }
 
 template <class T>
-Node<T>* Bst<T>::insertRec(Node<T>* node, const T& value) {
+Node<T>* Bst<T>::insertRec(Node<T>* node, T* value) {
     if (node == nullptr) {
         return new Node<T>(value);
     }
 
-    if (value < node->data) {
+    if (*value < *(node->data)) {  // Dereference for comparison
         node->left = insertRec(node->left, value);
-    } else if (value > node->data) {
+    } else if (*value > *(node->data)) {  // Dereference for comparison
         node->right = insertRec(node->right, value);
     }
     return node;
 }
 
 template <class T>
-void Bst<T>::insert(const T& value) {
+void Bst<T>::insert(T* value) {
     root = insertRec(root, value);
 }
 
 template <class T>
-Node<T>* Bst<T>::searchRec(Node<T>* node, const T& value) const {
-    if (node == nullptr || node->data == value) {
+Node<T>* Bst<T>::searchRec(Node<T>* node, T* value) const {
+    if (node == nullptr || *(node->data) == *value) {
         return node;
     }
 
-    if (value < node->data) {
+    if (*value < *(node->data)) {
         return searchRec(node->left, value);
     } else {
         return searchRec(node->right, value);
@@ -147,95 +150,95 @@ Node<T>* Bst<T>::searchRec(Node<T>* node, const T& value) const {
 }
 
 template <class T>
-Node<T>* Bst<T>::search(const T& value) const {
+Node<T>* Bst<T>::search(T* value) const {
     return searchRec(root, value);
 }
 
 // Traversal with simple function pointer
 template <class T>
-void Bst<T>::inOrderRec(Node<T>* node, void (*visit)(const T&)) const {
+void Bst<T>::inOrderRec(Node<T>* node, void (*visit)(const T*)) const {
     if (node != nullptr) {
         inOrderRec(node->left, visit);
-        visit(node->data);
+        visit(node->data);  // Pass pointer
         inOrderRec(node->right, visit);
     }
 }
 
 template <class T>
-void Bst<T>::inOrder(void (*visit)(const T&)) const {
+void Bst<T>::inOrder(void (*visit)(const T*)) const {
     inOrderRec(root, visit);
 }
 
 template <class T>
-void Bst<T>::preOrderRec(Node<T>* node, void (*visit)(const T&)) const {
+void Bst<T>::preOrderRec(Node<T>* node, void (*visit)(const T*)) const {
     if (node != nullptr) {
-        visit(node->data);
+        visit(node->data);  // Pass pointer
         preOrderRec(node->left, visit);
         preOrderRec(node->right, visit);
     }
 }
 
 template <class T>
-void Bst<T>::preOrder(void (*visit)(const T&)) const {
+void Bst<T>::preOrder(void (*visit)(const T*)) const {
     preOrderRec(root, visit);
 }
 
 template <class T>
-void Bst<T>::postOrderRec(Node<T>* node, void (*visit)(const T&)) const {
+void Bst<T>::postOrderRec(Node<T>* node, void (*visit)(const T*)) const {
     if (node != nullptr) {
         postOrderRec(node->left, visit);
         postOrderRec(node->right, visit);
-        visit(node->data);
+        visit(node->data);  // Pass pointer
     }
 }
 
 template <class T>
-void Bst<T>::postOrder(void (*visit)(const T&)) const {
+void Bst<T>::postOrder(void (*visit)(const T*)) const {
     postOrderRec(root, visit);
 }
 
 // Traversal with context for data collection
 template <class T>
-void Bst<T>::inOrderRec(Node<T>* node, void (*visit)(const T&, void*), void* context) const {
+void Bst<T>::inOrderRec(Node<T>* node, void (*visit)(const T*, void*), void* context) const {
     if (node != nullptr) {
         inOrderRec(node->left, visit, context);
-        visit(node->data, context);
+        visit(node->data, context);  // Pass pointer
         inOrderRec(node->right, visit, context);
     }
 }
 
 template <class T>
-void Bst<T>::inOrder(void (*visit)(const T&, void*), void* context) const {
+void Bst<T>::inOrder(void (*visit)(const T*, void*), void* context) const {
     inOrderRec(root, visit, context);
 }
 
 // Simple traversals (backward compatibility)
 template <class T>
 void Bst<T>::inOrder() const {
-    inOrder([](const T& value) {
-        std::cout << value << " ";
+    inOrder([](const T* value) {
+        std::cout << *value << " ";
     });
 }
 
 template <class T>
 void Bst<T>::preOrder() const {
-    preOrder([](const T& value) {
-        std::cout << value << " ";
+    preOrder([](const T* value) {
+        std::cout << *value << " ";
     });
 }
 
 template <class T>
 void Bst<T>::postOrder() const {
-    postOrder([](const T& value) {
-        std::cout << value << " ";
+    postOrder([](const T* value) {
+        std::cout << *value << " ";
     });
 }
 
 template <class T>
-bool Bst<T>::checkInvariantRec(Node<T>* node, const T& min, const T& max) const {
+bool Bst<T>::checkInvariantRec(Node<T>* node, const T* min, const T* max) const {
     if (node == nullptr) return true;
 
-    if (!(node->data > min) || !(node->data < max)) {
+    if (!(*(node->data) > *min) || !(*(node->data) < *max)) {
         return false;
     }
 
@@ -245,9 +248,11 @@ bool Bst<T>::checkInvariantRec(Node<T>* node, const T& min, const T& max) const 
 
 template <class T>
 bool Bst<T>::checkInvariant() const {
-    T minVal = T();
-    T maxVal = T();
-    return checkInvariantRec(root, minVal, maxVal);
+    // For pointer version, we need valid min/max pointers
+    // This might need adjustment based on your specific type T
+    T defaultMin;
+    T defaultMax;
+    return checkInvariantRec(root, &defaultMin, &defaultMax);
 }
 
 template <class T>
