@@ -1,36 +1,87 @@
-.TH "Assignment2App" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "Assignment2App" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Assignment2App
+Assignment2App \- The main application class for Assignment 2, managing the user interface and data processing flow\&.  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <Assignment2App\&.h>\fP
 .SS "Public Member Functions"
 
 .in +1c
 .ti -1c
 .RI "\fBAssignment2App\fP ()"
 .br
+.RI "Constructor for the \fBAssignment2App\fP class\&. "
 .ti -1c
 .RI "void \fBrun\fP ()"
 .br
+.RI "Runs the main application loop\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 7 of file main\&.cpp\&.
+The main application class for Assignment 2, managing the user interface and data processing flow\&. 
+
+This class handles the main menu loop, user input, and delegates data-related tasks to the \fC\fBWeatherDataCollection\fP\fP object\&. It ensures data is loaded before analysis options are offered\&.
+.PP
+\fBAuthor\fP
+.RS 4
+[Your Name Here] 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+01 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+23/11/2025 Started
+.RE
+.PP
+\fBTodo\fP
+.RS 4
+Implement input validation for all user prompts (e\&.g\&., check for non-numeric input)\&. 
+.PP
+Separate the UI logic from the data processing logic further for better modularity\&. 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file Assignment2App\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "Assignment2App::Assignment2App ()\fC [inline]\fP"
+.SS "Assignment2App::Assignment2App ()"
 
 .PP
-Definition at line 14 of file main\&.cpp\&.
+Constructor for the \fBAssignment2App\fP class\&. Initializes the \fC\fBWeatherDataCollection\fP\fP object and sets the \fCdataLoaded\fP flag to false\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 23 of file Assignment2App\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "void Assignment2App::run ()\fC [inline]\fP"
+.SS "void Assignment2App::run ()"
 
 .PP
-Definition at line 16 of file main\&.cpp\&.
+Runs the main application loop\&. Displays the menu, takes user input, and processes the selected choice until the exit option (7) is chosen\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file Assignment2App\&.cpp\&.
 
 .SH "Author"
 .PP 

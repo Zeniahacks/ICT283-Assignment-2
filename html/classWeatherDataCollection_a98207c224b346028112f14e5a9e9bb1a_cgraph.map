@@ -1,0 +1,10 @@
+<map id="WeatherDataCollection::generateMonthlyStats" name="WeatherDataCollection::generateMonthlyStats">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,161,115"/>
+<area shape="rect" id="node2" href="$namespaceStatistics.html#a28c2da464cb0172858b0f0fd98502e23" title="Calculates the Mean Absolute Deviation (MAD) of a set of values." alt="" coords="217,5,375,32"/>
+<area shape="rect" id="node3" href="$namespaceStatistics.html#a340dd726c3840ecc737efcd201d52f20" title="Calculates the arithmetic mean (average) of a set of values." alt="" coords="431,56,595,83"/>
+<area shape="rect" id="node4" href="$namespaceStatistics.html#a73c38a7230ffe59562de5d1f2062d390" title="Calculates the Sample Standard Deviation of a set of values." alt="" coords="209,107,383,133"/>
+<area shape="rect" id="node5" href="$classWeatherDataCollection.html#a7509e18dd1bd7839cd442db739573c9d" title=" " alt="" coords="218,158,374,199"/>
+<area shape="rect" id="node6" href="$classMap.html#a12db9738ef141377c56c68bc17ab8537" title="Retrieves a pointer to the value associated with the specified key (mutable version)." alt="" coords="479,136,546,163"/>
+<area shape="rect" id="node7" href="$classWeatherDataCollection.html#ae8e7fd8fb3d9f6b3a57794cb70f55847" title=" " alt="" coords="437,187,589,229"/>
+<area shape="rect" id="node8" href="$classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="643,195,745,221"/>
+</map>

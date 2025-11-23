@@ -2,15 +2,20 @@
 \label{class_weather_data_collection}\index{WeatherDataCollection@{WeatherDataCollection}}
 
 
+Collection of weather data with B\+ST storage and month mapping.  
+
+
+
+
 {\ttfamily \#include $<$Weather\+Data.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}{Weather\+Data\+Collection}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}{$\sim$\+Weather\+Data\+Collection}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47}{add\+Weather\+Record}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&record)
 \item 
 void \mbox{\hyperlink{class_weather_data_collection_a208171f41a04ea93ec8b18780d765f39}{load\+From\+Files}} (const std\+::string \&data\+Source\+File)
@@ -30,15 +35,47 @@ void \mbox{\hyperlink{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a3
 void \mbox{\hyperlink{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a}{generate\+Monthly\+Stats}} (int year, const std\+::string \&filename) const
 \item 
 void \mbox{\hyperlink{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}{display\+All\+Data}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Displays all stored weather data records to the console in order. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}{get\+Total\+Records}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the total number of weather records stored in the collection. \end{DoxyCompactList}\item 
 std\+::vector$<$ int $>$ \mbox{\hyperlink{class_weather_data_collection_ae0b7490bc29c71ca76ae5da6726070a9}{get\+Available\+Years}} () const
-\end{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}{Weather\+Data\+Collection}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}{$\sim$\+Weather\+Data\+Collection}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_data_collection_a2120664be147f501882d294040600d7e}{Weather\+Data\+Collection}} (const \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor (Rule of Three). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} \& \mbox{\hyperlink{class_weather_data_collection_af55535ebe28fa2a58ef2c27a16e76345}{operator=}} (const \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator (Rule of Three). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_a3a0e258cf048023a308f2a096700432e}{add\+Weather\+Record}} (\mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$record)
+\begin{DoxyCompactList}\small\item\em Adds a single weather record to the collection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_a59d06eed3551fd09398d7d84461f54fd}{load\+From\+Files}} (std\+::string $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads weather data from a file specified by the filename. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_weather_data_collection_acb42b813d954d2651ba67b2b708d29e8}{get\+Data\+For\+Month}} (int $\ast$month) const
+\begin{DoxyCompactList}\small\item\em Retrieves a vector of pointers to all records for a given month, across all years. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_weather_data_collection_a6ca139a9e1e84b3cda31d467fcf718cc}{get\+Data\+For\+Year\+Month}} (int $\ast$year, int $\ast$month) const
+\begin{DoxyCompactList}\small\item\em Retrieves a vector of pointers to records for a specific year and month. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_weather_data_collection_aea0d9b28870084d3d68e2a77886d4286}{get\+Data\+For\+Specific\+Month\+Year}} (int $\ast$year, int $\ast$month) const
+\begin{DoxyCompactList}\small\item\em Retrieves a vector of pointers to records for a specific year and month (alternative function name). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_weather_data_collection_a1a2f70f1d907377486f7452fe39ef298}{calculate\+S\+P\+CC}} (int $\ast$year, int $\ast$month, std\+::string $\ast$type) const
+\begin{DoxyCompactList}\small\item\em Calculates the Sample Pearson Correlation Coefficient (S\+P\+CC) for data points of a specific year and month, based on the correlation type requested. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_a0eb44123ff66c78fdd732a5c1e24e127}{display\+Average\+Wind\+Speed}} (int $\ast$year, int $\ast$month) const
+\begin{DoxyCompactList}\small\item\em Displays the average wind speed and its standard deviation for a given year and month. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_ae866100b9fe76895fc4832a5146340a0}{display\+Monthly\+Temperatures}} (int $\ast$year) const
+\begin{DoxyCompactList}\small\item\em Displays the average and standard deviation of temperature for each month of a given year. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_a47d20575ab93fbac98b0e0045287c860}{generate\+Monthly\+Stats}} (int $\ast$year, std\+::string $\ast$filename) const
+\begin{DoxyCompactList}\small\item\em Generates and writes a comprehensive monthly statistics report to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}{display\+All\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Displays all weather data records stored in the collection (typically using an inorder traversal of the B\+ST). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}{get\+Total\+Records}} () const
+\begin{DoxyCompactList}\small\item\em Returns the total number of weather records stored in the collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Collection of weather data with B\+ST storage and month mapping. 
 
+This class manages weather data records, storing them in a Binary Search Tree (B\+ST) sorted by date, and additionally maintaining a map for quick access by month. It provides functionality for loading data, performing statistical calculations, and generating reports. 
 
 Definition at line 67 of file Weather\+Data.\+h.
 
@@ -48,9 +85,18 @@ Definition at line 67 of file Weather\+Data.\+h.
 \mbox{\Hypertarget{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}\label{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
 \index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{WeatherDataCollection()}{WeatherDataCollection()}}
+\doxysubsubsection{\texorpdfstring{WeatherDataCollection()}{WeatherDataCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Weather\+Data\+Collection\+::\+Weather\+Data\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Default constructor for \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}. 
+
+Initializes the Binary Search Tree (B\+ST) and the \mbox{\hyperlink{class_map}{Map}} used for monthly lookups.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Definition at line 33 of file Weather\+Data.\+cpp.
@@ -58,12 +104,72 @@ Definition at line 33 of file Weather\+Data.\+cpp.
 \mbox{\Hypertarget{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}\label{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!````~WeatherDataCollection@{$\sim$WeatherDataCollection}}
 \index{````~WeatherDataCollection@{$\sim$WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{$\sim$WeatherDataCollection()}{~WeatherDataCollection()}}
+\doxysubsubsection{\texorpdfstring{$\sim$WeatherDataCollection()}{~WeatherDataCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Weather\+Data\+Collection\+::$\sim$\+Weather\+Data\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
+Destructor for \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}. 
+
+Deletes the dynamically allocated B\+ST and \mbox{\hyperlink{class_map}{Map}} structures. The B\+ST is assumed to handle the deletion of the contained \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects and their associated \mbox{\hyperlink{class_date}{Date}} objects.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Definition at line 36 of file Weather\+Data.\+cpp.
+
+\mbox{\Hypertarget{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}\label{class_weather_data_collection_ac3202894d9362c8ae57d61ba1a1b683f}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{WeatherDataCollection()}{WeatherDataCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Weather\+Data\+Collection\+::\+Weather\+Data\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Initializes the internal B\+ST and \mbox{\hyperlink{class_map}{Map}} structures. \mbox{\Hypertarget{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}\label{class_weather_data_collection_a58b299aa1f7928d53e909e144d8d1b24}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!````~WeatherDataCollection@{$\sim$WeatherDataCollection}}
+\index{````~WeatherDataCollection@{$\sim$WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{$\sim$WeatherDataCollection()}{~WeatherDataCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Weather\+Data\+Collection\+::$\sim$\+Weather\+Data\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Cleans up and deletes dynamically allocated memory for the B\+ST and \mbox{\hyperlink{class_map}{Map}}. \mbox{\Hypertarget{class_weather_data_collection_a2120664be147f501882d294040600d7e}\label{class_weather_data_collection_a2120664be147f501882d294040600d7e}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\index{WeatherDataCollection@{WeatherDataCollection}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{WeatherDataCollection()}{WeatherDataCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Weather\+Data\+Collection\+::\+Weather\+Data\+Collection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor (Rule of Three). 
+
+Copy constructor for \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} object to copy from.\\
+\hline
+\end{DoxyParams}
+Performs a deep copy of the B\+ST and the monthly lookup \mbox{\hyperlink{class_map}{Map}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} object to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file Weather\+Data\+Collection.\+cpp.
 
 
 
@@ -71,7 +177,7 @@ Definition at line 36 of file Weather\+Data.\+cpp.
 \mbox{\Hypertarget{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47}\label{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!addWeatherRecord@{addWeatherRecord}}
 \index{addWeatherRecord@{addWeatherRecord}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{addWeatherRecord()}{addWeatherRecord()}}
+\doxysubsubsection{\texorpdfstring{addWeatherRecord()}{addWeatherRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Weather\+Data\+Collection\+::add\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{record }\end{DoxyParamCaption})}
 
 
@@ -79,17 +185,90 @@ Definition at line 36 of file Weather\+Data.\+cpp.
 Definition at line 39 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=318pt]{class_weather_data_collection_ae2c16b0fadf4b8edee794ab1bea87e47_cgraph}
-\end{center}
-\end{figure}
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_weather_data_collection_a3a0e258cf048023a308f2a096700432e}\label{class_weather_data_collection_a3a0e258cf048023a308f2a096700432e}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!addWeatherRecord@{addWeatherRecord}}
+\index{addWeatherRecord@{addWeatherRecord}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{addWeatherRecord()}{addWeatherRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::add\+Weather\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$}]{record }\end{DoxyParamCaption})}
+
+
+
+Adds a single weather record to the collection. 
+
+Adds a new \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to the collection.
+
+Inserts the record into the B\+ST and updates the data\+By\+Month map. 
+\begin{DoxyParams}{Parameters}
+{\em record} & A pointer to the \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to add.\\
+\hline
+\end{DoxyParams}
+Inserts the record into the B\+ST for ordered storage and also adds its pointer to the corresponding monthly vector in the \mbox{\hyperlink{class_map}{Map}} for fast lookup.
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & -\/ Pointer to the \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to be added. Ownership remains with this class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_weather_data_collection_a1a2f70f1d907377486f7452fe39ef298}\label{class_weather_data_collection_a1a2f70f1d907377486f7452fe39ef298}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!calculateSPCC@{calculateSPCC}}
+\index{calculateSPCC@{calculateSPCC}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{calculateSPCC()}{calculateSPCC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Weather\+Data\+Collection\+::calculate\+S\+P\+CC (\begin{DoxyParamCaption}\item[{int $\ast$}]{year,  }\item[{int $\ast$}]{month,  }\item[{std\+::string $\ast$}]{type }\end{DoxyParamCaption}) const}
+
+
+
+Calculates the Sample Pearson Correlation Coefficient (S\+P\+CC) for data points of a specific year and month, based on the correlation type requested. 
+
+Calculates the Sample Pearson Correlation Coefficient (S\+P\+CC) between two variables for a given month and year.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & A constant pointer to the integer representing the year (or sentinel for all years). \\
+\hline
+{\em month} & A constant pointer to the integer representing the month (1-\/12). \\
+\hline
+{\em type} & A constant pointer to the string indicating the correlation type (e.\+g., \char`\"{}\+S\+\_\+\+T\char`\"{}, \char`\"{}\+S\+\_\+\+R\char`\"{}, \char`\"{}\+T\+\_\+\+R\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The calculated S\+P\+CC value.
+\end{DoxyReturn}
+Supports calculation across all years for a given month if {\ttfamily year} is 0. The correlation type ({\ttfamily S\+\_\+T}, {\ttfamily S\+\_\+R}, {\ttfamily T\+\_\+R}) specifies the variables to compare.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ Pointer to the target year (0 for all years). \\
+\hline
+{\em month} & -\/ Pointer to the target month (1-\/12). \\
+\hline
+{\em type} & -\/ Pointer to the string defining the correlation type (\char`\"{}\+S\+\_\+\+T\char`\"{}, \char`\"{}\+S\+\_\+\+R\char`\"{}, \char`\"{}\+T\+\_\+\+R\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ The calculated S\+P\+CC value, or 0.\+0 if data is insufficient or input is invalid. 
+\end{DoxyReturn}
+
+
+Definition at line 346 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 3
 \mbox{\Hypertarget{class_weather_data_collection_adf00be9874637aa86f79d03f79e3591d}\label{class_weather_data_collection_adf00be9874637aa86f79d03f79e3591d}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!calculateSPCC@{calculateSPCC}}
 \index{calculateSPCC@{calculateSPCC}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{calculateSPCC()}{calculateSPCC()}}
+\doxysubsubsection{\texorpdfstring{calculateSPCC()}{calculateSPCC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily double Weather\+Data\+Collection\+::calculate\+S\+P\+CC (\begin{DoxyParamCaption}\item[{int}]{month,  }\item[{const std\+::string \&}]{correlation\+Type }\end{DoxyParamCaption}) const}
 
 
@@ -101,35 +280,79 @@ Calculation of S\+P\+CC.
 Definition at line 279 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_adf00be9874637aa86f79d03f79e3591d_cgraph}
-\end{center}
-\end{figure}
+% FIG 4
 \mbox{\Hypertarget{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}\label{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!displayAllData@{displayAllData}}
 \index{displayAllData@{displayAllData}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{displayAllData()}{displayAllData()}}
+\doxysubsubsection{\texorpdfstring{displayAllData()}{displayAllData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Displays all stored weather data records to the console in order. 
+
+Performs an in-\/order traversal on the B\+ST and prints each record.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Definition at line 461 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0_cgraph}
-\end{center}
-\end{figure}
+% FIG 5
+\mbox{\Hypertarget{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}\label{class_weather_data_collection_a317191b0b3a183ac9bc02e038b50d7d0}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!displayAllData@{displayAllData}}
+\index{displayAllData@{displayAllData}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{displayAllData()}{displayAllData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays all weather data records stored in the collection (typically using an inorder traversal of the B\+ST). 
+
+\mbox{\Hypertarget{class_weather_data_collection_a0eb44123ff66c78fdd732a5c1e24e127}\label{class_weather_data_collection_a0eb44123ff66c78fdd732a5c1e24e127}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!displayAverageWindSpeed@{displayAverageWindSpeed}}
+\index{displayAverageWindSpeed@{displayAverageWindSpeed}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{displayAverageWindSpeed()}{displayAverageWindSpeed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+Average\+Wind\+Speed (\begin{DoxyParamCaption}\item[{int $\ast$}]{year,  }\item[{int $\ast$}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Displays the average wind speed and its standard deviation for a given year and month. 
+
+Calculates and displays the average wind speed and standard deviation for a specific year and month.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & A constant pointer to the integer representing the year. \\
+\hline
+{\em month} & A constant pointer to the integer representing the month (1-\/12).\\
+\hline
+\end{DoxyParams}
+Retrieves the relevant data and uses the \mbox{\hyperlink{namespace_statistics}{Statistics}} module for calculation and console output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ Pointer to the target year. \\
+\hline
+{\em month} & -\/ Pointer to the target month (1-\/12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 409 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 6
 \mbox{\Hypertarget{class_weather_data_collection_aebed502136a6a926dffeaaab3df64fb8}\label{class_weather_data_collection_aebed502136a6a926dffeaaab3df64fb8}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!displayAverageWindSpeed@{displayAverageWindSpeed}}
 \index{displayAverageWindSpeed@{displayAverageWindSpeed}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{displayAverageWindSpeed()}{displayAverageWindSpeed()}}
+\doxysubsubsection{\texorpdfstring{displayAverageWindSpeed()}{displayAverageWindSpeed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+Average\+Wind\+Speed (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption}) const}
 
 
@@ -141,17 +364,44 @@ Menu Option 2\+: The average wind speed and sample standard deviation for this w
 Definition at line 192 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_aebed502136a6a926dffeaaab3df64fb8_cgraph}
-\end{center}
-\end{figure}
+% FIG 7
+\mbox{\Hypertarget{class_weather_data_collection_ae866100b9fe76895fc4832a5146340a0}\label{class_weather_data_collection_ae866100b9fe76895fc4832a5146340a0}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!displayMonthlyTemperatures@{displayMonthlyTemperatures}}
+\index{displayMonthlyTemperatures@{displayMonthlyTemperatures}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{displayMonthlyTemperatures()}{displayMonthlyTemperatures()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+Monthly\+Temperatures (\begin{DoxyParamCaption}\item[{int $\ast$}]{year }\end{DoxyParamCaption}) const}
+
+
+
+Displays the average and standard deviation of temperature for each month of a given year. 
+
+Displays the monthly temperature averages, standard deviations, and M\+A\+Ds for a specified year.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & A constant pointer to the integer representing the year.\\
+\hline
+\end{DoxyParams}
+Iterates through all 12 months, retrieves data, performs statistical calculations, and outputs the results.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ Pointer to the target year. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 440 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 8
 \mbox{\Hypertarget{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a395329}\label{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a395329}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!displayMonthlyTemperatures@{displayMonthlyTemperatures}}
 \index{displayMonthlyTemperatures@{displayMonthlyTemperatures}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{displayMonthlyTemperatures()}{displayMonthlyTemperatures()}}
+\doxysubsubsection{\texorpdfstring{displayMonthlyTemperatures()}{displayMonthlyTemperatures()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Weather\+Data\+Collection\+::display\+Monthly\+Temperatures (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption}) const}
 
 
@@ -163,17 +413,48 @@ Menu option 3\+: Average ambient air temperature and sample standard deviation f
 Definition at line 216 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_ac46cef0678cb228ee7d3563c4a395329_cgraph}
-\end{center}
-\end{figure}
+% FIG 9
+\mbox{\Hypertarget{class_weather_data_collection_a47d20575ab93fbac98b0e0045287c860}\label{class_weather_data_collection_a47d20575ab93fbac98b0e0045287c860}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!generateMonthlyStats@{generateMonthlyStats}}
+\index{generateMonthlyStats@{generateMonthlyStats}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{generateMonthlyStats()}{generateMonthlyStats()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::generate\+Monthly\+Stats (\begin{DoxyParamCaption}\item[{int $\ast$}]{year,  }\item[{std\+::string $\ast$}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Generates and writes a comprehensive monthly statistics report to a file. 
+
+Generates a C\+SV file containing monthly statistics for wind speed, temperature, and solar radiation for a specified year.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & A constant pointer to the integer representing the year. \\
+\hline
+{\em filename} & A constant pointer to the output filename string.\\
+\hline
+\end{DoxyParams}
+Calculates mean, standard deviation, and Mean Absolute Deviation (M\+AD) for wind and temperature, and total solar radiation for each month.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ Pointer to the target year. \\
+\hline
+{\em filename} & -\/ Pointer to the output filename (e.\+g., \char`\"{}\+Wind\+Temp\+Solar.\+csv\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 479 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 10
 \mbox{\Hypertarget{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a}\label{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!generateMonthlyStats@{generateMonthlyStats}}
 \index{generateMonthlyStats@{generateMonthlyStats}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{generateMonthlyStats()}{generateMonthlyStats()}}
+\doxysubsubsection{\texorpdfstring{generateMonthlyStats()}{generateMonthlyStats()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Weather\+Data\+Collection\+::generate\+Monthly\+Stats (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const}
 
 
@@ -181,23 +462,53 @@ Here is the call graph for this function\+:
 Definition at line 404 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_a98207c224b346028112f14e5a9e9bb1a_cgraph}
-\end{center}
-\end{figure}
+% FIG 11
 \mbox{\Hypertarget{class_weather_data_collection_ae0b7490bc29c71ca76ae5da6726070a9}\label{class_weather_data_collection_ae0b7490bc29c71ca76ae5da6726070a9}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!getAvailableYears@{getAvailableYears}}
 \index{getAvailableYears@{getAvailableYears}!WeatherDataCollection@{WeatherDataCollection}}
 \doxysubsubsection{\texorpdfstring{getAvailableYears()}{getAvailableYears()}}
 {\footnotesize\ttfamily std\+::vector$<$int$>$ Weather\+Data\+Collection\+::get\+Available\+Years (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\mbox{\Hypertarget{class_weather_data_collection_acb42b813d954d2651ba67b2b708d29e8}\label{class_weather_data_collection_acb42b813d954d2651ba67b2b708d29e8}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getDataForMonth@{getDataForMonth}}
+\index{getDataForMonth@{getDataForMonth}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getDataForMonth()}{getDataForMonth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$ $>$ $\ast$ Weather\+Data\+Collection\+::get\+Data\+For\+Month (\begin{DoxyParamCaption}\item[{int $\ast$}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a vector of pointers to all records for a given month, across all years. 
+
+Retrieves all weather records for a specific month across all years.
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & A constant pointer to the integer representing the month (1-\/12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Weather\+Record$\ast$$>$$\ast$ A pointer to the vector of records, or null if month is invalid/no data.
+\end{DoxyReturn}
+Performs a traversal of the B\+ST to collect all records matching the month, regardless of year. The year parameter in the internal context is set to 0 to indicate all years.
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & -\/ Pointer to the target month (1-\/12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Weather\+Record$\ast$$>$$\ast$ -\/ Pointer to a new vector containing deep copies of the records, or nullptr if month is invalid. Caller must delete the vector and its contents. 
+\end{DoxyReturn}
+
+
+Definition at line 295 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 12
 \mbox{\Hypertarget{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210}\label{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!getDataForMonth@{getDataForMonth}}
 \index{getDataForMonth@{getDataForMonth}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{getDataForMonth()}{getDataForMonth()}}
+\doxysubsubsection{\texorpdfstring{getDataForMonth()}{getDataForMonth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ Weather\+Data\+Collection\+::get\+Data\+For\+Month (\begin{DoxyParamCaption}\item[{int}]{month }\end{DoxyParamCaption}) const}
 
 
@@ -209,25 +520,58 @@ Get data for Month only.
 Definition at line 245 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=282pt]{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+% FIG 13
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=348pt]{class_weather_data_collection_a9f12fb0238999c6de5e8b28f2d75f210_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_weather_data_collection_aea0d9b28870084d3d68e2a77886d4286}\label{class_weather_data_collection_aea0d9b28870084d3d68e2a77886d4286}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getDataForSpecificMonthYear@{getDataForSpecificMonthYear}}
+\index{getDataForSpecificMonthYear@{getDataForSpecificMonthYear}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getDataForSpecificMonthYear()}{getDataForSpecificMonthYear()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$ $>$ $\ast$ Weather\+Data\+Collection\+::get\+Data\+For\+Specific\+Month\+Year (\begin{DoxyParamCaption}\item[{int $\ast$}]{year,  }\item[{int $\ast$}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a vector of pointers to records for a specific year and month (alternative function name). 
+
+Retrieves all weather records for a specific year and month.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & A constant pointer to the integer representing the year. \\
+\hline
+{\em month} & A constant pointer to the integer representing the month (1-\/12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Weather\+Record$\ast$$>$$\ast$ A pointer to the vector of records.
+\end{DoxyReturn}
+This helper is specifically designed to use the collect\+By\+Year\+Month traversal function. The returned vector contains {\itshape deep copies} of the records.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ Pointer to the target year. \\
+\hline
+{\em month} & -\/ Pointer to the target month (1-\/12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Weather\+Record$\ast$$>$$\ast$ -\/ Pointer to a new vector containing deep copies of the records, or nullptr if input is invalid. Caller must delete the vector and its contents. 
+\end{DoxyReturn}
+
+
+Definition at line 320 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 14
 \mbox{\Hypertarget{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3}\label{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!getDataForSpecificMonthYear@{getDataForSpecificMonthYear}}
 \index{getDataForSpecificMonthYear@{getDataForSpecificMonthYear}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{getDataForSpecificMonthYear()}{getDataForSpecificMonthYear()}}
+\doxysubsubsection{\texorpdfstring{getDataForSpecificMonthYear()}{getDataForSpecificMonthYear()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ Weather\+Data\+Collection\+::get\+Data\+For\+Specific\+Month\+Year (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption}) const}
 
 
@@ -235,25 +579,56 @@ Here is the caller graph for this function\+:
 Definition at line 323 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3_cgraph}
-\end{center}
-\end{figure}
+% FIG 15
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_a8242557f38750a366d640009c2d0d9b3_icgraph}
-\end{center}
-\end{figure}
+% FIG 16
+\mbox{\Hypertarget{class_weather_data_collection_a6ca139a9e1e84b3cda31d467fcf718cc}\label{class_weather_data_collection_a6ca139a9e1e84b3cda31d467fcf718cc}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getDataForYearMonth@{getDataForYearMonth}}
+\index{getDataForYearMonth@{getDataForYearMonth}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getDataForYearMonth()}{getDataForYearMonth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$ $>$ $\ast$ Weather\+Data\+Collection\+::get\+Data\+For\+Year\+Month (\begin{DoxyParamCaption}\item[{int $\ast$}]{year,  }\item[{int $\ast$}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a vector of pointers to records for a specific year and month. 
+
+Retrieves all weather records for a specific year and month.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & A constant pointer to the integer representing the year. \\
+\hline
+{\em month} & A constant pointer to the integer representing the month (1-\/12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Weather\+Record$\ast$$>$$\ast$ A pointer to the vector of records. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is typically implemented by iterating through the month data and filtering by year.
+\end{DoxyNote}
+Performs a traversal of the B\+ST to collect matching records. Note\+: The returned vector contains {\itshape deep copies} of the records to isolate them from the main collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & -\/ Pointer to the target year (e.\+g., 2010). \\
+\hline
+{\em month} & -\/ Pointer to the target month (1-\/12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Weather\+Record$\ast$$>$$\ast$ -\/ Pointer to a new vector containing deep copies of the records, or an empty vector if none are found. Caller must delete the vector and its contents. 
+\end{DoxyReturn}
+
+
+Definition at line 278 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 17
 \mbox{\Hypertarget{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d}\label{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!getDataForYearMonth@{getDataForYearMonth}}
 \index{getDataForYearMonth@{getDataForYearMonth}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{getDataForYearMonth()}{getDataForYearMonth()}}
+\doxysubsubsection{\texorpdfstring{getDataForYearMonth()}{getDataForYearMonth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ Weather\+Data\+Collection\+::get\+Data\+For\+Year\+Month (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption}) const}
 
 
@@ -261,60 +636,127 @@ Here is the caller graph for this function\+:
 Definition at line 304 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=284pt]{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d_cgraph}
-\end{center}
-\end{figure}
+% FIG 18
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_weather_data_collection_a7509e18dd1bd7839cd442db739573c9d_icgraph}
-\end{center}
-\end{figure}
+% FIG 19
 \mbox{\Hypertarget{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}\label{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!getTotalRecords@{getTotalRecords}}
 \index{getTotalRecords@{getTotalRecords}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{getTotalRecords()}{getTotalRecords()}}
+\doxysubsubsection{\texorpdfstring{getTotalRecords()}{getTotalRecords()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily int Weather\+Data\+Collection\+::get\+Total\+Records (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Returns the total number of weather records stored in the collection. 
+
+Calls the size() method of the internal B\+ST.
+
+\begin{DoxyReturn}{Returns}
+int -\/ The total number of records. 
+\end{DoxyReturn}
 
 
 Definition at line 469 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=288pt]{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631_cgraph}
-\end{center}
-\end{figure}
+% FIG 20
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=348pt]{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631_icgraph}
-\end{center}
-\end{figure}
+% FIG 21
+\mbox{\Hypertarget{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}\label{class_weather_data_collection_aacac7f424c8b3dc53de5ea8acbec9631}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!getTotalRecords@{getTotalRecords}}
+\index{getTotalRecords@{getTotalRecords}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{getTotalRecords()}{getTotalRecords()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Weather\+Data\+Collection\+::get\+Total\+Records (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the total number of weather records stored in the collection. 
+
+\begin{DoxyReturn}{Returns}
+int The count of records. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_weather_data_collection_a208171f41a04ea93ec8b18780d765f39}\label{class_weather_data_collection_a208171f41a04ea93ec8b18780d765f39}} 
 \index{WeatherDataCollection@{WeatherDataCollection}!loadFromFiles@{loadFromFiles}}
 \index{loadFromFiles@{loadFromFiles}!WeatherDataCollection@{WeatherDataCollection}}
-\doxysubsubsection{\texorpdfstring{loadFromFiles()}{loadFromFiles()}}
+\doxysubsubsection{\texorpdfstring{loadFromFiles()}{loadFromFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Weather\+Data\+Collection\+::load\+From\+Files (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+Source\+File }\end{DoxyParamCaption})}
 
 
 
 Definition at line 63 of file Weather\+Data.\+cpp.
 
+\mbox{\Hypertarget{class_weather_data_collection_a59d06eed3551fd09398d7d84461f54fd}\label{class_weather_data_collection_a59d06eed3551fd09398d7d84461f54fd}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!loadFromFiles@{loadFromFiles}}
+\index{loadFromFiles@{loadFromFiles}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{loadFromFiles()}{loadFromFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Weather\+Data\+Collection\+::load\+From\+Files (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads weather data from a file specified by the filename. 
+
+Loads weather data from a list of C\+SV files.
+
+Reads, parses, and adds each record to the collection. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & A constant pointer to the string containing the path to the data file.\\
+\hline
+\end{DoxyParams}
+Reads filenames from the provided list file, then parses each C\+SV, creates \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects, and adds them to the collection. Records are shuffled before final insertion into the B\+ST for balance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ Pointer to the string containing the name of the file listing the C\+S\+Vs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file Weather\+Data\+Collection.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 22
+\mbox{\Hypertarget{class_weather_data_collection_af55535ebe28fa2a58ef2c27a16e76345}\label{class_weather_data_collection_af55535ebe28fa2a58ef2c27a16e76345}} 
+\index{WeatherDataCollection@{WeatherDataCollection}!operator=@{operator=}}
+\index{operator=@{operator=}!WeatherDataCollection@{WeatherDataCollection}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} \& Weather\+Data\+Collection\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator (Rule of Three). 
+
+Assignment operator for \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} object to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}\& A reference to the current object.
+\end{DoxyReturn}
+Cleans up existing resources and performs a deep copy assignment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The \mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}} object to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_weather_data_collection}{Weather\+Data\+Collection}}\& -\/ Reference to the updated object. 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file Weather\+Data\+Collection.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{_weather_data_8h}{Weather\+Data.\+h}}\item 
-\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_weather_data_collection_8h}{Weather\+Data\+Collection.\+h}}\item 
+\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\item 
+\mbox{\hyperlink{_weather_data_collection_8cpp}{Weather\+Data\+Collection.\+cpp}}\end{DoxyCompactItemize}

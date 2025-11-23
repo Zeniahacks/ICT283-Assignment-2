@@ -1,0 +1,6 @@
+<map id="WeatherDataCollection::getDataForYearMonth" name="WeatherDataCollection::getDataForYearMonth">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,161,69"/>
+<area shape="rect" id="node2" href="$classMap.html#a12db9738ef141377c56c68bc17ab8537" title="Retrieves a pointer to the value associated with the specified key (mutable version)." alt="" coords="252,5,319,32"/>
+<area shape="rect" id="node3" href="$classWeatherDataCollection.html#ae8e7fd8fb3d9f6b3a57794cb70f55847" title=" " alt="" coords="209,57,361,98"/>
+<area shape="rect" id="node4" href="$classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="409,64,512,91"/>
+</map>

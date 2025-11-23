@@ -1,11 +1,14 @@
-.TH "CollectionContext" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "CollectionContext" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-CollectionContext
+CollectionContext \- Context structure used during BST traversals to filter and collect records\&.  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <WeatherRecord\&.h>\fP
 .SS "Public Attributes"
 
 .in +1c
@@ -15,12 +18,31 @@ CollectionContext
 .ti -1c
 .RI "int \fBtargetMonth\fP"
 .br
+.RI "The target month (1-12) used for filtering\&. "
+.ti -1c
+.RI "std::vector< \fBWeatherRecord\fP * > * \fBrecords\fP"
+.br
+.RI "Pointer to the vector where collected \fBWeatherRecord\fP pointers are stored\&. "
+.ti -1c
+.RI "int \fBtargetYear\fP"
+.br
+.RI "The target year used for filtering\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
+Context structure used during BST traversals to filter and collect records\&. 
+
+This structure holds a pointer to a result vector and optional filtering criteria (target month and year)\&. 
+.PP
 Definition at line 266 of file WeatherData\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
+.SS "std::vector<\fBWeatherRecord\fP*>* CollectionContext::records"
+
+.PP
+Pointer to the vector where collected \fBWeatherRecord\fP pointers are stored\&. 
+.PP
+Definition at line 114 of file WeatherRecord\&.h\&.
 .SS "std::vector<\fBWeatherRecord\fP>* CollectionContext::records"
 
 .PP
@@ -28,7 +50,15 @@ Definition at line 267 of file WeatherData\&.cpp\&.
 .SS "int CollectionContext::targetMonth"
 
 .PP
+The target month (1-12) used for filtering\&. 
+.PP
 Definition at line 268 of file WeatherData\&.cpp\&.
+.SS "int CollectionContext::targetYear"
+
+.PP
+The target year used for filtering\&. 
+.PP
+Definition at line 124 of file WeatherRecord\&.h\&.
 
 .SH "Author"
 .PP 

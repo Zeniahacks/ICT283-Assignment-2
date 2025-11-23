@@ -1,0 +1,4 @@
+<map id="Bst::copyTreeRec" name="Bst::copyTreeRec">
+<area shape="rect" id="node1" title="Recursively creates a deep copy of the tree structure." alt="" coords="195,13,317,39"/>
+<area shape="rect" id="node2" href="$classBst.html#a88ee5a0d32c474cf021cd081131b64fc" title="Copy constructor. Performs a deep copy of the tree structure." alt="" coords="5,5,147,47"/>
+</map>

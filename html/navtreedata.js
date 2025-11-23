@@ -22,7 +22,9 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "DoxyExample", "index.html", [
+    [ "Todo List", "todo.html", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -44,8 +46,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ]
+        [ "Functions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -53,7 +54,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_bst_8h.html"
+"Assignment2App_8cpp.html",
+"structCollectionContext.html#ab52a39baa4b36964bcc7f8f065884a83"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

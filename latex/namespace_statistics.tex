@@ -1,8 +1,21 @@
 \hypertarget{namespace_statistics}{}\doxysection{Statistics Namespace Reference}
 \label{namespace_statistics}\index{Statistics@{Statistics}}
+
+
+Namespace for statistical calculations using pointer-\/based vectors.  
+
+
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+double \mbox{\hyperlink{namespace_statistics_a340dd726c3840ecc737efcd201d52f20}{calculate\+Mean}} (const std\+::vector$<$ double $>$ $\ast$values)
+\begin{DoxyCompactList}\small\item\em Calculates the arithmetic mean (average) of a set of values. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_statistics_a73c38a7230ffe59562de5d1f2062d390}{calculate\+Std\+Dev}} (const std\+::vector$<$ double $>$ $\ast$values)
+\begin{DoxyCompactList}\small\item\em Calculates the Sample Standard Deviation of a set of values. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_statistics_a28c2da464cb0172858b0f0fd98502e23}{calculate\+M\+AD}} (const std\+::vector$<$ double $>$ $\ast$values)
+\begin{DoxyCompactList}\small\item\em Calculates the Mean Absolute Deviation (M\+AD) of a set of values. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_statistics_a7d95b59b1f89f4df9d957c6ebf0acc74}{calculate\+S\+P\+CC}} (const std\+::vector$<$ double $>$ $\ast$x, const std\+::vector$<$ double $>$ $\ast$y)
+\begin{DoxyCompactList}\small\item\em Calculates the Sample Pearson Correlation Coefficient (S\+P\+CC) between two datasets. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{namespace_statistics_a27742824c580d8e4c2e70ffdf3c8a4fa}{calculate\+Mean}} (const std\+::vector$<$ double $>$ \&values)
 \item 
 double \mbox{\hyperlink{namespace_statistics_ac2a30272cbc2248b0c94b1921acd9f34}{calculate\+Std\+Dev}} (const std\+::vector$<$ double $>$ \&values)
@@ -13,11 +26,16 @@ double \mbox{\hyperlink{namespace_statistics_aa4976da3f8f935e7c33ffc1ce2016db8}{
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Namespace for statistical calculations using pointer-\/based vectors. 
+
+This namespace provides several static functions for common statistical calculations, specifically designed to accept constant pointers to standard C++ vectors of doubles. 
+
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{namespace_statistics_a707ebc094c5689786f4de672932eea01}\label{namespace_statistics_a707ebc094c5689786f4de672932eea01}} 
 \index{Statistics@{Statistics}!calculateMAD@{calculateMAD}}
 \index{calculateMAD@{calculateMAD}!Statistics@{Statistics}}
-\doxysubsubsection{\texorpdfstring{calculateMAD()}{calculateMAD()}}
+\doxysubsubsection{\texorpdfstring{calculateMAD()}{calculateMAD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily double Statistics\+::calculate\+M\+AD (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
 
 
@@ -25,61 +43,139 @@ double \mbox{\hyperlink{namespace_statistics_aa4976da3f8f935e7c33ffc1ce2016db8}{
 Definition at line 359 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_statistics_a707ebc094c5689786f4de672932eea01_cgraph}
-\end{center}
-\end{figure}
+% FIG 0
+\mbox{\Hypertarget{namespace_statistics_a28c2da464cb0172858b0f0fd98502e23}\label{namespace_statistics_a28c2da464cb0172858b0f0fd98502e23}} 
+\index{Statistics@{Statistics}!calculateMAD@{calculateMAD}}
+\index{calculateMAD@{calculateMAD}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{calculateMAD()}{calculateMAD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Statistics\+::calculate\+M\+AD (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ $\ast$}]{values }\end{DoxyParamCaption})}
+
+
+
+Calculates the Mean Absolute Deviation (M\+AD) of a set of values. 
+
+Calculates the Median Absolute Deviation (M\+AD) of a set of values.
+
+The average of the absolute differences between each value and the mean.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & -\/ Pointer to the vector of double values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ The calculated M\+AD, or 0.\+0 if the vector is empty.
+\end{DoxyReturn}
+Note\+: The actual median calculation must be handled within the implementation. 
+\begin{DoxyParams}{Parameters}
+{\em values} & A constant pointer to the vector of double values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The calculated Median Absolute Deviation. 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file Statistics.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 1
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_statistics_a707ebc094c5689786f4de672932eea01_icgraph}
-\end{center}
-\end{figure}
+% FIG 2
 \mbox{\Hypertarget{namespace_statistics_a27742824c580d8e4c2e70ffdf3c8a4fa}\label{namespace_statistics_a27742824c580d8e4c2e70ffdf3c8a4fa}} 
 \index{Statistics@{Statistics}!calculateMean@{calculateMean}}
 \index{calculateMean@{calculateMean}!Statistics@{Statistics}}
-\doxysubsubsection{\texorpdfstring{calculateMean()}{calculateMean()}}
+\doxysubsubsection{\texorpdfstring{calculateMean()}{calculateMean()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily double Statistics\+::calculate\+Mean (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
 
 
 
 Definition at line 331 of file Weather\+Data.\+cpp.
 
+\mbox{\Hypertarget{namespace_statistics_a340dd726c3840ecc737efcd201d52f20}\label{namespace_statistics_a340dd726c3840ecc737efcd201d52f20}} 
+\index{Statistics@{Statistics}!calculateMean@{calculateMean}}
+\index{calculateMean@{calculateMean}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{calculateMean()}{calculateMean()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Statistics\+::calculate\+Mean (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ $\ast$}]{values }\end{DoxyParamCaption})}
+
+
+
+Calculates the arithmetic mean (average) of a set of values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & -\/ Pointer to the vector of double values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ The calculated mean, or 0.\+0 if the vector is empty.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em values} & A constant pointer to the vector of double values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The calculated mean. Returns 0.\+0 if the vector is empty. 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file Statistics.\+cpp.
+
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_statistics_a27742824c580d8e4c2e70ffdf3c8a4fa_icgraph}
-\end{center}
-\end{figure}
+% FIG 3
 \mbox{\Hypertarget{namespace_statistics_aa4976da3f8f935e7c33ffc1ce2016db8}\label{namespace_statistics_aa4976da3f8f935e7c33ffc1ce2016db8}} 
 \index{Statistics@{Statistics}!calculateSPCC@{calculateSPCC}}
 \index{calculateSPCC@{calculateSPCC}!Statistics@{Statistics}}
-\doxysubsubsection{\texorpdfstring{calculateSPCC()}{calculateSPCC()}}
+\doxysubsubsection{\texorpdfstring{calculateSPCC()}{calculateSPCC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily double Statistics\+::calculate\+S\+P\+CC (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y }\end{DoxyParamCaption})}
 
 
 
 Definition at line 374 of file Weather\+Data.\+cpp.
 
+\mbox{\Hypertarget{namespace_statistics_a7d95b59b1f89f4df9d957c6ebf0acc74}\label{namespace_statistics_a7d95b59b1f89f4df9d957c6ebf0acc74}} 
+\index{Statistics@{Statistics}!calculateSPCC@{calculateSPCC}}
+\index{calculateSPCC@{calculateSPCC}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{calculateSPCC()}{calculateSPCC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Statistics\+::calculate\+S\+P\+CC (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ $\ast$}]{x,  }\item[{const std\+::vector$<$ double $>$ $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Calculates the Sample Pearson Correlation Coefficient (S\+P\+CC) between two datasets. 
+
+Calculates the Sample Pearson Correlation Coefficient (S\+P\+CC) between two data sets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ Pointer to the first vector (independent variable). \\
+\hline
+{\em y} & -\/ Pointer to the second vector (dependent variable). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ The calculated S\+P\+CC (range \mbox{[}-\/1, 1\mbox{]}), or 0.\+0 if datasets are too small or unequal size.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & A constant pointer to the vector of double values for the X variable. \\
+\hline
+{\em y} & A constant pointer to the vector of double values for the Y variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The calculated S\+P\+CC. Returns 0.\+0 if the vectors are not the same size or size $<$ 2. 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Statistics.\+cpp.
+
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_statistics_aa4976da3f8f935e7c33ffc1ce2016db8_icgraph}
-\end{center}
-\end{figure}
+% FIG 4
 \mbox{\Hypertarget{namespace_statistics_ac2a30272cbc2248b0c94b1921acd9f34}\label{namespace_statistics_ac2a30272cbc2248b0c94b1921acd9f34}} 
 \index{Statistics@{Statistics}!calculateStdDev@{calculateStdDev}}
 \index{calculateStdDev@{calculateStdDev}!Statistics@{Statistics}}
-\doxysubsubsection{\texorpdfstring{calculateStdDev()}{calculateStdDev()}}
+\doxysubsubsection{\texorpdfstring{calculateStdDev()}{calculateStdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily double Statistics\+::calculate\+Std\+Dev (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
 
 
@@ -87,18 +183,42 @@ Here is the caller graph for this function\+:
 Definition at line 344 of file Weather\+Data.\+cpp.
 
 Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_statistics_ac2a30272cbc2248b0c94b1921acd9f34_cgraph}
-\end{center}
-\end{figure}
+% FIG 5
+\mbox{\Hypertarget{namespace_statistics_a73c38a7230ffe59562de5d1f2062d390}\label{namespace_statistics_a73c38a7230ffe59562de5d1f2062d390}} 
+\index{Statistics@{Statistics}!calculateStdDev@{calculateStdDev}}
+\index{calculateStdDev@{calculateStdDev}!Statistics@{Statistics}}
+\doxysubsubsection{\texorpdfstring{calculateStdDev()}{calculateStdDev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Statistics\+::calculate\+Std\+Dev (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ $\ast$}]{values }\end{DoxyParamCaption})}
+
+
+
+Calculates the Sample Standard Deviation of a set of values. 
+
+Calculates the sample standard deviation of a set of values.
+
+Uses the N-\/1 method (Bessel\textquotesingle{}s correction).
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & -\/ Pointer to the vector of double values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ The calculated standard deviation, or 0.\+0 if there is less than two values.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em values} & A constant pointer to the vector of double values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The calculated standard deviation. Returns 0.\+0 if size $<$ 2. 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Statistics.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 6
 Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_statistics_ac2a30272cbc2248b0c94b1921acd9f34_icgraph}
-\end{center}
-\end{figure}
+% FIG 7

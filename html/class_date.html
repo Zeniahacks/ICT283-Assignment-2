@@ -90,56 +90,79 @@ $(document).ready(function(){initNavTree('class_date.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a specific point in time (day, month, year, hour, minute).  
+ <a href="class_date.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_date_8h_source.html">Date.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e59ed4ba66eec61c27460c5d09fa1bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a4e59ed4ba66eec61c27460c5d09fa1bd">Date</a> ()</td></tr>
+<tr class="memdesc:a4e59ed4ba66eec61c27460c5d09fa1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes date/time members to default values (e.g., 0).  <a href="class_date.html#a4e59ed4ba66eec61c27460c5d09fa1bd">More...</a><br /></td></tr>
 <tr class="separator:a4e59ed4ba66eec61c27460c5d09fa1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1d154b0e6f67e1dacfa563c9d4ed46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a3b1d154b0e6f67e1dacfa563c9d4ed46">Date</a> (int d, int m, int y)</td></tr>
-<tr class="separator:a3b1d154b0e6f67e1dacfa563c9d4ed46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe000c3150ca5122ed773aac2ce7d180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#abe000c3150ca5122ed773aac2ce7d180">Date</a> (int d, int m, int y, int h=0, int min=0)</td></tr>
+<tr class="memdesc:abe000c3150ca5122ed773aac2ce7d180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor.  <a href="class_date.html#abe000c3150ca5122ed773aac2ce7d180">More...</a><br /></td></tr>
+<tr class="separator:abe000c3150ca5122ed773aac2ce7d180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6304a67f1c13b239eb8e80ad68161e40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a6304a67f1c13b239eb8e80ad68161e40">GetDay</a> () const</td></tr>
+<tr class="memdesc:a6304a67f1c13b239eb8e80ad68161e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the day component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#a6304a67f1c13b239eb8e80ad68161e40">More...</a><br /></td></tr>
 <tr class="separator:a6304a67f1c13b239eb8e80ad68161e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2dcc6ce51dbb2bd798499a149bdffb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7">GetMonth</a> () const</td></tr>
+<tr class="memdesc:af2dcc6ce51dbb2bd798499a149bdffb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the month component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7">More...</a><br /></td></tr>
 <tr class="separator:af2dcc6ce51dbb2bd798499a149bdffb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79ce504482f317ddcfdc4ecad77671f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f">GetYear</a> () const</td></tr>
+<tr class="memdesc:ad79ce504482f317ddcfdc4ecad77671f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the year component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f">More...</a><br /></td></tr>
 <tr class="separator:ad79ce504482f317ddcfdc4ecad77671f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09be4d1341cffa49a5dafdb1c783a45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ae09be4d1341cffa49a5dafdb1c783a45">GetHour</a> () const</td></tr>
+<tr class="memdesc:ae09be4d1341cffa49a5dafdb1c783a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the hour component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#ae09be4d1341cffa49a5dafdb1c783a45">More...</a><br /></td></tr>
+<tr class="separator:ae09be4d1341cffa49a5dafdb1c783a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a698483d129b63fe36c04d3cbeb4d3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a6a698483d129b63fe36c04d3cbeb4d3f">GetMinute</a> () const</td></tr>
+<tr class="memdesc:a6a698483d129b63fe36c04d3cbeb4d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the minute component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#a6a698483d129b63fe36c04d3cbeb4d3f">More...</a><br /></td></tr>
+<tr class="separator:a6a698483d129b63fe36c04d3cbeb4d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2d0573c89abb758c92b429874ad9ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ab2d0573c89abb758c92b429874ad9ae2">SetDay</a> (int d)</td></tr>
+<tr class="memdesc:ab2d0573c89abb758c92b429874ad9ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the day component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#ab2d0573c89abb758c92b429874ad9ae2">More...</a><br /></td></tr>
 <tr class="separator:ab2d0573c89abb758c92b429874ad9ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae47ff4dbe38076b995703ecb4aa5c602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602">SetMonth</a> (int m)</td></tr>
+<tr class="memdesc:ae47ff4dbe38076b995703ecb4aa5c602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the month component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602">More...</a><br /></td></tr>
 <tr class="separator:ae47ff4dbe38076b995703ecb4aa5c602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae77d46d475c904d1fabcb91933034514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ae77d46d475c904d1fabcb91933034514">SetYear</a> (int y)</td></tr>
+<tr class="memdesc:ae77d46d475c904d1fabcb91933034514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the year component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#ae77d46d475c904d1fabcb91933034514">More...</a><br /></td></tr>
 <tr class="separator:ae77d46d475c904d1fabcb91933034514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceba42d25cb6a888cea3428f80d50359"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#aceba42d25cb6a888cea3428f80d50359">toString</a> () const</td></tr>
-<tr class="separator:aceba42d25cb6a888cea3428f80d50359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56469dbfb6a0c32326330796cb316881"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a56469dbfb6a0c32326330796cb316881">operator&lt;</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="separator:a56469dbfb6a0c32326330796cb316881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2943ef426612046e084e2d885c5fed4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ab2943ef426612046e084e2d885c5fed4">operator&gt;</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="separator:ab2943ef426612046e084e2d885c5fed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b103cc8257d3055aedb519fff343503"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a3b103cc8257d3055aedb519fff343503">operator==</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="separator:a3b103cc8257d3055aedb519fff343503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af47f5313d22ea8a75eb9270d433abd6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#af47f5313d22ea8a75eb9270d433abd6b">operator!=</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="separator:af47f5313d22ea8a75eb9270d433abd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02041d9356b6222f6502cfcf1685456a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a02041d9356b6222f6502cfcf1685456a">SetHour</a> (int h)</td></tr>
+<tr class="memdesc:a02041d9356b6222f6502cfcf1685456a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the hour component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#a02041d9356b6222f6502cfcf1685456a">More...</a><br /></td></tr>
+<tr class="separator:a02041d9356b6222f6502cfcf1685456a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d90f6b34c9ad926d1983e1ec0f55c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a9d90f6b34c9ad926d1983e1ec0f55c3e">SetMinute</a> (int min)</td></tr>
+<tr class="memdesc:a9d90f6b34c9ad926d1983e1ec0f55c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the minute component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object.  <a href="class_date.html#a9d90f6b34c9ad926d1983e1ec0f55c3e">More...</a><br /></td></tr>
+<tr class="separator:a9d90f6b34c9ad926d1983e1ec0f55c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba466aa1afde28225f87cddea7097c8d"><td class="memItemLeft" align="right" valign="top">std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#aba466aa1afde28225f87cddea7097c8d">toString</a> () const</td></tr>
+<tr class="memdesc:aba466aa1afde28225f87cddea7097c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object into a dynamically allocated string representation.  <a href="class_date.html#aba466aa1afde28225f87cddea7097c8d">More...</a><br /></td></tr>
+<tr class="separator:aba466aa1afde28225f87cddea7097c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28dbe7c4e1abc94a5f7bc635a7771f32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a28dbe7c4e1abc94a5f7bc635a7771f32">operator&lt;</a> (const <a class="el" href="class_date.html">Date</a> *other) const</td></tr>
+<tr class="memdesc:a28dbe7c4e1abc94a5f7bc635a7771f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator to check if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is chronologically less than another.  <a href="class_date.html#a28dbe7c4e1abc94a5f7bc635a7771f32">More...</a><br /></td></tr>
+<tr class="separator:a28dbe7c4e1abc94a5f7bc635a7771f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d482a9c65cda3a7f82488577c91053"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a31d482a9c65cda3a7f82488577c91053">operator&gt;</a> (const <a class="el" href="class_date.html">Date</a> *other) const</td></tr>
+<tr class="memdesc:a31d482a9c65cda3a7f82488577c91053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator to check if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is chronologically greater than another.  <a href="class_date.html#a31d482a9c65cda3a7f82488577c91053">More...</a><br /></td></tr>
+<tr class="separator:a31d482a9c65cda3a7f82488577c91053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd818b41d073df16cf32615713438cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a5cd818b41d073df16cf32615713438cc">operator==</a> (const <a class="el" href="class_date.html">Date</a> *other) const</td></tr>
+<tr class="memdesc:a5cd818b41d073df16cf32615713438cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator to check if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is chronologically equal to another.  <a href="class_date.html#a5cd818b41d073df16cf32615713438cc">More...</a><br /></td></tr>
+<tr class="separator:a5cd818b41d073df16cf32615713438cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a1862604492a841a6b98e1a3061d95b96"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a1862604492a841a6b98e1a3061d95b96">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_date.html">Date</a> &amp;date)</td></tr>
-<tr class="separator:a1862604492a841a6b98e1a3061d95b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38747168f2005159180860e5509b26e"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ad38747168f2005159180860e5509b26e">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="class_date.html">Date</a> &amp;date)</td></tr>
-<tr class="separator:ad38747168f2005159180860e5509b26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ebc8d5a8f4830186d9a628b71ade16"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ae6ebc8d5a8f4830186d9a628b71ade16">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_date.html">Date</a> *date)</td></tr>
+<tr class="memdesc:ae6ebc8d5a8f4830186d9a628b71ade16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Friend function for output stream operator overload.  <a href="class_date.html#ae6ebc8d5a8f4830186d9a628b71ade16">More...</a><br /></td></tr>
+<tr class="separator:ae6ebc8d5a8f4830186d9a628b71ade16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00007">7</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<div class="textblock"><p>Represents a specific point in time (day, month, year, hour, minute). </p>
+<p>This class stores date and time components and provides utility methods for access, modification, string conversion, and comparison, specifically designed to work with pointer comparisons needed by the <a class="el" href="class_bst.html" title="Template Binary Search Tree with function pointers for traversal.">Bst</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00015">15</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4e59ed4ba66eec61c27460c5d09fa1bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e59ed4ba66eec61c27460c5d09fa1bd">&#9670;&nbsp;</a></span>Date() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Date::Date </td>
@@ -148,25 +171,22 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00043">43</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Default constructor. Initializes date/time members to default values (e.g., 0). </p>
+<p>Default constructor.</p>
+<p>Initializes date to 1/1/2000 at 00:00.</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00016">16</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a3b1d154b0e6f67e1dacfa563c9d4ed46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b1d154b0e6f67e1dacfa563c9d4ed46">&#9670;&nbsp;</a></span>Date() <span class="overload">[2/2]</span></h2>
+<a id="abe000c3150ca5122ed773aac2ce7d180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe000c3150ca5122ed773aac2ce7d180">&#9670;&nbsp;</a></span>Date() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Date::Date </td>
@@ -184,7 +204,19 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -192,14 +224,27 @@ Friends</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00045">45</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Parameterized constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>The day. </td></tr>
+    <tr><td class="paramname">m</td><td>The month. </td></tr>
+    <tr><td class="paramname">y</td><td>The year. </td></tr>
+    <tr><td class="paramname">h</td><td>The hour (default is 0). </td></tr>
+    <tr><td class="paramname">min</td><td>The minute (default is 0).</td></tr>
+    <tr><td class="paramname">d</td><td>- The day (1-31). </td></tr>
+    <tr><td class="paramname">m</td><td>- The month (1-12). </td></tr>
+    <tr><td class="paramname">y</td><td>- The year. </td></tr>
+    <tr><td class="paramname">h</td><td>- The hour (0-23). </td></tr>
+    <tr><td class="paramname">min</td><td>- The minute (0-59). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00028">28</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,9 +254,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Date::GetDay </td>
@@ -220,19 +262,20 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00047">47</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Gets the day component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<p>Retrieves the day component.</p>
+<dl class="section return"><dt>Returns</dt><dd>int The day.</dd>
+<dd>
+int - The day (1-31). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00035">35</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af2dcc6ce51dbb2bd798499a149bdffb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2dcc6ce51dbb2bd798499a149bdffb7">&#9670;&nbsp;</a></span>GetMonth()</h2>
+<a id="ae09be4d1341cffa49a5dafdb1c783a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09be4d1341cffa49a5dafdb1c783a45">&#9670;&nbsp;</a></span>GetHour()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +284,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Date::GetMonth </td>
+          <td class="memname">int Date::GetHour </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -254,16 +297,70 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00049">49</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Gets the hour component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>int The hour. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00061">61</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+
+</div>
+</div>
+<a id="a6a698483d129b63fe36c04d3cbeb4d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a698483d129b63fe36c04d3cbeb4d3f">&#9670;&nbsp;</a></span>GetMinute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Date::GetMinute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the minute component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>int The minute. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00067">67</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+
+</div>
+</div>
+<a id="af2dcc6ce51dbb2bd798499a149bdffb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2dcc6ce51dbb2bd798499a149bdffb7">&#9670;&nbsp;</a></span>GetMonth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Date::GetMonth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the month component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<p>Retrieves the month component.</p>
+<dl class="section return"><dt>Returns</dt><dd>int The month.</dd>
+<dd>
+int - The month (1-12). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00042">42</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_date_af2dcc6ce51dbb2bd798499a149bdffb7_icgraph.png" border="0" usemap="#class_date_af2dcc6ce51dbb2bd798499a149bdffb7_icgraph" alt=""/></div>
-<map name="class_date_af2dcc6ce51dbb2bd798499a149bdffb7_icgraph" id="class_date_af2dcc6ce51dbb2bd798499a149bdffb7_icgraph">
-<area shape="rect" title=" " alt="" coords="208,42,323,69"/>
-<area shape="rect" href="class_weather_data_collection.html#ae2c16b0fadf4b8edee794ab1bea87e47" title=" " alt="" coords="5,5,160,47"/>
-<area shape="rect" href="_weather_data_8h.html#aa757d30bfccdbec1174036ccf7edcc8f" title=" " alt="" coords="27,71,139,98"/>
-</map>
+<!-- MAP 0 -->
 </div>
 
 </div>
@@ -273,9 +370,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Date::GetYear </td>
@@ -284,126 +378,133 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00051">51</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Gets the year component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<p>Retrieves the year component.</p>
+<dl class="section return"><dt>Returns</dt><dd>int The year.</dd>
+<dd>
+int - The year. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00049">49</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_date_ad79ce504482f317ddcfdc4ecad77671f_icgraph.png" border="0" usemap="#class_date_ad79ce504482f317ddcfdc4ecad77671f_icgraph" alt=""/></div>
+<!-- MAP 1 -->
+</div>
 
 </div>
 </div>
-<a id="af47f5313d22ea8a75eb9270d433abd6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af47f5313d22ea8a75eb9270d433abd6b">&#9670;&nbsp;</a></span>operator!=()</h2>
+<a id="a28dbe7c4e1abc94a5f7bc635a7771f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28dbe7c4e1abc94a5f7bc635a7771f32">&#9670;&nbsp;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Date::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00077">77</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
-
-</div>
-</div>
-<a id="a56469dbfb6a0c32326330796cb316881"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56469dbfb6a0c32326330796cb316881">&#9670;&nbsp;</a></span>operator&lt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00063">63</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Comparison operator to check if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is chronologically less than another. </p>
+<p>Overloads the less-than operator for <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> comparison.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>A constant pointer to the other <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool True if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is earlier than the other, false otherwise.</dd></dl>
+<p>Compares dates based on year, then month, day, hour, and minute.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>- Pointer to the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object to compare against. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool - True if this date is chronologically before the other date. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00096">96</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a3b103cc8257d3055aedb519fff343503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b103cc8257d3055aedb519fff343503">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="a5cd818b41d073df16cf32615713438cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd818b41d073df16cf32615713438cc">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00073">73</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Comparison operator to check if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is chronologically equal to another. </p>
+<p>Overloads the equality operator for <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> comparison.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>A constant pointer to the other <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool True if both <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> objects represent the exact same time, false otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>- Pointer to the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object to compare against. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool - True if all date and time components are equal. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00128">128</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab2943ef426612046e084e2d885c5fed4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2943ef426612046e084e2d885c5fed4">&#9670;&nbsp;</a></span>operator&gt;()</h2>
+<a id="a31d482a9c65cda3a7f82488577c91053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d482a9c65cda3a7f82488577c91053">&#9670;&nbsp;</a></span>operator&gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator&gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00069">69</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Comparison operator to check if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is chronologically greater than another. </p>
+<p>Overloads the greater-than operator for <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> comparison.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>A constant pointer to the other <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool True if this <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> is later than the other, false otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>- Pointer to the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object to compare against. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool - True if this date is chronologically after the other date. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00118">118</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
@@ -412,9 +513,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Date::SetDay </td>
@@ -424,6 +522,40 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+<p>Sets the day component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<p>Sets the day component.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>The new day value.</td></tr>
+    <tr><td class="paramname">d</td><td>- The new day value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00057">57</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a02041d9356b6222f6502cfcf1685456a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02041d9356b6222f6502cfcf1685456a">&#9670;&nbsp;</a></span>SetHour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Date::SetHour </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
@@ -431,7 +563,51 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00053">53</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Sets the hour component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>The new hour value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00091">91</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+
+</div>
+</div>
+<a id="a9d90f6b34c9ad926d1983e1ec0f55c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d90f6b34c9ad926d1983e1ec0f55c3e">&#9670;&nbsp;</a></span>SetMinute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Date::SetMinute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the minute component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The new minute value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00097">97</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
 
 </div>
 </div>
@@ -440,9 +616,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Date::SetMonth </td>
@@ -452,14 +625,20 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00055">55</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Sets the month component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<p>Sets the month component.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The new month value.</td></tr>
+    <tr><td class="paramname">m</td><td>- The new month value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00065">65</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
@@ -468,9 +647,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Date::SetYear </td>
@@ -480,47 +656,51 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00057">57</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Sets the year component of the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object. </p>
+<p>Sets the year component.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>The new year value.</td></tr>
+    <tr><td class="paramname">y</td><td>- The new year value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00073">73</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aceba42d25cb6a888cea3428f80d50359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceba42d25cb6a888cea3428f80d50359">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="aba466aa1afde28225f87cddea7097c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba466aa1afde28225f87cddea7097c8d">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Date::toString </td>
+          <td class="memname">std::string * Date::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00059">59</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Converts the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object into a dynamically allocated string representation. </p>
+<p>Returns a pointer to a string representation of the date and time.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string* Pointer to the new string object containing the formatted date/time.</dd></dl>
+<p>The format is "D/M/Y H:MIN".</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string* - Pointer to the formatted date string. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00082">82</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a1862604492a841a6b98e1a3061d95b96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1862604492a841a6b98e1a3061d95b96">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+<a id="ae6ebc8d5a8f4830186d9a628b71ade16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ebc8d5a8f4830186d9a628b71ade16">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +717,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
           <td class="paramname"><em>date</em>&#160;</td>
         </tr>
         <tr>
@@ -553,50 +733,32 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00081">81</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
+<p>Friend function for output stream operator overload. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>The output stream reference. </td></tr>
+    <tr><td class="paramname">date</td><td>A constant pointer to the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::ostream&amp; Reference to the output stream.</dd></dl>
+<p>Prints the date and time in D/M/Y H:MIN format to the output stream.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>- The output stream. </td></tr>
+    <tr><td class="paramname">date</td><td>- Pointer to the <a class="el" href="class_date.html" title="Represents a specific point in time (day, month, year, hour, minute).">Date</a> object to print. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::ostream&amp; - Reference to the output stream. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_date_8cpp_source.html#l00143">143</a> of file <a class="el" href="_date_8cpp_source.html">Date.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ad38747168f2005159180860e5509b26e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad38747168f2005159180860e5509b26e">&#9670;&nbsp;</a></span>operator&gt;&gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
-          <td>(</td>
-          <td class="paramtype">std::istream &amp;&#160;</td>
-          <td class="paramname"><em>is</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_date.html">Date</a> &amp;&#160;</td>
-          <td class="paramname"><em>date</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_date_8h_source.html#l00086">86</a> of file <a class="el" href="_date_8h_source.html">Date.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_date_8h_source.html">Date.h</a></li>
+<li><a class="el" href="_date_8cpp_source.html">Date.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

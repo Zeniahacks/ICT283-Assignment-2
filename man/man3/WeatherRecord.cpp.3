@@ -1,0 +1,124 @@
+.TH "WeatherRecord.cpp" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WeatherRecord.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'WeatherRecord\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBprintWeatherRecord\fP (const \fBWeatherRecord\fP *record)"
+.br
+.RI "Standalone print function used for generic BST traversal\&. "
+.ti -1c
+.RI "void \fBcollectByMonth\fP (const \fBWeatherRecord\fP *record, void *context)"
+.br
+.RI "Traversal helper function to collect records matching a target month across all years\&. "
+.ti -1c
+.RI "void \fBcollectByYearMonth\fP (const \fBWeatherRecord\fP *record, void *context)"
+.br
+.RI "Traversal helper function to collect records matching a specific year and month\&. "
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBWeatherRecord\fP *wr)"
+.br
+.RI "Overloads the stream insertion operator for \fBWeatherRecord\fP pointers\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void collectByMonth (const \fBWeatherRecord\fP * record, void * context)"
+
+.PP
+Traversal helper function to collect records matching a target month across all years\&. Traversal helper function to collect records based only on the target month\&.
+.PP
+If the record's month matches the context's target month, a deep copy of the record is added to the context vector\&. This function is designed to be used by the BST's inOrder traversal\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecord\fP - Pointer to the current \fBWeatherRecord\fP during traversal\&. 
+.br
+\fIcontext\fP - Pointer to the \fBCollectionContext\fP struct containing the target month and the results vector\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 129 of file WeatherRecord\&.cpp\&.
+.SS "void collectByYearMonth (const \fBWeatherRecord\fP * record, void * context)"
+
+.PP
+Traversal helper function to collect records matching a specific year and month\&. Traversal helper function to collect records based on both the target year and month\&.
+.PP
+If the record's year and month match the context's target, a deep copy of the record is added to the context vector\&. This function is designed to be used by the BST's inOrder traversal\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecord\fP - Pointer to the current \fBWeatherRecord\fP during traversal\&. 
+.br
+\fIcontext\fP - Pointer to the \fBCollectionContext\fP struct containing the target year/month and the results vector\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 146 of file WeatherRecord\&.cpp\&.
+.SS "std::ostream& operator<< (std::ostream & os, const \fBWeatherRecord\fP * wr)"
+
+.PP
+Overloads the stream insertion operator for \fBWeatherRecord\fP pointers\&. Overloads the stream insertion operator to print a \fBWeatherRecord\fP pointer\&.
+.PP
+Provides a convenient way to output \fBWeatherRecord\fP data to an output stream\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIos\fP - The output stream\&. 
+.br
+\fIwr\fP - Pointer to the \fBWeatherRecord\fP object to output\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::ostream& - Reference to the output stream\&. 
+.RE
+.PP
+
+.PP
+Definition at line 162 of file WeatherRecord\&.cpp\&.
+.SS "void printWeatherRecord (const \fBWeatherRecord\fP * record)"
+
+.PP
+Standalone print function used for generic BST traversal\&. Utility function to print the details of a \fBWeatherRecord\fP\&.
+.PP
+Prints the details of a single weather record to standard output\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecord\fP - Pointer to the \fBWeatherRecord\fP to be printed\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file WeatherRecord\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

@@ -1,8 +1,9 @@
-.TH "Date" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "Date" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Date
+Date \- Represents a specific point in time (day, month, year, hour, minute)\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -14,122 +15,437 @@ Date
 .ti -1c
 .RI "\fBDate\fP ()"
 .br
+.RI "Default constructor\&. Initializes date/time members to default values (e\&.g\&., 0)\&. "
 .ti -1c
-.RI "\fBDate\fP (int d, int m, int y)"
+.RI "\fBDate\fP (int d, int m, int y, int h=0, int min=0)"
 .br
+.RI "Parameterized constructor\&. "
 .ti -1c
 .RI "int \fBGetDay\fP () const"
 .br
+.RI "Gets the day component of the \fBDate\fP object\&. "
 .ti -1c
 .RI "int \fBGetMonth\fP () const"
 .br
+.RI "Gets the month component of the \fBDate\fP object\&. "
 .ti -1c
 .RI "int \fBGetYear\fP () const"
 .br
+.RI "Gets the year component of the \fBDate\fP object\&. "
+.ti -1c
+.RI "int \fBGetHour\fP () const"
+.br
+.RI "Gets the hour component of the \fBDate\fP object\&. "
+.ti -1c
+.RI "int \fBGetMinute\fP () const"
+.br
+.RI "Gets the minute component of the \fBDate\fP object\&. "
 .ti -1c
 .RI "void \fBSetDay\fP (int d)"
 .br
+.RI "Sets the day component of the \fBDate\fP object\&. "
 .ti -1c
 .RI "void \fBSetMonth\fP (int m)"
 .br
+.RI "Sets the month component of the \fBDate\fP object\&. "
 .ti -1c
 .RI "void \fBSetYear\fP (int y)"
 .br
+.RI "Sets the year component of the \fBDate\fP object\&. "
 .ti -1c
-.RI "std::string \fBtoString\fP () const"
+.RI "void \fBSetHour\fP (int h)"
 .br
+.RI "Sets the hour component of the \fBDate\fP object\&. "
 .ti -1c
-.RI "bool \fBoperator<\fP (const \fBDate\fP &other) const"
+.RI "void \fBSetMinute\fP (int min)"
 .br
+.RI "Sets the minute component of the \fBDate\fP object\&. "
 .ti -1c
-.RI "bool \fBoperator>\fP (const \fBDate\fP &other) const"
+.RI "std::string * \fBtoString\fP () const"
 .br
+.RI "Converts the \fBDate\fP object into a dynamically allocated string representation\&. "
 .ti -1c
-.RI "bool \fBoperator==\fP (const \fBDate\fP &other) const"
+.RI "bool \fBoperator<\fP (const \fBDate\fP *other) const"
 .br
+.RI "Comparison operator to check if this \fBDate\fP is chronologically less than another\&. "
 .ti -1c
-.RI "bool \fBoperator!=\fP (const \fBDate\fP &other) const"
+.RI "bool \fBoperator>\fP (const \fBDate\fP *other) const"
 .br
+.RI "Comparison operator to check if this \fBDate\fP is chronologically greater than another\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBDate\fP *other) const"
+.br
+.RI "Comparison operator to check if this \fBDate\fP is chronologically equal to another\&. "
 .in -1c
 .SS "Friends"
 
 .in +1c
 .ti -1c
-.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBDate\fP &date)"
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBDate\fP *date)"
 .br
-.ti -1c
-.RI "std::istream & \fBoperator>>\fP (std::istream &is, \fBDate\fP &date)"
-.br
+.RI "Friend function for output stream operator overload\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 7 of file Date\&.h\&.
+Represents a specific point in time (day, month, year, hour, minute)\&. 
+
+This class stores date and time components and provides utility methods for access, modification, string conversion, and comparison, specifically designed to work with pointer comparisons needed by the \fBBst\fP class\&. 
+.PP
+Definition at line 15 of file Date\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "Date::Date ()\fC [inline]\fP"
+.SS "Date::Date ()"
 
 .PP
-Definition at line 43 of file Date\&.h\&.
-.SS "Date::Date (int d, int m, int y)\fC [inline]\fP"
+Default constructor\&. Initializes date/time members to default values (e\&.g\&., 0)\&. Default constructor\&.
+.PP
+Initializes date to 1/1/2000 at 00:00\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
 
 .PP
-Definition at line 45 of file Date\&.h\&.
+Definition at line 16 of file Date\&.cpp\&.
+.SS "Date::Date (int d, int m, int y, int h = \fC0\fP, int min = \fC0\fP)"
+
+.PP
+Parameterized constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fId\fP The day\&. 
+.br
+\fIm\fP The month\&. 
+.br
+\fIy\fP The year\&. 
+.br
+\fIh\fP The hour (default is 0)\&. 
+.br
+\fImin\fP The minute (default is 0)\&.
+.br
+\fId\fP - The day (1-31)\&. 
+.br
+\fIm\fP - The month (1-12)\&. 
+.br
+\fIy\fP - The year\&. 
+.br
+\fIh\fP - The hour (0-23)\&. 
+.br
+\fImin\fP - The minute (0-59)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file Date\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "int Date::GetDay () const\fC [inline]\fP"
+.SS "int Date::GetDay () const"
 
 .PP
-Definition at line 47 of file Date\&.h\&.
-.SS "int Date::GetMonth () const\fC [inline]\fP"
+Gets the day component of the \fBDate\fP object\&. Retrieves the day component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int The day\&.
+.PP
+int - The day (1-31)\&. 
+.RE
+.PP
 
 .PP
-Definition at line 49 of file Date\&.h\&.
-.SS "int Date::GetYear () const\fC [inline]\fP"
+Definition at line 35 of file Date\&.cpp\&.
+.SS "int Date::GetHour () const\fC [inline]\fP"
 
 .PP
-Definition at line 51 of file Date\&.h\&.
-.SS "bool Date::operator!= (const \fBDate\fP & other) const\fC [inline]\fP"
+Gets the hour component of the \fBDate\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The hour\&. 
+.RE
+.PP
 
 .PP
-Definition at line 77 of file Date\&.h\&.
-.SS "bool Date::operator< (const \fBDate\fP & other) const\fC [inline]\fP"
+Definition at line 61 of file Date\&.h\&.
+.SS "int Date::GetMinute () const\fC [inline]\fP"
 
 .PP
-Definition at line 63 of file Date\&.h\&.
-.SS "bool Date::operator== (const \fBDate\fP & other) const\fC [inline]\fP"
+Gets the minute component of the \fBDate\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The minute\&. 
+.RE
+.PP
 
 .PP
-Definition at line 73 of file Date\&.h\&.
-.SS "bool Date::operator> (const \fBDate\fP & other) const\fC [inline]\fP"
+Definition at line 67 of file Date\&.h\&.
+.SS "int Date::GetMonth () const"
 
 .PP
-Definition at line 69 of file Date\&.h\&.
-.SS "void Date::SetDay (int d)\fC [inline]\fP"
+Gets the month component of the \fBDate\fP object\&. Retrieves the month component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int The month\&.
+.PP
+int - The month (1-12)\&. 
+.RE
+.PP
 
 .PP
-Definition at line 53 of file Date\&.h\&.
-.SS "void Date::SetMonth (int m)\fC [inline]\fP"
+Definition at line 42 of file Date\&.cpp\&.
+.SS "int Date::GetYear () const"
 
 .PP
-Definition at line 55 of file Date\&.h\&.
-.SS "void Date::SetYear (int y)\fC [inline]\fP"
+Gets the year component of the \fBDate\fP object\&. Retrieves the year component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int The year\&.
+.PP
+int - The year\&. 
+.RE
+.PP
 
 .PP
-Definition at line 57 of file Date\&.h\&.
-.SS "std::string Date::toString () const\fC [inline]\fP"
+Definition at line 49 of file Date\&.cpp\&.
+.SS "bool Date::operator< (const \fBDate\fP * other) const"
 
 .PP
-Definition at line 59 of file Date\&.h\&.
+Comparison operator to check if this \fBDate\fP is chronologically less than another\&. Overloads the less-than operator for \fBDate\fP comparison\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP A constant pointer to the other \fBDate\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool True if this \fBDate\fP is earlier than the other, false otherwise\&.
+.RE
+.PP
+Compares dates based on year, then month, day, hour, and minute\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - Pointer to the \fBDate\fP object to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool - True if this date is chronologically before the other date\&. 
+.RE
+.PP
+
+.PP
+Definition at line 96 of file Date\&.cpp\&.
+.SS "bool Date::operator== (const \fBDate\fP * other) const"
+
+.PP
+Comparison operator to check if this \fBDate\fP is chronologically equal to another\&. Overloads the equality operator for \fBDate\fP comparison\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP A constant pointer to the other \fBDate\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool True if both \fBDate\fP objects represent the exact same time, false otherwise\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - Pointer to the \fBDate\fP object to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool - True if all date and time components are equal\&. 
+.RE
+.PP
+
+.PP
+Definition at line 128 of file Date\&.cpp\&.
+.SS "bool Date::operator> (const \fBDate\fP * other) const"
+
+.PP
+Comparison operator to check if this \fBDate\fP is chronologically greater than another\&. Overloads the greater-than operator for \fBDate\fP comparison\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP A constant pointer to the other \fBDate\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool True if this \fBDate\fP is later than the other, false otherwise\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - Pointer to the \fBDate\fP object to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool - True if this date is chronologically after the other date\&. 
+.RE
+.PP
+
+.PP
+Definition at line 118 of file Date\&.cpp\&.
+.SS "void Date::SetDay (int d)"
+
+.PP
+Sets the day component of the \fBDate\fP object\&. Sets the day component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fId\fP The new day value\&.
+.br
+\fId\fP - The new day value\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file Date\&.cpp\&.
+.SS "void Date::SetHour (int h)\fC [inline]\fP"
+
+.PP
+Sets the hour component of the \fBDate\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIh\fP The new hour value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 91 of file Date\&.h\&.
+.SS "void Date::SetMinute (int min)\fC [inline]\fP"
+
+.PP
+Sets the minute component of the \fBDate\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImin\fP The new minute value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 97 of file Date\&.h\&.
+.SS "void Date::SetMonth (int m)"
+
+.PP
+Sets the month component of the \fBDate\fP object\&. Sets the month component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP The new month value\&.
+.br
+\fIm\fP - The new month value\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 65 of file Date\&.cpp\&.
+.SS "void Date::SetYear (int y)"
+
+.PP
+Sets the year component of the \fBDate\fP object\&. Sets the year component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIy\fP The new year value\&.
+.br
+\fIy\fP - The new year value\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 73 of file Date\&.cpp\&.
+.SS "std::string * Date::toString () const"
+
+.PP
+Converts the \fBDate\fP object into a dynamically allocated string representation\&. Returns a pointer to a string representation of the date and time\&.
+.PP
+\fBReturns\fP
+.RS 4
+std::string* Pointer to the new string object containing the formatted date/time\&.
+.RE
+.PP
+The format is 'D/M/Y H:MIN'\&.
+.PP
+\fBReturns\fP
+.RS 4
+std::string* - Pointer to the formatted date string\&. 
+.RE
+.PP
+
+.PP
+Definition at line 82 of file Date\&.cpp\&.
 .SH "Friends And Related Function Documentation"
 .PP 
-.SS "std::ostream& operator<< (std::ostream & os, const \fBDate\fP & date)\fC [friend]\fP"
+.SS "std::ostream& operator<< (std::ostream & os, const \fBDate\fP * date)\fC [friend]\fP"
 
 .PP
-Definition at line 81 of file Date\&.h\&.
-.SS "std::istream& operator>> (std::istream & is, \fBDate\fP & date)\fC [friend]\fP"
+Friend function for output stream operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIos\fP The output stream reference\&. 
+.br
+\fIdate\fP A constant pointer to the \fBDate\fP object to output\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::ostream& Reference to the output stream\&.
+.RE
+.PP
+Prints the date and time in D/M/Y H:MIN format to the output stream\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIos\fP - The output stream\&. 
+.br
+\fIdate\fP - Pointer to the \fBDate\fP object to print\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::ostream& - Reference to the output stream\&. 
+.RE
+.PP
 
 .PP
-Definition at line 86 of file Date\&.h\&.
+Definition at line 143 of file Date\&.cpp\&.
 
 .SH "Author"
 .PP 

@@ -88,26 +88,38 @@ $(document).ready(function(){initNavTree('class_assignment2_app.html',''); initR
 <div class="title">Assignment2App Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The main application class for Assignment 2, managing the user interface and data processing flow.  
+ <a href="class_assignment2_app.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_assignment2_app_8h_source.html">Assignment2App.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a68c7b79cde569810046441f99a99e0ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assignment2_app.html#a68c7b79cde569810046441f99a99e0ae">Assignment2App</a> ()</td></tr>
+<tr class="memdesc:a68c7b79cde569810046441f99a99e0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_assignment2_app.html" title="The main application class for Assignment 2, managing the user interface and data processing flow.">Assignment2App</a> class.  <a href="class_assignment2_app.html#a68c7b79cde569810046441f99a99e0ae">More...</a><br /></td></tr>
 <tr class="separator:a68c7b79cde569810046441f99a99e0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d0de259955552f8641eb67c2978418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assignment2_app.html#a04d0de259955552f8641eb67c2978418">run</a> ()</td></tr>
+<tr class="memdesc:a04d0de259955552f8641eb67c2978418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the main application loop.  <a href="class_assignment2_app.html#a04d0de259955552f8641eb67c2978418">More...</a><br /></td></tr>
 <tr class="separator:a04d0de259955552f8641eb67c2978418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00007">7</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="textblock"><p>The main application class for Assignment 2, managing the user interface and data processing flow. </p>
+<p>This class handles the main menu loop, user input, and delegates data-related tasks to the <code><a class="el" href="class_weather_data_collection.html" title="Collection of weather data with BST storage and month mapping.">WeatherDataCollection</a></code> object. It ensures data is loaded before analysis options are offered.</p>
+<dl class="section author"><dt>Author</dt><dd>[Your Name Here] </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>01 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>23/11/2025 Started</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><p class="startdd">Implement input validation for all user prompts (e.g., check for non-numeric input). </p>
+<p class="enddd">Separate the UI logic from the data processing logic further for better modularity. </p>
+</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_assignment2_app_8h_source.html#l00034">34</a> of file <a class="el" href="_assignment2_app_8h_source.html">Assignment2App.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a68c7b79cde569810046441f99a99e0ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68c7b79cde569810046441f99a99e0ae">&#9670;&nbsp;</a></span>Assignment2App()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Assignment2App::Assignment2App </td>
@@ -116,14 +128,13 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00014">14</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Constructor for the <a class="el" href="class_assignment2_app.html" title="The main application class for Assignment 2, managing the user interface and data processing flow.">Assignment2App</a> class. </p>
+<p>Initializes the <code><a class="el" href="class_weather_data_collection.html" title="Collection of weather data with BST storage and month mapping.">WeatherDataCollection</a></code> object and sets the <code>dataLoaded</code> flag to false.</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_assignment2_app_8cpp_source.html#l00023">23</a> of file <a class="el" href="_assignment2_app_8cpp_source.html">Assignment2App.cpp</a>.</p>
 
 </div>
 </div>
@@ -133,9 +144,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Assignment2App::run </td>
@@ -144,28 +152,25 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00016">16</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Runs the main application loop. </p>
+<p>Displays the menu, takes user input, and processes the selected choice until the exit option (7) is chosen.</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_assignment2_app_8cpp_source.html#l00037">37</a> of file <a class="el" href="_assignment2_app_8cpp_source.html">Assignment2App.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_assignment2_app_a04d0de259955552f8641eb67c2978418_icgraph.png" border="0" usemap="#class_assignment2_app_a04d0de259955552f8641eb67c2978418_icgraph" alt=""/></div>
-<map name="class_assignment2_app_a04d0de259955552f8641eb67c2978418_icgraph" id="class_assignment2_app_a04d0de259955552f8641eb67c2978418_icgraph">
-<area shape="rect" title=" " alt="" coords="104,5,251,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
-</map>
+<!-- MAP 0 -->
 </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="main_8cpp_source.html">main.cpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_assignment2_app_8h_source.html">Assignment2App.h</a></li>
+<li><a class="el" href="_assignment2_app_8cpp_source.html">Assignment2App.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

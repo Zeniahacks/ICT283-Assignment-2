@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: main.cpp File Reference</title>
+<title>DoxyExample: main.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">DoxyExample
    </div>
   </td>
  </tr>
@@ -82,43 +82,39 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="_weather_data_8h_source.html">WeatherData.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="Assignment2App_8h_source.html">Assignment2App.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
 <map name="main_8cpp" id="main_8cpp">
-<area shape="rect" title=" " alt="" coords="183,5,258,32"/>
-<area shape="rect" title=" " alt="" coords="413,229,485,256"/>
-<area shape="rect" title=" " alt="" coords="5,229,60,256"/>
-<area shape="rect" href="_weather_data_8h.html" title=" " alt="" coords="166,80,275,107"/>
-<area shape="rect" href="_date_8h.html" title=" " alt="" coords="71,155,131,181"/>
-<area shape="rect" href="_bst_8h.html" title=" " alt="" coords="390,155,443,181"/>
-<area shape="rect" title=" " alt="" coords="155,155,211,181"/>
-<area shape="rect" title=" " alt="" coords="236,155,283,181"/>
-<area shape="rect" title=" " alt="" coords="307,155,366,181"/>
-<area shape="rect" title=" " alt="" coords="311,229,389,256"/>
+<area shape="rect" title=" " alt="" coords="270,5,344,32"/>
+<area shape="rect" href="Assignment2App_8h.html" title=" " alt="" coords="243,80,371,107"/>
+<area shape="rect" href="WeatherDataCollection_8h.html" title=" " alt="" coords="226,155,388,181"/>
+<area shape="rect" href="Bst_8h.html" title=" " alt="" coords="36,229,87,256"/>
+<area shape="rect" href="Map_8h.html" title=" " alt="" coords="114,229,172,256"/>
+<area shape="rect" href="WeatherRecord_8h.html" title=" " alt="" coords="196,229,319,256"/>
+<area shape="rect" title=" " alt="" coords="380,379,434,405"/>
+<area shape="rect" title=" " alt="" coords="330,304,388,331"/>
+<area shape="rect" href="Statistics_8h.html" title=" " alt="" coords="394,229,478,256"/>
+<area shape="rect" title=" " alt="" coords="174,379,246,405"/>
+<area shape="rect" title=" " alt="" coords="23,304,100,331"/>
+<area shape="rect" title=" " alt="" coords="125,304,172,331"/>
+<area shape="rect" href="Date_8h.html" title=" " alt="" coords="247,304,306,331"/>
 </map>
 </div>
 </div>
 <p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assignment2_app.html">Assignment2App</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function of the program.  <a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -137,14 +133,53 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00199">199</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Main function of the program. </p>
+<p>Creates an instance of the <a class="el" href="classAssignment2App.html" title="The main application class for Assignment 2, managing the user interface and data processing flow.">Assignment2App</a> and starts the application loop.</p>
+<dl class="section return"><dt>Returns</dt><dd>int - Returns 0 upon successful execution. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00015">15</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="Assignment2App_8cpp_source.html#l00037">Assignment2App::run()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" href="class_assignment2_app.html#a04d0de259955552f8641eb67c2978418" title=" " alt="" coords="104,5,251,32"/>
+<area shape="rect" title="Main function of the program." alt="" coords="5,311,56,338"/>
+<area shape="rect" href="classAssignment2App.html#a04d0de259955552f8641eb67c2978418" title="Runs the main application loop." alt="" coords="104,311,251,338"/>
+<area shape="rect" href="classAssignment2App.html#a93434df6273044ebe10e438e56726955" title="Displays the main application menu to the console." alt="" coords="305,286,502,313"/>
+<area shape="rect" href="classAssignment2App.html#ad01929ce6c99caeb9eda8132c24fa130" title="Processes the user&#39;s choice from the menu." alt="" coords="299,337,508,363"/>
+<area shape="rect" href="classAssignment2App.html#a2fa2b03dd5ed95a46acb621868f2c931" title="Calculates and displays Pearson Correlation Coefficients for the specified month across all years." alt="" coords="574,372,751,413"/>
+<area shape="rect" href="classAssignment2App.html#a991484f1bc1d1f6d5b87ddad6cf956a8" title="Calculates and displays the average wind speed and standard deviation for a specific year and month." alt="" coords="556,185,769,227"/>
+<area shape="rect" href="classAssignment2App.html#aab5cd599e2510021622c85c476d556aa" title="Displays all loaded weather data records." alt="" coords="567,497,759,523"/>
+<area shape="rect" href="classAssignment2App.html#aafd14abc5f58356186156944a193752b" title="Displays the monthly temperature averages and standard deviations for a specified year." alt="" coords="557,92,768,133"/>
+<area shape="rect" href="classAssignment2App.html#a5759c1b1d6ffb44fd0c4ac2b567ca06d" title="Generates a monthly statistics report file for a specified year." alt="" coords="573,285,752,327"/>
+<area shape="rect" href="classAssignment2App.html#add343d8222b637ba984db13b2bf1cced" title="Handles the loading of weather data from the user&#45;specified file." alt="" coords="574,438,751,465"/>
+<area shape="rect" href="classWeatherDataCollection.html#adf00be9874637aa86f79d03f79e3591d" title="Calculation of SPCC." alt="" coords="1085,372,1237,413"/>
+<area shape="rect" href="namespaceStatistics.html#a7d95b59b1f89f4df9d957c6ebf0acc74" title="Calculates the Sample Pearson Correlation Coefficient (SPCC) between two datasets." alt="" coords="1309,319,1473,346"/>
+<area shape="rect" href="classWeatherDataCollection.html#a9f12fb0238999c6de5e8b28f2d75f210" title="Get data for Month only." alt="" coords="1315,371,1467,412"/>
+<area shape="rect" href="classMap.html#a12db9738ef141377c56c68bc17ab8537" title="Retrieves a pointer to the value associated with the specified key (mutable version)." alt="" coords="1564,342,1631,369"/>
+<area shape="rect" href="classWeatherDataCollection.html#ae8e7fd8fb3d9f6b3a57794cb70f55847" title=" " alt="" coords="1521,276,1673,317"/>
+<area shape="rect" href="classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="1721,389,1824,415"/>
+<area shape="rect" href="classWeatherDataCollection.html#aebed502136a6a926dffeaaab3df64fb8" title="New Menu option tasked from assignment 2." alt="" coords="824,151,1007,192"/>
+<area shape="rect" href="namespaceStatistics.html#a340dd726c3840ecc737efcd201d52f20" title="Calculates the arithmetic mean (average) of a set of values." alt="" coords="1309,269,1473,295"/>
+<area shape="rect" href="namespaceStatistics.html#a73c38a7230ffe59562de5d1f2062d390" title="Calculates the Sample Standard Deviation of a set of values." alt="" coords="1075,169,1248,195"/>
+<area shape="rect" href="classWeatherDataCollection.html#a8242557f38750a366d640009c2d0d9b3" title=" " alt="" coords="1061,52,1261,93"/>
+<area shape="rect" href="classWeatherDataCollection.html#a7509e18dd1bd7839cd442db739573c9d" title=" " alt="" coords="1313,203,1469,244"/>
+<area shape="rect" href="classWeatherDataCollection.html#a317191b0b3a183ac9bc02e038b50d7d0" title="Displays all stored weather data records to the console in order." alt="" coords="839,497,991,539"/>
+<area shape="rect" href="classWeatherDataCollection.html#aacac7f424c8b3dc53de5ea8acbec9631" title="Returns the total number of weather records stored in the collection." alt="" coords="1085,557,1237,599"/>
+<area shape="rect" href="classBst.html#a4666aa938cc23461357ad0c7d6cadf68" title="Initiates an in&#45;order traversal, applying the visit function to each node." alt="" coords="1115,505,1207,531"/>
+<area shape="rect" href="classBst.html#a2fa9672cc879f25613c40690cf0098e8" title="Gets the total number of nodes in the tree." alt="" coords="1356,567,1427,594"/>
+<area shape="rect" href="classWeatherDataCollection.html#ac46cef0678cb228ee7d3563c4a395329" title="Menu option 3: Average ambient air temperature and sample standard deviation for each month of a spec..." alt="" coords="817,64,1013,105"/>
+<area shape="rect" href="classWeatherDataCollection.html#a98207c224b346028112f14e5a9e9bb1a" title=" " alt="" coords="837,263,993,304"/>
+<area shape="rect" href="namespaceStatistics.html#a28c2da464cb0172858b0f0fd98502e23" title="Calculates the Mean Absolute Deviation (MAD) of a set of values." alt="" coords="1082,270,1241,297"/>
+<area shape="rect" href="classWeatherDataCollection.html#a208171f41a04ea93ec8b18780d765f39" title=" " alt="" coords="839,431,991,472"/>
+<area shape="rect" href="classWeatherDataCollection.html#ab989cab32d91cff3b7a9f31bcdc31a47" title=" " alt="" coords="1085,437,1237,479"/>
+<area shape="rect" href="classWeatherDataCollection.html#ae2c16b0fadf4b8edee794ab1bea87e47" title=" " alt="" coords="1315,436,1467,477"/>
+<area shape="rect" href="classWeatherDataCollection.html#ad3eae0f0b875676f9b4371c584ac6bed" title=" " alt="" coords="1315,501,1467,543"/>
+<area shape="rect" href="classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Gets the month component of the Date object." alt="" coords="1541,545,1653,571"/>
+<area shape="rect" href="classMap.html#a1dbfcab8d66538121a085aeb9f659abf" title="Inserts a key&#45;value pair into the map." alt="" coords="1553,393,1641,419"/>
+<area shape="rect" href="classBst.html#aec1107623bc46ce2d242ca8701706db5" title="Inserts a data value into the BST. Takes ownership of the pointer." alt="" coords="1557,443,1638,470"/>
 </map>
 </div>
 

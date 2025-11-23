@@ -1,4 +1,4 @@
-.TH "Bst< T >" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "Bst< T >" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -15,54 +15,71 @@ Bst< T > \- Template Binary Search Tree with function pointers for traversal\&.
 .ti -1c
 .RI "\fBBst\fP ()"
 .br
+.RI "Default constructor\&. Initializes an empty tree\&. "
 .ti -1c
 .RI "\fB~Bst\fP ()"
 .br
+.RI "Destructor\&. Cleans up the entire tree structure\&. "
 .ti -1c
 .RI "\fBBst\fP (const \fBBst\fP< T > &other)"
 .br
+.RI "Copy constructor\&. Performs a deep copy of the tree structure\&. "
 .ti -1c
 .RI "\fBBst\fP< T > & \fBoperator=\fP (const \fBBst\fP< T > &other)"
 .br
+.RI "Assignment operator\&. Handles self-assignment and performs a deep copy assignment\&. "
 .ti -1c
-.RI "void \fBinsert\fP (const T &value)"
+.RI "void \fBinsert\fP (T *value)"
 .br
+.RI "Inserts a data value into the BST\&. Takes ownership of the pointer\&. "
 .ti -1c
-.RI "\fBNode\fP< T > * \fBsearch\fP (const T &value) const"
+.RI "\fBNode\fP< T > * \fBsearch\fP (T *value) const"
 .br
+.RI "Searches for a data value in the BST\&. "
 .ti -1c
-.RI "void \fBinOrder\fP (void(*visit)(const T &)) const"
+.RI "void \fBinOrder\fP (void(*visit)(const T *)) const"
 .br
+.RI "Initiates an in-order traversal, applying the visit function to each node\&. "
 .ti -1c
-.RI "void \fBpreOrder\fP (void(*visit)(const T &)) const"
+.RI "void \fBpreOrder\fP (void(*visit)(const T *)) const"
 .br
+.RI "Initiates a pre-order traversal, applying the visit function to each node\&. "
 .ti -1c
-.RI "void \fBpostOrder\fP (void(*visit)(const T &)) const"
+.RI "void \fBpostOrder\fP (void(*visit)(const T *)) const"
 .br
+.RI "Initiates a post-order traversal, applying the visit function to each node\&. "
 .ti -1c
-.RI "void \fBinOrder\fP (void(*visit)(const T &, void *), void *context) const"
+.RI "void \fBinOrder\fP (void(*visit)(const T *, void *), void *context) const"
 .br
+.RI "Initiates an in-order traversal that uses a context pointer for collection\&. "
 .ti -1c
 .RI "void \fBinOrder\fP () const"
 .br
+.RI "Simple in-order traversal that prints the data (requires operator<< for T)\&. "
 .ti -1c
 .RI "void \fBpreOrder\fP () const"
 .br
+.RI "Simple pre-order traversal that prints the data (requires operator<< for T)\&. "
 .ti -1c
 .RI "void \fBpostOrder\fP () const"
 .br
+.RI "Simple post-order traversal that prints the data (requires operator<< for T)\&. "
 .ti -1c
 .RI "bool \fBcheckInvariant\fP () const"
 .br
+.RI "Checks if the tree satisfies the Binary Search Tree invariant\&. "
 .ti -1c
 .RI "bool \fBisEmpty\fP () const"
 .br
+.RI "Checks if the tree is empty\&. "
 .ti -1c
 .RI "int \fBsize\fP () const"
 .br
+.RI "Gets the total number of nodes in the tree\&. "
 .ti -1c
 .RI "int \fBheight\fP () const"
 .br
+.RI "Gets the height of the tree (number of edges on the longest path from the root to a leaf)\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -72,79 +89,209 @@ Bst< T > \- Template Binary Search Tree with function pointers for traversal\&.
 class Bst< T >"
 Template Binary Search Tree with function pointers for traversal\&. 
 .PP
-Definition at line 22 of file Bst\&.h\&.
+Definition at line 31 of file Bst\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "template<class T > \fBBst\fP< T >::\fBBst\fP"
 
 .PP
-Definition at line 77 of file Bst\&.h\&.
+Default constructor\&. Initializes an empty tree\&. Default constructor implementation\&. 
+.PP
+Definition at line 234 of file Bst\&.h\&.
 .SS "template<class T > \fBBst\fP< T >::~\fBBst\fP"
 
 .PP
-Definition at line 80 of file Bst\&.h\&.
+Destructor\&. Cleans up the entire tree structure\&. Destructor implementation\&. Calls recursive delete function\&. 
+.PP
+Definition at line 240 of file Bst\&.h\&.
 .SS "template<class T > \fBBst\fP< T >::\fBBst\fP (const \fBBst\fP< T > & other)"
 
 .PP
-Definition at line 85 of file Bst\&.h\&.
+Copy constructor\&. Performs a deep copy of the tree structure\&. Copy constructor implementation\&. Calls recursive copy function\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBBst\fP object to copy from\&. 
+.RE
+.PP
+
+.PP
+Definition at line 249 of file Bst\&.h\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "template<class T > bool \fBBst\fP< T >::checkInvariant"
 
 .PP
-Definition at line 247 of file Bst\&.h\&.
+Checks if the tree satisfies the Binary Search Tree invariant\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool True if the invariant holds, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Definition at line 506 of file Bst\&.h\&.
 .SS "template<class T > int \fBBst\fP< T >::height"
 
 .PP
-Definition at line 276 of file Bst\&.h\&.
+Gets the height of the tree (number of edges on the longest path from the root to a leaf)\&. Gets the height of the tree\&.
+.PP
+\fBReturns\fP
+.RS 4
+int The height of the tree, or -1 if the tree is empty\&. 
+.RE
+.PP
+
+.PP
+Definition at line 559 of file Bst\&.h\&.
 .SS "template<class T > void \fBBst\fP< T >::inOrder"
 
 .PP
-Definition at line 214 of file Bst\&.h\&.
-.SS "template<class T > void \fBBst\fP< T >::inOrder (void(*)(const T &) visit) const"
+Simple in-order traversal that prints the data (requires operator<< for T)\&. 
+.PP
+Definition at line 456 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::inOrder (void(*)(const T *) visit) const"
 
 .PP
-Definition at line 165 of file Bst\&.h\&.
-.SS "template<class T > void \fBBst\fP< T >::inOrder (void(*)(const T &, void *) visit, void * context) const"
+Initiates an in-order traversal, applying the visit function to each node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvisit\fP The function pointer to apply to each node's data\&. 
+.RE
+.PP
 
 .PP
-Definition at line 208 of file Bst\&.h\&.
-.SS "template<class T > void \fBBst\fP< T >::insert (const T & value)"
+Definition at line 375 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::inOrder (void(*)(const T *, void *) visit, void * context) const"
 
 .PP
-Definition at line 132 of file Bst\&.h\&.
+Initiates an in-order traversal that uses a context pointer for collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvisit\fP The function pointer to apply (accepts data pointer and context pointer)\&. 
+.br
+\fIcontext\fP Opaque pointer to the context/collector struct\&. 
+.RE
+.PP
+
+.PP
+Definition at line 447 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::insert (T * value)"
+
+.PP
+Inserts a data value into the BST\&. Takes ownership of the pointer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP The pointer to the data value to insert\&. 
+.RE
+.PP
+
+.PP
+Definition at line 322 of file Bst\&.h\&.
 .SS "template<class T > bool \fBBst\fP< T >::isEmpty"
 
 .PP
-Definition at line 254 of file Bst\&.h\&.
+Checks if the tree is empty\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool True if the root is null\&. 
+.RE
+.PP
+
+.PP
+Definition at line 519 of file Bst\&.h\&.
 .SS "template<class T > \fBBst\fP< T > & \fBBst\fP< T >::operator= (const \fBBst\fP< T > & other)"
 
 .PP
-Definition at line 90 of file Bst\&.h\&.
+Assignment operator\&. Handles self-assignment and performs a deep copy assignment\&. Assignment operator implementation\&. Handles cleanup and deep copy\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBBst\fP object to assign from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Bst<T>& Reference to the updated object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 259 of file Bst\&.h\&.
 .SS "template<class T > void \fBBst\fP< T >::postOrder"
 
 .PP
-Definition at line 228 of file Bst\&.h\&.
-.SS "template<class T > void \fBBst\fP< T >::postOrder (void(*)(const T &) visit) const"
+Simple post-order traversal that prints the data (requires operator<< for T)\&. 
+.PP
+Definition at line 476 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::postOrder (void(*)(const T *) visit) const"
 
 .PP
-Definition at line 193 of file Bst\&.h\&.
+Initiates a post-order traversal, applying the visit function to each node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvisit\fP The function pointer to apply to each node's data\&. 
+.RE
+.PP
+
+.PP
+Definition at line 421 of file Bst\&.h\&.
 .SS "template<class T > void \fBBst\fP< T >::preOrder"
 
 .PP
-Definition at line 221 of file Bst\&.h\&.
-.SS "template<class T > void \fBBst\fP< T >::preOrder (void(*)(const T &) visit) const"
+Simple pre-order traversal that prints the data (requires operator<< for T)\&. 
+.PP
+Definition at line 466 of file Bst\&.h\&.
+.SS "template<class T > void \fBBst\fP< T >::preOrder (void(*)(const T *) visit) const"
 
 .PP
-Definition at line 179 of file Bst\&.h\&.
-.SS "template<class T > \fBNode\fP< T > * \fBBst\fP< T >::search (const T & value) const"
+Initiates a pre-order traversal, applying the visit function to each node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvisit\fP The function pointer to apply to each node's data\&. 
+.RE
+.PP
 
 .PP
-Definition at line 150 of file Bst\&.h\&.
+Definition at line 398 of file Bst\&.h\&.
+.SS "template<class T > \fBNode\fP< T > * \fBBst\fP< T >::search (T * value) const"
+
+.PP
+Searches for a data value in the BST\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP The pointer to the data value (used for comparison key)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Node<T>* The node containing the value, or nullptr if not found\&. 
+.RE
+.PP
+
+.PP
+Definition at line 351 of file Bst\&.h\&.
 .SS "template<class T > int \fBBst\fP< T >::size"
 
 .PP
-Definition at line 265 of file Bst\&.h\&.
+Gets the total number of nodes in the tree\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The size of the tree\&. 
+.RE
+.PP
+
+.PP
+Definition at line 539 of file Bst\&.h\&.
 
 .SH "Author"
 .PP 

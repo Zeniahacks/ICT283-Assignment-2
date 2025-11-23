@@ -88,20 +88,52 @@ $(document).ready(function(){initNavTree('struct_collection_context.html',''); i
 <div class="title">CollectionContext Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Context structure used during BST traversals to filter and collect records.  
+ <a href="struct_collection_context.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_weather_record_8h_source.html">WeatherRecord.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa8620149ccba5b87793d279e8c17eda4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_weather_record.html">WeatherRecord</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collection_context.html#aa8620149ccba5b87793d279e8c17eda4">records</a></td></tr>
 <tr class="separator:aa8620149ccba5b87793d279e8c17eda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea866f273ccd54b1663e6ab7c2f457c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collection_context.html#aea866f273ccd54b1663e6ab7c2f457c6">targetMonth</a></td></tr>
+<tr class="memdesc:aea866f273ccd54b1663e6ab7c2f457c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target month (1-12) used for filtering.  <a href="struct_collection_context.html#aea866f273ccd54b1663e6ab7c2f457c6">More...</a><br /></td></tr>
 <tr class="separator:aea866f273ccd54b1663e6ab7c2f457c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac609cb79515b0f16183139782932d939"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_weather_record.html">WeatherRecord</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collection_context.html#ac609cb79515b0f16183139782932d939">records</a></td></tr>
+<tr class="memdesc:ac609cb79515b0f16183139782932d939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the vector where collected <a class="el" href="class_weather_record.html" title="Represents a single weather data observation at a specific date and time.">WeatherRecord</a> pointers are stored.  <a href="struct_collection_context.html#ac609cb79515b0f16183139782932d939">More...</a><br /></td></tr>
+<tr class="separator:ac609cb79515b0f16183139782932d939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52a39baa4b36964bcc7f8f065884a83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collection_context.html#ab52a39baa4b36964bcc7f8f065884a83">targetYear</a></td></tr>
+<tr class="memdesc:ab52a39baa4b36964bcc7f8f065884a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target year used for filtering.  <a href="struct_collection_context.html#ab52a39baa4b36964bcc7f8f065884a83">More...</a><br /></td></tr>
+<tr class="separator:ab52a39baa4b36964bcc7f8f065884a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
+<div class="textblock"><p>Context structure used during BST traversals to filter and collect records. </p>
+<p>This structure holds a pointer to a result vector and optional filtering criteria (target month and year). </p>
+
 <p class="definition">Definition at line <a class="el" href="_weather_data_8cpp_source.html#l00266">266</a> of file <a class="el" href="_weather_data_8cpp_source.html">WeatherData.cpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac609cb79515b0f16183139782932d939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac609cb79515b0f16183139782932d939">&#9670;&nbsp;</a></span>records <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_weather_record.html">WeatherRecord</a>*&gt;* CollectionContext::records</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the vector where collected <a class="el" href="class_weather_record.html" title="Represents a single weather data observation at a specific date and time.">WeatherRecord</a> pointers are stored. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weather_record_8h_source.html#l00114">114</a> of file <a class="el" href="_weather_record_8h_source.html">WeatherRecord.h</a>.</p>
+
+</div>
+</div>
 <a id="aa8620149ccba5b87793d279e8c17eda4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8620149ccba5b87793d279e8c17eda4">&#9670;&nbsp;</a></span>records</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8620149ccba5b87793d279e8c17eda4">&#9670;&nbsp;</a></span>records <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,12 +160,33 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The target month (1-12) used for filtering. </p>
+
 <p class="definition">Definition at line <a class="el" href="_weather_data_8cpp_source.html#l00268">268</a> of file <a class="el" href="_weather_data_8cpp_source.html">WeatherData.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a id="ab52a39baa4b36964bcc7f8f065884a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52a39baa4b36964bcc7f8f065884a83">&#9670;&nbsp;</a></span>targetYear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CollectionContext::targetYear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The target year used for filtering. </p>
+
+<p class="definition">Definition at line <a class="el" href="_weather_record_8h_source.html#l00124">124</a> of file <a class="el" href="_weather_record_8h_source.html">WeatherRecord.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_weather_data_8cpp_source.html">WeatherData.cpp</a></li>
+<li><a class="el" href="_weather_record_8h_source.html">WeatherRecord.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

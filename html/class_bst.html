@@ -93,42 +93,65 @@ $(document).ready(function(){initNavTree('class_bst.html',''); initResizable(); 
  <a href="class_bst.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_bst_8h_source.html">Bst.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Bst&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bst__inherit__graph.png" border="0" usemap="#_bst_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9124c96ba73bebfbe93a1179908292a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#ac9124c96ba73bebfbe93a1179908292a">Bst</a> ()</td></tr>
+<tr class="memdesc:ac9124c96ba73bebfbe93a1179908292a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes an empty tree.  <a href="class_bst.html#ac9124c96ba73bebfbe93a1179908292a">More...</a><br /></td></tr>
 <tr class="separator:ac9124c96ba73bebfbe93a1179908292a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac70fe9f8cfede8f34f74d3105544760e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#ac70fe9f8cfede8f34f74d3105544760e">~Bst</a> ()</td></tr>
+<tr class="memdesc:ac70fe9f8cfede8f34f74d3105544760e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Cleans up the entire tree structure.  <a href="class_bst.html#ac70fe9f8cfede8f34f74d3105544760e">More...</a><br /></td></tr>
 <tr class="separator:ac70fe9f8cfede8f34f74d3105544760e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ee5a0d32c474cf021cd081131b64fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a88ee5a0d32c474cf021cd081131b64fc">Bst</a> (const <a class="el" href="class_bst.html">Bst</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:a88ee5a0d32c474cf021cd081131b64fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. Performs a deep copy of the tree structure.  <a href="class_bst.html#a88ee5a0d32c474cf021cd081131b64fc">More...</a><br /></td></tr>
 <tr class="separator:a88ee5a0d32c474cf021cd081131b64fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42abbdf74271d69421563d28c938b592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bst.html">Bst</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a42abbdf74271d69421563d28c938b592">operator=</a> (const <a class="el" href="class_bst.html">Bst</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:a42abbdf74271d69421563d28c938b592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator. Handles self-assignment and performs a deep copy assignment.  <a href="class_bst.html#a42abbdf74271d69421563d28c938b592">More...</a><br /></td></tr>
 <tr class="separator:a42abbdf74271d69421563d28c938b592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e4e604602065a9fe143ec5dfba3536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a56e4e604602065a9fe143ec5dfba3536">insert</a> (const T &amp;value)</td></tr>
-<tr class="separator:a56e4e604602065a9fe143ec5dfba3536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa3dacb8f38c0af9905591cab0d7f1b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#aaa3dacb8f38c0af9905591cab0d7f1b7">search</a> (const T &amp;value) const</td></tr>
-<tr class="separator:aaa3dacb8f38c0af9905591cab0d7f1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a548552ba241e7b600a04bc55154af36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a548552ba241e7b600a04bc55154af36e">inOrder</a> (void(*visit)(const T &amp;)) const</td></tr>
-<tr class="separator:a548552ba241e7b600a04bc55154af36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a635962ab972d9ec514b326764c3714a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a635962ab972d9ec514b326764c3714a4">preOrder</a> (void(*visit)(const T &amp;)) const</td></tr>
-<tr class="separator:a635962ab972d9ec514b326764c3714a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53ffa06cb90c2b3d5e4e16640deccb7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a53ffa06cb90c2b3d5e4e16640deccb7c">postOrder</a> (void(*visit)(const T &amp;)) const</td></tr>
-<tr class="separator:a53ffa06cb90c2b3d5e4e16640deccb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afca2cc218f063a8379b9e97cfd9bae8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#afca2cc218f063a8379b9e97cfd9bae8b">inOrder</a> (void(*visit)(const T &amp;, void *), void *context) const</td></tr>
-<tr class="separator:afca2cc218f063a8379b9e97cfd9bae8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1107623bc46ce2d242ca8701706db5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#aec1107623bc46ce2d242ca8701706db5">insert</a> (T *value)</td></tr>
+<tr class="memdesc:aec1107623bc46ce2d242ca8701706db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a data value into the BST. Takes ownership of the pointer.  <a href="class_bst.html#aec1107623bc46ce2d242ca8701706db5">More...</a><br /></td></tr>
+<tr class="separator:aec1107623bc46ce2d242ca8701706db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d26ff31f41b368b9af71c7ae9a66af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a2d26ff31f41b368b9af71c7ae9a66af4">search</a> (T *value) const</td></tr>
+<tr class="memdesc:a2d26ff31f41b368b9af71c7ae9a66af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a data value in the BST.  <a href="class_bst.html#a2d26ff31f41b368b9af71c7ae9a66af4">More...</a><br /></td></tr>
+<tr class="separator:a2d26ff31f41b368b9af71c7ae9a66af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4666aa938cc23461357ad0c7d6cadf68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a4666aa938cc23461357ad0c7d6cadf68">inOrder</a> (void(*visit)(const T *)) const</td></tr>
+<tr class="memdesc:a4666aa938cc23461357ad0c7d6cadf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates an in-order traversal, applying the visit function to each node.  <a href="class_bst.html#a4666aa938cc23461357ad0c7d6cadf68">More...</a><br /></td></tr>
+<tr class="separator:a4666aa938cc23461357ad0c7d6cadf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2e20a43023f902a62095631daac9a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a9e2e20a43023f902a62095631daac9a6">preOrder</a> (void(*visit)(const T *)) const</td></tr>
+<tr class="memdesc:a9e2e20a43023f902a62095631daac9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates a pre-order traversal, applying the visit function to each node.  <a href="class_bst.html#a9e2e20a43023f902a62095631daac9a6">More...</a><br /></td></tr>
+<tr class="separator:a9e2e20a43023f902a62095631daac9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d7b801867de18abab95ea64789a548"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a51d7b801867de18abab95ea64789a548">postOrder</a> (void(*visit)(const T *)) const</td></tr>
+<tr class="memdesc:a51d7b801867de18abab95ea64789a548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates a post-order traversal, applying the visit function to each node.  <a href="class_bst.html#a51d7b801867de18abab95ea64789a548">More...</a><br /></td></tr>
+<tr class="separator:a51d7b801867de18abab95ea64789a548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bf320ccb52e4ac16aa598177ead488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a29bf320ccb52e4ac16aa598177ead488">inOrder</a> (void(*visit)(const T *, void *), void *context) const</td></tr>
+<tr class="memdesc:a29bf320ccb52e4ac16aa598177ead488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates an in-order traversal that uses a context pointer for collection.  <a href="class_bst.html#a29bf320ccb52e4ac16aa598177ead488">More...</a><br /></td></tr>
+<tr class="separator:a29bf320ccb52e4ac16aa598177ead488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedcaa57cd09d4ba78aed57be5add24c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#aedcaa57cd09d4ba78aed57be5add24c5">inOrder</a> () const</td></tr>
+<tr class="memdesc:aedcaa57cd09d4ba78aed57be5add24c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple in-order traversal that prints the data (requires operator&lt;&lt; for T).  <a href="class_bst.html#aedcaa57cd09d4ba78aed57be5add24c5">More...</a><br /></td></tr>
 <tr class="separator:aedcaa57cd09d4ba78aed57be5add24c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef63223428c98395284efa9683b1f51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#aaef63223428c98395284efa9683b1f51">preOrder</a> () const</td></tr>
+<tr class="memdesc:aaef63223428c98395284efa9683b1f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple pre-order traversal that prints the data (requires operator&lt;&lt; for T).  <a href="class_bst.html#aaef63223428c98395284efa9683b1f51">More...</a><br /></td></tr>
 <tr class="separator:aaef63223428c98395284efa9683b1f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051ebb3b382d31b9b5ad4044c031b59f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a051ebb3b382d31b9b5ad4044c031b59f">postOrder</a> () const</td></tr>
+<tr class="memdesc:a051ebb3b382d31b9b5ad4044c031b59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple post-order traversal that prints the data (requires operator&lt;&lt; for T).  <a href="class_bst.html#a051ebb3b382d31b9b5ad4044c031b59f">More...</a><br /></td></tr>
 <tr class="separator:a051ebb3b382d31b9b5ad4044c031b59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b3e3c8eae6ca64aae996457cf0c1187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a5b3e3c8eae6ca64aae996457cf0c1187">checkInvariant</a> () const</td></tr>
+<tr class="memdesc:a5b3e3c8eae6ca64aae996457cf0c1187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the tree satisfies the Binary Search Tree invariant.  <a href="class_bst.html#a5b3e3c8eae6ca64aae996457cf0c1187">More...</a><br /></td></tr>
 <tr class="separator:a5b3e3c8eae6ca64aae996457cf0c1187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0223b3d12a3effe9541d29b6768a72f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#af0223b3d12a3effe9541d29b6768a72f">isEmpty</a> () const</td></tr>
+<tr class="memdesc:af0223b3d12a3effe9541d29b6768a72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the tree is empty.  <a href="class_bst.html#af0223b3d12a3effe9541d29b6768a72f">More...</a><br /></td></tr>
 <tr class="separator:af0223b3d12a3effe9541d29b6768a72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa9672cc879f25613c40690cf0098e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a2fa9672cc879f25613c40690cf0098e8">size</a> () const</td></tr>
+<tr class="memdesc:a2fa9672cc879f25613c40690cf0098e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total number of nodes in the tree.  <a href="class_bst.html#a2fa9672cc879f25613c40690cf0098e8">More...</a><br /></td></tr>
 <tr class="separator:a2fa9672cc879f25613c40690cf0098e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ddb8f2ecd2034f6a92caa6e6b628e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bst.html#a02ddb8f2ecd2034f6a92caa6e6b628e6">height</a> () const</td></tr>
+<tr class="memdesc:a02ddb8f2ecd2034f6a92caa6e6b628e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the height of the tree (number of edges on the longest path from the root to a leaf).  <a href="class_bst.html#a02ddb8f2ecd2034f6a92caa6e6b628e6">More...</a><br /></td></tr>
 <tr class="separator:a02ddb8f2ecd2034f6a92caa6e6b628e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -137,7 +160,7 @@ class Bst&lt; T &gt;</h3>
 
 <p>Template Binary Search Tree with function pointers for traversal. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00022">22</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00031">31</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac9124c96ba73bebfbe93a1179908292a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9124c96ba73bebfbe93a1179908292a">&#9670;&nbsp;</a></span>Bst() <span class="overload">[1/2]</span></h2>
@@ -153,7 +176,10 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00077">77</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Default constructor. Initializes an empty tree. </p>
+<p>Default constructor implementation. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00234">234</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +197,10 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00080">80</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Destructor. Cleans up the entire tree structure. </p>
+<p>Destructor implementation. Calls recursive delete function. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00240">240</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -193,7 +222,16 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00085">85</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Copy constructor. Performs a deep copy of the tree structure. </p>
+<p>Copy constructor implementation. Calls recursive copy function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="class_bst.html" title="Template Binary Search Tree with function pointers for traversal.">Bst</a> object to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00249">249</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -212,7 +250,10 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00247">247</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Checks if the tree satisfies the Binary Search Tree invariant. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool True if the invariant holds, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00506">506</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +271,11 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00276">276</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Gets the height of the tree (number of edges on the longest path from the root to a leaf). </p>
+<p>Gets the height of the tree.</p>
+<dl class="section return"><dt>Returns</dt><dd>int The height of the tree, or -1 if the tree is empty. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00559">559</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -248,12 +293,14 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00214">214</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Simple in-order traversal that prints the data (requires operator&lt;&lt; for T). </p>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00456">456</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
-<a id="a548552ba241e7b600a04bc55154af36e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a548552ba241e7b600a04bc55154af36e">&#9670;&nbsp;</a></span>inOrder() <span class="overload">[2/3]</span></h2>
+<a id="a4666aa938cc23461357ad0c7d6cadf68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4666aa938cc23461357ad0c7d6cadf68">&#9670;&nbsp;</a></span>inOrder() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,28 +310,33 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_bst.html">Bst</a>&lt; T &gt;::inOrder </td>
           <td>(</td>
-          <td class="paramtype">void(*)(const T &amp;)&#160;</td>
+          <td class="paramtype">void(*)(const T *)&#160;</td>
           <td class="paramname"><em>visit</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00165">165</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Initiates an in-order traversal, applying the visit function to each node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visit</td><td>The function pointer to apply to each node's data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00375">375</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_bst_a548552ba241e7b600a04bc55154af36e_icgraph.png" border="0" usemap="#class_bst_a548552ba241e7b600a04bc55154af36e_icgraph" alt=""/></div>
-<map name="class_bst_a548552ba241e7b600a04bc55154af36e_icgraph" id="class_bst_a548552ba241e7b600a04bc55154af36e_icgraph">
-<area shape="rect" title=" " alt="" coords="208,13,300,39"/>
-<area shape="rect" href="class_weather_data_collection.html#a317191b0b3a183ac9bc02e038b50d7d0" title=" " alt="" coords="5,5,160,47"/>
-</map>
+<div class="center"><img src="class_bst_a4666aa938cc23461357ad0c7d6cadf68_icgraph.png" border="0" usemap="#class_bst_a4666aa938cc23461357ad0c7d6cadf68_icgraph" alt=""/></div>
+<!-- MAP 1 -->
 </div>
 
 </div>
 </div>
-<a id="afca2cc218f063a8379b9e97cfd9bae8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afca2cc218f063a8379b9e97cfd9bae8b">&#9670;&nbsp;</a></span>inOrder() <span class="overload">[3/3]</span></h2>
+<a id="a29bf320ccb52e4ac16aa598177ead488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bf320ccb52e4ac16aa598177ead488">&#9670;&nbsp;</a></span>inOrder() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +346,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_bst.html">Bst</a>&lt; T &gt;::inOrder </td>
           <td>(</td>
-          <td class="paramtype">void(*)(const T &amp;, void *)&#160;</td>
+          <td class="paramtype">void(*)(const T *, void *)&#160;</td>
           <td class="paramname"><em>visit</em>, </td>
         </tr>
         <tr>
@@ -311,12 +363,21 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00208">208</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Initiates an in-order traversal that uses a context pointer for collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visit</td><td>The function pointer to apply (accepts data pointer and context pointer). </td></tr>
+    <tr><td class="paramname">context</td><td>Opaque pointer to the context/collector struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00447">447</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
-<a id="a56e4e604602065a9fe143ec5dfba3536"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e4e604602065a9fe143ec5dfba3536">&#9670;&nbsp;</a></span>insert()</h2>
+<a id="aec1107623bc46ce2d242ca8701706db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1107623bc46ce2d242ca8701706db5">&#9670;&nbsp;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,22 +387,27 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_bst.html">Bst</a>&lt; T &gt;::insert </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00132">132</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Inserts a data value into the BST. Takes ownership of the pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The pointer to the data value to insert. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00322">322</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_bst_a56e4e604602065a9fe143ec5dfba3536_icgraph.png" border="0" usemap="#class_bst_a56e4e604602065a9fe143ec5dfba3536_icgraph" alt=""/></div>
-<map name="class_bst_a56e4e604602065a9fe143ec5dfba3536_icgraph" id="class_bst_a56e4e604602065a9fe143ec5dfba3536_icgraph">
-<area shape="rect" title=" " alt="" coords="208,13,291,39"/>
-<area shape="rect" href="class_weather_data_collection.html#ae2c16b0fadf4b8edee794ab1bea87e47" title=" " alt="" coords="5,5,160,47"/>
-</map>
+<div class="center"><img src="class_bst_aec1107623bc46ce2d242ca8701706db5_icgraph.png" border="0" usemap="#class_bst_aec1107623bc46ce2d242ca8701706db5_icgraph" alt=""/></div>
+<!-- MAP 2 -->
 </div>
 
 </div>
@@ -360,7 +426,10 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00254">254</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Checks if the tree is empty. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool True if the root is null. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00519">519</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +451,17 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00090">90</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Assignment operator. Handles self-assignment and performs a deep copy assignment. </p>
+<p>Assignment operator implementation. Handles cleanup and deep copy.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="class_bst.html" title="Template Binary Search Tree with function pointers for traversal.">Bst</a> object to assign from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Bst&lt;T&gt;&amp; Reference to the updated object. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00259">259</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -400,12 +479,14 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00228">228</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Simple post-order traversal that prints the data (requires operator&lt;&lt; for T). </p>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00476">476</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
-<a id="a53ffa06cb90c2b3d5e4e16640deccb7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53ffa06cb90c2b3d5e4e16640deccb7c">&#9670;&nbsp;</a></span>postOrder() <span class="overload">[2/2]</span></h2>
+<a id="a51d7b801867de18abab95ea64789a548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d7b801867de18abab95ea64789a548">&#9670;&nbsp;</a></span>postOrder() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,14 +496,22 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_bst.html">Bst</a>&lt; T &gt;::postOrder </td>
           <td>(</td>
-          <td class="paramtype">void(*)(const T &amp;)&#160;</td>
+          <td class="paramtype">void(*)(const T *)&#160;</td>
           <td class="paramname"><em>visit</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00193">193</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Initiates a post-order traversal, applying the visit function to each node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visit</td><td>The function pointer to apply to each node's data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00421">421</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -440,12 +529,14 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00221">221</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Simple pre-order traversal that prints the data (requires operator&lt;&lt; for T). </p>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00466">466</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
-<a id="a635962ab972d9ec514b326764c3714a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a635962ab972d9ec514b326764c3714a4">&#9670;&nbsp;</a></span>preOrder() <span class="overload">[2/2]</span></h2>
+<a id="a9e2e20a43023f902a62095631daac9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2e20a43023f902a62095631daac9a6">&#9670;&nbsp;</a></span>preOrder() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,19 +546,27 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_bst.html">Bst</a>&lt; T &gt;::preOrder </td>
           <td>(</td>
-          <td class="paramtype">void(*)(const T &amp;)&#160;</td>
+          <td class="paramtype">void(*)(const T *)&#160;</td>
           <td class="paramname"><em>visit</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00179">179</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Initiates a pre-order traversal, applying the visit function to each node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visit</td><td>The function pointer to apply to each node's data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00398">398</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
-<a id="aaa3dacb8f38c0af9905591cab0d7f1b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa3dacb8f38c0af9905591cab0d7f1b7">&#9670;&nbsp;</a></span>search()</h2>
+<a id="a2d26ff31f41b368b9af71c7ae9a66af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d26ff31f41b368b9af71c7ae9a66af4">&#9670;&nbsp;</a></span>search()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,14 +576,23 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_node.html">Node</a>&lt; T &gt; * <a class="el" href="class_bst.html">Bst</a>&lt; T &gt;::search </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00150">150</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Searches for a data value in the BST. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The pointer to the data value (used for comparison key). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Node&lt;T&gt;* The node containing the value, or nullptr if not found. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00351">351</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
@@ -502,16 +610,15 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00265">265</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Gets the total number of nodes in the tree. </p>
+<dl class="section return"><dt>Returns</dt><dd>int The size of the tree. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00539">539</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_bst_a2fa9672cc879f25613c40690cf0098e8_icgraph.png" border="0" usemap="#class_bst_a2fa9672cc879f25613c40690cf0098e8_icgraph" alt=""/></div>
-<map name="class_bst_a2fa9672cc879f25613c40690cf0098e8_icgraph" id="class_bst_a2fa9672cc879f25613c40690cf0098e8_icgraph">
-<area shape="rect" title=" " alt="" coords="411,13,485,39"/>
-<area shape="rect" href="class_weather_data_collection.html#aacac7f424c8b3dc53de5ea8acbec9631" title=" " alt="" coords="208,5,363,47"/>
-<area shape="rect" href="class_weather_data_collection.html#a317191b0b3a183ac9bc02e038b50d7d0" title=" " alt="" coords="5,5,160,47"/>
-</map>
+<!-- MAP 3 -->
 </div>
 
 </div>

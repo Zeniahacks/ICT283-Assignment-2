@@ -9,20 +9,26 @@ Template node class for Binary Search Tree.
 
 {\ttfamily \#include $<$Bst.\+h$>$}
 
+
+
+Inheritance diagram for Node$<$ T $>$\+:
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_node_ac57506b1a54e5b804f22ae786d3ab737}{Node}} (const T \&value)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_node_af557ae6400a0b59c6c4fd0d325853c83}{Node}} (T $\ast$value)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_node}{Node}}, taking ownership of the provided data pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node_ae923d0417581dd19784d55b901f0f7f0}{$\sim$\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. Deletes the owned data element. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-T \mbox{\hyperlink{class_node_ac450c71a8677a38d306361f9ced518d3}{data}}
-\item 
+T $\ast$ \mbox{\hyperlink{class_node_a6ddf69fca989b717bb570e9d5586d2cc}{data}}
+\begin{DoxyCompactList}\small\item\em Store pointer to the data element. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_node_a2841886a16c27e72b21885025c00b44b}{left}}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointer to the left child node. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_node_ad7092450d89448320103cde1f72da320}{right}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the right child node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -36,26 +42,54 @@ Definition at line 10 of file Bst.\+h.
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_node_ac57506b1a54e5b804f22ae786d3ab737}\label{class_node_ac57506b1a54e5b804f22ae786d3ab737}} 
+\mbox{\Hypertarget{class_node_af557ae6400a0b59c6c4fd0d325853c83}\label{class_node_af557ae6400a0b59c6c4fd0d325853c83}} 
 \index{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}}
 \index{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{Node()}{Node()}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-\mbox{\hyperlink{class_node}{Node}}$<$ T $>$\+::\mbox{\hyperlink{class_node}{Node}} (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{class_node}{Node}}$<$ T $>$\+::\mbox{\hyperlink{class_node}{Node}} (\begin{DoxyParamCaption}\item[{T $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 16 of file Bst.\+h.
+Constructs a \mbox{\hyperlink{class_node}{Node}}, taking ownership of the provided data pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The pointer to the data element. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Bst.\+h.
+
+\mbox{\Hypertarget{class_node_ae923d0417581dd19784d55b901f0f7f0}\label{class_node_ae923d0417581dd19784d55b901f0f7f0}} 
+\index{Node$<$ T $>$@{Node$<$ T $>$}!````~Node@{$\sim$Node}}
+\index{````~Node@{$\sim$Node}!Node$<$ T $>$@{Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Node()}{~Node()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_node}{Node}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_node}{Node}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. Deletes the owned data element. 
+
+
+
+Definition at line 25 of file Bst.\+h.
 
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_node_ac450c71a8677a38d306361f9ced518d3}\label{class_node_ac450c71a8677a38d306361f9ced518d3}} 
+\mbox{\Hypertarget{class_node_a6ddf69fca989b717bb570e9d5586d2cc}\label{class_node_a6ddf69fca989b717bb570e9d5586d2cc}} 
 \index{Node$<$ T $>$@{Node$<$ T $>$}!data@{data}}
 \index{data@{data}!Node$<$ T $>$@{Node$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{data}{data}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
-T \mbox{\hyperlink{class_node}{Node}}$<$ T $>$\+::data}
+T$\ast$ \mbox{\hyperlink{class_node}{Node}}$<$ T $>$\+::data}
+
+
+
+Store pointer to the data element. 
 
 
 
@@ -70,6 +104,10 @@ Definition at line 12 of file Bst.\+h.
 
 
 
+Pointer to the left child node. 
+
+
+
 Definition at line 13 of file Bst.\+h.
 
 \mbox{\Hypertarget{class_node_ad7092450d89448320103cde1f72da320}\label{class_node_ad7092450d89448320103cde1f72da320}} 
@@ -78,6 +116,10 @@ Definition at line 13 of file Bst.\+h.
 \doxysubsubsection{\texorpdfstring{right}{right}}
 {\footnotesize\ttfamily template$<$class T $>$ \\
 \mbox{\hyperlink{class_node}{Node}}$<$T$>$$\ast$ \mbox{\hyperlink{class_node}{Node}}$<$ T $>$\+::right}
+
+
+
+Pointer to the right child node. 
 
 
 

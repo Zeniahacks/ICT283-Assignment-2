@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['left_44',['left',['../class_node.html#a2841886a16c27e72b21885025c00b44b',1,'Node']]],
-  ['loadfromfiles_45',['loadFromFiles',['../class_weather_data_collection.html#a208171f41a04ea93ec8b18780d765f39',1,'WeatherDataCollection']]]
+  ['name_80',['name',['../structModelFile_1_1Template.html#a7554893ece2ce712768a61a8662129b5',1,'ModelFile::Template']]],
+  ['node_81',['Node',['../classNode.html',1,'Node&lt; T &gt;'],['../classNode.html#af557ae6400a0b59c6c4fd0d325853c83',1,'Node::Node()']]],
+  ['node_3c_20weatherrecord_20_3e_82',['Node&lt; WeatherRecord &gt;',['../classNode.html',1,'']]]
 ];

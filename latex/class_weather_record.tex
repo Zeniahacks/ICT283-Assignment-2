@@ -2,40 +2,55 @@
 \label{class_weather_record}\index{WeatherRecord@{WeatherRecord}}
 
 
+Represents a single weather data observation at a specific date and time.  
+
+
+
+
 {\ttfamily \#include $<$Weather\+Data.\+h$>$}
 
 
 
 Collaboration diagram for Weather\+Record\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=164pt]{class_weather_record__coll__graph}
-\end{center}
-\end{figure}
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_weather_record_a763c553bc47d7723d38ef96b94ed2dab}{Weather\+Record}} (const \mbox{\hyperlink{class_date}{Date}} \&d, double ws, double temp, double sr)
 \item 
 bool \mbox{\hyperlink{class_weather_record_a96728b5c02d42bbe650323b0001aba50}{operator$<$}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
-\item 
+\begin{DoxyCompactList}\small\item\em Less-\/than comparison operator. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}{operator$>$}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
-\item 
+\begin{DoxyCompactList}\small\item\em Greater-\/than comparison operator. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}{operator==}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Equality comparison operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_record_a95caa6fa91888fb3ecb2531c98f2ed84}{Weather\+Record}} (\mbox{\hyperlink{class_date}{Date}} $\ast$d, double ws, double temp, double sr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_record_acebb4605cd7521efa06ede637c7db50a}{$\sim$\+Weather\+Record}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_record_a13f313682e53d7faa11d1cc36bcb3794}{Weather\+Record}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. Performs a deep copy of the \mbox{\hyperlink{class_date}{Date}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_record}{Weather\+Record}} \& \mbox{\hyperlink{class_weather_record_a44283b221fde52093611bb6ed1b58f44}{operator=}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. Performs a deep copy of the \mbox{\hyperlink{class_date}{Date}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weather_record_a96728b5c02d42bbe650323b0001aba50}{operator$<$}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
+\begin{DoxyCompactList}\small\item\em Less-\/than comparison operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}{operator$>$}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
+\begin{DoxyCompactList}\small\item\em Greater-\/than comparison operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}{operator==}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality comparison operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_date}{Date}} \mbox{\hyperlink{class_weather_record_a70f012d48746320340d318fe747104ee}{date}}
 \item 
 double \mbox{\hyperlink{class_weather_record_a7720d281cc2f8762f56949c4f662dba3}{wind\+Speed}}
-\item 
+\begin{DoxyCompactList}\small\item\em Wind speed recorded (in m/s). \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_weather_record_ac805b71758371a9eff0fdb498dce30d3}{temperature}}
-\item 
+\begin{DoxyCompactList}\small\item\em Air temperature recorded (in degrees Celsius). \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_weather_record_ad0949ad871135e6c854a80ed75df76fa}{solar\+Radiation}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Solar radiation recorded (in W/m$^\wedge$2). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_date}{Date}} $\ast$ \mbox{\hyperlink{class_weather_record_a9c80c6669563241f7896ab182c999ae1}{date}}
+\begin{DoxyCompactList}\small\item\em Pointer to the \mbox{\hyperlink{class_date}{Date}} and time of the record. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,7 +59,9 @@ std\+::ostream \& \mbox{\hyperlink{class_weather_record_a009055c1258017f36456e81
 
 
 \doxysubsection{Detailed Description}
+Represents a single weather data observation at a specific date and time. 
 
+This class holds the date, wind speed, temperature, and solar radiation for a single recorded observation. It includes comparison operators essential for storage within the Binary Search Tree (B\+ST). 
 
 Definition at line 49 of file Weather\+Data.\+h.
 
@@ -54,12 +71,109 @@ Definition at line 49 of file Weather\+Data.\+h.
 \mbox{\Hypertarget{class_weather_record_a763c553bc47d7723d38ef96b94ed2dab}\label{class_weather_record_a763c553bc47d7723d38ef96b94ed2dab}} 
 \index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
 \index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
-\doxysubsubsection{\texorpdfstring{WeatherRecord()}{WeatherRecord()}}
+\doxysubsubsection{\texorpdfstring{WeatherRecord()}{WeatherRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Weather\+Record\+::\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{d,  }\item[{double}]{ws,  }\item[{double}]{temp,  }\item[{double}]{sr }\end{DoxyParamCaption})}
 
 
 
 Definition at line 11 of file Weather\+Data.\+cpp.
+
+\mbox{\Hypertarget{class_weather_record_a95caa6fa91888fb3ecb2531c98f2ed84}\label{class_weather_record_a95caa6fa91888fb3ecb2531c98f2ed84}} 
+\index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
+\index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{WeatherRecord()}{WeatherRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Weather\+Record\+::\+Weather\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_date}{Date}} $\ast$}]{d,  }\item[{double}]{ws,  }\item[{double}]{temp,  }\item[{double}]{sr }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor for \mbox{\hyperlink{class_weather_record}{Weather\+Record}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Pointer to the \mbox{\hyperlink{class_date}{Date}} object. \\
+\hline
+{\em ws} & Wind speed value. \\
+\hline
+{\em temp} & Temperature value. \\
+\hline
+{\em sr} & Solar radiation value.\\
+\hline
+\end{DoxyParams}
+Initializes a weather record with specific values and takes ownership of the provided \mbox{\hyperlink{class_date}{Date}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & -\/ Pointer to the \mbox{\hyperlink{class_date}{Date}} object (ownership is transferred). \\
+\hline
+{\em ws} & -\/ Wind speed. \\
+\hline
+{\em temp} & -\/ Temperature. \\
+\hline
+{\em sr} & -\/ Solar radiation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Weather\+Record.\+cpp.
+
+\mbox{\Hypertarget{class_weather_record_acebb4605cd7521efa06ede637c7db50a}\label{class_weather_record_acebb4605cd7521efa06ede637c7db50a}} 
+\index{WeatherRecord@{WeatherRecord}!````~WeatherRecord@{$\sim$WeatherRecord}}
+\index{````~WeatherRecord@{$\sim$WeatherRecord}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{$\sim$WeatherRecord()}{~WeatherRecord()}}
+{\footnotesize\ttfamily Weather\+Record\+::$\sim$\+Weather\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destructor for \mbox{\hyperlink{class_weather_record}{Weather\+Record}}.
+
+Ensures the dynamically allocated \mbox{\hyperlink{class_date}{Date}} object is properly deleted.
+
+Deletes the owned \mbox{\hyperlink{class_date}{Date}} object.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Weather\+Record.\+cpp.
+
+\mbox{\Hypertarget{class_weather_record_a13f313682e53d7faa11d1cc36bcb3794}\label{class_weather_record_a13f313682e53d7faa11d1cc36bcb3794}} 
+\index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
+\index{WeatherRecord@{WeatherRecord}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{WeatherRecord()}{WeatherRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Weather\+Record\+::\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. Performs a deep copy of the \mbox{\hyperlink{class_date}{Date}} object. 
+
+Copy constructor for \mbox{\hyperlink{class_weather_record}{Weather\+Record}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_weather_record}{Weather\+Record}} object to copy from.\\
+\hline
+\end{DoxyParams}
+Performs a deep copy of the \mbox{\hyperlink{class_date}{Date}} object to ensure records are independent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The \mbox{\hyperlink{class_weather_record}{Weather\+Record}} object to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Weather\+Record.\+cpp.
 
 
 
@@ -67,33 +181,163 @@ Definition at line 11 of file Weather\+Data.\+cpp.
 \mbox{\Hypertarget{class_weather_record_a96728b5c02d42bbe650323b0001aba50}\label{class_weather_record_a96728b5c02d42bbe650323b0001aba50}} 
 \index{WeatherRecord@{WeatherRecord}!operator$<$@{operator$<$}}
 \index{operator$<$@{operator$<$}!WeatherRecord@{WeatherRecord}}
-\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool Weather\+Record\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
 
 
 
+Less-\/than comparison operator. 
+
+Compares two \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects based on their \mbox{\hyperlink{class_date}{Date}} and Time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The other \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ True if this record is chronologically before the other. 
+\end{DoxyReturn}
+
+
 Definition at line 14 of file Weather\+Data.\+cpp.
+
+\mbox{\Hypertarget{class_weather_record_a96728b5c02d42bbe650323b0001aba50}\label{class_weather_record_a96728b5c02d42bbe650323b0001aba50}} 
+\index{WeatherRecord@{WeatherRecord}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Weather\+Record\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Less-\/than comparison operator. 
+
+Compares two \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects primarily based on their \mbox{\hyperlink{class_date}{Date}}. 
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if this record is chronologically less than the other. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_weather_record_a44283b221fde52093611bb6ed1b58f44}\label{class_weather_record_a44283b221fde52093611bb6ed1b58f44}} 
+\index{WeatherRecord@{WeatherRecord}!operator=@{operator=}}
+\index{operator=@{operator=}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \& Weather\+Record\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. Performs a deep copy of the \mbox{\hyperlink{class_date}{Date}} object. 
+
+Assignment operator for \mbox{\hyperlink{class_weather_record}{Weather\+Record}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_weather_record}{Weather\+Record}} object to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_weather_record}{Weather\+Record}}\& A reference to the current object.
+\end{DoxyReturn}
+Cleans up the existing \mbox{\hyperlink{class_date}{Date}} object and performs a deep copy assignment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The \mbox{\hyperlink{class_weather_record}{Weather\+Record}} object to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_weather_record}{Weather\+Record}}\& -\/ Reference to the updated object. 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Weather\+Record.\+cpp.
 
 \mbox{\Hypertarget{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}\label{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}} 
 \index{WeatherRecord@{WeatherRecord}!operator==@{operator==}}
 \index{operator==@{operator==}!WeatherRecord@{WeatherRecord}}
-\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool Weather\+Record\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
 
 
 
+Equality comparison operator. 
+
+Compares two \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects based on their \mbox{\hyperlink{class_date}{Date}} and Time (used as the primary key).
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The other \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ True if both records have the same date and time. 
+\end{DoxyReturn}
+
+
 Definition at line 22 of file Weather\+Data.\+cpp.
 
+\mbox{\Hypertarget{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}\label{class_weather_record_a2a34fb7dfafdfff7ff82a13dfae8fae3}} 
+\index{WeatherRecord@{WeatherRecord}!operator==@{operator==}}
+\index{operator==@{operator==}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Weather\+Record\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality comparison operator. 
+
+Compares two \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects for equality based on their \mbox{\hyperlink{class_date}{Date}}. 
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if both records have the same \mbox{\hyperlink{class_date}{Date}}. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}\label{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}} 
 \index{WeatherRecord@{WeatherRecord}!operator$>$@{operator$>$}}
 \index{operator$>$@{operator$>$}!WeatherRecord@{WeatherRecord}}
-\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool Weather\+Record\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
 
 
 
+Greater-\/than comparison operator. 
+
+Compares two \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects based on their \mbox{\hyperlink{class_date}{Date}} and Time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The other \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ True if this record is chronologically after the other. 
+\end{DoxyReturn}
+
+
 Definition at line 18 of file Weather\+Data.\+cpp.
 
+\mbox{\Hypertarget{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}\label{class_weather_record_a0984be568b0ed7a74c3c6d0735ac8120}} 
+\index{WeatherRecord@{WeatherRecord}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Weather\+Record\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Greater-\/than comparison operator. 
+
+Compares two \mbox{\hyperlink{class_weather_record}{Weather\+Record}} objects primarily based on their \mbox{\hyperlink{class_date}{Date}}. 
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if this record is chronologically greater than the other. 
+\end{DoxyReturn}
 
 
 \doxysubsection{Friends And Related Function Documentation}
@@ -110,10 +354,24 @@ Definition at line 26 of file Weather\+Data.\+cpp.
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_weather_record_a9c80c6669563241f7896ab182c999ae1}\label{class_weather_record_a9c80c6669563241f7896ab182c999ae1}} 
+\index{WeatherRecord@{WeatherRecord}!date@{date}}
+\index{date@{date}!WeatherRecord@{WeatherRecord}}
+\doxysubsubsection{\texorpdfstring{date}{date}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_date}{Date}}$\ast$ Weather\+Record\+::date}
+
+
+
+Pointer to the \mbox{\hyperlink{class_date}{Date}} and time of the record. 
+
+
+
+Definition at line 21 of file Weather\+Record.\+h.
+
 \mbox{\Hypertarget{class_weather_record_a70f012d48746320340d318fe747104ee}\label{class_weather_record_a70f012d48746320340d318fe747104ee}} 
 \index{WeatherRecord@{WeatherRecord}!date@{date}}
 \index{date@{date}!WeatherRecord@{WeatherRecord}}
-\doxysubsubsection{\texorpdfstring{date}{date}}
+\doxysubsubsection{\texorpdfstring{date}{date}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_date}{Date}} Weather\+Record\+::date}
 
 
@@ -128,6 +386,10 @@ Definition at line 51 of file Weather\+Data.\+h.
 
 
 
+Solar radiation recorded (in W/m$^\wedge$2). 
+
+
+
 Definition at line 54 of file Weather\+Data.\+h.
 
 \mbox{\Hypertarget{class_weather_record_ac805b71758371a9eff0fdb498dce30d3}\label{class_weather_record_ac805b71758371a9eff0fdb498dce30d3}} 
@@ -135,6 +397,10 @@ Definition at line 54 of file Weather\+Data.\+h.
 \index{temperature@{temperature}!WeatherRecord@{WeatherRecord}}
 \doxysubsubsection{\texorpdfstring{temperature}{temperature}}
 {\footnotesize\ttfamily double Weather\+Record\+::temperature}
+
+
+
+Air temperature recorded (in degrees Celsius). 
 
 
 
@@ -148,6 +414,10 @@ Definition at line 53 of file Weather\+Data.\+h.
 
 
 
+Wind speed recorded (in m/s). 
+
+
+
 Definition at line 52 of file Weather\+Data.\+h.
 
 
@@ -155,4 +425,6 @@ Definition at line 52 of file Weather\+Data.\+h.
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{_weather_data_8h}{Weather\+Data.\+h}}\item 
-\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_weather_record_8h}{Weather\+Record.\+h}}\item 
+\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\item 
+\mbox{\hyperlink{_weather_record_8cpp}{Weather\+Record.\+cpp}}\end{DoxyCompactItemize}

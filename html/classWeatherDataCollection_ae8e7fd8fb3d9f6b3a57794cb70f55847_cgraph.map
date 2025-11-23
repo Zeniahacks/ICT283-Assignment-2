@@ -1,0 +1,4 @@
+<map id="WeatherDataCollection::monthExists" name="WeatherDataCollection::monthExists">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,157,47"/>
+<area shape="rect" id="node2" href="$classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="205,13,308,39"/>
+</map>

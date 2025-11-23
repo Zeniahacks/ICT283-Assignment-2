@@ -1,26 +1,55 @@
 \hypertarget{struct_collection_context}{}\doxysection{Collection\+Context Struct Reference}
 \label{struct_collection_context}\index{CollectionContext@{CollectionContext}}
+
+
+Context structure used during B\+ST traversals to filter and collect records.  
+
+
+
+
+{\ttfamily \#include $<$Weather\+Record.\+h$>$}
+
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $>$ $\ast$ \mbox{\hyperlink{struct_collection_context_aa8620149ccba5b87793d279e8c17eda4}{records}}
 \item 
 int \mbox{\hyperlink{struct_collection_context_aea866f273ccd54b1663e6ab7c2f457c6}{target\+Month}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The target month (1-\/12) used for filtering. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{struct_collection_context_ac609cb79515b0f16183139782932d939}{records}}
+\begin{DoxyCompactList}\small\item\em Pointer to the vector where collected \mbox{\hyperlink{class_weather_record}{Weather\+Record}} pointers are stored. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_collection_context_ab52a39baa4b36964bcc7f8f065884a83}{target\+Year}}
+\begin{DoxyCompactList}\small\item\em The target year used for filtering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Context structure used during B\+ST traversals to filter and collect records. 
 
+This structure holds a pointer to a result vector and optional filtering criteria (target month and year). 
 
 Definition at line 266 of file Weather\+Data.\+cpp.
 
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_collection_context_ac609cb79515b0f16183139782932d939}\label{struct_collection_context_ac609cb79515b0f16183139782932d939}} 
+\index{CollectionContext@{CollectionContext}!records@{records}}
+\index{records@{records}!CollectionContext@{CollectionContext}}
+\doxysubsubsection{\texorpdfstring{records}{records}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_weather_record}{Weather\+Record}}$\ast$$>$$\ast$ Collection\+Context\+::records}
+
+
+
+Pointer to the vector where collected \mbox{\hyperlink{class_weather_record}{Weather\+Record}} pointers are stored. 
+
+
+
+Definition at line 114 of file Weather\+Record.\+h.
+
 \mbox{\Hypertarget{struct_collection_context_aa8620149ccba5b87793d279e8c17eda4}\label{struct_collection_context_aa8620149ccba5b87793d279e8c17eda4}} 
 \index{CollectionContext@{CollectionContext}!records@{records}}
 \index{records@{records}!CollectionContext@{CollectionContext}}
-\doxysubsubsection{\texorpdfstring{records}{records}}
+\doxysubsubsection{\texorpdfstring{records}{records}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_weather_record}{Weather\+Record}}$>$$\ast$ Collection\+Context\+::records}
 
 
@@ -35,10 +64,29 @@ Definition at line 267 of file Weather\+Data.\+cpp.
 
 
 
+The target month (1-\/12) used for filtering. 
+
+
+
 Definition at line 268 of file Weather\+Data.\+cpp.
 
+\mbox{\Hypertarget{struct_collection_context_ab52a39baa4b36964bcc7f8f065884a83}\label{struct_collection_context_ab52a39baa4b36964bcc7f8f065884a83}} 
+\index{CollectionContext@{CollectionContext}!targetYear@{targetYear}}
+\index{targetYear@{targetYear}!CollectionContext@{CollectionContext}}
+\doxysubsubsection{\texorpdfstring{targetYear}{targetYear}}
+{\footnotesize\ttfamily int Collection\+Context\+::target\+Year}
 
 
-The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+
+The target year used for filtering. 
+
+
+
+Definition at line 124 of file Weather\+Record.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_weather_data_8cpp}{Weather\+Data.\+cpp}}\item 
+\mbox{\hyperlink{_weather_record_8h}{Weather\+Record.\+h}}\end{DoxyCompactItemize}

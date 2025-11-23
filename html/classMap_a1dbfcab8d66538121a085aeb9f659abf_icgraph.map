@@ -1,0 +1,11 @@
+<map id="Map::insert" name="Map::insert">
+<area shape="rect" id="node1" title="Inserts a key&#45;value pair into the map." alt="" coords="1381,46,1469,73"/>
+<area shape="rect" id="node2" href="$classWeatherDataCollection.html#ae2c16b0fadf4b8edee794ab1bea87e47" title=" " alt="" coords="1181,39,1333,80"/>
+<area shape="rect" id="node3" href="$classWeatherDataCollection.html#a59d06eed3551fd09398d7d84461f54fd" title="Loads weather data from a file specified by the filename." alt="" coords="981,5,1133,47"/>
+<area shape="rect" id="node4" href="$classWeatherDataCollection.html#ab989cab32d91cff3b7a9f31bcdc31a47" title=" " alt="" coords="981,71,1133,112"/>
+<area shape="rect" id="node5" href="$classWeatherDataCollection.html#a208171f41a04ea93ec8b18780d765f39" title=" " alt="" coords="781,71,933,112"/>
+<area shape="rect" id="node6" href="$classAssignment2App.html#add343d8222b637ba984db13b2bf1cced" title="Handles the loading of weather data from the user&#45;specified file." alt="" coords="556,78,733,105"/>
+<area shape="rect" id="node7" href="$classAssignment2App.html#ad01929ce6c99caeb9eda8132c24fa130" title="Processes the user&#39;s choice from the menu." alt="" coords="299,78,508,105"/>
+<area shape="rect" id="node8" href="$classAssignment2App.html#a04d0de259955552f8641eb67c2978418" title="Runs the main application loop." alt="" coords="104,78,251,105"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function of the program." alt="" coords="5,78,56,105"/>
+</map>

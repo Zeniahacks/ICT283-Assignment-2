@@ -1,0 +1,9 @@
+<map id="Assignment2App::calculateCorrelations" name="Assignment2App::calculateCorrelations">
+<area shape="rect" id="node1" title="Calculates and displays Pearson Correlation Coefficients for the specified month across all years." alt="" coords="5,27,183,69"/>
+<area shape="rect" id="node2" href="$classWeatherDataCollection.html#adf00be9874637aa86f79d03f79e3591d" title="Calculation of SPCC." alt="" coords="231,27,383,69"/>
+<area shape="rect" id="node3" href="$namespaceStatistics.html#a7d95b59b1f89f4df9d957c6ebf0acc74" title="Calculates the Sample Pearson Correlation Coefficient (SPCC) between two datasets." alt="" coords="431,5,595,32"/>
+<area shape="rect" id="node4" href="$classWeatherDataCollection.html#a9f12fb0238999c6de5e8b28f2d75f210" title="Get data for Month only." alt="" coords="437,57,589,98"/>
+<area shape="rect" id="node5" href="$classMap.html#a12db9738ef141377c56c68bc17ab8537" title="Retrieves a pointer to the value associated with the specified key (mutable version)." alt="" coords="685,35,752,61"/>
+<area shape="rect" id="node6" href="$classWeatherDataCollection.html#ae8e7fd8fb3d9f6b3a57794cb70f55847" title=" " alt="" coords="643,86,795,127"/>
+<area shape="rect" id="node7" href="$classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="843,93,945,120"/>
+</map>

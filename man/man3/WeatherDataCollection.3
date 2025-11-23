@@ -1,8 +1,9 @@
-.TH "WeatherDataCollection" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "WeatherDataCollection" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-WeatherDataCollection
+WeatherDataCollection \- Collection of weather data with BST storage and month mapping\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -14,9 +15,11 @@ WeatherDataCollection
 .ti -1c
 .RI "\fBWeatherDataCollection\fP ()"
 .br
+.RI "Default constructor for \fBWeatherDataCollection\fP\&. "
 .ti -1c
 .RI "\fB~WeatherDataCollection\fP ()"
 .br
+.RI "Destructor for \fBWeatherDataCollection\fP\&. "
 .ti -1c
 .RI "void \fBaddWeatherRecord\fP (const \fBWeatherRecord\fP &record)"
 .br
@@ -51,32 +54,214 @@ WeatherDataCollection
 .ti -1c
 .RI "void \fBdisplayAllData\fP () const"
 .br
+.RI "Displays all stored weather data records to the console in order\&. "
 .ti -1c
 .RI "int \fBgetTotalRecords\fP () const"
 .br
+.RI "Returns the total number of weather records stored in the collection\&. "
 .ti -1c
 .RI "std::vector< int > \fBgetAvailableYears\fP () const"
 .br
+.ti -1c
+.RI "\fBWeatherDataCollection\fP ()"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "\fB~WeatherDataCollection\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBWeatherDataCollection\fP (const \fBWeatherDataCollection\fP &other)"
+.br
+.RI "Copy constructor (Rule of Three)\&. "
+.ti -1c
+.RI "\fBWeatherDataCollection\fP & \fBoperator=\fP (const \fBWeatherDataCollection\fP &other)"
+.br
+.RI "Assignment operator (Rule of Three)\&. "
+.ti -1c
+.RI "void \fBaddWeatherRecord\fP (\fBWeatherRecord\fP *record)"
+.br
+.RI "Adds a single weather record to the collection\&. "
+.ti -1c
+.RI "void \fBloadFromFiles\fP (std::string *filename)"
+.br
+.RI "Loads weather data from a file specified by the filename\&. "
+.ti -1c
+.RI "std::vector< \fBWeatherRecord\fP * > * \fBgetDataForMonth\fP (int *month) const"
+.br
+.RI "Retrieves a vector of pointers to all records for a given month, across all years\&. "
+.ti -1c
+.RI "std::vector< \fBWeatherRecord\fP * > * \fBgetDataForYearMonth\fP (int *year, int *month) const"
+.br
+.RI "Retrieves a vector of pointers to records for a specific year and month\&. "
+.ti -1c
+.RI "std::vector< \fBWeatherRecord\fP * > * \fBgetDataForSpecificMonthYear\fP (int *year, int *month) const"
+.br
+.RI "Retrieves a vector of pointers to records for a specific year and month (alternative function name)\&. "
+.ti -1c
+.RI "double \fBcalculateSPCC\fP (int *year, int *month, std::string *type) const"
+.br
+.RI "Calculates the Sample Pearson Correlation Coefficient (SPCC) for data points of a specific year and month, based on the correlation type requested\&. "
+.ti -1c
+.RI "void \fBdisplayAverageWindSpeed\fP (int *year, int *month) const"
+.br
+.RI "Displays the average wind speed and its standard deviation for a given year and month\&. "
+.ti -1c
+.RI "void \fBdisplayMonthlyTemperatures\fP (int *year) const"
+.br
+.RI "Displays the average and standard deviation of temperature for each month of a given year\&. "
+.ti -1c
+.RI "void \fBgenerateMonthlyStats\fP (int *year, std::string *filename) const"
+.br
+.RI "Generates and writes a comprehensive monthly statistics report to a file\&. "
+.ti -1c
+.RI "void \fBdisplayAllData\fP () const"
+.br
+.RI "Displays all weather data records stored in the collection (typically using an inorder traversal of the BST)\&. "
+.ti -1c
+.RI "int \fBgetTotalRecords\fP () const"
+.br
+.RI "Returns the total number of weather records stored in the collection\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
+Collection of weather data with BST storage and month mapping\&. 
+
+This class manages weather data records, storing them in a Binary Search Tree (BST) sorted by date, and additionally maintaining a map for quick access by month\&. It provides functionality for loading data, performing statistical calculations, and generating reports\&. 
+.PP
 Definition at line 67 of file WeatherData\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "WeatherDataCollection::WeatherDataCollection ()"
 
 .PP
+Default constructor for \fBWeatherDataCollection\fP\&. Initializes the Binary Search Tree (BST) and the \fBMap\fP used for monthly lookups\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
 Definition at line 33 of file WeatherData\&.cpp\&.
 .SS "WeatherDataCollection::~WeatherDataCollection ()"
 
 .PP
+Destructor for \fBWeatherDataCollection\fP\&. Deletes the dynamically allocated BST and \fBMap\fP structures\&. The BST is assumed to handle the deletion of the contained \fBWeatherRecord\fP objects and their associated \fBDate\fP objects\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
 Definition at line 36 of file WeatherData\&.cpp\&.
+.SS "WeatherDataCollection::WeatherDataCollection ()"
+
+.PP
+Default constructor\&. Initializes the internal BST and \fBMap\fP structures\&. 
+.SS "WeatherDataCollection::~WeatherDataCollection ()"
+
+.PP
+Destructor\&. Cleans up and deletes dynamically allocated memory for the BST and \fBMap\fP\&. 
+.SS "WeatherDataCollection::WeatherDataCollection (const \fBWeatherDataCollection\fP & other)"
+
+.PP
+Copy constructor (Rule of Three)\&. Copy constructor for \fBWeatherDataCollection\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBWeatherDataCollection\fP object to copy from\&.
+.RE
+.PP
+Performs a deep copy of the BST and the monthly lookup \fBMap\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - The \fBWeatherDataCollection\fP object to copy from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 62 of file WeatherDataCollection\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void WeatherDataCollection::addWeatherRecord (const \fBWeatherRecord\fP & record)"
 
 .PP
 Definition at line 39 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::addWeatherRecord (\fBWeatherRecord\fP * record)"
+
+.PP
+Adds a single weather record to the collection\&. Adds a new \fBWeatherRecord\fP to the collection\&.
+.PP
+Inserts the record into the BST and updates the dataByMonth map\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecord\fP A pointer to the \fBWeatherRecord\fP to add\&.
+.RE
+.PP
+Inserts the record into the BST for ordered storage and also adds its pointer to the corresponding monthly vector in the \fBMap\fP for fast lookup\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecord\fP - Pointer to the \fBWeatherRecord\fP to be added\&. Ownership remains with this class\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 93 of file WeatherDataCollection\&.cpp\&.
+.SS "double WeatherDataCollection::calculateSPCC (int * year, int * month, std::string * type) const"
+
+.PP
+Calculates the Sample Pearson Correlation Coefficient (SPCC) for data points of a specific year and month, based on the correlation type requested\&. Calculates the Sample Pearson Correlation Coefficient (SPCC) between two variables for a given month and year\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP A constant pointer to the integer representing the year (or sentinel for all years)\&. 
+.br
+\fImonth\fP A constant pointer to the integer representing the month (1-12)\&. 
+.br
+\fItype\fP A constant pointer to the string indicating the correlation type (e\&.g\&., 'S_T', 'S_R', 'T_R')\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double The calculated SPCC value\&.
+.RE
+.PP
+Supports calculation across all years for a given month if \fCyear\fP is 0\&. The correlation type (\fCS_T\fP, \fCS_R\fP, \fCT_R\fP) specifies the variables to compare\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP - Pointer to the target year (0 for all years)\&. 
+.br
+\fImonth\fP - Pointer to the target month (1-12)\&. 
+.br
+\fItype\fP - Pointer to the string defining the correlation type ('S_T', 'S_R', 'T_R')\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double - The calculated SPCC value, or 0\&.0 if data is insufficient or input is invalid\&. 
+.RE
+.PP
+
+.PP
+Definition at line 346 of file WeatherDataCollection\&.cpp\&.
 .SS "double WeatherDataCollection::calculateSPCC (int month, const std::string & correlationType) const"
 
 .PP
@@ -86,35 +271,234 @@ Definition at line 279 of file WeatherData\&.cpp\&.
 .SS "void WeatherDataCollection::displayAllData () const"
 
 .PP
+Displays all stored weather data records to the console in order\&. Performs an in-order traversal on the BST and prints each record\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
 Definition at line 461 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::displayAllData () const"
+
+.PP
+Displays all weather data records stored in the collection (typically using an inorder traversal of the BST)\&. 
+.SS "void WeatherDataCollection::displayAverageWindSpeed (int * year, int * month) const"
+
+.PP
+Displays the average wind speed and its standard deviation for a given year and month\&. Calculates and displays the average wind speed and standard deviation for a specific year and month\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP A constant pointer to the integer representing the year\&. 
+.br
+\fImonth\fP A constant pointer to the integer representing the month (1-12)\&.
+.RE
+.PP
+Retrieves the relevant data and uses the \fBStatistics\fP module for calculation and console output\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP - Pointer to the target year\&. 
+.br
+\fImonth\fP - Pointer to the target month (1-12)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 409 of file WeatherDataCollection\&.cpp\&.
 .SS "void WeatherDataCollection::displayAverageWindSpeed (int year, int month) const"
 
 .PP
 New Menu option tasked from assignment 2\&. Menu Option 2: The average wind speed and sample standard deviation for this wind speed given a specified month and year 
 .PP
 Definition at line 192 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::displayMonthlyTemperatures (int * year) const"
+
+.PP
+Displays the average and standard deviation of temperature for each month of a given year\&. Displays the monthly temperature averages, standard deviations, and MADs for a specified year\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP A constant pointer to the integer representing the year\&.
+.RE
+.PP
+Iterates through all 12 months, retrieves data, performs statistical calculations, and outputs the results\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP - Pointer to the target year\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 440 of file WeatherDataCollection\&.cpp\&.
 .SS "void WeatherDataCollection::displayMonthlyTemperatures (int year) const"
 
 .PP
 Menu option 3: Average ambient air temperature and sample standard deviation for each month of a specified year\&. 
 .PP
 Definition at line 216 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::generateMonthlyStats (int * year, std::string * filename) const"
+
+.PP
+Generates and writes a comprehensive monthly statistics report to a file\&. Generates a CSV file containing monthly statistics for wind speed, temperature, and solar radiation for a specified year\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP A constant pointer to the integer representing the year\&. 
+.br
+\fIfilename\fP A constant pointer to the output filename string\&.
+.RE
+.PP
+Calculates mean, standard deviation, and Mean Absolute Deviation (MAD) for wind and temperature, and total solar radiation for each month\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP - Pointer to the target year\&. 
+.br
+\fIfilename\fP - Pointer to the output filename (e\&.g\&., 'WindTempSolar\&.csv')\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 479 of file WeatherDataCollection\&.cpp\&.
 .SS "void WeatherDataCollection::generateMonthlyStats (int year, const std::string & filename) const"
 
 .PP
 Definition at line 404 of file WeatherData\&.cpp\&.
 .SS "std::vector<int> WeatherDataCollection::getAvailableYears () const"
 
+.SS "std::vector< \fBWeatherRecord\fP * > * WeatherDataCollection::getDataForMonth (int * month) const"
+
+.PP
+Retrieves a vector of pointers to all records for a given month, across all years\&. Retrieves all weather records for a specific month across all years\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fImonth\fP A constant pointer to the integer representing the month (1-12)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<WeatherRecord*>* A pointer to the vector of records, or null if month is invalid/no data\&.
+.RE
+.PP
+Performs a traversal of the BST to collect all records matching the month, regardless of year\&. The year parameter in the internal context is set to 0 to indicate all years\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fImonth\fP - Pointer to the target month (1-12)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<WeatherRecord*>* - Pointer to a new vector containing deep copies of the records, or nullptr if month is invalid\&. Caller must delete the vector and its contents\&. 
+.RE
+.PP
+
+.PP
+Definition at line 295 of file WeatherDataCollection\&.cpp\&.
 .SS "std::vector< \fBWeatherRecord\fP > WeatherDataCollection::getDataForMonth (int month) const"
 
 .PP
 Get data for Month only\&. 
 .PP
 Definition at line 245 of file WeatherData\&.cpp\&.
+.SS "std::vector< \fBWeatherRecord\fP * > * WeatherDataCollection::getDataForSpecificMonthYear (int * year, int * month) const"
+
+.PP
+Retrieves a vector of pointers to records for a specific year and month (alternative function name)\&. Retrieves all weather records for a specific year and month\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP A constant pointer to the integer representing the year\&. 
+.br
+\fImonth\fP A constant pointer to the integer representing the month (1-12)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<WeatherRecord*>* A pointer to the vector of records\&.
+.RE
+.PP
+This helper is specifically designed to use the collectByYearMonth traversal function\&. The returned vector contains \fIdeep copies\fP of the records\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP - Pointer to the target year\&. 
+.br
+\fImonth\fP - Pointer to the target month (1-12)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<WeatherRecord*>* - Pointer to a new vector containing deep copies of the records, or nullptr if input is invalid\&. Caller must delete the vector and its contents\&. 
+.RE
+.PP
+
+.PP
+Definition at line 320 of file WeatherDataCollection\&.cpp\&.
 .SS "std::vector< \fBWeatherRecord\fP > WeatherDataCollection::getDataForSpecificMonthYear (int year, int month) const"
 
 .PP
 Definition at line 323 of file WeatherData\&.cpp\&.
+.SS "std::vector< \fBWeatherRecord\fP * > * WeatherDataCollection::getDataForYearMonth (int * year, int * month) const"
+
+.PP
+Retrieves a vector of pointers to records for a specific year and month\&. Retrieves all weather records for a specific year and month\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP A constant pointer to the integer representing the year\&. 
+.br
+\fImonth\fP A constant pointer to the integer representing the month (1-12)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<WeatherRecord*>* A pointer to the vector of records\&. 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+This is typically implemented by iterating through the month data and filtering by year\&.
+.RE
+.PP
+Performs a traversal of the BST to collect matching records\&. Note: The returned vector contains \fIdeep copies\fP of the records to isolate them from the main collection\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIyear\fP - Pointer to the target year (e\&.g\&., 2010)\&. 
+.br
+\fImonth\fP - Pointer to the target month (1-12)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+std::vector<WeatherRecord*>* - Pointer to a new vector containing deep copies of the records, or an empty vector if none are found\&. Caller must delete the vector and its contents\&. 
+.RE
+.PP
+
+.PP
+Definition at line 278 of file WeatherDataCollection\&.cpp\&.
 .SS "std::vector< \fBWeatherRecord\fP > WeatherDataCollection::getDataForYearMonth (int year, int month) const"
 
 .PP
@@ -122,11 +506,88 @@ Definition at line 304 of file WeatherData\&.cpp\&.
 .SS "int WeatherDataCollection::getTotalRecords () const"
 
 .PP
+Returns the total number of weather records stored in the collection\&. Calls the size() method of the internal BST\&.
+.PP
+\fBReturns\fP
+.RS 4
+int - The total number of records\&. 
+.RE
+.PP
+
+.PP
 Definition at line 469 of file WeatherData\&.cpp\&.
+.SS "int WeatherDataCollection::getTotalRecords () const"
+
+.PP
+Returns the total number of weather records stored in the collection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The count of records\&. 
+.RE
+.PP
+
 .SS "void WeatherDataCollection::loadFromFiles (const std::string & dataSourceFile)"
 
 .PP
 Definition at line 63 of file WeatherData\&.cpp\&.
+.SS "void WeatherDataCollection::loadFromFiles (std::string * filename)"
+
+.PP
+Loads weather data from a file specified by the filename\&. Loads weather data from a list of CSV files\&.
+.PP
+Reads, parses, and adds each record to the collection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP A constant pointer to the string containing the path to the data file\&.
+.RE
+.PP
+Reads filenames from the provided list file, then parses each CSV, creates \fBWeatherRecord\fP objects, and adds them to the collection\&. Records are shuffled before final insertion into the BST for balance\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP - Pointer to the string containing the name of the file listing the CSVs\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 136 of file WeatherDataCollection\&.cpp\&.
+.SS "\fBWeatherDataCollection\fP & WeatherDataCollection::operator= (const \fBWeatherDataCollection\fP & other)"
+
+.PP
+Assignment operator (Rule of Three)\&. Assignment operator for \fBWeatherDataCollection\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBWeatherDataCollection\fP object to assign from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBWeatherDataCollection\fP& A reference to the current object\&.
+.RE
+.PP
+Cleans up existing resources and performs a deep copy assignment\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - The \fBWeatherDataCollection\fP object to assign from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBWeatherDataCollection\fP& - Reference to the updated object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 74 of file WeatherDataCollection\&.cpp\&.
 
 .SH "Author"
 .PP 

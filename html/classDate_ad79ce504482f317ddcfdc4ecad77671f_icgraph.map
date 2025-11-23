@@ -1,0 +1,6 @@
+<map id="Date::GetYear" name="Date::GetYear">
+<area shape="rect" id="node1" title="Gets the year component of the Date object." alt="" coords="433,46,536,73"/>
+<area shape="rect" id="node2" href="$WeatherRecord_8h.html#af845de93f339445b06dde8ebbc2a15e9" title="Traversal helper function to collect records based on both the target year and month." alt="" coords="253,46,385,73"/>
+<area shape="rect" id="node3" href="$classWeatherDataCollection.html#aea0d9b28870084d3d68e2a77886d4286" title="Retrieves a vector of pointers to records for a specific year and month (alternative function name)." alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node4" href="$classWeatherDataCollection.html#a6ca139a9e1e84b3cda31d467fcf718cc" title="Retrieves a vector of pointers to records for a specific year and month." alt="" coords="27,71,183,112"/>
+</map>

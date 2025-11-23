@@ -1,0 +1,5 @@
+<map id="collectByYearMonth" name="collectByYearMonth">
+<area shape="rect" id="node1" title="Traversal helper function to collect records matching a specific year and month." alt="" coords="5,31,137,57"/>
+<area shape="rect" id="node2" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Gets the month component of the Date object." alt="" coords="185,5,297,32"/>
+<area shape="rect" id="node3" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Gets the year component of the Date object." alt="" coords="190,56,293,83"/>
+</map>

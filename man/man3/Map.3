@@ -1,16 +1,69 @@
-.TH "Map< K, V >" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "Map< K, V >" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Map< K, V >
+Map< K, V > \- A template wrapper class for the standard C++ std::map container\&.  
+
 .SH SYNOPSIS
 .br
 .PP
 .PP
-\fC#include <WeatherData\&.h>\fP
+\fC#include <Map\&.h>\fP
 .SS "Public Member Functions"
 
 .in +1c
+.ti -1c
+.RI "\fBMap\fP ()"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "\fB~Map\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBMap\fP (const \fBMap\fP &other)"
+.br
+.RI "Copy constructor (Rule of Three)\&. "
+.ti -1c
+.RI "\fBMap\fP & \fBoperator=\fP (const \fBMap\fP &other)"
+.br
+.RI "Assignment operator (Rule of Three)\&. "
+.ti -1c
+.RI "void \fBinsert\fP (const K *key, const V *value)"
+.br
+.RI "Inserts a key-value pair into the map\&. "
+.ti -1c
+.RI "bool \fBcontains\fP (const K *key) const"
+.br
+.RI "Checks if the map contains the specified key\&. "
+.ti -1c
+.RI "V * \fBat\fP (const K *key)"
+.br
+.RI "Retrieves a pointer to the value associated with the specified key (mutable version)\&. "
+.ti -1c
+.RI "const V * \fBat\fP (const K *key) const"
+.br
+.RI "Retrieves a constant pointer to the value associated with the specified key (constant version)\&. "
+.ti -1c
+.RI "size_t \fBsize\fP () const"
+.br
+.RI "Returns the number of key-value pairs in the map\&. "
+.ti -1c
+.RI "std::map< K, V >::iterator \fBbegin\fP ()"
+.br
+.RI "Returns an iterator pointing to the first element in the map (mutable)\&. "
+.ti -1c
+.RI "std::map< K, V >::iterator \fBend\fP ()"
+.br
+.RI "Returns an iterator referring to the past-the-end element in the map (mutable)\&. "
+.ti -1c
+.RI "std::map< K, V >::const_iterator \fBbegin\fP () const"
+.br
+.RI "Returns a const iterator pointing to the first element in the map (constant)\&. "
+.ti -1c
+.RI "std::map< K, V >::const_iterator \fBend\fP () const"
+.br
+.RI "Returns a const iterator referring to the past-the-end element in the map (constant)\&. "
 .ti -1c
 .RI "\fBMap\fP ()=default"
 .br
@@ -45,11 +98,47 @@ Map< K, V >
 .SS "template<typename K, typename V>
 .br
 class Map< K, V >"
+A template wrapper class for the standard C++ std::map container\&. 
+
+This class provides a dynamic, heap-allocated wrapper around std::map, implementing the Rule of Three (Destructor, Copy Constructor, Assignment Operator) and providing specific methods for insertion and retrieval that handle key and value pointers, as required by the application's design\&.
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIK\fP The type of the key (must be comparable)\&. 
+.br
+\fIV\fP The type of the value\&. 
+.RE
+.PP
 
 .PP
-Definition at line 17 of file WeatherData\&.h\&.
+Definition at line 19 of file Map\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
+.SS "template<typename K , typename V > \fBMap\fP< K, V >::\fBMap\fP ()\fC [inline]\fP"
+
+.PP
+Default constructor\&. Initializes and dynamically allocates the internal std::map\&. 
+.PP
+Definition at line 32 of file Map\&.h\&.
+.SS "template<typename K , typename V > \fBMap\fP< K, V >::~\fBMap\fP ()\fC [inline]\fP"
+
+.PP
+Destructor\&. Frees the dynamically allocated internal std::map\&. 
+.PP
+Definition at line 41 of file Map\&.h\&.
+.SS "template<typename K , typename V > \fBMap\fP< K, V >::\fBMap\fP (const \fBMap\fP< K, V > & other)\fC [inline]\fP"
+
+.PP
+Copy constructor (Rule of Three)\&. Performs a deep copy of the internal map from the 'other' \fBMap\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBMap\fP object to copy from\&. 
+.RE
+.PP
+
+.PP
+Definition at line 51 of file Map\&.h\&.
 .SS "template<typename K , typename V > \fBMap\fP< K, V >::\fBMap\fP ()\fC [default]\fP"
 
 .SH "Member Function Documentation"
@@ -62,30 +151,182 @@ Definition at line 33 of file WeatherData\&.h\&.
 
 .PP
 Definition at line 37 of file WeatherData\&.h\&.
+.SS "template<typename K , typename V > V* \fBMap\fP< K, V >::at (const K * key)\fC [inline]\fP"
+
+.PP
+Retrieves a pointer to the value associated with the specified key (mutable version)\&. Behaves like std::map operator[]: if the key does not exist, it is inserted with a default-constructed value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A constant pointer to the key\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+V* A mutable pointer to the value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 100 of file Map\&.h\&.
+.SS "template<typename K , typename V > const V* \fBMap\fP< K, V >::at (const K * key) const\fC [inline]\fP"
+
+.PP
+Retrieves a constant pointer to the value associated with the specified key (constant version)\&. Behaves like std::map::at(): throws an exception if the key is not found\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A constant pointer to the key\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+const V* A constant pointer to the value\&. 
+.RE
+.PP
+
+.PP
+Definition at line 111 of file Map\&.h\&.
 .SS "template<typename K , typename V > std::map<K, V>::iterator \fBMap\fP< K, V >::begin ()\fC [inline]\fP"
 
 .PP
 Definition at line 42 of file WeatherData\&.h\&.
+.SS "template<typename K , typename V > std::map<K, V>::iterator \fBMap\fP< K, V >::begin ()\fC [inline]\fP"
+
+.PP
+Returns an iterator pointing to the first element in the map (mutable)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+typename std::map<K, V>::iterator An iterator to the beginning\&. 
+.RE
+.PP
+
+.PP
+Definition at line 126 of file Map\&.h\&.
 .SS "template<typename K , typename V > std::map<K, V>::const_iterator \fBMap\fP< K, V >::begin () const\fC [inline]\fP"
 
 .PP
 Definition at line 44 of file WeatherData\&.h\&.
+.SS "template<typename K , typename V > std::map<K, V>::const_iterator \fBMap\fP< K, V >::begin () const\fC [inline]\fP"
+
+.PP
+Returns a const iterator pointing to the first element in the map (constant)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+typename std::map<K, V>::const_iterator A const iterator to the beginning\&. 
+.RE
+.PP
+
+.PP
+Definition at line 138 of file Map\&.h\&.
 .SS "template<typename K , typename V > bool \fBMap\fP< K, V >::contains (const K & key) const\fC [inline]\fP"
 
 .PP
 Definition at line 29 of file WeatherData\&.h\&.
+.SS "template<typename K , typename V > bool \fBMap\fP< K, V >::contains (const K * key) const\fC [inline]\fP"
+
+.PP
+Checks if the map contains the specified key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A constant pointer to the key to search for\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool True if the key is found, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Definition at line 88 of file Map\&.h\&.
 .SS "template<typename K , typename V > std::map<K, V>::iterator \fBMap\fP< K, V >::end ()\fC [inline]\fP"
 
 .PP
 Definition at line 43 of file WeatherData\&.h\&.
+.SS "template<typename K , typename V > std::map<K, V>::iterator \fBMap\fP< K, V >::end ()\fC [inline]\fP"
+
+.PP
+Returns an iterator referring to the past-the-end element in the map (mutable)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+typename std::map<K, V>::iterator An iterator to the end\&. 
+.RE
+.PP
+
+.PP
+Definition at line 132 of file Map\&.h\&.
 .SS "template<typename K , typename V > std::map<K, V>::const_iterator \fBMap\fP< K, V >::end () const\fC [inline]\fP"
 
 .PP
 Definition at line 45 of file WeatherData\&.h\&.
+.SS "template<typename K , typename V > std::map<K, V>::const_iterator \fBMap\fP< K, V >::end () const\fC [inline]\fP"
+
+.PP
+Returns a const iterator referring to the past-the-end element in the map (constant)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+typename std::map<K, V>::const_iterator A const iterator to the end\&. 
+.RE
+.PP
+
+.PP
+Definition at line 144 of file Map\&.h\&.
 .SS "template<typename K , typename V > void \fBMap\fP< K, V >::insert (const K & key, const V & value)\fC [inline]\fP"
 
 .PP
 Definition at line 25 of file WeatherData\&.h\&.
+.SS "template<typename K , typename V > void \fBMap\fP< K, V >::insert (const K * key, const V * value)\fC [inline]\fP"
+
+.PP
+Inserts a key-value pair into the map\&. Keys and values are passed as pointers, but the dereferenced copies are stored in the internal map (copy semantics)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP A constant pointer to the key to insert\&. 
+.br
+\fIvalue\fP A constant pointer to the value to insert\&. 
+.RE
+.PP
+
+.PP
+Definition at line 79 of file Map\&.h\&.
+.SS "template<typename K , typename V > \fBMap\fP& \fBMap\fP< K, V >::operator= (const \fBMap\fP< K, V > & other)\fC [inline]\fP"
+
+.PP
+Assignment operator (Rule of Three)\&. Performs a deep copy assignment\&. Cleans up existing resources and copies the internal map from the 'other' \fBMap\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBMap\fP object to assign from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBMap\fP& A reference to the current \fBMap\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file Map\&.h\&.
+.SS "template<typename K , typename V > size_t \fBMap\fP< K, V >::size () const\fC [inline]\fP"
+
+.PP
+Returns the number of key-value pairs in the map\&. 
+.PP
+\fBReturns\fP
+.RS 4
+size_t The size of the map\&. 
+.RE
+.PP
+
+.PP
+Definition at line 119 of file Map\&.h\&.
 
 .SH "Author"
 .PP 

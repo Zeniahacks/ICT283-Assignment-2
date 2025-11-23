@@ -1,8 +1,9 @@
-.TH "WeatherRecord" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "WeatherRecord" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-WeatherRecord
+WeatherRecord \- Represents a single weather data observation at a specific date and time\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -17,12 +18,43 @@ WeatherRecord
 .ti -1c
 .RI "bool \fBoperator<\fP (const \fBWeatherRecord\fP &other) const"
 .br
+.RI "Less-than comparison operator\&. "
 .ti -1c
 .RI "bool \fBoperator>\fP (const \fBWeatherRecord\fP &other) const"
 .br
+.RI "Greater-than comparison operator\&. "
 .ti -1c
 .RI "bool \fBoperator==\fP (const \fBWeatherRecord\fP &other) const"
 .br
+.RI "Equality comparison operator\&. "
+.ti -1c
+.RI "\fBWeatherRecord\fP (\fBDate\fP *d, double ws, double temp, double sr)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fB~WeatherRecord\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBWeatherRecord\fP (const \fBWeatherRecord\fP &other)"
+.br
+.RI "Copy constructor\&. Performs a deep copy of the \fBDate\fP object\&. "
+.ti -1c
+.RI "\fBWeatherRecord\fP & \fBoperator=\fP (const \fBWeatherRecord\fP &other)"
+.br
+.RI "Assignment operator\&. Performs a deep copy of the \fBDate\fP object\&. "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBWeatherRecord\fP &other) const"
+.br
+.RI "Less-than comparison operator\&. "
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBWeatherRecord\fP &other) const"
+.br
+.RI "Greater-than comparison operator\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBWeatherRecord\fP &other) const"
+.br
+.RI "Equality comparison operator\&. "
 .in -1c
 .SS "Public Attributes"
 
@@ -33,12 +65,19 @@ WeatherRecord
 .ti -1c
 .RI "double \fBwindSpeed\fP"
 .br
+.RI "Wind speed recorded (in m/s)\&. "
 .ti -1c
 .RI "double \fBtemperature\fP"
 .br
+.RI "Air temperature recorded (in degrees Celsius)\&. "
 .ti -1c
 .RI "double \fBsolarRadiation\fP"
 .br
+.RI "Solar radiation recorded (in W/m^2)\&. "
+.ti -1c
+.RI "\fBDate\fP * \fBdate\fP"
+.br
+.RI "Pointer to the \fBDate\fP and time of the record\&. "
 .in -1c
 .SS "Friends"
 
@@ -49,6 +88,10 @@ WeatherRecord
 .in -1c
 .SH "Detailed Description"
 .PP 
+Represents a single weather data observation at a specific date and time\&. 
+
+This class holds the date, wind speed, temperature, and solar radiation for a single recorded observation\&. It includes comparison operators essential for storage within the Binary Search Tree (BST)\&. 
+.PP
 Definition at line 49 of file WeatherData\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
@@ -56,20 +99,219 @@ Definition at line 49 of file WeatherData\&.h\&.
 
 .PP
 Definition at line 11 of file WeatherData\&.cpp\&.
+.SS "WeatherRecord::WeatherRecord (\fBDate\fP * d, double ws, double temp, double sr)"
+
+.PP
+Constructor\&. Constructor for \fBWeatherRecord\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fId\fP Pointer to the \fBDate\fP object\&. 
+.br
+\fIws\fP Wind speed value\&. 
+.br
+\fItemp\fP Temperature value\&. 
+.br
+\fIsr\fP Solar radiation value\&.
+.RE
+.PP
+Initializes a weather record with specific values and takes ownership of the provided \fBDate\fP object\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fId\fP - Pointer to the \fBDate\fP object (ownership is transferred)\&. 
+.br
+\fIws\fP - Wind speed\&. 
+.br
+\fItemp\fP - Temperature\&. 
+.br
+\fIsr\fP - Solar radiation\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 21 of file WeatherRecord\&.cpp\&.
+.SS "WeatherRecord::~WeatherRecord ()"
+
+.PP
+Destructor\&. Destructor for \fBWeatherRecord\fP\&.
+.PP
+Ensures the dynamically allocated \fBDate\fP object is properly deleted\&.
+.PP
+Deletes the owned \fBDate\fP object\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file WeatherRecord\&.cpp\&.
+.SS "WeatherRecord::WeatherRecord (const \fBWeatherRecord\fP & other)"
+
+.PP
+Copy constructor\&. Performs a deep copy of the \fBDate\fP object\&. Copy constructor for \fBWeatherRecord\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBWeatherRecord\fP object to copy from\&.
+.RE
+.PP
+Performs a deep copy of the \fBDate\fP object to ensure records are independent\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - The \fBWeatherRecord\fP object to copy from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file WeatherRecord\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "bool WeatherRecord::operator< (const \fBWeatherRecord\fP & other) const"
 
 .PP
+Less-than comparison operator\&. Compares two \fBWeatherRecord\fP objects based on their \fBDate\fP and Time\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - The other \fBWeatherRecord\fP to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool - True if this record is chronologically before the other\&. 
+.RE
+.PP
+
+.PP
 Definition at line 14 of file WeatherData\&.cpp\&.
+.SS "bool WeatherRecord::operator< (const \fBWeatherRecord\fP & other) const"
+
+.PP
+Less-than comparison operator\&. Compares two \fBWeatherRecord\fP objects primarily based on their \fBDate\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBWeatherRecord\fP to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool True if this record is chronologically less than the other\&. 
+.RE
+.PP
+
+.SS "\fBWeatherRecord\fP & WeatherRecord::operator= (const \fBWeatherRecord\fP & other)"
+
+.PP
+Assignment operator\&. Performs a deep copy of the \fBDate\fP object\&. Assignment operator for \fBWeatherRecord\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBWeatherRecord\fP object to assign from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBWeatherRecord\fP& A reference to the current object\&.
+.RE
+.PP
+Cleans up the existing \fBDate\fP object and performs a deep copy assignment\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - The \fBWeatherRecord\fP object to assign from\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBWeatherRecord\fP& - Reference to the updated object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file WeatherRecord\&.cpp\&.
 .SS "bool WeatherRecord::operator== (const \fBWeatherRecord\fP & other) const"
 
 .PP
+Equality comparison operator\&. Compares two \fBWeatherRecord\fP objects based on their \fBDate\fP and Time (used as the primary key)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - The other \fBWeatherRecord\fP to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool - True if both records have the same date and time\&. 
+.RE
+.PP
+
+.PP
 Definition at line 22 of file WeatherData\&.cpp\&.
+.SS "bool WeatherRecord::operator== (const \fBWeatherRecord\fP & other) const"
+
+.PP
+Equality comparison operator\&. Compares two \fBWeatherRecord\fP objects for equality based on their \fBDate\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBWeatherRecord\fP to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool True if both records have the same \fBDate\fP\&. 
+.RE
+.PP
+
 .SS "bool WeatherRecord::operator> (const \fBWeatherRecord\fP & other) const"
 
 .PP
+Greater-than comparison operator\&. Compares two \fBWeatherRecord\fP objects based on their \fBDate\fP and Time\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP - The other \fBWeatherRecord\fP to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool - True if this record is chronologically after the other\&. 
+.RE
+.PP
+
+.PP
 Definition at line 18 of file WeatherData\&.cpp\&.
+.SS "bool WeatherRecord::operator> (const \fBWeatherRecord\fP & other) const"
+
+.PP
+Greater-than comparison operator\&. Compares two \fBWeatherRecord\fP objects primarily based on their \fBDate\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The \fBWeatherRecord\fP to compare against\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool True if this record is chronologically greater than the other\&. 
+.RE
+.PP
+
 .SH "Friends And Related Function Documentation"
 .PP 
 .SS "std::ostream& operator<< (std::ostream & os, const \fBWeatherRecord\fP & wr)\fC [friend]\fP"
@@ -78,6 +320,12 @@ Definition at line 18 of file WeatherData\&.cpp\&.
 Definition at line 26 of file WeatherData\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
+.SS "\fBDate\fP* WeatherRecord::date"
+
+.PP
+Pointer to the \fBDate\fP and time of the record\&. 
+.PP
+Definition at line 21 of file WeatherRecord\&.h\&.
 .SS "\fBDate\fP WeatherRecord::date"
 
 .PP
@@ -85,13 +333,19 @@ Definition at line 51 of file WeatherData\&.h\&.
 .SS "double WeatherRecord::solarRadiation"
 
 .PP
+Solar radiation recorded (in W/m^2)\&. 
+.PP
 Definition at line 54 of file WeatherData\&.h\&.
 .SS "double WeatherRecord::temperature"
 
 .PP
+Air temperature recorded (in degrees Celsius)\&. 
+.PP
 Definition at line 53 of file WeatherData\&.h\&.
 .SS "double WeatherRecord::windSpeed"
 
+.PP
+Wind speed recorded (in m/s)\&. 
 .PP
 Definition at line 52 of file WeatherData\&.h\&.
 

@@ -1,0 +1,13 @@
+digraph "collectByYearMonth"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="collectByYearMonth",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Traversal helper function to collect records matching a specific year and month."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="WeatherDataCollection\l::getDataForSpecificMonthYear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#aea0d9b28870084d3d68e2a77886d4286",tooltip="Retrieves a vector of pointers to records for a specific year and month (alternative function name)."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="WeatherDataCollection\l::getDataForYearMonth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#a6ca139a9e1e84b3cda31d467fcf718cc",tooltip="Retrieves a vector of pointers to records for a specific year and month."];
+}

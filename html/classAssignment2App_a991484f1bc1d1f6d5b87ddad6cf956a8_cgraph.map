@@ -1,0 +1,11 @@
+<map id="Assignment2App::displayAverageWindSpeed" name="Assignment2App::displayAverageWindSpeed">
+<area shape="rect" id="node1" title="Calculates and displays the average wind speed and standard deviation for a specific year and month." alt="" coords="5,23,219,65"/>
+<area shape="rect" id="node2" href="$classWeatherDataCollection.html#aebed502136a6a926dffeaaab3df64fb8" title="New Menu option tasked from assignment 2." alt="" coords="267,23,449,65"/>
+<area shape="rect" id="node3" href="$namespaceStatistics.html#a340dd726c3840ecc737efcd201d52f20" title="Calculates the arithmetic mean (average) of a set of values." alt="" coords="745,5,909,32"/>
+<area shape="rect" id="node4" href="$namespaceStatistics.html#a73c38a7230ffe59562de5d1f2062d390" title="Calculates the Sample Standard Deviation of a set of values." alt="" coords="511,31,684,57"/>
+<area shape="rect" id="node5" href="$classWeatherDataCollection.html#a8242557f38750a366d640009c2d0d9b3" title=" " alt="" coords="497,82,697,123"/>
+<area shape="rect" id="node6" href="$classWeatherDataCollection.html#a7509e18dd1bd7839cd442db739573c9d" title=" " alt="" coords="749,82,905,123"/>
+<area shape="rect" id="node7" href="$classMap.html#a12db9738ef141377c56c68bc17ab8537" title="Retrieves a pointer to the value associated with the specified key (mutable version)." alt="" coords="1000,60,1067,87"/>
+<area shape="rect" id="node8" href="$classWeatherDataCollection.html#ae8e7fd8fb3d9f6b3a57794cb70f55847" title=" " alt="" coords="957,111,1109,153"/>
+<area shape="rect" id="node9" href="$classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="1157,119,1260,145"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Assignment2App::displayAverageWindSpeed" name="Assignment2App::displayAverageWindSpeed">
+<area shape="rect" id="node1" title="Calculates and displays the average wind speed and standard deviation for a specific year and month." alt="" coords="556,5,769,47"/>
+<area shape="rect" id="node2" href="$classAssignment2App.html#ad01929ce6c99caeb9eda8132c24fa130" title="Processes the user&#39;s choice from the menu." alt="" coords="299,13,508,39"/>
+<area shape="rect" id="node3" href="$classAssignment2App.html#a04d0de259955552f8641eb67c2978418" title="Runs the main application loop." alt="" coords="104,13,251,39"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function of the program." alt="" coords="5,13,56,39"/>
+</map>

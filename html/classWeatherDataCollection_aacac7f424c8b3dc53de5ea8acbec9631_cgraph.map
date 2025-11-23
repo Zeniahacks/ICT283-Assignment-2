@@ -1,0 +1,4 @@
+<map id="WeatherDataCollection::getTotalRecords" name="WeatherDataCollection::getTotalRecords">
+<area shape="rect" id="node1" title="Returns the total number of weather records stored in the collection." alt="" coords="5,5,157,47"/>
+<area shape="rect" id="node2" href="$classBst.html#a2fa9672cc879f25613c40690cf0098e8" title="Gets the total number of nodes in the tree." alt="" coords="205,13,276,39"/>
+</map>

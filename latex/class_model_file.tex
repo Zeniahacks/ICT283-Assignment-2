@@ -1,0 +1,292 @@
+\hypertarget{class_model_file}{}\doxysection{Model\+File Class Reference}
+\label{class_model_file}\index{ModelFile@{ModelFile}}
+
+
+Manages all models and room templates.  
+
+
+
+
+{\ttfamily \#include $<$Model\+File.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_model_file_1_1_template}{Template}}
+\begin{DoxyCompactList}\small\item\em Defines a single room template. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_model_file_1_1_template_object}{Template\+Object}}
+\begin{DoxyCompactList}\small\item\em Defines a single model used in a template. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_model_file_a8c23f5d6564eee82e232510d908fc696}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears all loaded models and templates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_file_a6bca52fddf69af91881311cedf38aee5}{Load\+Models}} (string list\+File)
+\begin{DoxyCompactList}\small\item\em Loads all models listed in a text file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_file_a2909e1be39c99dac7ba13d9d7ea937d7}{Load\+Templates}} (string template\+File)
+\begin{DoxyCompactList}\small\item\em Loads all room templates listed in a text file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_file_aa629fdf206541b10d1a21a4736108543}{Render\+Template}} (int template\+ID)
+\begin{DoxyCompactList}\small\item\em Draws specified room template. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_model_file_a46dfc67974aebc0aa712258853d40af8}{Get\+Template\+ID}} (string template\+Name)
+\begin{DoxyCompactList}\small\item\em Retrieves the ID number of a template based on name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_model_file}{Model\+File}} $\ast$ \mbox{\hyperlink{class_model_file_a0c1f394bc097aa2c4afd3f5105af6afa}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the modelfile singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_file_a37ed502fe8d42fd4e4cc92246d1815ef}{Model\+File}} ()
+\item 
+virtual \mbox{\hyperlink{class_model_file_a5ff0e3827d489224c55921cf1e6aad2d}{$\sim$\+Model\+File}} ()
+\item 
+Block\+Model $\ast$ \mbox{\hyperlink{class_model_file_a2706830fe4acc6893e22b1598c7f4bbc}{Get\+Model}} (string model\+Name)
+\begin{DoxyCompactList}\small\item\em Returns pointer to requested model, or zero if not found. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, Block\+Model $>$ \mbox{\hyperlink{class_model_file_a130531e8e36513e3edc158bb64473e56}{m\+\_\+models}}
+\begin{DoxyCompactList}\small\item\em Maps from model filename to model data. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{struct_model_file_1_1_template}{Template}} $>$ \mbox{\hyperlink{class_model_file_a6c9dc66d14bc6330a5b25bdc0aa25fb0}{m\+\_\+templates}}
+\begin{DoxyCompactList}\small\item\em Room contents templates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages all models and room templates. 
+
+Models are constructed using Harry\textquotesingle{}s block class. Room templates contain references to several models, and are used to place furniture in rooms. Models do not support collision detection.
+
+\mbox{\hyperlink{struct_model_file_1_1_template}{Template}} names can contain multiple words (ie with spaces).~\newline
+Case differences are ignored in template names, but not model names.~\newline
+Models are standard bdl files.~\newline
+ \begin{DoxyAuthor}{Author}
+Mark Iskra 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+01 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26/09/2007 Mark Iskra, Started
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+The monkey 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+02 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/09/2009 The Monkey, Added more comments
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Let Harry know his block class is being used.\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]My program has no bugs. Well, maybe it has... 
+
+The program didn\textquotesingle{}t make my cofee right. \end{DoxyRefDesc}
+
+
+Definition at line 63 of file Model\+File.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_file_a37ed502fe8d42fd4e4cc92246d1815ef}\label{class_model_file_a37ed502fe8d42fd4e4cc92246d1815ef}} 
+\index{ModelFile@{ModelFile}!ModelFile@{ModelFile}}
+\index{ModelFile@{ModelFile}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{ModelFile()}{ModelFile()}}
+{\footnotesize\ttfamily Model\+File\+::\+Model\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 136 of file Model\+File.\+h.
+
+\mbox{\Hypertarget{class_model_file_a5ff0e3827d489224c55921cf1e6aad2d}\label{class_model_file_a5ff0e3827d489224c55921cf1e6aad2d}} 
+\index{ModelFile@{ModelFile}!````~ModelFile@{$\sim$ModelFile}}
+\index{````~ModelFile@{$\sim$ModelFile}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModelFile()}{~ModelFile()}}
+{\footnotesize\ttfamily virtual Model\+File\+::$\sim$\+Model\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 137 of file Model\+File.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_file_a8c23f5d6564eee82e232510d908fc696}\label{class_model_file_a8c23f5d6564eee82e232510d908fc696}} 
+\index{ModelFile@{ModelFile}!Clear@{Clear}}
+\index{Clear@{Clear}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Model\+File\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears all loaded models and templates. 
+
+This function will clear all the display lists and B\+DL data associated with the specific instance of this class.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_file_a0c1f394bc097aa2c4afd3f5105af6afa}\label{class_model_file_a0c1f394bc097aa2c4afd3f5105af6afa}} 
+\index{ModelFile@{ModelFile}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_model_file}{Model\+File}}$\ast$ Model\+File\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a pointer to the modelfile singleton. 
+
+\begin{DoxyReturn}{Returns}
+Model\+File$\ast$ -\/ pointer to \mbox{\hyperlink{class_model_file}{Model\+File}} singleton 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_file_a2706830fe4acc6893e22b1598c7f4bbc}\label{class_model_file_a2706830fe4acc6893e22b1598c7f4bbc}} 
+\index{ModelFile@{ModelFile}!GetModel@{GetModel}}
+\index{GetModel@{GetModel}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{GetModel()}{GetModel()}}
+{\footnotesize\ttfamily Block\+Model$\ast$ Model\+File\+::\+Get\+Model (\begin{DoxyParamCaption}\item[{string}]{model\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns pointer to requested model, or zero if not found. 
+
+\begin{DoxyWarning}{Warning}
+Do N\+OT delete the pointer.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Name} & -\/ Name of file model is stored in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Block\+Model$\ast$ -\/ Pointer to model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_file_a46dfc67974aebc0aa712258853d40af8}\label{class_model_file_a46dfc67974aebc0aa712258853d40af8}} 
+\index{ModelFile@{ModelFile}!GetTemplateID@{GetTemplateID}}
+\index{GetTemplateID@{GetTemplateID}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{GetTemplateID()}{GetTemplateID()}}
+{\footnotesize\ttfamily int Model\+File\+::\+Get\+Template\+ID (\begin{DoxyParamCaption}\item[{string}]{template\+Name }\end{DoxyParamCaption})}
+
+
+
+Retrieves the ID number of a template based on name. 
+
+A room template is a collection of models with associated positions Returns zero if template is missing/not loaded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em template\+Name} & -\/ name of template \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_file_a6bca52fddf69af91881311cedf38aee5}\label{class_model_file_a6bca52fddf69af91881311cedf38aee5}} 
+\index{ModelFile@{ModelFile}!LoadModels@{LoadModels}}
+\index{LoadModels@{LoadModels}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{LoadModels()}{LoadModels()}}
+{\footnotesize\ttfamily void Model\+File\+::\+Load\+Models (\begin{DoxyParamCaption}\item[{string}]{list\+File }\end{DoxyParamCaption})}
+
+
+
+Loads all models listed in a text file. 
+
+This function can be called multiple times with different filenames to load several sets of models.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+File} & -\/ Filename of text file (lists model files) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_file_a2909e1be39c99dac7ba13d9d7ea937d7}\label{class_model_file_a2909e1be39c99dac7ba13d9d7ea937d7}} 
+\index{ModelFile@{ModelFile}!LoadTemplates@{LoadTemplates}}
+\index{LoadTemplates@{LoadTemplates}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{LoadTemplates()}{LoadTemplates()}}
+{\footnotesize\ttfamily void Model\+File\+::\+Load\+Templates (\begin{DoxyParamCaption}\item[{string}]{template\+File }\end{DoxyParamCaption})}
+
+
+
+Loads all room templates listed in a text file. 
+
+A room template is a collection of models with associated positions This function can be called multiple times with different filenames to load several sets of templates. Models used in a template must be loaded before loading the template itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em template\+File} & -\/ Filename of template file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+list\+File must have contents 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+will make my coffee too, dream on.. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_model_file_aa629fdf206541b10d1a21a4736108543}\label{class_model_file_aa629fdf206541b10d1a21a4736108543}} 
+\index{ModelFile@{ModelFile}!RenderTemplate@{RenderTemplate}}
+\index{RenderTemplate@{RenderTemplate}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{RenderTemplate()}{RenderTemplate()}}
+{\footnotesize\ttfamily void Model\+File\+::\+Render\+Template (\begin{DoxyParamCaption}\item[{int}]{template\+ID }\end{DoxyParamCaption})}
+
+
+
+Draws specified room template. 
+
+A room template is a collection of models with associated positions It is assumed that the caller has already applied a transformation so that 0,0,0 is the minimum corner of the room
+
+
+\begin{DoxyParams}{Parameters}
+{\em template\+ID} & -\/ ID number of template. Ranged checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+0,0,0 is the minimum corner of the room 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_model_file_a130531e8e36513e3edc158bb64473e56}\label{class_model_file_a130531e8e36513e3edc158bb64473e56}} 
+\index{ModelFile@{ModelFile}!m\_models@{m\_models}}
+\index{m\_models@{m\_models}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{m\_models}{m\_models}}
+{\footnotesize\ttfamily map$<$string, Block\+Model$>$ Model\+File\+::m\+\_\+models\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Maps from model filename to model data. 
+
+
+
+Definition at line 149 of file Model\+File.\+h.
+
+\mbox{\Hypertarget{class_model_file_a6c9dc66d14bc6330a5b25bdc0aa25fb0}\label{class_model_file_a6c9dc66d14bc6330a5b25bdc0aa25fb0}} 
+\index{ModelFile@{ModelFile}!m\_templates@{m\_templates}}
+\index{m\_templates@{m\_templates}!ModelFile@{ModelFile}}
+\doxysubsubsection{\texorpdfstring{m\_templates}{m\_templates}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{struct_model_file_1_1_template}{Template}}$>$ Model\+File\+::m\+\_\+templates\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Room contents templates. 
+
+
+
+Definition at line 172 of file Model\+File.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_model_file_8h}{Model\+File.\+h}}\end{DoxyCompactItemize}

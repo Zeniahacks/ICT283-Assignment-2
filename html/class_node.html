@@ -94,19 +94,32 @@ $(document).ready(function(){initNavTree('class_node.html',''); initResizable();
  <a href="class_node.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_bst_8h_source.html">Bst.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Node&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node__inherit__graph.png" border="0" usemap="#_node_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac57506b1a54e5b804f22ae786d3ab737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ac57506b1a54e5b804f22ae786d3ab737">Node</a> (const T &amp;value)</td></tr>
-<tr class="separator:ac57506b1a54e5b804f22ae786d3ab737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af557ae6400a0b59c6c4fd0d325853c83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#af557ae6400a0b59c6c4fd0d325853c83">Node</a> (T *value)</td></tr>
+<tr class="memdesc:af557ae6400a0b59c6c4fd0d325853c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="class_node.html" title="Template node class for Binary Search Tree.">Node</a>, taking ownership of the provided data pointer.  <a href="class_node.html#af557ae6400a0b59c6c4fd0d325853c83">More...</a><br /></td></tr>
+<tr class="separator:af557ae6400a0b59c6c4fd0d325853c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae923d0417581dd19784d55b901f0f7f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ae923d0417581dd19784d55b901f0f7f0">~Node</a> ()</td></tr>
+<tr class="memdesc:ae923d0417581dd19784d55b901f0f7f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Deletes the owned data element.  <a href="class_node.html#ae923d0417581dd19784d55b901f0f7f0">More...</a><br /></td></tr>
+<tr class="separator:ae923d0417581dd19784d55b901f0f7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac450c71a8677a38d306361f9ced518d3"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ac450c71a8677a38d306361f9ced518d3">data</a></td></tr>
-<tr class="separator:ac450c71a8677a38d306361f9ced518d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ddf69fca989b717bb570e9d5586d2cc"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a6ddf69fca989b717bb570e9d5586d2cc">data</a></td></tr>
+<tr class="memdesc:a6ddf69fca989b717bb570e9d5586d2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store pointer to the data element.  <a href="class_node.html#a6ddf69fca989b717bb570e9d5586d2cc">More...</a><br /></td></tr>
+<tr class="separator:a6ddf69fca989b717bb570e9d5586d2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2841886a16c27e72b21885025c00b44b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a2841886a16c27e72b21885025c00b44b">left</a></td></tr>
+<tr class="memdesc:a2841886a16c27e72b21885025c00b44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the left child node.  <a href="class_node.html#a2841886a16c27e72b21885025c00b44b">More...</a><br /></td></tr>
 <tr class="separator:a2841886a16c27e72b21885025c00b44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7092450d89448320103cde1f72da320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ad7092450d89448320103cde1f72da320">right</a></td></tr>
+<tr class="memdesc:ad7092450d89448320103cde1f72da320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the right child node.  <a href="class_node.html#ad7092450d89448320103cde1f72da320">More...</a><br /></td></tr>
 <tr class="separator:ad7092450d89448320103cde1f72da320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -117,8 +130,8 @@ class Node&lt; T &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00010">10</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac57506b1a54e5b804f22ae786d3ab737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac57506b1a54e5b804f22ae786d3ab737">&#9670;&nbsp;</a></span>Node()</h2>
+<a id="af557ae6400a0b59c6c4fd0d325853c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af557ae6400a0b59c6c4fd0d325853c83">&#9670;&nbsp;</a></span>Node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +144,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_node.html">Node</a>&lt; T &gt;::<a class="el" href="class_node.html">Node</a> </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -143,13 +156,52 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00016">16</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+<p>Constructs a <a class="el" href="class_node.html" title="Template node class for Binary Search Tree.">Node</a>, taking ownership of the provided data pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The pointer to the data element. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00020">20</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
+
+</div>
+</div>
+<a id="ae923d0417581dd19784d55b901f0f7f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae923d0417581dd19784d55b901f0f7f0">&#9670;&nbsp;</a></span>~Node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_node.html">Node</a>&lt; T &gt;::~<a class="el" href="class_node.html">Node</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. Deletes the owned data element. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00025">25</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac450c71a8677a38d306361f9ced518d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac450c71a8677a38d306361f9ced518d3">&#9670;&nbsp;</a></span>data</h2>
+<a id="a6ddf69fca989b717bb570e9d5586d2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ddf69fca989b717bb570e9d5586d2cc">&#9670;&nbsp;</a></span>data</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,10 +209,12 @@ template&lt;class T &gt; </div>
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_node.html">Node</a>&lt; T &gt;::data</td>
+          <td class="memname">T* <a class="el" href="class_node.html">Node</a>&lt; T &gt;::data</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Store pointer to the data element. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00012">12</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
@@ -180,6 +234,8 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Pointer to the left child node. </p>
+
 <p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00013">13</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 
 </div>
@@ -197,6 +253,8 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pointer to the right child node. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bst_8h_source.html#l00014">14</a> of file <a class="el" href="_bst_8h_source.html">Bst.h</a>.</p>
 

@@ -1,4 +1,4 @@
-.TH "Node< T >" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "Node< T >" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -13,21 +13,29 @@ Node< T > \- Template node class for Binary Search Tree\&.
 
 .in +1c
 .ti -1c
-.RI "\fBNode\fP (const T &value)"
+.RI "\fBNode\fP (T *value)"
 .br
+.RI "Constructs a \fBNode\fP, taking ownership of the provided data pointer\&. "
+.ti -1c
+.RI "\fB~Node\fP ()"
+.br
+.RI "Destructor\&. Deletes the owned data element\&. "
 .in -1c
 .SS "Public Attributes"
 
 .in +1c
 .ti -1c
-.RI "T \fBdata\fP"
+.RI "T * \fBdata\fP"
 .br
+.RI "Store pointer to the data element\&. "
 .ti -1c
 .RI "\fBNode\fP< T > * \fBleft\fP"
 .br
+.RI "Pointer to the left child node\&. "
 .ti -1c
 .RI "\fBNode\fP< T > * \fBright\fP"
 .br
+.RI "Pointer to the right child node\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -40,22 +48,43 @@ Template node class for Binary Search Tree\&.
 Definition at line 10 of file Bst\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "template<class T > \fBNode\fP< T >::\fBNode\fP (const T & value)\fC [inline]\fP"
+.SS "template<class T > \fBNode\fP< T >::\fBNode\fP (T * value)\fC [inline]\fP"
 
 .PP
-Definition at line 16 of file Bst\&.h\&.
+Constructs a \fBNode\fP, taking ownership of the provided data pointer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP The pointer to the data element\&. 
+.RE
+.PP
+
+.PP
+Definition at line 20 of file Bst\&.h\&.
+.SS "template<class T > \fBNode\fP< T >::~\fBNode\fP ()\fC [inline]\fP"
+
+.PP
+Destructor\&. Deletes the owned data element\&. 
+.PP
+Definition at line 25 of file Bst\&.h\&.
 .SH "Member Data Documentation"
 .PP 
-.SS "template<class T > T \fBNode\fP< T >::data"
+.SS "template<class T > T* \fBNode\fP< T >::data"
 
+.PP
+Store pointer to the data element\&. 
 .PP
 Definition at line 12 of file Bst\&.h\&.
 .SS "template<class T > \fBNode\fP<T>* \fBNode\fP< T >::left"
 
 .PP
+Pointer to the left child node\&. 
+.PP
 Definition at line 13 of file Bst\&.h\&.
 .SS "template<class T > \fBNode\fP<T>* \fBNode\fP< T >::right"
 
+.PP
+Pointer to the right child node\&. 
 .PP
 Definition at line 14 of file Bst\&.h\&.
 

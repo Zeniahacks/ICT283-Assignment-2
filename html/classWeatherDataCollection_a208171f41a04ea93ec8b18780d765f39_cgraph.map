@@ -1,0 +1,11 @@
+<map id="WeatherDataCollection::loadFromFiles" name="WeatherDataCollection::loadFromFiles">
+<area shape="rect" id="node1" title=" " alt="" coords="5,133,157,174"/>
+<area shape="rect" id="node2" href="$classWeatherDataCollection.html#ab989cab32d91cff3b7a9f31bcdc31a47" title=" " alt="" coords="205,133,357,174"/>
+<area shape="rect" id="node3" href="$classWeatherDataCollection.html#ae2c16b0fadf4b8edee794ab1bea87e47" title=" " alt="" coords="405,99,557,141"/>
+<area shape="rect" id="node9" href="$classWeatherDataCollection.html#ad3eae0f0b875676f9b4371c584ac6bed" title=" " alt="" coords="405,165,557,206"/>
+<area shape="rect" id="node4" href="$classMap.html#a12db9738ef141377c56c68bc17ab8537" title="Retrieves a pointer to the value associated with the specified key (mutable version)." alt="" coords="628,5,695,32"/>
+<area shape="rect" id="node5" href="$classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="610,56,713,83"/>
+<area shape="rect" id="node6" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Gets the month component of the Date object." alt="" coords="605,107,717,133"/>
+<area shape="rect" id="node7" href="$classMap.html#a1dbfcab8d66538121a085aeb9f659abf" title="Inserts a key&#45;value pair into the map." alt="" coords="617,157,705,184"/>
+<area shape="rect" id="node8" href="$classBst.html#aec1107623bc46ce2d242ca8701706db5" title="Inserts a data value into the BST. Takes ownership of the pointer." alt="" coords="621,208,702,235"/>
+</map>

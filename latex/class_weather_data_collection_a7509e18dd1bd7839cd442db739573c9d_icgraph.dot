@@ -1,0 +1,23 @@
+digraph "WeatherDataCollection::getDataForYearMonth"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="WeatherDataCollection\l::getDataForYearMonth",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="WeatherDataCollection\l::displayAverageWindSpeed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#a0eb44123ff66c78fdd732a5c1e24e127",tooltip="Displays the average wind speed and its standard deviation for a given year and month."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="WeatherDataCollection\l::displayMonthlyTemperatures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#ae866100b9fe76895fc4832a5146340a0",tooltip="Displays the average and standard deviation of temperature for each month of a given year."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="WeatherDataCollection\l::generateMonthlyStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#a98207c224b346028112f14e5a9e9bb1a",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="WeatherDataCollection\l::getDataForSpecificMonthYear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#a8242557f38750a366d640009c2d0d9b3",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="WeatherDataCollection\l::calculateSPCC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#a1a2f70f1d907377486f7452fe39ef298",tooltip="Calculates the Sample Pearson Correlation Coefficient (SPCC) for data points of a specific year and m..."];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="WeatherDataCollection\l::displayAverageWindSpeed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#aebed502136a6a926dffeaaab3df64fb8",tooltip="New Menu option tasked from assignment 2."];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="WeatherDataCollection\l::displayMonthlyTemperatures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#ac46cef0678cb228ee7d3563c4a395329",tooltip="Menu option 3: Average ambient air temperature and sample standard deviation for each month of a spec..."];
+}

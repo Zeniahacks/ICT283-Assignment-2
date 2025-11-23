@@ -1,0 +1,136 @@
+\hypertarget{_weather_record_8cpp}{}\doxysection{Weather\+Record.\+cpp File Reference}
+\label{_weather_record_8cpp}\index{WeatherRecord.cpp@{WeatherRecord.cpp}}
+{\ttfamily \#include \char`\"{}Weather\+Record.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Weather\+Record.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_weather_record_8cpp_a03fd1c1015c743ca31c710a00633a3e3}{print\+Weather\+Record}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$record)
+\begin{DoxyCompactList}\small\item\em Standalone print function used for generic B\+ST traversal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_weather_record_8cpp_a63d62ba62e33da167a22b196d8f96e7f}{collect\+By\+Month}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$record, void $\ast$context)
+\begin{DoxyCompactList}\small\item\em Traversal helper function to collect records matching a target month across all years. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_weather_record_8cpp_af845de93f339445b06dde8ebbc2a15e9}{collect\+By\+Year\+Month}} (const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$record, void $\ast$context)
+\begin{DoxyCompactList}\small\item\em Traversal helper function to collect records matching a specific year and month. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{_weather_record_8cpp_ab4e69aba897c5a14dbbbf12ea326c070}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$wr)
+\begin{DoxyCompactList}\small\item\em Overloads the stream insertion operator for \mbox{\hyperlink{class_weather_record}{Weather\+Record}} pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_weather_record_8cpp_a63d62ba62e33da167a22b196d8f96e7f}\label{_weather_record_8cpp_a63d62ba62e33da167a22b196d8f96e7f}} 
+\index{WeatherRecord.cpp@{WeatherRecord.cpp}!collectByMonth@{collectByMonth}}
+\index{collectByMonth@{collectByMonth}!WeatherRecord.cpp@{WeatherRecord.cpp}}
+\doxysubsubsection{\texorpdfstring{collectByMonth()}{collectByMonth()}}
+{\footnotesize\ttfamily void collect\+By\+Month (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$}]{record,  }\item[{void $\ast$}]{context }\end{DoxyParamCaption})}
+
+
+
+Traversal helper function to collect records matching a target month across all years. 
+
+Traversal helper function to collect records based only on the target month.
+
+If the record\textquotesingle{}s month matches the context\textquotesingle{}s target month, a deep copy of the record is added to the context vector. This function is designed to be used by the B\+ST\textquotesingle{}s in\+Order traversal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & -\/ Pointer to the current \mbox{\hyperlink{class_weather_record}{Weather\+Record}} during traversal. \\
+\hline
+{\em context} & -\/ Pointer to the \mbox{\hyperlink{struct_collection_context}{Collection\+Context}} struct containing the target month and the results vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file Weather\+Record.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{_weather_record_8cpp_af845de93f339445b06dde8ebbc2a15e9}\label{_weather_record_8cpp_af845de93f339445b06dde8ebbc2a15e9}} 
+\index{WeatherRecord.cpp@{WeatherRecord.cpp}!collectByYearMonth@{collectByYearMonth}}
+\index{collectByYearMonth@{collectByYearMonth}!WeatherRecord.cpp@{WeatherRecord.cpp}}
+\doxysubsubsection{\texorpdfstring{collectByYearMonth()}{collectByYearMonth()}}
+{\footnotesize\ttfamily void collect\+By\+Year\+Month (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$}]{record,  }\item[{void $\ast$}]{context }\end{DoxyParamCaption})}
+
+
+
+Traversal helper function to collect records matching a specific year and month. 
+
+Traversal helper function to collect records based on both the target year and month.
+
+If the record\textquotesingle{}s year and month match the context\textquotesingle{}s target, a deep copy of the record is added to the context vector. This function is designed to be used by the B\+ST\textquotesingle{}s in\+Order traversal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & -\/ Pointer to the current \mbox{\hyperlink{class_weather_record}{Weather\+Record}} during traversal. \\
+\hline
+{\em context} & -\/ Pointer to the \mbox{\hyperlink{struct_collection_context}{Collection\+Context}} struct containing the target year/month and the results vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 146 of file Weather\+Record.\+cpp.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{_weather_record_8cpp_ab4e69aba897c5a14dbbbf12ea326c070}\label{_weather_record_8cpp_ab4e69aba897c5a14dbbbf12ea326c070}} 
+\index{WeatherRecord.cpp@{WeatherRecord.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!WeatherRecord.cpp@{WeatherRecord.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$}]{wr }\end{DoxyParamCaption})}
+
+
+
+Overloads the stream insertion operator for \mbox{\hyperlink{class_weather_record}{Weather\+Record}} pointers. 
+
+Overloads the stream insertion operator to print a \mbox{\hyperlink{class_weather_record}{Weather\+Record}} pointer.
+
+Provides a convenient way to output \mbox{\hyperlink{class_weather_record}{Weather\+Record}} data to an output stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ The output stream. \\
+\hline
+{\em wr} & -\/ Pointer to the \mbox{\hyperlink{class_weather_record}{Weather\+Record}} object to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& -\/ Reference to the output stream. 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file Weather\+Record.\+cpp.
+
+\mbox{\Hypertarget{_weather_record_8cpp_a03fd1c1015c743ca31c710a00633a3e3}\label{_weather_record_8cpp_a03fd1c1015c743ca31c710a00633a3e3}} 
+\index{WeatherRecord.cpp@{WeatherRecord.cpp}!printWeatherRecord@{printWeatherRecord}}
+\index{printWeatherRecord@{printWeatherRecord}!WeatherRecord.cpp@{WeatherRecord.cpp}}
+\doxysubsubsection{\texorpdfstring{printWeatherRecord()}{printWeatherRecord()}}
+{\footnotesize\ttfamily void print\+Weather\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_weather_record}{Weather\+Record}} $\ast$}]{record }\end{DoxyParamCaption})}
+
+
+
+Standalone print function used for generic B\+ST traversal. 
+
+Utility function to print the details of a \mbox{\hyperlink{class_weather_record}{Weather\+Record}}.
+
+Prints the details of a single weather record to standard output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & -\/ Pointer to the \mbox{\hyperlink{class_weather_record}{Weather\+Record}} to be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Weather\+Record.\+cpp.
+

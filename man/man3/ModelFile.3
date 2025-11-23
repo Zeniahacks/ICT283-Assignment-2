@@ -1,0 +1,293 @@
+.TH "ModelFile" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ModelFile \- Manages all models and room templates\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ModelFile\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTemplate\fP"
+.br
+.RI "Defines a single room template\&. "
+.ti -1c
+.RI "struct \fBTemplateObject\fP"
+.br
+.RI "Defines a single model used in a template\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBClear\fP ()"
+.br
+.RI "Clears all loaded models and templates\&. "
+.ti -1c
+.RI "void \fBLoadModels\fP (string listFile)"
+.br
+.RI "Loads all models listed in a text file\&. "
+.ti -1c
+.RI "void \fBLoadTemplates\fP (string templateFile)"
+.br
+.RI "Loads all room templates listed in a text file\&. "
+.ti -1c
+.RI "void \fBRenderTemplate\fP (int templateID)"
+.br
+.RI "Draws specified room template\&. "
+.ti -1c
+.RI "int \fBGetTemplateID\fP (string templateName)"
+.br
+.RI "Retrieves the ID number of a template based on name\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBModelFile\fP * \fBGetInstance\fP ()"
+.br
+.RI "Returns a pointer to the modelfile singleton\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBModelFile\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~ModelFile\fP ()"
+.br
+.ti -1c
+.RI "BlockModel * \fBGetModel\fP (string modelName)"
+.br
+.RI "Returns pointer to requested model, or zero if not found\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "map< string, BlockModel > \fBm_models\fP"
+.br
+.RI "Maps from model filename to model data\&. "
+.ti -1c
+.RI "vector< \fBTemplate\fP > \fBm_templates\fP"
+.br
+.RI "Room contents templates\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Manages all models and room templates\&. 
+
+Models are constructed using Harry's block class\&. Room templates contain references to several models, and are used to place furniture in rooms\&. Models do not support collision detection\&.
+.PP
+\fBTemplate\fP names can contain multiple words (ie with spaces)\&.
+.br
+Case differences are ignored in template names, but not model names\&.
+.br
+Models are standard bdl files\&.
+.br
+ 
+.PP
+\fBAuthor\fP
+.RS 4
+Mark Iskra 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+01 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+26/09/2007 Mark Iskra, Started
+.RE
+.PP
+\fBAuthor\fP
+.RS 4
+The monkey 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+02 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+27/09/2009 The Monkey, Added more comments
+.RE
+.PP
+\fBTodo\fP
+.RS 4
+Let Harry know his block class is being used\&.
+.RE
+.PP
+.PP
+\fBBug\fP
+.RS 4
+My program has no bugs\&. Well, maybe it has\&.\&.\&. 
+.PP
+The program didn't make my cofee right\&. 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file ModelFile\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ModelFile::ModelFile ()\fC [inline]\fP, \fC [protected]\fP"
+
+.PP
+Definition at line 136 of file ModelFile\&.h\&.
+.SS "virtual ModelFile::~ModelFile ()\fC [inline]\fP, \fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 137 of file ModelFile\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void ModelFile::Clear ()"
+
+.PP
+Clears all loaded models and templates\&. This function will clear all the display lists and BDL data associated with the specific instance of this class\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "static \fBModelFile\fP* ModelFile::GetInstance ()\fC [static]\fP"
+
+.PP
+Returns a pointer to the modelfile singleton\&. 
+.PP
+\fBReturns\fP
+.RS 4
+ModelFile* - pointer to \fBModelFile\fP singleton 
+.RE
+.PP
+
+.SS "BlockModel* ModelFile::GetModel (string modelName)\fC [protected]\fP"
+
+.PP
+Returns pointer to requested model, or zero if not found\&. 
+.PP
+\fBWarning\fP
+.RS 4
+Do NOT delete the pointer\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fImodelName\fP - Name of file model is stored in 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+BlockModel* - Pointer to model 
+.RE
+.PP
+
+.SS "int ModelFile::GetTemplateID (string templateName)"
+
+.PP
+Retrieves the ID number of a template based on name\&. A room template is a collection of models with associated positions Returns zero if template is missing/not loaded\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fItemplateName\fP - name of template 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "void ModelFile::LoadModels (string listFile)"
+
+.PP
+Loads all models listed in a text file\&. This function can be called multiple times with different filenames to load several sets of models\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIlistFile\fP - Filename of text file (lists model files) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "void ModelFile::LoadTemplates (string templateFile)"
+
+.PP
+Loads all room templates listed in a text file\&. A room template is a collection of models with associated positions This function can be called multiple times with different filenames to load several sets of templates\&. Models used in a template must be loaded before loading the template itself\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fItemplateFile\fP - Filename of template file 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBPrecondition\fP
+.RS 4
+listFile must have contents 
+.RE
+.PP
+\fBPostcondition\fP
+.RS 4
+will make my coffee too, dream on\&.\&. 
+.RE
+.PP
+
+.SS "void ModelFile::RenderTemplate (int templateID)"
+
+.PP
+Draws specified room template\&. A room template is a collection of models with associated positions It is assumed that the caller has already applied a transformation so that 0,0,0 is the minimum corner of the room
+.PP
+\fBParameters\fP
+.RS 4
+\fItemplateID\fP - ID number of template\&. Ranged checked 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBPrecondition\fP
+.RS 4
+0,0,0 is the minimum corner of the room 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "map<string, BlockModel> ModelFile::m_models\fC [protected]\fP"
+
+.PP
+Maps from model filename to model data\&. 
+.PP
+Definition at line 149 of file ModelFile\&.h\&.
+.SS "vector<\fBTemplate\fP> ModelFile::m_templates\fC [protected]\fP"
+
+.PP
+Room contents templates\&. 
+.PP
+Definition at line 172 of file ModelFile\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

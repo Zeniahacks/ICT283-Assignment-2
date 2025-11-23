@@ -1,0 +1,11 @@
+digraph "Statistics::calculateSPCC"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Statistics::calculateSPCC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculates the Sample Pearson Correlation Coefficient (SPCC) between two datasets."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="WeatherDataCollection\l::calculateSPCC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weather_data_collection.html#adf00be9874637aa86f79d03f79e3591d",tooltip="Calculation of SPCC."];
+}

@@ -1,0 +1,14 @@
+<map id="Statistics::calculateMean" name="Statistics::calculateMean">
+<area shape="rect" id="node1" title="Calculates the arithmetic mean (average) of a set of values." alt="" coords="1283,107,1447,133"/>
+<area shape="rect" id="node2" href="$namespaceStatistics.html#a28c2da464cb0172858b0f0fd98502e23" title="Calculates the Mean Absolute Deviation (MAD) of a set of values." alt="" coords="1069,5,1227,32"/>
+<area shape="rect" id="node3" href="$classWeatherDataCollection.html#a98207c224b346028112f14e5a9e9bb1a" title=" " alt="" coords="837,49,993,90"/>
+<area shape="rect" id="node8" href="$namespaceStatistics.html#a73c38a7230ffe59562de5d1f2062d390" title="Calculates the Sample Standard Deviation of a set of values." alt="" coords="1061,157,1235,184"/>
+<area shape="rect" id="node9" href="$classWeatherDataCollection.html#aebed502136a6a926dffeaaab3df64fb8" title="New Menu option tasked from assignment 2." alt="" coords="824,114,1007,155"/>
+<area shape="rect" id="node11" href="$classWeatherDataCollection.html#ac46cef0678cb228ee7d3563c4a395329" title="Menu option 3: Average ambient air temperature and sample standard deviation for each month of a spec..." alt="" coords="817,179,1013,221"/>
+<area shape="rect" id="node4" href="$classAssignment2App.html#a5759c1b1d6ffb44fd0c4ac2b567ca06d" title="Generates a monthly statistics report file for a specified year." alt="" coords="573,49,752,90"/>
+<area shape="rect" id="node5" href="$classAssignment2App.html#ad01929ce6c99caeb9eda8132c24fa130" title="Processes the user&#39;s choice from the menu." alt="" coords="299,121,508,148"/>
+<area shape="rect" id="node6" href="$classAssignment2App.html#a04d0de259955552f8641eb67c2978418" title="Runs the main application loop." alt="" coords="104,121,251,148"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function of the program." alt="" coords="5,121,56,148"/>
+<area shape="rect" id="node10" href="$classAssignment2App.html#a991484f1bc1d1f6d5b87ddad6cf956a8" title="Calculates and displays the average wind speed and standard deviation for a specific year and month." alt="" coords="556,114,769,155"/>
+<area shape="rect" id="node12" href="$classAssignment2App.html#aafd14abc5f58356186156944a193752b" title="Displays the monthly temperature averages and standard deviations for a specified year." alt="" coords="557,179,768,221"/>
+</map>

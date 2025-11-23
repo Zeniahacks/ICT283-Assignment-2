@@ -1,0 +1,42 @@
+\hypertarget{_date_8cpp}{}\doxysection{Date.\+cpp File Reference}
+\label{_date_8cpp}\index{Date.cpp@{Date.cpp}}
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Date.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_date_8cpp_ae6ebc8d5a8f4830186d9a628b71ade16}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_date}{Date}} $\ast$date)
+\begin{DoxyCompactList}\small\item\em Overloads the stream insertion operator ($<$$<$) for \mbox{\hyperlink{class_date}{Date}} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_date_8cpp_ae6ebc8d5a8f4830186d9a628b71ade16}\label{_date_8cpp_ae6ebc8d5a8f4830186d9a628b71ade16}} 
+\index{Date.cpp@{Date.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Date.cpp@{Date.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_date}{Date}} $\ast$}]{date }\end{DoxyParamCaption})}
+
+
+
+Overloads the stream insertion operator ($<$$<$) for \mbox{\hyperlink{class_date}{Date}} objects. 
+
+Friend function for output stream operator overload.
+
+Prints the date and time in D/\+M/Y H\+:M\+IN format to the output stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ The output stream. \\
+\hline
+{\em date} & -\/ Pointer to the \mbox{\hyperlink{class_date}{Date}} object to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& -\/ Reference to the output stream. 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Date.\+cpp.
+

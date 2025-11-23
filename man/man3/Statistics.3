@@ -1,14 +1,31 @@
-.TH "Statistics" 3 "Thu Nov 20 2025" "My Project" \" -*- nroff -*-
+.TH "Statistics" 3 "Sun Nov 23 2025" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Statistics
+Statistics \- Namespace for statistical calculations using pointer-based vectors\&.  
+
 .SH SYNOPSIS
 .br
 .PP
 .SS "Functions"
 
 .in +1c
+.ti -1c
+.RI "double \fBcalculateMean\fP (const std::vector< double > *values)"
+.br
+.RI "Calculates the arithmetic mean (average) of a set of values\&. "
+.ti -1c
+.RI "double \fBcalculateStdDev\fP (const std::vector< double > *values)"
+.br
+.RI "Calculates the Sample Standard Deviation of a set of values\&. "
+.ti -1c
+.RI "double \fBcalculateMAD\fP (const std::vector< double > *values)"
+.br
+.RI "Calculates the Mean Absolute Deviation (MAD) of a set of values\&. "
+.ti -1c
+.RI "double \fBcalculateSPCC\fP (const std::vector< double > *x, const std::vector< double > *y)"
+.br
+.RI "Calculates the Sample Pearson Correlation Coefficient (SPCC) between two datasets\&. "
 .ti -1c
 .RI "double \fBcalculateMean\fP (const std::vector< double > &values)"
 .br
@@ -22,24 +39,151 @@ Statistics
 .RI "double \fBcalculateSPCC\fP (const std::vector< double > &x, const std::vector< double > &y)"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+Namespace for statistical calculations using pointer-based vectors\&. 
+
+This namespace provides several static functions for common statistical calculations, specifically designed to accept constant pointers to standard C++ vectors of doubles\&. 
 .SH "Function Documentation"
 .PP 
 .SS "double Statistics::calculateMAD (const std::vector< double > & values)"
 
 .PP
 Definition at line 359 of file WeatherData\&.cpp\&.
+.SS "double Statistics::calculateMAD (const std::vector< double > * values)"
+
+.PP
+Calculates the Mean Absolute Deviation (MAD) of a set of values\&. Calculates the Median Absolute Deviation (MAD) of a set of values\&.
+.PP
+The average of the absolute differences between each value and the mean\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalues\fP - Pointer to the vector of double values\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double - The calculated MAD, or 0\&.0 if the vector is empty\&.
+.RE
+.PP
+Note: The actual median calculation must be handled within the implementation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalues\fP A constant pointer to the vector of double values\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double The calculated Median Absolute Deviation\&. 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file Statistics\&.cpp\&.
 .SS "double Statistics::calculateMean (const std::vector< double > & values)"
 
 .PP
 Definition at line 331 of file WeatherData\&.cpp\&.
+.SS "double Statistics::calculateMean (const std::vector< double > * values)"
+
+.PP
+Calculates the arithmetic mean (average) of a set of values\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalues\fP - Pointer to the vector of double values\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double - The calculated mean, or 0\&.0 if the vector is empty\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalues\fP A constant pointer to the vector of double values\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double The calculated mean\&. Returns 0\&.0 if the vector is empty\&. 
+.RE
+.PP
+
+.PP
+Definition at line 17 of file Statistics\&.cpp\&.
 .SS "double Statistics::calculateSPCC (const std::vector< double > & x, const std::vector< double > & y)"
 
 .PP
 Definition at line 374 of file WeatherData\&.cpp\&.
+.SS "double Statistics::calculateSPCC (const std::vector< double > * x, const std::vector< double > * y)"
+
+.PP
+Calculates the Sample Pearson Correlation Coefficient (SPCC) between two datasets\&. Calculates the Sample Pearson Correlation Coefficient (SPCC) between two data sets\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP - Pointer to the first vector (independent variable)\&. 
+.br
+\fIy\fP - Pointer to the second vector (dependent variable)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double - The calculated SPCC (range [-1, 1]), or 0\&.0 if datasets are too small or unequal size\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP A constant pointer to the vector of double values for the X variable\&. 
+.br
+\fIy\fP A constant pointer to the vector of double values for the Y variable\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double The calculated SPCC\&. Returns 0\&.0 if the vectors are not the same size or size < 2\&. 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file Statistics\&.cpp\&.
 .SS "double Statistics::calculateStdDev (const std::vector< double > & values)"
 
 .PP
 Definition at line 344 of file WeatherData\&.cpp\&.
+.SS "double Statistics::calculateStdDev (const std::vector< double > * values)"
+
+.PP
+Calculates the Sample Standard Deviation of a set of values\&. Calculates the sample standard deviation of a set of values\&.
+.PP
+Uses the N-1 method (Bessel's correction)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalues\fP - Pointer to the vector of double values\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double - The calculated standard deviation, or 0\&.0 if there is less than two values\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalues\fP A constant pointer to the vector of double values\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double The calculated standard deviation\&. Returns 0\&.0 if size < 2\&. 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file Statistics\&.cpp\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for My Project from the source code\&.

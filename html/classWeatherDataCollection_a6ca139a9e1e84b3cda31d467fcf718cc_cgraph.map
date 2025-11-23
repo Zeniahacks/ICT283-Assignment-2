@@ -1,0 +1,7 @@
+<map id="WeatherDataCollection::getDataForYearMonth" name="WeatherDataCollection::getDataForYearMonth">
+<area shape="rect" id="node1" title="Retrieves a vector of pointers to records for a specific year and month." alt="" coords="5,49,161,90"/>
+<area shape="rect" id="node2" href="$WeatherRecord_8cpp.html#af845de93f339445b06dde8ebbc2a15e9" title="Traversal helper function to collect records matching a specific year and month." alt="" coords="209,31,341,57"/>
+<area shape="rect" id="node5" href="$classBst.html#a4666aa938cc23461357ad0c7d6cadf68" title="Initiates an in&#45;order traversal, applying the visit function to each node." alt="" coords="229,81,321,108"/>
+<area shape="rect" id="node3" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Gets the month component of the Date object." alt="" coords="389,5,501,32"/>
+<area shape="rect" id="node4" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Gets the year component of the Date object." alt="" coords="394,56,497,83"/>
+</map>

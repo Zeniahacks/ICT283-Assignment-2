@@ -1,0 +1,11 @@
+<map id="Assignment2App::displayMonthlyTemperatures" name="Assignment2App::displayMonthlyTemperatures">
+<area shape="rect" id="node1" title="Displays the monthly temperature averages and standard deviations for a specified year." alt="" coords="5,23,216,65"/>
+<area shape="rect" id="node2" href="$classWeatherDataCollection.html#ac46cef0678cb228ee7d3563c4a395329" title="Menu option 3: Average ambient air temperature and sample standard deviation for each month of a spec..." alt="" coords="264,23,460,65"/>
+<area shape="rect" id="node3" href="$namespaceStatistics.html#a340dd726c3840ecc737efcd201d52f20" title="Calculates the arithmetic mean (average) of a set of values." alt="" coords="756,5,920,32"/>
+<area shape="rect" id="node4" href="$namespaceStatistics.html#a73c38a7230ffe59562de5d1f2062d390" title="Calculates the Sample Standard Deviation of a set of values." alt="" coords="521,31,695,57"/>
+<area shape="rect" id="node5" href="$classWeatherDataCollection.html#a8242557f38750a366d640009c2d0d9b3" title=" " alt="" coords="508,82,708,123"/>
+<area shape="rect" id="node6" href="$classWeatherDataCollection.html#a7509e18dd1bd7839cd442db739573c9d" title=" " alt="" coords="760,82,916,123"/>
+<area shape="rect" id="node7" href="$classMap.html#a12db9738ef141377c56c68bc17ab8537" title="Retrieves a pointer to the value associated with the specified key (mutable version)." alt="" coords="1011,60,1077,87"/>
+<area shape="rect" id="node8" href="$classWeatherDataCollection.html#ae8e7fd8fb3d9f6b3a57794cb70f55847" title=" " alt="" coords="968,111,1120,153"/>
+<area shape="rect" id="node9" href="$classMap.html#ad33d816036e3b02e6d6c3ecd6cb52427" title="Checks if the map contains the specified key." alt="" coords="1168,119,1271,145"/>
+</map>

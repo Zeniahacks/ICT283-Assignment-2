@@ -1,0 +1,6 @@
+<map id="WeatherRecord" name="WeatherRecord">
+<area shape="rect" id="node1" title="Represents a single weather data observation at a specific date and time." alt="" coords="25,520,168,744"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,277,65,355"/>
+<area shape="rect" id="node3" href="$classDate.html" title="Represents a specific point in time (day, month, year, hour, minute)." alt="" coords="109,204,210,428"/>
+<area shape="rect" id="node4" title=" " alt="" coords="140,5,179,83"/>
+</map>

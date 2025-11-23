@@ -1,0 +1,4 @@
+<map id="collectByMonth" name="collectByMonth">
+<area shape="rect" id="node1" title=" " alt="" coords="205,13,312,39"/>
+<area shape="rect" id="node2" href="$classWeatherDataCollection.html#acb42b813d954d2651ba67b2b708d29e8" title="Retrieves a vector of pointers to all records for a given month, across all years." alt="" coords="5,5,157,47"/>
+</map>

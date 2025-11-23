@@ -1,0 +1,11 @@
+digraph "main"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Main function of the program."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Assignment2App::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assignment2_app.html#a04d0de259955552f8641eb67c2978418",tooltip="Runs the main application loop."];
+}
