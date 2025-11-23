@@ -23,7 +23,6 @@ private:
     void displayMonthlyTemperatures();
     void calculateCorrelations();
     void generateReport();
-    void displayStructuredinfo();
 };
 
 #endif // ASSIGNMENT2APP_H

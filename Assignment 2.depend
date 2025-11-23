@@ -1,7 +1,6 @@
 # depslib dependency file v1.0
-1763832451 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\main.cpp
+1763891873 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\main.cpp
 	"Assignment2App.h"
-	<iostream>
 
 1763547305 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherdata.h
 	"Date.h"
@@ -11,11 +10,11 @@
 	<map>
 	<cmath>
 
-1763831828 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\date.h
+1763892543 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\date.h
 	<iostream>
 	<string>
 
-1763829405 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\bst.h
+1763892543 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\bst.h
 	<iostream>
 	<functional>
 
@@ -29,33 +28,37 @@
 	<numeric>
 	<stdexcept>
 
-1763828490 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\statistics.cpp
+1763891773 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\statistics.cpp
 	"Statistics.h"
 	<cmath>
+	<cstddef>
 
-1763828490 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\statistics.h
+1763892543 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\statistics.h
 	<vector>
 
-1763831829 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherrecord.cpp
+1763892045 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherrecord.cpp
 	"WeatherRecord.h"
 	<iostream>
+	<algorithm>
 
-1763831829 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherrecord.h
+1763892543 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherrecord.h
 	"Date.h"
 	<vector>
 	<iostream>
 
-1763832547 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\assignment2app.cpp
+1763892406 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\assignment2app.cpp
 	"Assignment2App.h"
 	<iostream>
 	<string>
+	<limits>
+	<sstream>
 
-1763827193 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\assignment2app.h
+1763892543 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\assignment2app.h
 	"WeatherDataCollection.h"
 	<iostream>
 	<string>
 
-1763831829 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherdatacollection.h
+1763892543 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherdatacollection.h
 	"Bst.h"
 	"Map.h"
 	"WeatherRecord.h"
@@ -63,18 +66,22 @@
 	<string>
 	<vector>
 
-1763831829 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\map.h
+1763892543 c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\map.h
 	<map>
 
-1763831829 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\date.cpp
+1763891728 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\date.cpp
 	"Date.h"
 	<string>
+	<sstream>
 
-1763831959 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherdatacollection.cpp
+1763890373 source:c:\users\elson\desktop\ict283 data structures and abstractions\ict283_assignment2_ang_kai_jun_elson_35771004\assignment 2\weatherdatacollection.cpp
 	"WeatherDataCollection.h"
+	"Statistics.h"
 	<fstream>
 	<sstream>
 	<iostream>
-	<stdexcept>
-	<cmath>
+	<numeric>
+	<algorithm>
+	<random>
+	<chrono>
 

@@ -8,28 +8,28 @@
 #include <string>
 #include <vector>
 
+/**
+ * @brief Collection of weather data with BST storage and month mapping.
+ */
 class WeatherDataCollection {
 private:
-    Bst<WeatherRecord>* weatherDataBST;
-    Map<int, std::vector<WeatherRecord*>>* dataByMonth;
+    Bst<WeatherRecord>* weatherDataBST; ///< Binary search tree of all records
+    Map<int, std::vector<WeatherRecord*>>* dataByMonth; ///< Map of month to records
 
 public:
     WeatherDataCollection();
     ~WeatherDataCollection();
 
-    // Copy control
     WeatherDataCollection(const WeatherDataCollection& other);
     WeatherDataCollection& operator=(const WeatherDataCollection& other);
 
-    // MAIN FUNCTIONS USING POINTERS
     void addWeatherRecord(WeatherRecord* record);
-    void loadFromFiles(std::string* filename); // simple pointer interface kept
+    void loadFromFiles(std::string* filename);
 
     std::vector<WeatherRecord*>* getDataForMonth(int* month) const;
     std::vector<WeatherRecord*>* getDataForYearMonth(int* year, int* month) const;
     std::vector<WeatherRecord*>* getDataForSpecificMonthYear(int* year, int* month) const;
 
-    // Simple SPCC placeholder (pointer styles)
     double calculateSPCC(int* year, int* month, std::string* type) const;
 
     void displayAverageWindSpeed(int* year, int* month) const;
@@ -39,12 +39,9 @@ public:
     void displayAllData() const;
     int getTotalRecords() const;
 
-    // Traversal print func prototype (so cpp-scope function is declared)
-    friend void printRecordForTraversal(const WeatherRecord* record);
-
 private:
     void parseAndAddRecord(std::string* line);
     Date* parseDate(std::string* dateTimeString);
 };
 
-#endif // WEATHERDATACOLLECTION_H
+#endif

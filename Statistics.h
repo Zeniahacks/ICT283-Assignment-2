@@ -3,6 +3,9 @@
 
 #include <vector>
 
+/**
+ * @brief Namespace for statistical calculations using pointer-based vectors
+ */
 namespace Statistics {
     double calculateMean(const std::vector<double>* values);
     double calculateStdDev(const std::vector<double>* values);
