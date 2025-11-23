@@ -1,3 +1,8 @@
+// Assignment2App.cpp
+
+// Implements the main application logic, user interface, and flow control
+// for the weather data analysis program.
+
 #include "Assignment2App.h"
 #include <iostream>
 #include <string>
@@ -6,6 +11,15 @@
 
 using namespace std;
 
+//----------------------FOLLOW THE INDENTATION USED---
+
+	/**
+	 * @brief Constructor for the Assignment2App class.
+	 *
+	 * Initializes the `WeatherDataCollection` object and sets the `dataLoaded` flag to false.
+	 *
+	 * @return void
+	 */
 Assignment2App::Assignment2App()
     : weatherData(), // Initialize the WeatherDataCollection object
       dataLoaded(false) // Initialize the boolean flag
@@ -13,6 +27,13 @@ Assignment2App::Assignment2App()
     // Constructor body is now empty
 }
 
+	/**
+	 * @brief Runs the main application loop.
+	 *
+	 * Displays the menu, takes user input, and processes the selected choice until the exit option (7) is chosen.
+	 *
+	 * @return void
+	 */
 void Assignment2App::run() {
     int choice = 0;
 
@@ -25,6 +46,11 @@ void Assignment2App::run() {
     while (choice != 7); // EXIT OPTION
 }
 
+	/**
+	 * @brief Displays the main application menu to the console.
+	 *
+	 * @return void
+	 */
 void Assignment2App::displayMenu()
 {
         cout << "\n=== Assignment 2 Weather Data Analysis ===" << endl;
@@ -38,6 +64,14 @@ void Assignment2App::displayMenu()
         cout << "==========================================" << endl;
 }
 
+	/**
+	 * @brief Processes the user's choice from the menu.
+	 *
+	 * Calls the appropriate member function based on the menu choice.
+	 *
+	 * @param  choice - The integer value corresponding to the menu option selected by the user.
+	 * @return void
+	 */
 void Assignment2App::processChoice(int choice) {
     switch (choice) {
         case 1:
@@ -73,6 +107,13 @@ void Assignment2App::processChoice(int choice) {
     }
 }
 
+	/**
+	 * @brief Handles the loading of weather data from the user-specified file.
+	 *
+	 * Prompts the user for a filename, loads the data into `weatherData`, and sets `dataLoaded` to true.
+	 *
+	 * @return void
+	 */
 void Assignment2App::loadData() {
     string filename;
     cout << "Enter data filename: ";
@@ -84,6 +125,13 @@ void Assignment2App::loadData() {
     cout << "Data loaded successfully.\n";
 }
 
+	/**
+	 * @brief Displays all loaded weather data records.
+	 *
+	 * Calls `weatherData.displayAllData()`. Checks if data is loaded first.
+	 *
+	 * @return void
+	 */
 void Assignment2App::displayData() {
     if (!dataLoaded) {
         cout << "Please load the data first (Option 1)." << endl;
@@ -93,6 +141,13 @@ void Assignment2App::displayData() {
     weatherData.displayAllData();
 }
 
+	/**
+	 * @brief Calculates and displays the average wind speed and standard deviation for a specific year and month.
+	 *
+	 * Prompts for year and month, then calls `weatherData.displayAverageWindSpeed()`. Checks if data is loaded first.
+	 *
+	 * @return void
+	 */
 void Assignment2App::displayAverageWindSpeed() {
     if (!dataLoaded) {
         cout << "Please load the data first (Option 1)." << endl;
@@ -108,6 +163,13 @@ void Assignment2App::displayAverageWindSpeed() {
     weatherData.displayAverageWindSpeed(&year, &month);
 }
 
+	/**
+	 * @brief Displays the monthly temperature averages and standard deviations for a specified year.
+	 *
+	 * Prompts for the year, then calls `weatherData.displayMonthlyTemperatures()`. Checks if data is loaded first.
+	 *
+	 * @return void
+	 */
 void Assignment2App::displayMonthlyTemperatures() {
     if (!dataLoaded) {
         cout << "Please load the data first (Option 1)." << endl;
@@ -121,6 +183,13 @@ void Assignment2App::displayMonthlyTemperatures() {
     weatherData.displayMonthlyTemperatures(&year);
 }
 
+	/**
+	 * @brief Calculates and displays Pearson Correlation Coefficients for the specified month across all years.
+	 *
+	 * Prompts for the month, calculates S_T, S_R, and T_R correlation coefficients, and displays the results. Checks if data is loaded first.
+	 *
+	 * @return void
+	 */
 void Assignment2App::calculateCorrelations() {
     if (!dataLoaded) {
         cout << "Please load the data first (Option 1)." << endl;
@@ -158,6 +227,13 @@ void Assignment2App::calculateCorrelations() {
     cout << "T_R: " << weatherData.calculateSPCC(&year, &month, &t_r) << endl;
 }
 
+	/**
+	 * @brief Generates a monthly statistics report file for a specified year.
+	 *
+	 * Prompts for the year, then calls `weatherData.generateMonthlyStats()` to create a CSV file. Checks if data is loaded first.
+	 *
+	 * @return void
+	 */
 void Assignment2App::generateReport() {
     if (!dataLoaded) {
         cout << "Please load the data first (Option 1)." << endl;

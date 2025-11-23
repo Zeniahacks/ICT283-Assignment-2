@@ -38,7 +38,6 @@
 		<Unit filename="Date.cpp" />
 		<Unit filename="Date.h" />
 		<Unit filename="Map.h" />
-		<Unit filename="ModelFile.h" />
 		<Unit filename="Statistics.cpp" />
 		<Unit filename="Statistics.h" />
 		<Unit filename="WeatherDataCollection.cpp" />
